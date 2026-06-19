@@ -9,6 +9,7 @@ from typing import List
 
 
 PHASE_MODULES = {
+    "prepare-candidates": "training.prepare_candidate_pool",
     "prepare-dapt": "training.prepare_dapt_corpus",
     "phase0": "training.phase0_build_candidates",
     "phase1": "training.phase1_train_features",
