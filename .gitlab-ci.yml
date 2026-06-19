@@ -1,0 +1,58 @@
+workflow:
+  rules:
+    - when: never
+
+stages:
+  - lint # Run static checks first.
+  - test # Run tests after lint passes.
+
+variables: # Set environment variables available to all jobs.
+  UV_CACHE_DIR: "$CI_PROJECT_DIR/.cache/uv"
+  PYTHONPATH: "."
+  ES_DEV_ENDPOINT: "http://localhost:9200"
+  MONGO_PROD_HOST: "localhost"
+  MONGO_PROD_PORT: "27017"
+  MONGO_PROD_DATABASE: "test_db"
+
+cache: # Reuse dependency artifacts between pipeline runs.
+  key:
+    files:
+      - requirements.txt
+  paths: # Persist these directories between jobs.
+    - .cache/uv # Keep uv's download cache.
+    - .uv-bootstrap/ # Keep the bootstrap virtual environment.
+
+before_script: # Prepare a clean Python environment before each job script runs.
+  - python3 --version
+  - python3 -m venv .uv-bootstrap # Create a bootstrap virtual environment for tooling.
+  - .uv-bootstrap/bin/python -m pip install --upgrade pip
+  - .uv-bootstrap/bin/python -m pip install uv
+  - .uv-bootstrap/bin/uv --version
+  - .uv-bootstrap/bin/uv venv --clear .venv # Create a fresh project virtual environment.
+  - .venv/bin/python --version
+  - .uv-bootstrap/bin/uv pip install --python .venv/bin/python -r requirements.txt
+
+lint: # Define the linting job.
+  stage: lint
+  tags:
+    - graph # Run on runners tagged graph.
+  script:
+    - .uv-bootstrap/bin/uv pip install --python .venv/bin/python ruff
+    - .venv/bin/ruff check . --exit-zero # Run linting without failing the job on findings.
+  rules: # Control when this job is created.
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"' # Run for merge request pipelines.
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH' # Run on the default branch.
+    - if: '$CI_PIPELINE_SOURCE == "push"' # Run on direct push pipelines.
+    - if: '$CI_PIPELINE_SOURCE == "web"' # Run when triggered manually from the GitLab UI.
+
+test: # Define the test job.
+  stage: test
+  tags:
+    - graph # Run on runners tagged graph.
+  script:
+    - .venv/bin/python run_tests.py # Execute the project's test runner script.
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"' # Run for merge request pipelines.
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH' # Run on the default branch.
+    - if: '$CI_PIPELINE_SOURCE == "push"' # Run on direct push pipelines.
+    - if: '$CI_PIPELINE_SOURCE == "web"' # Run when triggered manually from the GitLab UI.

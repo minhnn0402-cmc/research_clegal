@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKG Pipeline Flow Visualization</title>
+    <!-- Modern Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0b10;
+            --bg-glass: rgba(18, 20, 32, 0.7);
+            --bg-glass-hover: rgba(26, 29, 46, 0.85);
+            --primary: #6c5ce7;
+            --primary-glow: rgba(108, 92, 231, 0.35);
+            --secondary: #00dec9;
+            --secondary-glow: rgba(0, 222, 201, 0.3);
+            --accent: #ff7675;
+            --accent-glow: rgba(255, 118, 117, 0.25);
+            --text-main: #f1f2f6;
+            --text-muted: #8b92b6;
+            --border-color: rgba(255, 255, 255, 0.06);
+            --border-active: rgba(108, 92, 231, 0.5);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --node-width: 140px;
+            --node-height: 80px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(108, 92, 231, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(0, 222, 201, 0.06) 0%, transparent 45%);
+            background-attachment: fixed;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(10, 11, 16, 0.5);
+            backdrop-filter: blur(12px);
+            z-index: 100;
+        }
+
+        .logo-section h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 30%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-section p {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .toggle-container {
+            display: flex;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 30px;
+            padding: 4px;
+        }
+
+        .toggle-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            padding: 10px 24px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 26px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .toggle-btn.active {
+            background: var(--primary);
+            color: #fff;
+            box-shadow: 0 4px 15px var(--primary-glow);
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            height: calc(100vh - 85px);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Side timeline column */
+        .timeline-panel {
+            width: 380px;
+            border-right: 1px solid var(--border-color);
+            background: rgba(8, 9, 14, 0.4);
+            backdrop-filter: blur(20px);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .panel-header {
+            padding: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .panel-header h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .step-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px 24px;
+        }
+
+        /* Custom scrollbar */
+        .step-list::-webkit-scrollbar, .details-content::-webkit-scrollbar {
+            width: 6px;
+        }
+        .step-list::-webkit-scrollbar-thumb, .details-content::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 16px;
+            padding: 14px 16px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 1px solid transparent;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.01);
+            position: relative;
+        }
+
+        .step-item:hover {
+            background: rgba(255, 255, 255, 0.03);
+            border-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .step-item.active {
+            background: rgba(108, 92, 231, 0.08);
+            border-color: var(--primary);
+            box-shadow: 0 4px 20px rgba(108, 92, 231, 0.05);
+        }
+
+        .step-number {
+            width: 28px;
+            height: 28px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-muted);
+            flex-shrink: 0;
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+        }
+
+        .step-item.active .step-number {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+
+        .step-text {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .step-title {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .step-desc {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Central canvas area */
+        .canvas-area {
+            flex: 1;
+            position: relative;
+            background: rgba(5, 6, 8, 0.8);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* SVG layer for connection lines */
+        .svg-connections {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .svg-connections path {
+            fill: none;
+            stroke: rgba(255, 255, 255, 0.1);
+            stroke-width: 2.5;
+            transition: var(--transition);
+        }
+
+        .svg-connections path.active {
+            stroke: var(--primary);
+            filter: drop-shadow(0 0 8px var(--primary));
+            stroke-dasharray: 8 4;
+            animation: flowDash 25s linear infinite;
+        }
+
+        .svg-connections path.active.reverse {
+            stroke: var(--secondary);
+            filter: drop-shadow(0 0 8px var(--secondary));
+            animation: flowDashReverse 25s linear infinite;
+        }
+
+        @keyframes flowDash {
+            to {
+                stroke-dashoffset: -1000;
+            }
+        }
+
+        @keyframes flowDashReverse {
+            to {
+                stroke-dashoffset: 1000;
+            }
+        }
+
+        /* Node Graph Layout Grid */
+        .graph-container {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 50px 60px;
+            padding: 40px;
+            z-index: 20;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .node-card {
+            background: var(--bg-glass);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(8px);
+        }
+
+        .node-card:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+            background: var(--bg-glass-hover);
+            transform: translateY(-2px);
+        }
+
+        .node-card.active {
+            border-color: var(--primary);
+            box-shadow: 0 0 20px var(--primary-glow);
+            background: rgba(108, 92, 231, 0.15);
+        }
+
+        .node-card.active.source {
+            border-color: var(--secondary);
+            box-shadow: 0 0 20px var(--secondary-glow);
+            background: rgba(0, 222, 201, 0.12);
+        }
+
+        .node-card.active.target {
+            border-color: var(--accent);
+            box-shadow: 0 0 20px var(--accent-glow);
+            background: rgba(255, 118, 117, 0.12);
+        }
+
+        .node-label {
+            font-family: 'Outfit', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .node-card.active.source .node-label {
+            color: var(--secondary);
+        }
+
+        .node-card.active.target .node-label {
+            color: var(--accent);
+        }
+
+        .node-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-main);
+            line-height: 1.3;
+        }
+
+        .node-desc {
+            font-size: 10px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Right inspector details panel */
+        .details-panel {
+            width: 420px;
+            border-left: 1px solid var(--border-color);
+            background: rgba(8, 9, 14, 0.5);
+            backdrop-filter: blur(20px);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .details-content {
+            padding: 30px;
+            overflow-y: auto;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .details-header {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .details-step-num {
+            display: inline-block;
+            background: var(--primary-glow);
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 700;
+            width: fit-content;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 1px solid rgba(108, 92, 231, 0.2);
+        }
+
+        .details-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .details-direction {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .details-direction .comp-pill {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-main);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .details-body {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-muted);
+        }
+
+        .details-body strong {
+            color: var(--text-main);
+        }
+
+        .code-block {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 14px;
+            font-family: monospace;
+            font-size: 12px;
+            color: #58ebd3;
+            overflow-x: auto;
+            line-height: 1.4;
+        }
+
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            color: var(--text-muted);
+            gap: 12px;
+        }
+
+        .empty-state svg {
+            width: 48px;
+            height: 48px;
+            stroke: rgba(255, 255, 255, 0.15);
+            stroke-width: 1.5;
+            fill: none;
+        }
+
+        .badge-type {
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 700;
+            margin-left: 6px;
+            text-transform: uppercase;
+        }
+
+        .badge-mongo { background: rgba(0, 222, 201, 0.15); color: var(--secondary); border: 1px solid rgba(0, 222, 201, 0.3); }
+        .badge-neo4j { background: rgba(108, 92, 231, 0.15); color: var(--primary); border: 1px solid rgba(108, 92, 231, 0.3); }
+        .badge-file { background: rgba(255, 118, 117, 0.15); color: var(--accent); border: 1px solid rgba(255, 118, 117, 0.3); }
+
+        /* Grid specific placements */
+        /* Phase 1 Layout Grid positions */
+        .p1-doc_ids { grid-column: 1; grid-row: 1; }
+        .p1-extract_relations { grid-column: 1; grid-row: 2; }
+        .p1-relations_processor { grid-column: 2; grid-row: 2; }
+        .p1-mongo_prod { grid-column: 3; grid-row: 1; }
+        .p1-relations_extractor { grid-column: 3; grid-row: 2; }
+        .p1-rule_resolver { grid-column: 4; grid-row: 1; }
+        .p1-fallback_llm { grid-column: 4; grid-row: 2; }
+        .p1-post_process { grid-column: 2; grid-row: 3; }
+        .p1-laws_dataframe { grid-column: 1; grid-row: 3; }
+        .p1-elasticsearch { grid-column: 3; grid-row: 3; }
+        .p1-mongo_dev { grid-column: 4; grid-row: 3; }
+
+        /* Phase 2 Layout Grid positions */
+        .p2-all_ids { grid-column: 1; grid-row: 1; }
+        .p2-build_graph { grid-column: 1; grid-row: 2; }
+        .p2-build_graph_app { grid-column: 2; grid-row: 2; }
+        .p2-mongo_prod { grid-column: 3; grid-row: 1; }
+        .p2-builder { grid-column: 3; grid-row: 2; }
+        .p2-prep_service { grid-column: 4; grid-row: 1; }
+        .p2-neo4j { grid-column: 4; grid-row: 2; }
+        .p2-mongo_dev { grid-column: 4; grid-row: 3; }
+        .p2-status_prep { grid-column: 1; grid-row: 3; }
+        .p2-coord { grid-column: 2; grid-row: 3; }
+        .p2-healer { grid-column: 3; grid-row: 3; }
+        .p2-inferred { grid-column: 2; grid-row: 4; }
+        .p2-tvpl { grid-column: 3; grid-row: 4; }
+        .p2-sync_prep { grid-column: 1; grid-row: 4; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-section">
+            <h1>CAI Legal Graph</h1>
+            <p>Sơ đồ tương tác luồng dữ liệu & dịch vụ hệ thống LKG</p>
+        </div>
+        <div class="toggle-container">
+            <button class="toggle-btn active" id="btn-p1" onclick="switchPhase(1)">Pha 1: Trích xuất Quan hệ</button>
+            <button class="toggle-btn" id="btn-p2" onclick="switchPhase(2)">Pha 2: Xây dựng Đồ thị</button>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar containing steps timeline -->
+        <div class="timeline-panel">
+            <div class="panel-header">
+                <h2 id="timeline-title">Các bước trích xuất quan hệ</h2>
+            </div>
+            <div class="step-list" id="step-list-container">
+                <!-- Dynamically populated step list -->
+            </div>
+        </div>
+
+        <!-- Central Visualization Canvas -->
+        <div class="canvas-area">
+            <!-- SVG paths layer -->
+            <svg class="svg-connections" id="svg-layer">
+                <!-- Dynamically populated connection lines -->
+            </svg>
+
+            <!-- Dynamic Node Grid -->
+            <div class="graph-container" id="graph-container">
+                <!-- Dynamically populated nodes -->
+            </div>
+        </div>
+
+        <!-- Right inspector details panel -->
+        <div class="details-panel">
+            <div class="details-content" id="details-panel-content">
+                <div class="empty-state">
+                    <svg viewBox="0 0 24 24" stroke="currentColor">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M12 8v4M12 16h.01"></path>
+                    </svg>
+                    <p>Chọn một bước ở thanh bên để thanh sát chi tiết luồng xử lý và dữ liệu truy vấn.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // High quality data structures matching source_code_analysis.md exactly
+        const dataPhase1 = {
+            title: "Các bước trích xuất quan hệ (Phase 1)",
+            nodes: [
+                { id: "A", label: "Tệp tin", name: "doc_ids.json", type: "file", class: "p1-doc_ids" },
+                { id: "B", label: "Mã nguồn", name: "extract_relations.py", type: "file", class: "p1-extract_relations" },
+                { id: "C", label: "Bộ điều phối", name: "RelationsProcessorService", type: "code", class: "p1-relations_processor" },
+                { id: "D", label: "MongoDB PROD", name: "cls_ver2", type: "mongo", class: "p1-mongo_prod" },
+                { id: "E", label: "Bộ trích xuất", name: "RelationsExtractor", type: "code", class: "p1-relations_extractor" },
+                { id: "E1", label: "Bộ quy tắc", name: "Rule-based Resolver", type: "code", class: "p1-rule_resolver" },
+                { id: "F", label: "LLM Fallback", name: "LangExtractFallback LLM", type: "code", class: "p1-fallback_llm" },
+                { id: "G", label: "Hậu xử lý", name: "post_process_relations", type: "code", class: "p1-post_process" },
+                { id: "H", label: "Bộ nhớ đệm CSV", name: "laws_dataframe", type: "file", class: "p1-laws_dataframe" },
+                { id: "I", label: "Elasticsearch", name: "law_documents_t4", type: "mongo", class: "p1-elasticsearch" },
+                { id: "J", label: "MongoDB DEV", name: "ie_collection", type: "mongo", class: "p1-mongo_dev" }
+            ],
+            steps: [
+                {
+                    id: "1",
+                    num: "Bước 1",
+                    title: "Đọc đầu vào doc_ids.json",
+                    desc: "extract_relations.py đọc danh sách ID văn bản nguồn.",
+                    from: "A",
+                    to: "B",
+                    direction: "forward",
+                    details: "Tệp tin <strong>doc_ids.json (A)</strong> cung cấp danh sách các ID văn bản pháp luật cần xử lý cho tệp chạy chính <strong>extract_relations.py (B)</strong> để lọc và phân lô.",
+                    code: "with open('doc_ids.json') as f:\n    doc_ids = json.load(f)"
+                },
+                {
+                    id: "2",
+                    num: "Bước 2",
+                    title: "Khởi tạo điều phối dịch vụ",
+                    desc: "extract_relations.py gọi RelationsProcessorService.",
+                    from: "B",
+                    to: "C",
+                    direction: "forward",
+                    details: "Bộ chạy chính khởi tạo <strong>RelationsProcessorService (C)</strong> chịu trách nhiệm quản lý vòng đời chạy lô (batch processing), đa luồng song song và lưu checkpoint.",
+                    code: "processor = RelationsProcessorService(config)\nprocessor.process_batch(doc_ids)"
+                },
+                {
+                    id: "3a",
+                    num: "Bước 3a",
+                    title: "Yêu cầu đọc văn bản gốc",
+                    desc: "RelationsProcessorService truy vấn MongoDB Production.",
+                    from: "C",
+                    to: "D",
+                    direction: "forward",
+                    details: "RelationsProcessorService (C) gửi truy vấn MongoDB Production <strong>cls_ver2 (D)</strong> để tải tài liệu gốc bao gồm trường cây cấu trúc <code>cls_parsing</code> và trường thông tin <code>cls_info</code>.",
+                    code: "db.cls_ver2.find(\n    {'cls_ID': {'$in': batch_ids}},\n    {'cls_ID': 1, 'cls_parsing': 1, 'cls_info': 1}\n)"
+                },
+                {
+                    id: "3b",
+                    num: "Bước 3b",
+                    title: "Trả về dữ liệu văn bản gốc",
+                    desc: "MongoDB trả dữ liệu văn bản gốc về RelationsProcessorService.",
+                    from: "D",
+                    to: "C",
+                    direction: "reverse",
+                    details: "MongoDB Production <strong>cls_ver2 (D)</strong> trả về dữ liệu tài liệu nhị phân đã nén. RelationsProcessorService thực hiện giải nén trường <code>cls_parsing</code> bằng Gzip trên RAM.",
+                    code: "raw_xml = gzip.decompress(doc['cls_parsing'])\ndata_parsing = json.loads(raw_xml)"
+                },
+                {
+                    id: "4",
+                    num: "Bước 4",
+                    title: "Yêu cầu bóc tách quan hệ thô",
+                    desc: "RelationsProcessorService gọi RelationsExtractor.",
+                    from: "C",
+                    to: "E",
+                    direction: "forward",
+                    details: "RelationsProcessorService (C) phân chia các tài liệu đã giải nén sang cho các luồng xử lý riêng biệt của <strong>RelationsExtractor (E)</strong> để tiến hành bóc tách cues câu từ.",
+                    code: "extractor = self.thread_local.extractor\nrelations = extractor.extract(doc)"
+                },
+                {
+                    id: "5a",
+                    num: "Bước 5a",
+                    title: "Gửi câu sang Rule-based Resolver",
+                    desc: "RelationsExtractor gọi Rule-based Resolver.",
+                    from: "E",
+                    to: "E1",
+                    direction: "forward",
+                    details: "RelationsExtractor (E) gửi các câu trong điều khoản qua bộ lọc quy tắc <strong>Rule-based Resolver (E1)</strong> nhằm thực hiện lọc nhiễu ngữ cảnh (DistractorFilter) và phân giải tham chiếu nội bộ.",
+                    code: "raw_relations = rule_resolver.resolve_internal_refs(clauses)"
+                },
+                {
+                    id: "5b",
+                    num: "Bước 5b",
+                    title: "Trả về quan hệ thô từ quy tắc",
+                    desc: "Rule-based Resolver trả về quan hệ thô tìm được bằng Regex.",
+                    from: "E1",
+                    to: "E",
+                    direction: "reverse",
+                    details: "<strong>Rule-based Resolver (E1)</strong> trả về danh sách các quan hệ thô dựa trên các mẫu Regex cues pháp lý, liên kết trực tiếp các từ khóa cues với văn bản tham chiếu thô.",
+                    code: "[{'relationship': 'sua_doi', 'target': 'Luật Đất đai 2013'}]"
+                },
+                {
+                    id: "6a",
+                    num: "Bước 6a",
+                    title: "Kích hoạt LLM Fallback",
+                    desc: "RelationsExtractor gửi context sang Fallback LLM.",
+                    from: "E",
+                    to: "F",
+                    direction: "forward",
+                    details: "Khi điểm tự tin của quy tắc Regex thấp hoặc câu có ngữ nghĩa phức tạp, RelationsExtractor gửi nội dung điều khoản sang <strong>LangExtractFallback LLM (F)</strong> để phân tích ngữ nghĩa sâu.",
+                    code: "payload = {'prompt': f'Extract legal relations: {clause_text}'}\nfuture = thread_pool.submit(call_llm_api, payload)"
+                },
+                {
+                    id: "6b",
+                    num: "Bước 6b",
+                    title: "Trả về quan hệ từ LLM",
+                    desc: "LLM trả kết quả chuẩn hóa JSON về cho RelationsExtractor.",
+                    from: "F",
+                    to: "E",
+                    direction: "reverse",
+                    details: "API LLM <strong>(F)</strong> phản hồi kết quả trích xuất chuẩn định dạng JSON, phân tách rõ ràng nhãn quan hệ và cấu trúc mô tả văn bản đích.",
+                    code: "{'source_key': 'dieu_3', 'relationship': 'bai_bo', 'target_doc': {...}}"
+                },
+                {
+                    id: "7",
+                    num: "Bước 7",
+                    title: "Trả danh sách quan hệ thô",
+                    desc: "RelationsExtractor hoàn tất, trả kết quả về cho C.",
+                    from: "E",
+                    to: "C",
+                    direction: "reverse",
+                    details: "RelationsExtractor (E) tập hợp tất cả các quan hệ thô bóc tách được (qua cả Regex và LLM) trả lại cho <strong>RelationsProcessorService (C)</strong>.",
+                    code: "return all_extracted_raw_relations"
+                },
+                {
+                    id: "8",
+                    num: "Bước 8",
+                    title: "Yêu cầu phân giải ID đích",
+                    desc: "RelationsProcessorService gọi module hậu xử lý.",
+                    from: "C",
+                    to: "G",
+                    direction: "forward",
+                    details: "RelationsProcessorService gửi danh sách quan hệ thô sang <strong>post_process_relations (G)</strong> để phân giải chuỗi text mô tả văn bản đích sang ID hệ thống (`cls_ID`).",
+                    code: "resolved_relations = post_process_relations(raw_relations, cache)"
+                },
+                {
+                    id: "9a",
+                    num: "Bước 9a",
+                    title: "Gửi yêu cầu tra cứu nhanh",
+                    desc: "post_process_relations tra cứu trên RAM DataFrame.",
+                    from: "G",
+                    to: "H",
+                    direction: "forward",
+                    details: "Với các văn bản cấp Luật/Bộ luật, module (G) tra cứu nhanh (Fast-path Lookup) trên Pandas DataFrame <strong>laws_dataframe (H)</strong> đã tải sẵn vào RAM.",
+                    code: "target_id = laws_df.loc[laws_df['title_clean'] == clean_title, 'cls_ID']"
+                },
+                {
+                    id: "9b",
+                    num: "Bước 9b",
+                    title: "Trả về kết quả tra cứu nhanh",
+                    desc: "RAM DataFrame trả về ID văn bản đích.",
+                    from: "H",
+                    to: "G",
+                    direction: "reverse",
+                    details: "DataFrame <strong>laws_dataframe (H)</strong> trả về kết quả khớp ID ngay lập tức trong 0ms nếu trùng hợp tiêu đề/từ viết tắt chuẩn.",
+                    code: "return {'target_doc_id': 12345}"
+                },
+                {
+                    id: "10a",
+                    num: "Bước 10a",
+                    title: "Gửi truy vấn mSearch",
+                    desc: "post_process_relations truy vấn Elasticsearch.",
+                    from: "G",
+                    to: "I",
+                    direction: "forward",
+                    details: "Khi tra cứu nhanh thất bại, module hậu xử lý gửi yêu cầu tìm kiếm mSearch đóng gói hai lớp truy vấn (so khớp số hiệu chính xác và tìm kiếm tiêu đề) sang Elasticsearch index <strong>law_documents_t4 (I)</strong>.",
+                    code: "es.msearch(body=[\n    {'index': 'law_documents_t4'},\n    {'query': {'match': {'so_hieu': symbol}}},\n    ...\n])"
+                },
+                {
+                    id: "10b",
+                    num: "Bước 10b",
+                    title: "Trả về kết quả tìm kiếm",
+                    desc: "Elasticsearch trả về ID văn bản đích.",
+                    from: "I",
+                    to: "G",
+                    direction: "reverse",
+                    details: "Elasticsearch <strong>(I)</strong> phản hồi văn bản khớp điểm cao nhất chứa thông tin ID mục tiêu. Module thực hiện lọc cache để lưu bộ đệm persistent.",
+                    code: "target_id = hit['_source']['cls_ID']\nself._es_cache[clean_query] = target_id"
+                },
+                {
+                    id: "11",
+                    num: "Bước 11",
+                    title: "Trả về quan hệ đã phân giải ID",
+                    desc: "post_process_relations trả danh sách quan hệ hoàn chỉnh cho C.",
+                    from: "G",
+                    to: "C",
+                    direction: "reverse",
+                    details: "Module hậu xử lý <strong>G</strong> trả lại danh sách quan hệ đã có ID chính xác và đã được giải quyết trùng lặp/xung đột quan hệ về cho <strong>RelationsProcessorService (C)</strong>.",
+                    code: "return resolved_list"
+                },
+                {
+                    id: "12",
+                    num: "Bước 12",
+                    title: "bulk_write ghi lô MongoDB",
+                    desc: "RelationsProcessorService lưu dữ liệu xuống Mongo DEV.",
+                    from: "C",
+                    to: "J",
+                    direction: "forward",
+                    details: "Kết quả được gom đủ lô 500 bản ghi, RelationsProcessorService (C) thực hiện <code>bulk_write</code> ghi đè trường kết quả <code>cls_graph</code> xuống cơ sở dữ liệu MongoDB Development <strong>ie_collection (J)</strong>.",
+                    code: "db.ie_collection.bulk_write(bulk_ops)"
+                }
+            ]
+        };
+
+        const dataPhase2 = {
+            title: "Các bước xây dựng Đồ thị tri thức (Phase 2)",
+            nodes: [
+                { id: "A1", label: "Tệp tin", name: "data/all_ids.json", type: "file", class: "p2-all_ids" },
+                { id: "K", label: "Mã nguồn", name: "build_graph.py", type: "file", class: "p2-build_graph" },
+                { id: "L", label: "Bộ điều phối", name: "BuildGraphApp", type: "code", class: "p2-build_graph_app" },
+                { id: "N", label: "Bộ tạo đồ thị", name: "LegalKnowledgeGraphBuilder", type: "code", class: "p2-builder" },
+                { id: "P", label: "MongoDB PROD", name: "cls_ver2", type: "mongo", class: "p2-mongo_prod" },
+                { id: "O", label: "Chuẩn bị tham số", name: "NodePreparationService", type: "code", class: "p2-prep_service" },
+                { id: "M", label: "Neo4j Graph Database", name: "Neo4j Database", type: "neo4j", class: "p2-neo4j" },
+                { id: "J", label: "MongoDB DEV", name: "ie_collection", type: "mongo", class: "p2-mongo_dev" },
+                { id: "Q", label: "Chuẩn bị quan hệ", name: "StatusRelationshipPrepService", type: "code", class: "p2-status_prep" },
+                { id: "R", label: "Điều phối ghi", name: "GraphRelationshipWriteCoordinator", type: "code", class: "p2-coord" },
+                { id: "S", label: "Tự sửa chữa", name: "GraphNodeAutoHealer", type: "code", class: "p2-healer" },
+                { id: "T", label: "Suy luận", name: "InferredRelationshipService", type: "code", class: "p2-inferred" },
+                { id: "U", label: "Quan hệ TVPL", name: "TVPLRelationshipService", type: "code", class: "p2-tvpl" },
+                { id: "V", label: "Đồng bộ ngược", name: "Neo4jToLuocDoPreparation", type: "code", class: "p2-sync_prep" }
+            ],
+            steps: [
+                {
+                    id: "1",
+                    num: "Bước 1",
+                    title: "Đọc cấu hình all_ids.json",
+                    desc: "build_graph.py đọc danh sách ID cần dựng đồ thị.",
+                    from: "A1",
+                    to: "K",
+                    direction: "forward",
+                    details: "CLI entry point <strong>build_graph.py (K)</strong> đọc danh sách ID văn bản cần xây dựng đồ thị từ tệp cấu hình JSON <strong>all_ids.json (A1)</strong>.",
+                    code: "with open('data/all_ids.json') as f:\n    doc_ids = json.load(f)"
+                },
+                {
+                    id: "2",
+                    num: "Bước 2",
+                    title: "Khởi tạo điều phối đồ thị",
+                    desc: "build_graph.py khởi tạo BuildGraphApp.",
+                    from: "K",
+                    to: "L",
+                    direction: "forward",
+                    details: "Tệp CLI (K) khởi tạo lớp điều phối chính <strong>BuildGraphApp (L)</strong>, cấu hình các tham số đa luồng song song và kích hoạt các pha xử lý đồ thị.",
+                    code: "app = BuildGraphApp(config)\napp.run(doc_ids)"
+                },
+                {
+                    id: "3a",
+                    num: "Bước 3a",
+                    title: "Yêu cầu tạo Nút đồ thị",
+                    desc: "BuildGraphApp yêu cầu LegalKnowledgeGraphBuilder khởi tạo nút.",
+                    from: "L",
+                    to: "N",
+                    direction: "forward",
+                    details: "BuildGraphApp (L) gọi phương thức khởi tạo nút thuộc <strong>LegalKnowledgeGraphBuilder (N)</strong> để tạo các nút VAN_BAN và DIEU_KHOAN.",
+                    code: "builder.build_nodes(batch_size=500)"
+                },
+                {
+                    id: "3b",
+                    num: "Bước 3b",
+                    title: "Truy vấn dữ liệu văn bản gốc",
+                    desc: "LegalKnowledgeGraphBuilder truy vấn MongoDB Production.",
+                    from: "N",
+                    to: "P",
+                    direction: "forward",
+                    details: "Builder (N) gửi yêu cầu truy vấn cấu trúc phân cấp và siêu dữ liệu của văn bản gốc từ MongoDB Production <strong>cls_ver2 (P)</strong>.",
+                    code: "db.cls_ver2.find({'cls_ID': {'$in': batch_ids}})"
+                },
+                {
+                    id: "3c",
+                    num: "Bước 3c",
+                    title: "Trả dữ liệu văn bản gốc",
+                    desc: "MongoDB PROD trả về dữ liệu văn bản cho N.",
+                    from: "P",
+                    to: "N",
+                    direction: "reverse",
+                    details: "MongoDB <strong>cls_ver2 (P)</strong> phản hồi thông tin văn bản gốc. Dữ liệu parsing được giải nén thành công để sẵn sàng xử lý.",
+                    code: "return list_of_docs"
+                },
+                {
+                    id: "3d",
+                    num: "Bước 3d",
+                    title: "Gửi tài liệu thô để phân tích",
+                    desc: "LegalKnowledgeGraphBuilder gọi NodePreparationService.",
+                    from: "N",
+                    to: "O",
+                    direction: "forward",
+                    details: "Builder (N) chuyển các tài liệu gốc đã giải nén sang cho <strong>NodePreparationService (O)</strong> để chuẩn hóa cấu trúc cây và bóc tách thuộc tính.",
+                    code: "doc_params, term_params = node_prep_service.batch_prepare_nodes(docs)"
+                },
+                {
+                    id: "3e",
+                    num: "Bước 3e",
+                    title: "Trả về tham số Nút",
+                    desc: "NodePreparationService trả về danh sách thuộc tính nút phẳng.",
+                    from: "O",
+                    to: "N",
+                    direction: "reverse",
+                    details: "<strong>NodePreparationService (O)</strong> trả về danh sách thuộc tính nút phẳng cho VAN_BAN và DIEU_KHOAN, hỗ trợ cơ chế nhân bản siêu dữ liệu (Property Inheritance) từ văn bản cha.",
+                    code: "return batch_doc_params, batch_term_params"
+                },
+                {
+                    id: "3f",
+                    num: "Bước 3f",
+                    title: "Ghi Nút vào Neo4j",
+                    desc: "LegalKnowledgeGraphBuilder thực hiện bulk upsert nút.",
+                    from: "N",
+                    to: "M",
+                    direction: "forward",
+                    details: "Builder (N) gọi driver Neo4j ghi lô (bulk upsert) tất cả các nút VAN_BAN và DIEU_KHOAN vào <strong>Neo4j Database (M)</strong>.",
+                    code: "neo4j.bulk_upsert_nodes(doc_params, term_params)"
+                },
+                {
+                    id: "3g",
+                    num: "Bước 3g",
+                    title: "Trả kết quả khởi tạo nút",
+                    desc: "LegalKnowledgeGraphBuilder trả kết quả về cho L.",
+                    from: "N",
+                    to: "L",
+                    direction: "reverse",
+                    details: "Builder (N) báo cáo thống kê số lượng nút đã được tạo/cập nhật thành công về cho bộ điều phối <strong>BuildGraphApp (L)</strong>.",
+                    code: "return {'docs_created': 500, 'terms_created': 4210}"
+                },
+                {
+                    id: "4a",
+                    num: "Bước 4a",
+                    title: "Yêu cầu tạo bao_gom",
+                    desc: "BuildGraphApp yêu cầu LegalKnowledgeGraphBuilder khởi tạo liên kết bao_gom.",
+                    from: "L",
+                    to: "N",
+                    direction: "forward",
+                    details: "BuildGraphApp (L) gọi phương thức tạo quan hệ cấu trúc thuộc <strong>LegalKnowledgeGraphBuilder (N)</strong>.",
+                    code: "builder.build_bao_gom_relationships(batch_size=500)"
+                },
+                {
+                    id: "4b",
+                    num: "Bước 4b",
+                    title: "Truy vấn dữ liệu văn bản gốc",
+                    desc: "LegalKnowledgeGraphBuilder truy vấn MongoDB Production.",
+                    from: "N",
+                    to: "P",
+                    direction: "forward",
+                    details: "Builder (N) truy vấn cấu trúc cây điều khoản của các ID tương ứng từ MongoDB Production <strong>cls_ver2 (P)</strong>.",
+                    code: "db.cls_ver2.find({'cls_ID': {'$in': batch_ids}})"
+                },
+                {
+                    id: "4c",
+                    num: "Bước 4c",
+                    title: "Trả dữ liệu văn bản gốc",
+                    desc: "MongoDB Production trả về dữ liệu văn bản cho N.",
+                    from: "P",
+                    to: "N",
+                    direction: "reverse",
+                    details: "MongoDB <strong>cls_ver2 (P)</strong> trả về dữ liệu cấu trúc văn bản gốc cho Builder (N).",
+                    code: "return list_of_docs"
+                },
+                {
+                    id: "4d",
+                    num: "Bước 4d",
+                    title: "Gửi tài liệu thô để phân tích",
+                    desc: "LegalKnowledgeGraphBuilder gọi NodePreparationService.",
+                    from: "N",
+                    to: "O",
+                    direction: "forward",
+                    details: "Builder (N) gửi tài liệu gốc sang <strong>NodePreparationService (O)</strong> để chuẩn bị các tham số cho mối quan hệ phân cấp cha-con.",
+                    code: "rel_params = node_prep_service.batch_prepare_relationships(docs)"
+                },
+                {
+                    id: "4e",
+                    num: "Bước 4e",
+                    title: "Trả về tham số bao_gom",
+                    desc: "NodePreparationService trả về danh sách quan hệ bao_gom.",
+                    from: "O",
+                    to: "N",
+                    direction: "reverse",
+                    details: "<strong>NodePreparationService (O)</strong> trả về danh sách các tham số quan hệ cấu trúc bao_gom hoàn chỉnh.",
+                    code: "return rel_params"
+                },
+                {
+                    id: "4f",
+                    num: "Bước 4f",
+                    title: "Ghi quan hệ bao_gom vào Neo4j",
+                    desc: "LegalKnowledgeGraphBuilder ghi lô các cạnh bao_gom.",
+                    from: "N",
+                    to: "M",
+                    direction: "forward",
+                    details: "Builder (N) thực hiện ghi lô các quan hệ cấu trúc <code>bao_gom</code> vào <strong>Neo4j Database (M)</strong> sử dụng câu lệnh UNWIND Cypher.",
+                    code: "neo4j.bulk_create_relationships('bao_gom', rel_params)"
+                },
+                {
+                    id: "4g",
+                    num: "Bước 4g",
+                    title: "Trả kết quả khởi tạo bao_gom",
+                    desc: "LegalKnowledgeGraphBuilder trả kết quả về cho L.",
+                    from: "N",
+                    to: "L",
+                    direction: "reverse",
+                    details: "Builder (N) trả về báo cáo số lượng cạnh cấu trúc đã tạo thành công cho <strong>BuildGraphApp (L)</strong>.",
+                    code: "return {'relationships_created': 4205}"
+                },
+                {
+                    id: "5a",
+                    num: "Bước 5a",
+                    title: "Đọc kết quả trích xuất Pha 1",
+                    desc: "BuildGraphApp truy vấn MongoDB Development.",
+                    from: "L",
+                    to: "J",
+                    direction: "forward",
+                    details: "BuildGraphApp (L) đọc kết quả trích xuất quan hệ thô đã hoàn thành ở Pha 1 tại MongoDB Development <strong>ie_collection (J)</strong>.",
+                    code: "db.ie_collection.find({'cls_ID': {'$in': batch_ids}})"
+                },
+                {
+                    id: "5b",
+                    num: "Bước 5b",
+                    title: "Trả về dữ liệu trích xuất",
+                    desc: "MongoDB DEV trả về trường cls_graph cho L.",
+                    from: "J",
+                    to: "L",
+                    direction: "reverse",
+                    details: "MongoDB Development <strong>(J)</strong> phản hồi dữ liệu trích xuất bao gồm trường <code>cls_graph</code> cho BuildGraphApp.",
+                    code: "return list_of_extracted_docs"
+                },
+                {
+                    id: "6a",
+                    num: "Bước 6a",
+                    title: "Đọc văn bản gốc để enrich",
+                    desc: "BuildGraphApp truy vấn MongoDB Production.",
+                    from: "L",
+                    to: "P",
+                    direction: "forward",
+                    details: "BuildGraphApp (L) truy vấn thông tin gốc từ MongoDB Production <strong>cls_ver2 (P)</strong> để nạp siêu dữ liệu bổ sung và giải quyết tham chiếu.",
+                    code: "db.cls_ver2.find({'cls_ID': {'$in': doc_ids}}, {'cls_ID': 1, 'cls_info': 1})"
+                },
+                {
+                    id: "6b",
+                    num: "Bước 6b",
+                    title: "Trả về dữ liệu văn bản gốc",
+                    desc: "MongoDB Production trả về dữ liệu cho L.",
+                    from: "P",
+                    to: "L",
+                    direction: "reverse",
+                    details: "MongoDB Production <strong>(P)</strong> trả về dữ liệu văn bản gốc để BuildGraphApp làm giàu ngữ cảnh.",
+                    code: "return list_of_cls_info_docs"
+                },
+                {
+                    id: "7a",
+                    num: "Bước 7a",
+                    title: "Gửi tài liệu làm giàu sang Q",
+                    desc: "BuildGraphApp gọi StatusRelationshipPreparationService.",
+                    from: "L",
+                    to: "Q",
+                    direction: "forward",
+                    details: "BuildGraphApp (L) gửi tài liệu thô đã làm giàu sang <strong>StatusRelationshipPreparationService (Q)</strong> để phân loại và bóc tách các quan hệ hiệu lực trực tiếp.",
+                    code: "rel_params = status_prep_service.prepare_relations(ie_docs)"
+                },
+                {
+                    id: "7b",
+                    num: "Bước 7b",
+                    title: "Trả về quan hệ thô chuẩn bị",
+                    desc: "StatusRelationshipPreparationService trả về quan hệ trực tiếp.",
+                    from: "Q",
+                    to: "L",
+                    direction: "reverse",
+                    details: "<strong>StatusRelationshipPreparationService (Q)</strong> trả về danh sách các quan hệ trực tiếp đã lọc xung đột và tạo nút điều khoản ảo nếu có bổ sung mới.",
+                    code: "return status_relation_params"
+                },
+                {
+                    id: "8a",
+                    num: "Bước 8a",
+                    title: "Gửi quan hệ thô sang Coordinator",
+                    desc: "BuildGraphApp gọi GraphRelationshipWriteCoordinator.",
+                    from: "L",
+                    to: "R",
+                    direction: "forward",
+                    details: "BuildGraphApp chuyển danh sách quan hệ thô sang <strong>GraphRelationshipWriteCoordinator (R)</strong> để điều phối quá trình ghi bảo mật và an toàn.",
+                    code: "coordinator.write_grouped_relationships(rel_params)"
+                },
+                {
+                    id: "8b",
+                    num: "Bước 8b",
+                    title: "Ghi quan hệ trực tiếp",
+                    desc: "Coordinator thực hiện ghi các quan hệ trực tiếp hợp lệ.",
+                    from: "R",
+                    to: "M",
+                    direction: "forward",
+                    details: "Coordinator <strong>(R)</strong> lọc trùng lặp và ghi các quan hệ trực tiếp (như <code>sua_doi</code>, <code>thay_the</code>, <code>bai_bo</code>) vào <strong>Neo4j Database (M)</strong>.",
+                    code: "neo4j.bulk_create_multiple_relationships(writable)"
+                },
+                {
+                    id: "8c",
+                    num: "Bước 8c",
+                    title: "Kích hoạt tự sửa chữa",
+                    desc: "Coordinator gọi GraphNodeAutoHealer khi thiếu nút.",
+                    from: "R",
+                    to: "S",
+                    direction: "forward",
+                    details: "Nếu phát hiện nút đích bị thiếu trên đồ thị khi ghi, coordinator (R) gọi đối tượng tự sửa chữa <strong>GraphNodeAutoHealer (S)</strong> để khôi phục cấu trúc.",
+                    code: "healer.ensure_nodes(missing_refs)"
+                },
+                {
+                    id: "8d",
+                    num: "Bước 8d",
+                    title: "Yêu cầu đọc văn bản gốc",
+                    desc: "GraphNodeAutoHealer truy vấn MongoDB Production.",
+                    from: "S",
+                    to: "P",
+                    direction: "forward",
+                    details: "<strong>GraphNodeAutoHealer (S)</strong> gửi yêu cầu truy vấn cấu trúc văn bản gốc của nút đích từ MongoDB Production <strong>cls_ver2 (P)</strong>.",
+                    code: "db.cls_ver2.find({'cls_ID': {'$in': missing_doc_ids}})"
+                },
+                {
+                    id: "8e",
+                    num: "Bước 8e",
+                    title: "Trả về dữ liệu văn bản gốc",
+                    desc: "MongoDB Production trả về dữ liệu văn bản gốc cho S.",
+                    from: "P",
+                    to: "S",
+                    direction: "reverse",
+                    details: "MongoDB Production <strong>cls_ver2 (P)</strong> trả về dữ liệu gốc để healer nạp và chuẩn bị khôi phục.",
+                    code: "return list_of_docs"
+                },
+                {
+                    id: "8f",
+                    num: "Bước 8f",
+                    title: "Gửi tài liệu gốc để phân tích",
+                    desc: "GraphNodeAutoHealer gọi NodePreparationService.",
+                    from: "S",
+                    to: "O",
+                    direction: "forward",
+                    details: "<strong>GraphNodeAutoHealer (S)</strong> chuyển các tài liệu đích thô sang cho <strong>NodePreparationService (O)</strong> để phân cấu trúc và trích xuất thuộc tính nút cần khôi phục.",
+                    code: "doc_params, term_params = node_prep_service.batch_prepare_nodes(docs)"
+                },
+                {
+                    id: "8g",
+                    num: "Bước 8g",
+                    title: "Trả về tham số nút",
+                    desc: "NodePreparationService trả về các thuộc tính cho S.",
+                    from: "O",
+                    to: "S",
+                    direction: "reverse",
+                    details: "<strong>NodePreparationService (O)</strong> trả về danh sách tham số của các nút cần khôi phục cho healer.",
+                    code: "return doc_params, term_params"
+                },
+                {
+                    id: "8h",
+                    num: "Bước 8h",
+                    title: "Khôi phục nút ảo và phân cấp",
+                    desc: "GraphNodeAutoHealer thực hiện bulk upsert nút ảo.",
+                    from: "S",
+                    to: "M",
+                    direction: "forward",
+                    details: "Healer <strong>(S)</strong> ghi lô các nút VAN_BAN, DIEU_KHOAN và cạnh cấu trúc bao_gom bị thiếu vào <strong>Neo4j Database (M)</strong>.",
+                    code: "neo4j.bulk_upsert_nodes(doc_params, term_params)"
+                },
+                {
+                    id: "8i",
+                    num: "Bước 8i",
+                    title: "Báo cáo hoàn thành tự sửa chữa",
+                    desc: "GraphNodeAutoHealer trả về kết quả cho R.",
+                    from: "S",
+                    to: "R",
+                    direction: "reverse",
+                    details: "Healer <strong>(S)</strong> báo cáo danh sách các nút đã được tự động sửa chữa/tạo thành công về cho coordinator <strong>(R)</strong>.",
+                    code: "return healed_refs_set"
+                },
+                {
+                    id: "8j",
+                    num: "Bước 8j",
+                    title: "Trả kết quả ghi",
+                    desc: "Coordinator hoàn tất, phản hồi về cho L.",
+                    from: "R",
+                    to: "L",
+                    direction: "reverse",
+                    details: "Coordinator <strong>(R)</strong> hoàn tất giao dịch ghi và phản hồi báo cáo kết quả ghi cũng như báo cáo tự sửa chữa về cho <strong>BuildGraphApp (L)</strong>.",
+                    code: "return write_summary"
+                },
+                {
+                    id: "9",
+                    num: "Bước 9",
+                    title: "Lan truyền bo_sung",
+                    desc: "BuildGraphApp chạy câu lệnh lan truyền bo_sung.",
+                    from: "L",
+                    to: "M",
+                    direction: "forward",
+                    details: "BuildGraphApp (L) thực thi lệnh Cypher lan truyền quan hệ <code>bo_sung</code> từ điều khoản cha sang các điều khoản con ảo trên <strong>Neo4j Database (M)</strong>.",
+                    code: "neo4j.run_cypher_propagation_bo_sung()"
+                },
+                {
+                    id: "10a",
+                    num: "Bước 10a",
+                    title: "Đọc inferred_relations",
+                    desc: "BuildGraphApp truy vấn MongoDB Development.",
+                    from: "L",
+                    to: "J",
+                    direction: "forward",
+                    details: "BuildGraphApp (L) đọc trường dữ liệu <code>cls_graph.inferred_relations</code> từ MongoDB Development <strong>ie_collection (J)</strong>.",
+                    code: "db.ie_collection.find({'cls_graph.inferred_relations': {'$exists': True}})"
+                },
+                {
+                    id: "10b",
+                    num: "Bước 10b",
+                    title: "Trả về inferred_relations",
+                    desc: "MongoDB DEV trả về quan hệ suy luận cho L.",
+                    from: "J",
+                    to: "L",
+                    direction: "reverse",
+                    details: "MongoDB Development <strong>(J)</strong> phản hồi danh sách quan hệ suy luận cấp điều khoản.",
+                    code: "return list_of_inferred_relations_docs"
+                },
+                {
+                    id: "10c",
+                    num: "Bước 10c",
+                    title: "Gửi quan hệ suy luận sang T",
+                    desc: "BuildGraphApp gọi InferredRelationshipService.",
+                    from: "L",
+                    to: "T",
+                    direction: "forward",
+                    details: "BuildGraphApp gửi dữ liệu sang <strong>InferredRelationshipService (T)</strong> để tổng hợp và biên dịch các quan hệ suy luận VB-VB.",
+                    code: "rel_params = inferred_service.prepare_relations(docs)"
+                },
+                {
+                    id: "10d",
+                    num: "Bước 10d",
+                    title: "Trả về quan hệ gián tiếp",
+                    desc: "InferredRelationshipService trả về danh sách quan hệ gián tiếp.",
+                    from: "T",
+                    to: "L",
+                    direction: "reverse",
+                    details: "Dịch vụ <strong>(T)</strong> phản hồi danh sách quan hệ gián tiếp kèm chuỗi chứng cứ pháp lý hiển thị tiếng Việt chuẩn hóa.",
+                    code: "return inferred_relation_params"
+                },
+                {
+                    id: "11",
+                    num: "Bước 11",
+                    title: "Ghi quan hệ gián tiếp vào Neo4j",
+                    desc: "BuildGraphApp ghi lô các quan hệ gián tiếp VB-VB.",
+                    from: "L",
+                    to: "M",
+                    direction: "forward",
+                    details: "BuildGraphApp (L) thực hiện ghi lô các cạnh quan hệ gián tiếp VB-VB vào <strong>Neo4j Database (M)</strong>.",
+                    code: "neo4j.bulk_create_multiple_relationships(inferred_params)"
+                },
+                {
+                    id: "12a",
+                    num: "Bước 12a",
+                    title: "Đọc lược đồ TVPL",
+                    desc: "BuildGraphApp truy vấn MongoDB Production.",
+                    from: "L",
+                    to: "P",
+                    direction: "forward",
+                    details: "BuildGraphApp (L) truy vấn trường lược đồ lịch sử <code>cls_luoc_do</code> của TVPL từ MongoDB Production <strong>cls_ver2 (P)</strong>.",
+                    code: "db.cls_ver2.find({'cls_luoc_do': {'$exists': True}})"
+                },
+                {
+                    id: "12b",
+                    num: "Bước 12b",
+                    title: "Trả về lược đồ TVPL",
+                    desc: "MongoDB Production trả về dữ liệu lược đồ cho L.",
+                    from: "P",
+                    to: "L",
+                    direction: "reverse",
+                    details: "MongoDB Production <strong>(P)</strong> trả về dữ liệu lịch sử TVPL.",
+                    code: "return list_of_tvpl_docs"
+                },
+                {
+                    id: "12c",
+                    num: "Bước 12c",
+                    title: "Gửi lược đồ TVPL sang U",
+                    desc: "BuildGraphApp gọi TVPLRelationshipService.",
+                    from: "L",
+                    to: "U",
+                    direction: "forward",
+                    details: "BuildGraphApp gửi dữ liệu sang <strong>TVPLRelationshipService (U)</strong> để chuẩn hóa, ánh xạ nhãn quan hệ và xử lý đảo chiều.",
+                    code: "rel_params = tvpl_service.prepare_relations(docs)"
+                },
+                {
+                    id: "12d",
+                    num: "Bước 12d",
+                    title: "Trả về quan hệ TVPL",
+                    desc: "TVPLRelationshipService trả về quan hệ TVPL đã đảo chiều.",
+                    from: "U",
+                    to: "L",
+                    direction: "reverse",
+                    details: "Dịch vụ <strong>(U)</strong> phản hồi danh sách quan hệ TVPL đã đảo chiều và chuẩn hóa nhãn.",
+                    code: "return tvpl_relation_params"
+                },
+                {
+                    id: "13",
+                    num: "Bước 13",
+                    title: "Ghi quan hệ TVPL vào Neo4j",
+                    desc: "BuildGraphApp ghi lô quan hệ TVPL với Priority Guard.",
+                    from: "L",
+                    to: "M",
+                    direction: "forward",
+                    details: "BuildGraphApp (L) chèn quan hệ TVPL vào <strong>Neo4j Database (M)</strong> dưới sự bảo vệ của Priority Guard (không ghi đè quan hệ do CMCAI trích xuất).",
+                    code: "coordinator.write_tvpl_relationships(tvpl_params, query)"
+                },
+                {
+                    id: "14a",
+                    num: "Bước 14a",
+                    title: "Yêu cầu làm giàu nút ảo",
+                    desc: "BuildGraphApp gọi LegalKnowledgeGraphBuilder.",
+                    from: "L",
+                    to: "N",
+                    direction: "forward",
+                    details: "BuildGraphApp (L) gọi phương thức làm giàu nút ảo của <strong>LegalKnowledgeGraphBuilder (N)</strong>.",
+                    code: "builder.enrich_skeleton_nodes(batch_size=500)"
+                },
+                {
+                    id: "14b",
+                    num: "Bước 14b",
+                    title: "Truy vấn siêu dữ liệu gốc",
+                    desc: "LegalKnowledgeGraphBuilder truy vấn MongoDB Production.",
+                    from: "N",
+                    to: "P",
+                    direction: "forward",
+                    details: "Builder (N) truy vấn MongoDB Production <strong>cls_ver2 (P)</strong> lấy siêu dữ liệu gốc của các nút ảo bị thiếu thuộc tính.",
+                    code: "db.cls_ver2.find({'cls_ID': {'$in': skeleton_parent_ids}})"
+                },
+                {
+                    id: "14c",
+                    num: "Bước 14c",
+                    title: "Trả về siêu dữ liệu gốc",
+                    desc: "MongoDB Production trả về siêu dữ liệu gốc cho N.",
+                    from: "P",
+                    to: "N",
+                    direction: "reverse",
+                    details: "MongoDB <strong>cls_ver2 (P)</strong> phản hồi siêu dữ liệu gốc cho các nút ảo xương.",
+                    code: "return list_of_docs"
+                },
+                {
+                    id: "14d",
+                    num: "Bước 14d",
+                    title: "Gửi siêu dữ liệu gốc để phân tích",
+                    desc: "LegalKnowledgeGraphBuilder gọi NodePreparationService.",
+                    from: "N",
+                    to: "O",
+                    direction: "forward",
+                    details: "Builder (N) gửi tài liệu gốc sang cho <strong>NodePreparationService (O)</strong> để bóc tách thông tin thuộc tính cụ thể cho nút ảo.",
+                    code: "doc_params, _ = node_prep_service.batch_prepare_nodes(docs)"
+                },
+                {
+                    id: "14e",
+                    num: "Bước 14e",
+                    title: "Trả về thuộc tính nút ảo",
+                    desc: "NodePreparationService trả về các thuộc tính cho N.",
+                    from: "O",
+                    to: "N",
+                    direction: "reverse",
+                    details: "<strong>NodePreparationService (O)</strong> trả về danh sách các thuộc tính nút ảo hoàn chỉnh.",
+                    code: "return doc_params"
+                },
+                {
+                    id: "14f",
+                    num: "Bước 14f",
+                    title: "Điền thuộc tính nút ảo vào Neo4j",
+                    desc: "LegalKnowledgeGraphBuilder ghi thuộc tính của nút ảo.",
+                    from: "N",
+                    to: "M",
+                    direction: "forward",
+                    details: "Builder (N) cập nhật thuộc tính cho các nút ảo xương tương ứng trên <strong>Neo4j Database (M)</strong>.",
+                    code: "neo4j.bulk_upsert_nodes(doc_params, term_params=[])"
+                },
+                {
+                    id: "14g",
+                    num: "Bước 14g",
+                    title: "Trả kết quả làm giàu",
+                    desc: "LegalKnowledgeGraphBuilder trả kết quả về cho L.",
+                    from: "N",
+                    to: "L",
+                    direction: "reverse",
+                    details: "Builder (N) báo cáo kết quả hoàn thành làm giàu các nút ảo về cho <strong>BuildGraphApp (L)</strong>.",
+                    code: "return {'enriched_vanban': 42, 'enriched_dieukhoan': 180}"
+                },
+                {
+                    id: "15a",
+                    num: "Bước 15a",
+                    title: "Gọi đồng bộ ngược",
+                    desc: "BuildGraphApp gọi Neo4jToLuocDoPreparation.",
+                    from: "L",
+                    to: "V",
+                    direction: "forward",
+                    details: "BuildGraphApp (L) gọi dịch vụ <strong>Neo4jToLuocDoPreparation (V)</strong> để bắt đầu đồng bộ ngược trạng thái hiệu lực đồ thị về MongoDB.",
+                    code: "luoc_do_service.update_luoc_do(doc_ids=doc_ids)"
+                },
+                {
+                    id: "15b",
+                    num: "Bước 15b",
+                    title: "Đọc quan hệ hai chiều từ Neo4j",
+                    desc: "Neo4jToLuocDoPreparation truy vấn các cạnh từ Neo4j.",
+                    from: "V",
+                    to: "M",
+                    direction: "forward",
+                    details: "Dịch vụ (V) truy vấn toàn bộ các mối quan hệ hai chiều (cạnh đi và cạnh đến) của danh sách ID văn bản đang xử lý từ <strong>Neo4j Database (M)</strong>.",
+                    code: "neo4j.run_cypher_to_fetch_inbound_outbound_relations(batch_ids)"
+                },
+                {
+                    id: "15c",
+                    num: "Bước 15c",
+                    title: "Trả về các quan hệ hai chiều",
+                    desc: "Neo4j trả về danh sách các mối quan hệ cho V.",
+                    from: "M",
+                    to: "V",
+                    direction: "reverse",
+                    details: "<strong>Neo4j Database (M)</strong> trả về toàn bộ danh sách các record chứa quan hệ.",
+                    code: "return all_records"
+                },
+                {
+                    id: "16",
+                    num: "Bước 16",
+                    title: "Ghi đè lược đồ cls_luoc_do",
+                    desc: "Neo4jToLuocDoPreparation cập nhật dữ liệu xuống Mongo DEV.",
+                    from: "V",
+                    to: "J",
+                    direction: "forward",
+                    details: "Dịch vụ (V) phân loại các quan hệ thành dạng chủ động/bị động và thực hiện <code>bulk_write</code> ghi đè trường <code>cls_luoc_do</code> hoàn chỉnh xuống MongoDB Development <strong>ie_collection (J)</strong>.",
+                    code: "db.ie_collection.bulk_write(ops)"
+                },
+                {
+                    id: "17",
+                    num: "Bước 17",
+                    title: "Trả kết quả đồng bộ ngược",
+                    desc: "Neo4jToLuocDoPreparation báo cáo hoàn thành cho L.",
+                    from: "V",
+                    to: "L",
+                    direction: "reverse",
+                    details: "Dịch vụ (V) báo cáo số lượng tài liệu đã đồng bộ ngược lược đồ thành công về cho <strong>BuildGraphApp (L)</strong>.",
+                    code: "return {'processed': 5000, 'updated': 4920}"
+                }
+            ]
+        };
+
+        let activePhase = 1;
+        let currentSteps = dataPhase1.steps;
+        let currentNodes = dataPhase1.nodes;
+
+        // Populate step timeline on load
+        function populateStepTimeline() {
+            const container = document.getElementById("step-list-container");
+            container.innerHTML = "";
+
+            currentSteps.forEach(step => {
+                const item = document.createElement("div");
+                item.className = "step-item";
+                item.id = `step-item-${step.id}`;
+                item.onclick = () => highlightStep(step.id);
+
+                item.innerHTML = `
+                    <div class="step-number">${step.id}</div>
+                    <div class="step-text">
+                        <div class="step-title">${step.title}</div>
+                        <div class="step-desc">${step.desc}</div>
+                    </div>
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        // Populate architecture node grid
+        function populateNodes() {
+            const container = document.getElementById("graph-container");
+            container.innerHTML = "";
+
+            // Adjust grid columns template based on phase nodes size to make it look clean
+            if (activePhase === 1) {
+                container.style.gridTemplateColumns = "repeat(4, 1fr)";
+            } else {
+                container.style.gridTemplateColumns = "repeat(4, 1fr)";
+            }
+
+            currentNodes.forEach(node => {
+                const card = document.createElement("div");
+                card.className = `node-card ${node.class}`;
+                card.id = `node-${node.id}`;
+
+                let badge = "";
+                if (node.type === "mongo") badge = `<span class="badge-type badge-mongo">Mongo</span>`;
+                if (node.type === "neo4j") badge = `<span class="badge-type badge-neo4j">Neo4j</span>`;
+                if (node.type === "file") badge = `<span class="badge-type badge-file">File</span>`;
+
+                card.innerHTML = `
+                    <div class="node-label">${node.label} ${badge}</div>
+                    <div class="node-name">${node.name}</div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Draw connection lines in SVG layer
+        function drawAllConnections() {
+            const svgLayer = document.getElementById("svg-layer");
+            svgLayer.innerHTML = ""; // Clear existing lines
+
+            const activeStep = document.querySelector(".step-item.active");
+            if (!activeStep) return;
+
+            const stepId = activeStep.id.replace("step-item-", "");
+            const step = currentSteps.find(s => s.id === stepId);
+            if (!step) return;
+
+            const fromNodeEl = document.getElementById(`node-${step.from}`);
+            const toNodeEl = document.getElementById(`node-${step.to}`);
+
+            if (!fromNodeEl || !toNodeEl) return;
+
+            const rectFrom = fromNodeEl.getBoundingClientRect();
+            const rectTo = toNodeEl.getBoundingClientRect();
+            const rectSvg = svgLayer.getBoundingClientRect();
+
+            // Calculate center coordinates relative to SVG container
+            const fromX = rectFrom.left + rectFrom.width / 2 - rectSvg.left;
+            const fromY = rectFrom.top + rectFrom.height / 2 - rectSvg.top;
+            const toX = rectTo.left + rectTo.width / 2 - rectSvg.left;
+            const toY = rectTo.top + rectTo.height / 2 - rectSvg.top;
+
+            // Draw beautiful curved bezier path
+            const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            
+            // Generate nice control points for curved visual flow lines
+            const dx = Math.abs(toX - fromX);
+            const dy = Math.abs(toY - fromY);
+            let dString = "";
+
+            if (dy < 20) {
+                // Horizontal flow
+                dString = `M ${fromX} ${fromY} C ${fromX + dx/2} ${fromY}, ${toX - dx/2} ${toY}, ${toX} ${toY}`;
+            } else if (dx < 20) {
+                // Vertical flow
+                dString = `M ${fromX} ${fromY} C ${fromX} ${fromY + dy/2}, ${toX} ${toY - dy/2}, ${toX} ${toY}`;
+            } else {
+                // Diagonal curved flow
+                dString = `M ${fromX} ${fromY} C ${fromX + dx/2} ${fromY}, ${toX - dx/2} ${toY}, ${toX} ${toY}`;
+            }
+
+            path.setAttribute("d", dString);
+            
+            // Set direction color based on direction parameter
+            if (step.direction === "reverse") {
+                path.setAttribute("class", "active reverse");
+            } else {
+                path.setAttribute("class", "active");
+            }
+
+            svgLayer.appendChild(path);
+        }
+
+        // Highlight selected step
+        function highlightStep(stepId) {
+            // Remove active states from all step items
+            document.querySelectorAll(".step-item").forEach(item => item.classList.remove("active"));
+            
+            // Set active state on clicked step item
+            const activeItem = document.getElementById(`step-item-${stepId}`);
+            if (activeItem) {
+                activeItem.classList.add("active");
+                // Scroll timeline panel to keep highlighted step in view
+                activeItem.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            }
+
+            const step = currentSteps.find(s => s.id === stepId);
+            if (!step) return;
+
+            // Highlight corresponding nodes in grid
+            document.querySelectorAll(".node-card").forEach(node => {
+                node.classList.remove("active", "source", "target");
+            });
+
+            const fromNode = document.getElementById(`node-${step.from}`);
+            const toNode = document.getElementById(`node-${step.to}`);
+
+            if (fromNode) {
+                fromNode.classList.add("active");
+                if (step.direction === "reverse") {
+                    fromNode.classList.add("target");
+                } else {
+                    fromNode.classList.add("source");
+                }
+            }
+
+            if (toNode) {
+                toNode.classList.add("active");
+                if (step.direction === "reverse") {
+                    toNode.classList.add("source");
+                } else {
+                    toNode.classList.add("target");
+                }
+            }
+
+            // Draw line
+            setTimeout(drawAllConnections, 50);
+
+            // Populate inspector details panel
+            const detailsContainer = document.getElementById("details-panel-content");
+            
+            const fromNodeName = currentNodes.find(n => n.id === step.from)?.name || step.from;
+            const toNodeName = currentNodes.find(n => n.id === step.to)?.name || step.to;
+
+            let arrowIcon = "➔";
+            if (step.direction === "reverse") {
+                arrowIcon = "⇠";
+            }
+
+            detailsContainer.innerHTML = `
+                <div class="details-header">
+                    <span class="details-step-num">${step.num}</span>
+                    <h3 class="details-title">${step.title}</h3>
+                </div>
+                <div class="details-direction">
+                    <span class="comp-pill">${fromNodeName}</span>
+                    <span>${arrowIcon}</span>
+                    <span class="comp-pill">${toNodeName}</span>
+                </div>
+                <div class="details-body">
+                    <p>${step.details}</p>
+                </div>
+                ${step.code ? `
+                    <div class="details-header" style="margin-top: 10px;">
+                        <span class="details-step-num" style="background: rgba(88, 235, 211, 0.15); color: #58ebd3; border-color: rgba(88, 235, 211, 0.2)">Truy vấn / Lệnh thực thi</span>
+                    </div>
+                    <pre class="code-block"><code>${step.code}</code></pre>
+                ` : ""}
+            `;
+        }
+
+        // Switch between Phase 1 and Phase 2 visualization
+        function switchPhase(phase) {
+            activePhase = phase;
+            
+            // Toggle active classes on header buttons
+            document.getElementById("btn-p1").classList.toggle("active", phase === 1);
+            document.getElementById("btn-p2").classList.toggle("active", phase === 2);
+
+            // Update state
+            if (phase === 1) {
+                document.getElementById("timeline-title").innerText = dataPhase1.title;
+                currentSteps = dataPhase1.steps;
+                currentNodes = dataPhase1.nodes;
+            } else {
+                document.getElementById("timeline-title").innerText = dataPhase2.title;
+                currentSteps = dataPhase2.steps;
+                currentNodes = dataPhase2.nodes;
+            }
+
+            // Redraw everything
+            populateStepTimeline();
+            populateNodes();
+
+            // Clear inspector panel
+            document.getElementById("details-panel-content").innerHTML = `
+                <div class="empty-state">
+                    <svg viewBox="0 0 24 24" stroke="currentColor">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M12 8v4M12 16h.01"></path>
+                    </svg>
+                    <p>Chọn một bước ở thanh bên để thanh sát chi tiết luồng xử lý và dữ liệu truy vấn.</p>
+                </div>
+            `;
+
+            // Clear SVG layer
+            document.getElementById("svg-layer").innerHTML = "";
+
+            // Highlight first step automatically
+            if (currentSteps.length > 0) {
+                highlightStep(currentSteps[0].id);
+            }
+        }
+
+        // Redraw SVG connectors on window resize to ensure responsiveness
+        window.addEventListener("resize", () => {
+            drawAllConnections();
+        });
+
+        // Initialize view on load
+        window.onload = () => {
+            switchPhase(1);
+        };
+    </script>
+</body>
+</html>

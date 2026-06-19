@@ -1,0 +1,28 @@
+doc_types:
+  - Hiến pháp
+  - Bộ luật
+  - Luật
+  - Pháp lệnh
+  - Nghị quyết
+  - Nghị quyết liên tịch
+  - Quyết định
+  - Nghị định
+  - Thông tư
+  - Thông tư liên tịch
+  - Công văn
+  - Chỉ thị
+  - Công điện
+  - Điều ước quốc tế
+  - Hiệp định
+  - Hướng dẫn
+  - Kế hoạch
+  - Văn bản
+  - Lệnh
+  - Sắc lệnh
+
+clause_types:
+  - điều
+  - khoản
+  - điểm
+
+  

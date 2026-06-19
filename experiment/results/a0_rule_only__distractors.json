@@ -1,0 +1,2045 @@
+{
+  "architecture": "a0_rule_only",
+  "n_clauses": 100,
+  "overall": {
+    "doc_id": "a0_rule_only",
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 3,
+    "fn": 0,
+    "true_positives": [],
+    "false_positives": [
+      {
+        "reference": "khoản 3 Nghị quyết số 35/NQ",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "điểm I Nghị quyết số 35/NQ",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "Điều 66 Bộ luật 35-L/CTN",
+        "relation": "dan_chieu"
+      }
+    ],
+    "false_negatives": [],
+    "precision_ci95": [
+      0.0,
+      0.5615
+    ],
+    "recall_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "by_relation_type": {
+    "dan_chieu": {
+      "doc_id": "dan_chieu",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 3,
+      "fn": 0,
+      "true_positives": [],
+      "false_positives": [
+        {
+          "reference": "khoản 3 Nghị quyết số 35/NQ",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm I Nghị quyết số 35/NQ",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "Điều 66 Bộ luật 35-L/CTN",
+          "relation": "dan_chieu"
+        }
+      ],
+      "false_negatives": []
+    }
+  },
+  "by_clause_type": {
+    "diem": {
+      "doc_id": "diem",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    "dieu": {
+      "doc_id": "dieu",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    "khoan": {
+      "doc_id": "khoan",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 3,
+      "fn": 0,
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    "vanban": {
+      "doc_id": "vanban",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": []
+    }
+  },
+  "telemetry": {},
+  "rows": [
+    {
+      "key": [
+        "24/2023/QH15",
+        "khoan",
+        "5. Chính phủ quy định chi tiết các nội dung sau đây:",
+        "Điều 29. Cung cấp và sử dụng dịch vụ trung tâm dữ liệu, dịch vụ điện toán đám mây",
+        ""
+      ],
+      "so_hieu": "24/2023/QH15",
+      "clause_type": "khoan",
+      "content": "5. Chính phủ quy định chi tiết các nội dung sau đây:",
+      "parent_content": "Điều 29. Cung cấp và sử dụng dịch vụ trung tâm dữ liệu, dịch vụ điện toán đám mây",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "02/2011/NQ-HĐND",
+        "dieu",
+        "Điều 3. Bãi bỏ và thay thế các văn bản quy định phí, lệ phí",
+        "",
+        ""
+      ],
+      "so_hieu": "02/2011/NQ-HĐND",
+      "clause_type": "dieu",
+      "content": "Điều 3. Bãi bỏ và thay thế các văn bản quy định phí, lệ phí",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "27/2026/TT-BGDĐT",
+        "diem",
+        "e) Hướng dẫn, hỗ trợ đồng nghiệp, chia sẻ kinh nghiệm về phát triển năng lực chuyên môn, nghiệp vụ;",
+        "3. Đối với hạng I",
+        "Điều 6. Tiêu chuẩn về năng lực chuyên môn, nghiệp vụ"
+      ],
+      "so_hieu": "27/2026/TT-BGDĐT",
+      "clause_type": "diem",
+      "content": "e) Hướng dẫn, hỗ trợ đồng nghiệp, chia sẻ kinh nghiệm về phát triển năng lực chuyên môn, nghiệp vụ;",
+      "parent_content": "3. Đối với hạng I",
+      "grandparent_content": "Điều 6. Tiêu chuẩn về năng lực chuyên môn, nghiệp vụ",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "35/2015/QĐ-UBND",
+        "khoan",
+        "6. Tổ chức thanh lý tài sản nhà nước theo phương thức phá dỡ, hủy bỏ",
+        "Điều 9. Thẩm quyền quyết định thanh lý tài sản nhà nước",
+        ""
+      ],
+      "so_hieu": "35/2015/QĐ-UBND",
+      "clause_type": "khoan",
+      "content": "6. Tổ chức thanh lý tài sản nhà nước theo phương thức phá dỡ, hủy bỏ",
+      "parent_content": "Điều 9. Thẩm quyền quyết định thanh lý tài sản nhà nước",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "105/2006/NĐ-CP",
+        "diem",
+        "a) Quyết định tạm dừng làm thủ tục hải quan bị đình chỉ hoặc thu hồi theo quyết định giải quyết khiếu nại, tố cáo;",
+        "2. Cơ quan hải quan tiếp tục làm thủ tục hải quan cho lô hàng bị tạm dừng làm thủ tục hải quan theo quy định tại khoản 3 Điều 218 của Luật Sở hữu trí tuệ và trong các trường hợp sau đây:",
+        "Điều 37. Xử lý hàng hoá bị nghi ngờ xâm phạm"
+      ],
+      "so_hieu": "105/2006/NĐ-CP",
+      "clause_type": "diem",
+      "content": "a) Quyết định tạm dừng làm thủ tục hải quan bị đình chỉ hoặc thu hồi theo quyết định giải quyết khiếu nại, tố cáo;",
+      "parent_content": "2. Cơ quan hải quan tiếp tục làm thủ tục hải quan cho lô hàng bị tạm dừng làm thủ tục hải quan theo quy định tại khoản 3 Điều 218 của Luật Sở hữu trí tuệ và trong các trường hợp sau đây:",
+      "grandparent_content": "Điều 37. Xử lý hàng hoá bị nghi ngờ xâm phạm",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "06/2017/QĐ-UBND",
+        "dieu",
+        "Điều 3. Đề xuất lập, sửa đổi, bổ sung, giải mật danh mục bí mật nhà nước",
+        "",
+        ""
+      ],
+      "so_hieu": "06/2017/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 3. Đề xuất lập, sửa đổi, bổ sung, giải mật danh mục bí mật nhà nước",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "46/2016/QĐ-TTg",
+        "vanban",
+        "2. Định mức phân bổ theo tiêu chí bổ sung:\r\nCác tỉnh, thành phố trực thuộc Trung ương có các huyện miền núi - vùng đồng bào dân tộc ở đồng bằng, vùng sâu, huyện vùng cao, hải đảo có trạm phát lại phát thanh, truyền hình được phân bổ 330 triệu đồng/huyện để có thêm kinh phí thực hiện phủ sóng phát thanh, truyền hình đối với vùng khó khăn.",
+        "",
+        ""
+      ],
+      "so_hieu": "46/2016/QĐ-TTg",
+      "clause_type": "vanban",
+      "content": "2. Định mức phân bổ theo tiêu chí bổ sung:\r\nCác tỉnh, thành phố trực thuộc Trung ương có các huyện miền núi - vùng đồng bào dân tộc ở đồng bằng, vùng sâu, huyện vùng cao, hải đảo có trạm phát lại phát thanh, truyền hình được phân bổ 330 triệu đồng/huyện để có thêm kinh phí thực hiện phủ sóng phát thanh, truyền hình đối với vùng khó khăn.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "02/2011/NQ-HĐND",
+        "khoan",
+        "3. Quy định về mức thu phí vệ sinh tại khoản 3 Điều 1 Nghị quyết này thay thế:",
+        "Điều 3. Bãi bỏ và thay thế các văn bản quy định phí, lệ phí",
+        ""
+      ],
+      "so_hieu": "02/2011/NQ-HĐND",
+      "clause_type": "khoan",
+      "content": "3. Quy định về mức thu phí vệ sinh tại khoản 3 Điều 1 Nghị quyết này thay thế:",
+      "parent_content": "Điều 3. Bãi bỏ và thay thế các văn bản quy định phí, lệ phí",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "70/2006/QH11",
+        "diem",
+        "d) Chia, tách, sáp nhập, hợp nhất, chuyển đổi, giải thể, phá sản;",
+        "2. Thành viên lưu ký bị thu hồi Giấy chứng nhận đăng ký hoạt động lưu ký chứng khoán trong các trường hợp sau đây:",
+        "Điều 51. Đình chỉ, thu hồi Giấy chứng nhận đăng ký hoạt động lưu ký chứng khoán"
+      ],
+      "so_hieu": "70/2006/QH11",
+      "clause_type": "diem",
+      "content": "d) Chia, tách, sáp nhập, hợp nhất, chuyển đổi, giải thể, phá sản;",
+      "parent_content": "2. Thành viên lưu ký bị thu hồi Giấy chứng nhận đăng ký hoạt động lưu ký chứng khoán trong các trường hợp sau đây:",
+      "grandparent_content": "Điều 51. Đình chỉ, thu hồi Giấy chứng nhận đăng ký hoạt động lưu ký chứng khoán",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "1410/BNG-LPQT",
+        "khoan",
+        "1. Bên chuyển giao có quyền bảo lưu thẩm quyền sửa đổi hoặc hủy bỏ hình phạt mà tòa án nước mình đã tuyên.",
+        "Điều 12\r\nBảo lưu thẩm quyền xét xử",
+        ""
+      ],
+      "so_hieu": "1410/BNG-LPQT",
+      "clause_type": "khoan",
+      "content": "1. Bên chuyển giao có quyền bảo lưu thẩm quyền sửa đổi hoặc hủy bỏ hình phạt mà tòa án nước mình đã tuyên.",
+      "parent_content": "Điều 12\r\nBảo lưu thẩm quyền xét xử",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "19/2004/QĐ-UB",
+        "vanban",
+        "____________________________\r\n- Căn cứ Luật Tổ chức Hội đồng nhân dân và Uỷ ban nhân dân ngày 26/11/2003;\r\n- Căn cứ Hướng dẫn số 1184/HD-BVHTT ngày 14/4/2004 của Bộ Văn hoá  - Thông tin hướng dẫn xây dựng thiết chế văn hoá làng, thôn , ấp, bản, khu phố;\r\n- Xét đề nghị của Giám đốc Sở Văn hoá - Thông tin tại Tờ trình số 27/TT-SVH-TT ngày 5/5/2004,",
+        "",
+        ""
+      ],
+      "so_hieu": "19/2004/QĐ-UB",
+      "clause_type": "vanban",
+      "content": "____________________________\r\n- Căn cứ Luật Tổ chức Hội đồng nhân dân và Uỷ ban nhân dân ngày 26/11/2003;\r\n- Căn cứ Hướng dẫn số 1184/HD-BVHTT ngày 14/4/2004 của Bộ Văn hoá  - Thông tin hướng dẫn xây dựng thiết chế văn hoá làng, thôn , ấp, bản, khu phố;\r\n- Xét đề nghị của Giám đốc Sở Văn hoá - Thông tin tại Tờ trình số 27/TT-SVH-TT ngày 5/5/2004,",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "105/2006/NĐ-CP",
+        "dieu",
+        "Điều 62. Hiệu lực của Nghị định\r\nNghị định này có hiệu lực thi hành sau 15 ngày, kể từ ngày đăng Công báo.\r\nCác quy định khác trong các văn bản ban hành trước ngày Nghị định này có hiệu lực thi hành trái với Nghị định này đều bãi bỏ.",
+        "",
+        ""
+      ],
+      "so_hieu": "105/2006/NĐ-CP",
+      "clause_type": "dieu",
+      "content": "Điều 62. Hiệu lực của Nghị định\r\nNghị định này có hiệu lực thi hành sau 15 ngày, kể từ ngày đăng Công báo.\r\nCác quy định khác trong các văn bản ban hành trước ngày Nghị định này có hiệu lực thi hành trái với Nghị định này đều bãi bỏ.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "28/2013/NQ-HĐND",
+        "diem",
+        "b) Giải pháp về công nghệ:\r\n- Đầu tư phát triển công nghệ khoa học kỹ thuật, đưa công nghệ thông tin vào công tác quản lý.\r\n- Khuyến khích ứng dụng những thành tựu về công nghệ, kỹ thuật mới trong công nghiệp chế biến, khai khoáng…, cải tiến đầu tư thay thế công nghệ lạc hậu, áp dụng các quy trình cấp nước tiên tiến để tiết kiệm nguồn nước và sử dụng có hiệu quả tài nguyên nước.",
+        "4. Giải pháp thực hiện quy hoạch",
+        "Điều 1. Nhất trí thông qua Quy hoạch bảo vệ, khai thác và sử dụng tài nguyên nước tỉnh Yên Bái đến năm 2020 và định hướng đến năm 2030 như sau:"
+      ],
+      "so_hieu": "28/2013/NQ-HĐND",
+      "clause_type": "diem",
+      "content": "b) Giải pháp về công nghệ:\r\n- Đầu tư phát triển công nghệ khoa học kỹ thuật, đưa công nghệ thông tin vào công tác quản lý.\r\n- Khuyến khích ứng dụng những thành tựu về công nghệ, kỹ thuật mới trong công nghiệp chế biến, khai khoáng…, cải tiến đầu tư thay thế công nghệ lạc hậu, áp dụng các quy trình cấp nước tiên tiến để tiết kiệm nguồn nước và sử dụng có hiệu quả tài nguyên nước.",
+      "parent_content": "4. Giải pháp thực hiện quy hoạch",
+      "grandparent_content": "Điều 1. Nhất trí thông qua Quy hoạch bảo vệ, khai thác và sử dụng tài nguyên nước tỉnh Yên Bái đến năm 2020 và định hướng đến năm 2030 như sau:",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "35-L/CTN",
+        "dieu",
+        "Điều 51. Trước khi thoả ước tập thể hết hạn, hai bên có thể thương lượng để kéo dài thời hạn thoả ước tập thể hoặc ký kết thoả ước tập thể mới. Khi thoả ước tập thể hết hạn mà hai bên vẫn tiếp tục thương lượng, thì thoả ước tập thể vẫn có hiệu lực. Nếu quá ba tháng, kể từ ngày thoả ước tập thể hết hạn mà thương lượng không đi đến kết quả, thì thoả ước tập thể đương nhiên hết hiệu lực.",
+        "",
+        ""
+      ],
+      "so_hieu": "35-L/CTN",
+      "clause_type": "dieu",
+      "content": "Điều 51. Trước khi thoả ước tập thể hết hạn, hai bên có thể thương lượng để kéo dài thời hạn thoả ước tập thể hoặc ký kết thoả ước tập thể mới. Khi thoả ước tập thể hết hạn mà hai bên vẫn tiếp tục thương lượng, thì thoả ước tập thể vẫn có hiệu lực. Nếu quá ba tháng, kể từ ngày thoả ước tập thể hết hạn mà thương lượng không đi đến kết quả, thì thoả ước tập thể đương nhiên hết hiệu lực.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "102/2007/NQ-HĐND.K7",
+        "dieu",
+        "Điều 2. Giao Uỷ ban nhân dân Tỉnh nghiên cứu tiếp thu những kiến nghị của các Ban Hội đồng nhân dân Tỉnh và ý kiến đóng góp của các Đại biểu Hội đồng nhân dân Tỉnh, bổ sung, hoàn chỉnh Báo cáo; chỉ đạo triển khai thực hiện với tinh thần khẩn trương, quyết tâm cao, nhằm đảm bảo hoàn thành thắng lợi nhiệm vụ phát triển kinh tế - xã hội, quốc phòng - an ninh năm 2008 đã được Hội đồng nhân dân Tỉnh thông qua.",
+        "",
+        ""
+      ],
+      "so_hieu": "102/2007/NQ-HĐND.K7",
+      "clause_type": "dieu",
+      "content": "Điều 2. Giao Uỷ ban nhân dân Tỉnh nghiên cứu tiếp thu những kiến nghị của các Ban Hội đồng nhân dân Tỉnh và ý kiến đóng góp của các Đại biểu Hội đồng nhân dân Tỉnh, bổ sung, hoàn chỉnh Báo cáo; chỉ đạo triển khai thực hiện với tinh thần khẩn trương, quyết tâm cao, nhằm đảm bảo hoàn thành thắng lợi nhiệm vụ phát triển kinh tế - xã hội, quốc phòng - an ninh năm 2008 đã được Hội đồng nhân dân Tỉnh thông qua.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "104/2016/QH14",
+        "khoan",
+        "5. Thông tin công khai không chính xác bằng hình thức nào thì phải được đính chính bằng hình thức đó.",
+        "Điều 22. Xử lý thông tin công khai không chính xác",
+        ""
+      ],
+      "so_hieu": "104/2016/QH14",
+      "clause_type": "khoan",
+      "content": "5. Thông tin công khai không chính xác bằng hình thức nào thì phải được đính chính bằng hình thức đó.",
+      "parent_content": "Điều 22. Xử lý thông tin công khai không chính xác",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "35/2015/QĐ-UBND",
+        "diem",
+        "a) Tài sản nhà nước được thanh lý theo các phương thức sau:\r\n- Bán tài sản nhà nước;\r\n- Phá dỡ, hủy bỏ tài sản nhà nước.",
+        "3. Phương thức thanh lý tài sản nhà nước",
+        "Điều 9. Thẩm quyền quyết định thanh lý tài sản nhà nước"
+      ],
+      "so_hieu": "35/2015/QĐ-UBND",
+      "clause_type": "diem",
+      "content": "a) Tài sản nhà nước được thanh lý theo các phương thức sau:\r\n- Bán tài sản nhà nước;\r\n- Phá dỡ, hủy bỏ tài sản nhà nước.",
+      "parent_content": "3. Phương thức thanh lý tài sản nhà nước",
+      "grandparent_content": "Điều 9. Thẩm quyền quyết định thanh lý tài sản nhà nước",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "34/2021/TT-BGDĐT",
+        "khoan",
+        "2. Hướng dẫn minh chứng và chấm điểm các nhóm tiêu chí được quy định tại phụ lục kèm theo Thông tư này.",
+        "Điều 6. Cách tính điểm hồ sơ xét thăng hạng chức danh nghề nghiệp",
+        ""
+      ],
+      "so_hieu": "34/2021/TT-BGDĐT",
+      "clause_type": "khoan",
+      "content": "2. Hướng dẫn minh chứng và chấm điểm các nhóm tiêu chí được quy định tại phụ lục kèm theo Thông tư này.",
+      "parent_content": "Điều 6. Cách tính điểm hồ sơ xét thăng hạng chức danh nghề nghiệp",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "05/2003/QH11",
+        "vanban",
+        "LUẬT\r\nCỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 05/2003/QH11 NGÀY 17 THÁNG 6 NĂM 2003 VỀ HOẠT ĐỘNG GIÁM SÁT CỦA QUỐC HỘI\r\nĐể nâng cao hiệu lực, hiệu quả hoạt động giám sát của Quốc hội, góp phần bảo đảm cho Hiến pháp, luật, nghị quyết của Quốc hội, pháp lệnh, nghị quyết của Uỷ ban thường vụ Quốc hội được thi hành nghiêm chỉnh và thống nhất; Căn cứ vào Hiến pháp nước Cộng hoà xã hội chủ nghĩa Việt Nam năm 1992 đã được sửa đổi, bổ sung theo Nghị quyết số 51/2001/QH10 ngày 25 tháng 12 năm 2001 của Quốc hội khoá X, kỳ họp thứ 10; Luật này quy định về hoạt động giám sát của Quốc hội, Uỷ ban thường vụ Quốc hội, Hội đồng dân tộc, Uỷ ban của Quốc hội, Đoàn đại biểu Quốc hội và đại biểu Quốc hội.",
+        "",
+        ""
+      ],
+      "so_hieu": "05/2003/QH11",
+      "clause_type": "vanban",
+      "content": "LUẬT\r\nCỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 05/2003/QH11 NGÀY 17 THÁNG 6 NĂM 2003 VỀ HOẠT ĐỘNG GIÁM SÁT CỦA QUỐC HỘI\r\nĐể nâng cao hiệu lực, hiệu quả hoạt động giám sát của Quốc hội, góp phần bảo đảm cho Hiến pháp, luật, nghị quyết của Quốc hội, pháp lệnh, nghị quyết của Uỷ ban thường vụ Quốc hội được thi hành nghiêm chỉnh và thống nhất; Căn cứ vào Hiến pháp nước Cộng hoà xã hội chủ nghĩa Việt Nam năm 1992 đã được sửa đổi, bổ sung theo Nghị quyết số 51/2001/QH10 ngày 25 tháng 12 năm 2001 của Quốc hội khoá X, kỳ họp thứ 10; Luật này quy định về hoạt động giám sát của Quốc hội, Uỷ ban thường vụ Quốc hội, Hội đồng dân tộc, Uỷ ban của Quốc hội, Đoàn đại biểu Quốc hội và đại biểu Quốc hội.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "23/2026/QĐ-UBND",
+        "diem",
+        "c) Đình chỉ xây dựng, thu hồi giấy phép xây dựng theo thẩm quyền khi chủ đầu tư xây dựng công trình vi phạm nghiêm trọng đối với các dự án trên địa bàn quản lý;",
+        "3. Ban Quản lý Khu kinh tế, công nghiệp thành phố",
+        "Điều 14. Trách nhiệm quản lý trật tự xây dựng"
+      ],
+      "so_hieu": "23/2026/QĐ-UBND",
+      "clause_type": "diem",
+      "content": "c) Đình chỉ xây dựng, thu hồi giấy phép xây dựng theo thẩm quyền khi chủ đầu tư xây dựng công trình vi phạm nghiêm trọng đối với các dự án trên địa bàn quản lý;",
+      "parent_content": "3. Ban Quản lý Khu kinh tế, công nghiệp thành phố",
+      "grandparent_content": "Điều 14. Trách nhiệm quản lý trật tự xây dựng",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "07/2000/NQ-HĐ",
+        "dieu",
+        "Điều 4: Giao UBND Thành phố bổ sung, hoàn chỉnh quy chế, quy trình đặt tên đường, phố và kiện toàn Hội đồng tư vấn lịch sử thành phố trong quý IV năm 2000, để phục vụ cho việc đặt tên đường, tên phố, tên ngõ, công viên, quảng trường, công trình văn hóa trên địa bàn thành phố Hà Nội.\r\n[TABLE] <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n<tbody>\r\n<tr>\r\n<td style=\"PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; PADDING-TOP: 0in\" valign=\"top\">\r\n<p style=\"MARGIN-BOTTOM: 6pt\"> </p></td>\r\n<td style=\"PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; PADDING-TOP: 0in\" valign=\"top\">\r\n<p align=\"center\" style=\"MARGIN-BOTTOM: 6pt; TEXT-ALIGN: center\"><b>T/M HỘI ĐỒNG NHÂN DÂN THÀNH PHỐ HÀ NỘI</b><br/><b>CHỦ TỊCH</b> <br/> <br/> <br/> <br/><b>Trần Văn Tuấn</b></p></td></tr></tbody></table> [#TABLE]",
+        "",
+        ""
+      ],
+      "so_hieu": "07/2000/NQ-HĐ",
+      "clause_type": "dieu",
+      "content": "Điều 4: Giao UBND Thành phố bổ sung, hoàn chỉnh quy chế, quy trình đặt tên đường, phố và kiện toàn Hội đồng tư vấn lịch sử thành phố trong quý IV năm 2000, để phục vụ cho việc đặt tên đường, tên phố, tên ngõ, công viên, quảng trường, công trình văn hóa trên địa bàn thành phố Hà Nội.\r\n[TABLE] <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n<tbody>\r\n<tr>\r\n<td style=\"PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; PADDING-TOP: 0in\" valign=\"top\">\r\n<p style=\"MARGIN-BOTTOM: 6pt\"> </p></td>\r\n<td style=\"PADDING-RIGHT: 5.4pt; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; PADDING-TOP: 0in\" valign=\"top\">\r\n<p align=\"center\" style=\"MARGIN-BOTTOM: 6pt; TEXT-ALIGN: center\"><b>T/M HỘI ĐỒNG NHÂN DÂN THÀNH PHỐ HÀ NỘI</b><br/><b>CHỦ TỊCH</b> <br/> <br/> <br/> <br/><b>Trần Văn Tuấn</b></p></td></tr></tbody></table> [#TABLE]",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "03/VBHN-BXD",
+        "khoan",
+        "2. Nghị định này thay thế Nghị định số 02/2006/NĐ-CP ngày 05 tháng 01 năm 2006 của Chính phủ.",
+        "Điều 53. Hiệu lực thi hành18",
+        ""
+      ],
+      "so_hieu": "03/VBHN-BXD",
+      "clause_type": "khoan",
+      "content": "2. Nghị định này thay thế Nghị định số 02/2006/NĐ-CP ngày 05 tháng 01 năm 2006 của Chính phủ.",
+      "parent_content": "Điều 53. Hiệu lực thi hành18",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "27/2026/TT-BGDĐT",
+        "diem",
+        "đ) Hướng dẫn đồng nghiệp triển khai thực hiện đề tài hoặc sáng kiến cấp cơ sở trở lên trong hoạt động quản lý giáo dục, giảng dạy;",
+        "3. Đối với hạng I",
+        "Điều 6. Tiêu chuẩn về năng lực chuyên môn, nghiệp vụ"
+      ],
+      "so_hieu": "27/2026/TT-BGDĐT",
+      "clause_type": "diem",
+      "content": "đ) Hướng dẫn đồng nghiệp triển khai thực hiện đề tài hoặc sáng kiến cấp cơ sở trở lên trong hoạt động quản lý giáo dục, giảng dạy;",
+      "parent_content": "3. Đối với hạng I",
+      "grandparent_content": "Điều 6. Tiêu chuẩn về năng lực chuyên môn, nghiệp vụ",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "23/2026/QĐ-UBND",
+        "dieu",
+        "Điều 9. Số lần kiểm tra\r\nSau khi nhận được thông báo khởi công xây dựng công trình của chủ đầu tư (theo quy định tại Phụ lục V Nghị định số 06/2021/NĐ-CP quy định chi tiết một số nội dung về quản lý chất lượng, thi công xây dựng và bảo trì công trình xây dựng), cơ quan chuyên môn về xây dựng sẽ thực hiện kiểm tra trong quá trình thi công, với số lần kiểm tra gồm:",
+        "",
+        ""
+      ],
+      "so_hieu": "23/2026/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 9. Số lần kiểm tra\r\nSau khi nhận được thông báo khởi công xây dựng công trình của chủ đầu tư (theo quy định tại Phụ lục V Nghị định số 06/2021/NĐ-CP quy định chi tiết một số nội dung về quản lý chất lượng, thi công xây dựng và bảo trì công trình xây dựng), cơ quan chuyên môn về xây dựng sẽ thực hiện kiểm tra trong quá trình thi công, với số lần kiểm tra gồm:",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "02/2011/NQ-HĐND",
+        "khoan",
+        "1. Bãi bỏ việc thu phí qua cầu An Hoá trên đường tỉnh 883 được quy định tại Khoản 3, Mục I về Tờ trình thu phí qua cầu An Hoá quy định tại Nghị quyết số 35/NQ-HĐND ngày 11 tháng 02 năm 1999 của Hội đồng nhân dân tỉnh Bến Tre khoá V.",
+        "Điều 3. Bãi bỏ và thay thế các văn bản quy định phí, lệ phí",
+        ""
+      ],
+      "so_hieu": "02/2011/NQ-HĐND",
+      "clause_type": "khoan",
+      "content": "1. Bãi bỏ việc thu phí qua cầu An Hoá trên đường tỉnh 883 được quy định tại Khoản 3, Mục I về Tờ trình thu phí qua cầu An Hoá quy định tại Nghị quyết số 35/NQ-HĐND ngày 11 tháng 02 năm 1999 của Hội đồng nhân dân tỉnh Bến Tre khoá V.",
+      "parent_content": "Điều 3. Bãi bỏ và thay thế các văn bản quy định phí, lệ phí",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "reference": "khoản 3 Nghị quyết số 35/NQ",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm I Nghị quyết số 35/NQ",
+          "relation": "dan_chieu"
+        }
+      ],
+      "tp": [],
+      "fp": [
+        {
+          "reference": "khoản 3 Nghị quyết số 35/NQ",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm I Nghị quyết số 35/NQ",
+          "relation": "dan_chieu"
+        }
+      ],
+      "fn": []
+    },
+    {
+      "key": [
+        "70/2006/QH11",
+        "dieu",
+        "Điều 69. Chia, tách, sáp nhập, hợp nhất, chuyển đổi công ty chứng khoán, công ty quản lý quỹ",
+        "",
+        ""
+      ],
+      "so_hieu": "70/2006/QH11",
+      "clause_type": "dieu",
+      "content": "Điều 69. Chia, tách, sáp nhập, hợp nhất, chuyển đổi công ty chứng khoán, công ty quản lý quỹ",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "46/2016/QĐ-TTg",
+        "vanban",
+        "2. Định mức phân bổ theo tiêu chí bổ sung, gồm:\r\na) Các tỉnh, thành phố trực thuộc Trung ương có đoàn nghệ thuật chuyên nghiệp (là đơn vị sự nghiệp công lập), đội thông tin lưu động được phân bổ thêm kinh phí: 510 triệu đồng/đoàn nghệ thuật chuyên nghiệp và 250 triệu đồng/đội thông tin lưu động;\r\nb) Các tỉnh, thành phố trực thuộc Trung ương có khu, điểm du lịch quốc gia được hỗ trợ 3.000 triệu đồng/khu, điểm du lịch quốc gia.",
+        "",
+        ""
+      ],
+      "so_hieu": "46/2016/QĐ-TTg",
+      "clause_type": "vanban",
+      "content": "2. Định mức phân bổ theo tiêu chí bổ sung, gồm:\r\na) Các tỉnh, thành phố trực thuộc Trung ương có đoàn nghệ thuật chuyên nghiệp (là đơn vị sự nghiệp công lập), đội thông tin lưu động được phân bổ thêm kinh phí: 510 triệu đồng/đoàn nghệ thuật chuyên nghiệp và 250 triệu đồng/đội thông tin lưu động;\r\nb) Các tỉnh, thành phố trực thuộc Trung ương có khu, điểm du lịch quốc gia được hỗ trợ 3.000 triệu đồng/khu, điểm du lịch quốc gia.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "34/2021/TT-BGDĐT",
+        "khoan",
+        "3. Trường hợp các văn bản dẫn chiếu tại Thông tư này được sửa đổi, bổ sung hoặc thay thế thì thực hiện theo các văn bản mới.",
+        "Điều 8. Điều khoản thi hành",
+        ""
+      ],
+      "so_hieu": "34/2021/TT-BGDĐT",
+      "clause_type": "khoan",
+      "content": "3. Trường hợp các văn bản dẫn chiếu tại Thông tư này được sửa đổi, bổ sung hoặc thay thế thì thực hiện theo các văn bản mới.",
+      "parent_content": "Điều 8. Điều khoản thi hành",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "35/2015/QĐ-UBND",
+        "diem",
+        "a) Cơ quan có tài sản thanh lý tự thực hiện hoặc thuê tổ chức, cá nhân khác thực hiện việc phá dỡ, hủy bỏ tài sản theo quy định của pháp luật.",
+        "6. Tổ chức thanh lý tài sản nhà nước theo phương thức phá dỡ, hủy bỏ",
+        "Điều 9. Thẩm quyền quyết định thanh lý tài sản nhà nước"
+      ],
+      "so_hieu": "35/2015/QĐ-UBND",
+      "clause_type": "diem",
+      "content": "a) Cơ quan có tài sản thanh lý tự thực hiện hoặc thuê tổ chức, cá nhân khác thực hiện việc phá dỡ, hủy bỏ tài sản theo quy định của pháp luật.",
+      "parent_content": "6. Tổ chức thanh lý tài sản nhà nước theo phương thức phá dỡ, hủy bỏ",
+      "grandparent_content": "Điều 9. Thẩm quyền quyết định thanh lý tài sản nhà nước",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "02/2011/NQ-HĐND",
+        "khoan",
+        "4. Quy định mức thu phí qua các phà trực thuộc Trung tâm Quản lý phà và bến xe Bến Tre quy định tại Khoản 2, Điều 1 Nghị quyết này thay thế:",
+        "Điều 3. Bãi bỏ và thay thế các văn bản quy định phí, lệ phí",
+        ""
+      ],
+      "so_hieu": "02/2011/NQ-HĐND",
+      "clause_type": "khoan",
+      "content": "4. Quy định mức thu phí qua các phà trực thuộc Trung tâm Quản lý phà và bến xe Bến Tre quy định tại Khoản 2, Điều 1 Nghị quyết này thay thế:",
+      "parent_content": "Điều 3. Bãi bỏ và thay thế các văn bản quy định phí, lệ phí",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "03/VBHN-BXD",
+        "dieu",
+        "Điều 43. Bộ Tài chính\r\nChủ trì, phối hợp với các Bộ ngành liên quan xây dựng và hướng dẫn thực hiện các ưu đãi có liên quan đến chính sách tài chính, thuế cho các dự án đầu tư phát triển đô thị.",
+        "",
+        ""
+      ],
+      "so_hieu": "03/VBHN-BXD",
+      "clause_type": "dieu",
+      "content": "Điều 43. Bộ Tài chính\r\nChủ trì, phối hợp với các Bộ ngành liên quan xây dựng và hướng dẫn thực hiện các ưu đãi có liên quan đến chính sách tài chính, thuế cho các dự án đầu tư phát triển đô thị.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "104/2016/QH14",
+        "diem",
+        "a) Công khai, cung cấp thông tin một cách kịp thời, chính xác, đầy đủ; trong trường hợp phát hiện thông tin đã cung cấp không chính xác hoặc không đầy đủ thì phải đính chính hoặc cung cấp bổ sung thông tin;",
+        "1. Cơ quan nhà nước có trách nhiệm cung cấp thông tin quy định tại Điều 9 của Luật này có trách nhiệm:",
+        "Điều 34. Trách nhiệm của cơ quan cung cấp thông tin trong việc bảo đảm thực hiện quyền tiếp cận thông tin"
+      ],
+      "so_hieu": "104/2016/QH14",
+      "clause_type": "diem",
+      "content": "a) Công khai, cung cấp thông tin một cách kịp thời, chính xác, đầy đủ; trong trường hợp phát hiện thông tin đã cung cấp không chính xác hoặc không đầy đủ thì phải đính chính hoặc cung cấp bổ sung thông tin;",
+      "parent_content": "1. Cơ quan nhà nước có trách nhiệm cung cấp thông tin quy định tại Điều 9 của Luật này có trách nhiệm:",
+      "grandparent_content": "Điều 34. Trách nhiệm của cơ quan cung cấp thông tin trong việc bảo đảm thực hiện quyền tiếp cận thông tin",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "252/2004/QĐ-UB",
+        "dieu",
+        "Điều 14. Kỷ luật.\r\nBáo cáo viên pháp luật vi phạm Quy chế này, không còn đủ tư cách Báo cáo viên thì tùy theo tính chất, mức độ có thể bị tạm đình chỉ hoạt động báo cáo pháp luật, xóa tên trong danh sách Báo cáo viên pháp luật và thu hồi thẻ Báo cáo viên pháp luật hoặc áp dụng các hình thức kỷ luật khác theo quy định của pháp luật./.",
+        "",
+        ""
+      ],
+      "so_hieu": "252/2004/QĐ-UB",
+      "clause_type": "dieu",
+      "content": "Điều 14. Kỷ luật.\r\nBáo cáo viên pháp luật vi phạm Quy chế này, không còn đủ tư cách Báo cáo viên thì tùy theo tính chất, mức độ có thể bị tạm đình chỉ hoạt động báo cáo pháp luật, xóa tên trong danh sách Báo cáo viên pháp luật và thu hồi thẻ Báo cáo viên pháp luật hoặc áp dụng các hình thức kỷ luật khác theo quy định của pháp luật./.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "24/2023/QH15",
+        "diem",
+        "b) Thuê bao viễn thông vi phạm pháp luật về viễn thông. Chính phủ quy định chi tiết Điểm này;",
+        "2. Doanh nghiệp viễn thông không được đơn phương chấm dứt hợp đồng với người sử dụng dịch vụ viễn thông, trừ các trường hợp sau đây:",
+        "Điều 22. Từ chối cung cấp dịch vụ viễn thông"
+      ],
+      "so_hieu": "24/2023/QH15",
+      "clause_type": "diem",
+      "content": "b) Thuê bao viễn thông vi phạm pháp luật về viễn thông. Chính phủ quy định chi tiết Điểm này;",
+      "parent_content": "2. Doanh nghiệp viễn thông không được đơn phương chấm dứt hợp đồng với người sử dụng dịch vụ viễn thông, trừ các trường hợp sau đây:",
+      "grandparent_content": "Điều 22. Từ chối cung cấp dịch vụ viễn thông",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "02/2011/NQ-HĐND",
+        "khoan",
+        "2. Quy định về lệ phí đăng ký giao dịch bảo đảm và phí cung cấp thông tin về giao dịch bảo đảm quy định tại Khoản 4, Điều 1 và Điều 2 Nghị quyết này thay thế Khoản 1, Điều 1, Khoản 1 Điều 2 Nghị Quyết số 15/2009/NQ-HĐND ngày 22 tháng 7 năm 2009 của Hội đồng nhân dân tỉnh Bến Tre về phí, lệ phí trình tại kỳ họp thứ 17, Hội đồng nhân dân tỉnh khoá VII.",
+        "Điều 3. Bãi bỏ và thay thế các văn bản quy định phí, lệ phí",
+        ""
+      ],
+      "so_hieu": "02/2011/NQ-HĐND",
+      "clause_type": "khoan",
+      "content": "2. Quy định về lệ phí đăng ký giao dịch bảo đảm và phí cung cấp thông tin về giao dịch bảo đảm quy định tại Khoản 4, Điều 1 và Điều 2 Nghị quyết này thay thế Khoản 1, Điều 1, Khoản 1 Điều 2 Nghị Quyết số 15/2009/NQ-HĐND ngày 22 tháng 7 năm 2009 của Hội đồng nhân dân tỉnh Bến Tre về phí, lệ phí trình tại kỳ họp thứ 17, Hội đồng nhân dân tỉnh khoá VII.",
+      "parent_content": "Điều 3. Bãi bỏ và thay thế các văn bản quy định phí, lệ phí",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "03/VBHN-BXD",
+        "khoan",
+        "8. Chủ trì, phối hợp với Bộ Tài nguyên và Môi trường, Bộ Xây dựng rà soát, điều chỉnh hoặc bổ sung quy hoạch, kế hoạch sử dụng đất để bố trí quỹ đất phát triển đô thị.",
+        "Điều 46. Ủy ban nhân dân cấp tỉnh",
+        ""
+      ],
+      "so_hieu": "03/VBHN-BXD",
+      "clause_type": "khoan",
+      "content": "8. Chủ trì, phối hợp với Bộ Tài nguyên và Môi trường, Bộ Xây dựng rà soát, điều chỉnh hoặc bổ sung quy hoạch, kế hoạch sử dụng đất để bố trí quỹ đất phát triển đô thị.",
+      "parent_content": "Điều 46. Ủy ban nhân dân cấp tỉnh",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "27/2026/TT-BGDĐT",
+        "diem",
+        "d) Chủ trì thực hiện các đề tài nghiên cứu khoa học hoặc sáng kiến cấp cơ sở trở lên; tham gia đánh giá hoặc hướng dẫn đồng nghiệp nghiên cứu khoa học hoặc viết sáng kiến từ cấp cơ sở trở lên;",
+        "2. Đối với hạng II\r\nGiáo viên dự bị đại học hạng II phải thực hiện các nhiệm vụ quy định tại khoản 1 Điều này và các nhiệm vụ sau:",
+        "Điều 3. Nhiệm vụ của giáo viên dự bị đại học"
+      ],
+      "so_hieu": "27/2026/TT-BGDĐT",
+      "clause_type": "diem",
+      "content": "d) Chủ trì thực hiện các đề tài nghiên cứu khoa học hoặc sáng kiến cấp cơ sở trở lên; tham gia đánh giá hoặc hướng dẫn đồng nghiệp nghiên cứu khoa học hoặc viết sáng kiến từ cấp cơ sở trở lên;",
+      "parent_content": "2. Đối với hạng II\r\nGiáo viên dự bị đại học hạng II phải thực hiện các nhiệm vụ quy định tại khoản 1 Điều này và các nhiệm vụ sau:",
+      "grandparent_content": "Điều 3. Nhiệm vụ của giáo viên dự bị đại học",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "297/QĐ-UBND",
+        "dieu",
+        "Điều 3. Hiệu lực thi hành\r\nQuyết định này có hiệu lực thi hành kể từ ngày ký.\r\nBãi bỏ các quy trình nội bộ đã được phê duyệt trước đây đối với thủ tục hành chính nêu tại danh mục kèm theo Quyết định này.",
+        "",
+        ""
+      ],
+      "so_hieu": "297/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 3. Hiệu lực thi hành\r\nQuyết định này có hiệu lực thi hành kể từ ngày ký.\r\nBãi bỏ các quy trình nội bộ đã được phê duyệt trước đây đối với thủ tục hành chính nêu tại danh mục kèm theo Quyết định này.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "1387/QĐ-UBND",
+        "khoan",
+        "2. Sở Tài chính:\r\n- Chủ trì, phối hợp với các cơ quan liên quan rà soát, xây dựng quy trình nội bộ đối với việc giải quyết từng thủ tục hành chính công bố tại Điều 1 Quyết định này; hoàn thiện hồ sơ trình Chủ tịch UBND tỉnh phê duyệt chậm nhất 03 ngày kể từ ngày ban hành Quyết định.\r\n- Phối hợp với Sở Khoa học và Công nghệ rà soát, cập nhật, đăng tải công khai kịp thời, đầy đủ, chính xác Danh mục thủ tục hành chính, bộ phận tạo thành của thủ tục hành chính công bố tại Điều 1 Quyết định này và gỡ bỏ các dữ liệu thủ tục hành chính đã hết hiệu lực thi hành trên Hệ thống thông tin giải quyết thủ tục hành chính của tỉnh.",
+        "Điều 2. Tổ chức thực hiện.",
+        ""
+      ],
+      "so_hieu": "1387/QĐ-UBND",
+      "clause_type": "khoan",
+      "content": "2. Sở Tài chính:\r\n- Chủ trì, phối hợp với các cơ quan liên quan rà soát, xây dựng quy trình nội bộ đối với việc giải quyết từng thủ tục hành chính công bố tại Điều 1 Quyết định này; hoàn thiện hồ sơ trình Chủ tịch UBND tỉnh phê duyệt chậm nhất 03 ngày kể từ ngày ban hành Quyết định.\r\n- Phối hợp với Sở Khoa học và Công nghệ rà soát, cập nhật, đăng tải công khai kịp thời, đầy đủ, chính xác Danh mục thủ tục hành chính, bộ phận tạo thành của thủ tục hành chính công bố tại Điều 1 Quyết định này và gỡ bỏ các dữ liệu thủ tục hành chính đã hết hiệu lực thi hành trên Hệ thống thông tin giải quyết thủ tục hành chính của tỉnh.",
+      "parent_content": "Điều 2. Tổ chức thực hiện.",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "67/2025/QH15",
+        "diem",
+        "k) Chênh lệch do đánh giá lại tài sản theo quy định của pháp luật để góp vốn, điều chuyển khi sáp nhập, hợp nhất, chia, tách, chuyển đổi chủ sở hữu, chuyển đổi loại hình doanh nghiệp;",
+        "2. Thu nhập khác bao gồm:",
+        "Điều 3. Thu nhập chịu thuế"
+      ],
+      "so_hieu": "67/2025/QH15",
+      "clause_type": "diem",
+      "content": "k) Chênh lệch do đánh giá lại tài sản theo quy định của pháp luật để góp vốn, điều chuyển khi sáp nhập, hợp nhất, chia, tách, chuyển đổi chủ sở hữu, chuyển đổi loại hình doanh nghiệp;",
+      "parent_content": "2. Thu nhập khác bao gồm:",
+      "grandparent_content": "Điều 3. Thu nhập chịu thuế",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "34/2021/TT-BGDĐT",
+        "khoan",
+        "2. Được xếp loại chất lượng ở mức hoàn thành tốt nhiệm vụ trở lên trong năm công tác liền kề trước năm dự thi hoặc xét thăng hạng chức danh nghề nghiệp; có phẩm chất chính trị, đạo đức nghề nghiệp tốt; không trong thời hạn xử lý kỷ luật, không trong thời gian thực hiện các quy định liên quan đến kỷ luật viên chức quy định tại Điều 56 Luật Viên chức được sửa đổi, bổ sung tại khoản 8 Điều 2 Luật sửa đổi, bổ sung một số điều của Luật Cán bộ, công chức và Luật Viên chức.",
+        "Điều 3. Tiêu chuẩn, điều kiện thi hoặc xét thăng hạng chức danh nghề nghiệp\r\nGiáo viên được đăng ký dự thi hoặc xét thăng hạng lên chức danh nghề nghiệp cao hơn liền kề khi có đủ các tiêu chuẩn, điều kiện sau:",
+        ""
+      ],
+      "so_hieu": "34/2021/TT-BGDĐT",
+      "clause_type": "khoan",
+      "content": "2. Được xếp loại chất lượng ở mức hoàn thành tốt nhiệm vụ trở lên trong năm công tác liền kề trước năm dự thi hoặc xét thăng hạng chức danh nghề nghiệp; có phẩm chất chính trị, đạo đức nghề nghiệp tốt; không trong thời hạn xử lý kỷ luật, không trong thời gian thực hiện các quy định liên quan đến kỷ luật viên chức quy định tại Điều 56 Luật Viên chức được sửa đổi, bổ sung tại khoản 8 Điều 2 Luật sửa đổi, bổ sung một số điều của Luật Cán bộ, công chức và Luật Viên chức.",
+      "parent_content": "Điều 3. Tiêu chuẩn, điều kiện thi hoặc xét thăng hạng chức danh nghề nghiệp\r\nGiáo viên được đăng ký dự thi hoặc xét thăng hạng lên chức danh nghề nghiệp cao hơn liền kề khi có đủ các tiêu chuẩn, điều kiện sau:",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "100/2025/QĐ-UBND",
+        "dieu",
+        "Điều 1. Bãi bỏ toàn bộ Quyết định\r\nBãi bỏ toàn bộ Quyết định số 10/2025/QĐ-UBND ngày 01/3/2025 của Ủy ban nhân dân tỉnh ban hành Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Sở Văn hóa, Thể thao và Du lịch.",
+        "",
+        ""
+      ],
+      "so_hieu": "100/2025/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 1. Bãi bỏ toàn bộ Quyết định\r\nBãi bỏ toàn bộ Quyết định số 10/2025/QĐ-UBND ngày 01/3/2025 của Ủy ban nhân dân tỉnh ban hành Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Sở Văn hóa, Thể thao và Du lịch.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "03/VBHN-BXD",
+        "diem",
+        "c) Lập kế hoạch lựa chọn chủ đầu tư dự án đầu tư phát triển đô thị, trình Ủy ban nhân dân cấp tỉnh quyết định; hướng dẫn, hỗ trợ các chủ đầu tư trong quá trình chuẩn bị đầu tư và thực hiện dự án đầu tư phát triển đô thị;",
+        "3. Nhiệm vụ, quyền hạn của Ban Quản lý khu vực phát triển đô thị:",
+        "Điều 13. Ban Quản lý khu vực phát triển đô thị"
+      ],
+      "so_hieu": "03/VBHN-BXD",
+      "clause_type": "diem",
+      "content": "c) Lập kế hoạch lựa chọn chủ đầu tư dự án đầu tư phát triển đô thị, trình Ủy ban nhân dân cấp tỉnh quyết định; hướng dẫn, hỗ trợ các chủ đầu tư trong quá trình chuẩn bị đầu tư và thực hiện dự án đầu tư phát triển đô thị;",
+      "parent_content": "3. Nhiệm vụ, quyền hạn của Ban Quản lý khu vực phát triển đô thị:",
+      "grandparent_content": "Điều 13. Ban Quản lý khu vực phát triển đô thị",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "70/2006/QH11",
+        "dieu",
+        "Điều 22. Đình chỉ chào bán chứng khoán ra công chúng",
+        "",
+        ""
+      ],
+      "so_hieu": "70/2006/QH11",
+      "clause_type": "dieu",
+      "content": "Điều 22. Đình chỉ chào bán chứng khoán ra công chúng",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "35/2015/QĐ-UBND",
+        "diem",
+        "b) Chi phí hợp lý liên quan đến việc thanh lý tài sản nhà nước gồm:\r\n- Chi phí kiểm kê tài sản;\r\n- Chi phí phá dỡ, hủy bỏ tài sản;\r\n- Chi phí định giá và thẩm định giá tài sản;\r\n- Chi phí tổ chức bán đấu giá;\r\n- Các chi phí khác có liên quan.",
+        "7. Quản lý, sử dụng tiền thu được từ thanh lý tài sản nhà nước",
+        "Điều 9. Thẩm quyền quyết định thanh lý tài sản nhà nước"
+      ],
+      "so_hieu": "35/2015/QĐ-UBND",
+      "clause_type": "diem",
+      "content": "b) Chi phí hợp lý liên quan đến việc thanh lý tài sản nhà nước gồm:\r\n- Chi phí kiểm kê tài sản;\r\n- Chi phí phá dỡ, hủy bỏ tài sản;\r\n- Chi phí định giá và thẩm định giá tài sản;\r\n- Chi phí tổ chức bán đấu giá;\r\n- Các chi phí khác có liên quan.",
+      "parent_content": "7. Quản lý, sử dụng tiền thu được từ thanh lý tài sản nhà nước",
+      "grandparent_content": "Điều 9. Thẩm quyền quyết định thanh lý tài sản nhà nước",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "03/VBHN-BXD",
+        "khoan",
+        "1. Ủy ban nhân dân cấp tỉnh chỉ đạo rà soát, bổ sung dự án vào danh mục các dự án của khu vực phát triển đô thị, đảm bảo các dự án thực hiện theo đúng kế hoạch thực hiện khu vực phát triển đô thị và các quy định tại Nghị định này.",
+        "Điều 49. Xử lý chuyển tiếp đối với các dự án đã được giao trên cơ sở tuân thủ quy hoạch chung và quy hoạch phân khu được cấp có thẩm quyền phê duyệt",
+        ""
+      ],
+      "so_hieu": "03/VBHN-BXD",
+      "clause_type": "khoan",
+      "content": "1. Ủy ban nhân dân cấp tỉnh chỉ đạo rà soát, bổ sung dự án vào danh mục các dự án của khu vực phát triển đô thị, đảm bảo các dự án thực hiện theo đúng kế hoạch thực hiện khu vực phát triển đô thị và các quy định tại Nghị định này.",
+      "parent_content": "Điều 49. Xử lý chuyển tiếp đối với các dự án đã được giao trên cơ sở tuân thủ quy hoạch chung và quy hoạch phân khu được cấp có thẩm quyền phê duyệt",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "122/QĐ-UBND",
+        "dieu",
+        "Điều 1. Công bố kèm theo Quyết định này 24 thủ tục hành chính (Phụ lục I) mới ban hành, sửa đổi, bổ sung trong lĩnh vực Khám bệnh, chữa bệnh, Dược phẩm thuộc thẩm quyền giải quyết của Sở Y tế tỉnh Ninh Bình.",
+        "",
+        ""
+      ],
+      "so_hieu": "122/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 1. Công bố kèm theo Quyết định này 24 thủ tục hành chính (Phụ lục I) mới ban hành, sửa đổi, bổ sung trong lĩnh vực Khám bệnh, chữa bệnh, Dược phẩm thuộc thẩm quyền giải quyết của Sở Y tế tỉnh Ninh Bình.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "35-L/CTN",
+        "khoan",
+        "2- Trong trường hợp thoả ước tập thể hết hiệu lực do doanh nghiệp chấm dứt hoạt động, thì quyền lợi của người lao động được giải quyết theo Điều 66 của Bộ luật này.",
+        "Điều 52.",
+        ""
+      ],
+      "so_hieu": "35-L/CTN",
+      "clause_type": "khoan",
+      "content": "2- Trong trường hợp thoả ước tập thể hết hiệu lực do doanh nghiệp chấm dứt hoạt động, thì quyền lợi của người lao động được giải quyết theo Điều 66 của Bộ luật này.",
+      "parent_content": "Điều 52.",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [
+        {
+          "reference": "Điều 66 Bộ luật 35-L/CTN",
+          "relation": "dan_chieu"
+        }
+      ],
+      "tp": [],
+      "fp": [
+        {
+          "reference": "Điều 66 Bộ luật 35-L/CTN",
+          "relation": "dan_chieu"
+        }
+      ],
+      "fn": []
+    },
+    {
+      "key": [
+        "27/2026/TT-BGDĐT",
+        "diem",
+        "b) Hướng dẫn, hỗ trợ đồng nghiệp cập nhật và vận dụng linh hoạt, hiệu quả các phương pháp, hình thức dạy học; các hình thức, phương pháp kiểm tra, đánh giá kết quả học tập, rèn luyện và sự tiến bộ của học sinh;",
+        "3. Đối với hạng I",
+        "Điều 6. Tiêu chuẩn về năng lực chuyên môn, nghiệp vụ"
+      ],
+      "so_hieu": "27/2026/TT-BGDĐT",
+      "clause_type": "diem",
+      "content": "b) Hướng dẫn, hỗ trợ đồng nghiệp cập nhật và vận dụng linh hoạt, hiệu quả các phương pháp, hình thức dạy học; các hình thức, phương pháp kiểm tra, đánh giá kết quả học tập, rèn luyện và sự tiến bộ của học sinh;",
+      "parent_content": "3. Đối với hạng I",
+      "grandparent_content": "Điều 6. Tiêu chuẩn về năng lực chuyên môn, nghiệp vụ",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "34/2013/QĐ-UBND",
+        "dieu",
+        "Điều 2. Quyết định này có hiệu lực thi hành sau 10 ngày kể từ ngày ký và thay thế các quyết định trước đây của Ủy ban nhân dân tỉnh Sóc Trăng ban hành biểu giá nước sạch sinh hoạt dân dụng trên địa bàn tỉnh Sóc Trăng.",
+        "",
+        ""
+      ],
+      "so_hieu": "34/2013/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 2. Quyết định này có hiệu lực thi hành sau 10 ngày kể từ ngày ký và thay thế các quyết định trước đây của Ủy ban nhân dân tỉnh Sóc Trăng ban hành biểu giá nước sạch sinh hoạt dân dụng trên địa bàn tỉnh Sóc Trăng.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "104/2016/QH14",
+        "khoan",
+        "1. Trường hợp phát hiện thông tin do mình tạo ra và đã được công khai không chính xác thì cơ quan đó có trách nhiệm kịp thời đính chính, công khai thông tin đã được đính chính.",
+        "Điều 22. Xử lý thông tin công khai không chính xác",
+        ""
+      ],
+      "so_hieu": "104/2016/QH14",
+      "clause_type": "khoan",
+      "content": "1. Trường hợp phát hiện thông tin do mình tạo ra và đã được công khai không chính xác thì cơ quan đó có trách nhiệm kịp thời đính chính, công khai thông tin đã được đính chính.",
+      "parent_content": "Điều 22. Xử lý thông tin công khai không chính xác",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "06/2017/QĐ-UBND",
+        "khoan",
+        "2. Người đứng đầu cơ quan, tổ chức thực hiện việc kiểm tra định kỳ hoặc đột xuất trong lĩnh vực Bảo vệ bí mật nhà nước đối với các đơn vị trong phạm vi quản lý của mình theo quy định tại các Khoản 3, Khoản 4, Điều 24 của Nghị định số 33/2002/NĐ-CP ngày 28/03/2002 của Chính phủ quy định chi tiết thi hành Pháp lệnh Bảo vệ bí mật nhà nước.",
+        "Điều 24. Thanh tra, kiểm tra, xử lý vi phạm và giải quyết khiếu nại, tố cáo trong lĩnh vực Bảo vệ bí mật nhà nước",
+        ""
+      ],
+      "so_hieu": "06/2017/QĐ-UBND",
+      "clause_type": "khoan",
+      "content": "2. Người đứng đầu cơ quan, tổ chức thực hiện việc kiểm tra định kỳ hoặc đột xuất trong lĩnh vực Bảo vệ bí mật nhà nước đối với các đơn vị trong phạm vi quản lý của mình theo quy định tại các Khoản 3, Khoản 4, Điều 24 của Nghị định số 33/2002/NĐ-CP ngày 28/03/2002 của Chính phủ quy định chi tiết thi hành Pháp lệnh Bảo vệ bí mật nhà nước.",
+      "parent_content": "Điều 24. Thanh tra, kiểm tra, xử lý vi phạm và giải quyết khiếu nại, tố cáo trong lĩnh vực Bảo vệ bí mật nhà nước",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "797/NQ-UBTVQH14",
+        "dieu",
+        "Điều 1\r\nPhân bổ 5.931 tỷ đồng từ nguồn điều chỉnh giảm nguồn vốn dự kiến bố trí cho các dự án quan trọng quốc gia của Kế hoạch đầu tư công trung hạn giai đoạn 2016-2020 cho các dự án tại các Phụ lục số 1, 2, 3, 4 và 5 kèm theo Nghị quyết này. Giao Chính phủ chỉ đạo các địa phương liên quan hoàn thiện thủ tục đầu tư, giao bổ sung kế hoạch đầu tư công trung hạn giai đoạn 2016-2020 cho các dự án bảo đảm đúng quy định của Luật Đầu tư công.",
+        "",
+        ""
+      ],
+      "so_hieu": "797/NQ-UBTVQH14",
+      "clause_type": "dieu",
+      "content": "Điều 1\r\nPhân bổ 5.931 tỷ đồng từ nguồn điều chỉnh giảm nguồn vốn dự kiến bố trí cho các dự án quan trọng quốc gia của Kế hoạch đầu tư công trung hạn giai đoạn 2016-2020 cho các dự án tại các Phụ lục số 1, 2, 3, 4 và 5 kèm theo Nghị quyết này. Giao Chính phủ chỉ đạo các địa phương liên quan hoàn thiện thủ tục đầu tư, giao bổ sung kế hoạch đầu tư công trung hạn giai đoạn 2016-2020 cho các dự án bảo đảm đúng quy định của Luật Đầu tư công.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "27/2026/TT-BGDĐT",
+        "diem",
+        "c) Vận dụng linh hoạt các kiến thức để tư vấn tâm lý, hướng nghiệp cho học sinh; có khả năng hướng dẫn, hỗ trợ đồng nghiệp triển khai có hiệu quả các biện pháp tư vấn tâm lý, hướng nghiệp phù hợp với từng đối tượng học sinh trong hoạt động dạy học và giáo dục;",
+        "3. Đối với hạng I",
+        "Điều 6. Tiêu chuẩn về năng lực chuyên môn, nghiệp vụ"
+      ],
+      "so_hieu": "27/2026/TT-BGDĐT",
+      "clause_type": "diem",
+      "content": "c) Vận dụng linh hoạt các kiến thức để tư vấn tâm lý, hướng nghiệp cho học sinh; có khả năng hướng dẫn, hỗ trợ đồng nghiệp triển khai có hiệu quả các biện pháp tư vấn tâm lý, hướng nghiệp phù hợp với từng đối tượng học sinh trong hoạt động dạy học và giáo dục;",
+      "parent_content": "3. Đối với hạng I",
+      "grandparent_content": "Điều 6. Tiêu chuẩn về năng lực chuyên môn, nghiệp vụ",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "35/2015/QĐ-UBND",
+        "diem",
+        "c) Phải thay thế tài sản do yêu cầu đổi mới kỹ thuật, công nghệ theo quyết định của cơ quan nhà nước có thẩm quyền.",
+        "1. Các trường hợp bán tài sản nhà nước:",
+        "Điều 8. Thẩm quyền quyết định bán tài sản nhà nước"
+      ],
+      "so_hieu": "35/2015/QĐ-UBND",
+      "clause_type": "diem",
+      "content": "c) Phải thay thế tài sản do yêu cầu đổi mới kỹ thuật, công nghệ theo quyết định của cơ quan nhà nước có thẩm quyền.",
+      "parent_content": "1. Các trường hợp bán tài sản nhà nước:",
+      "grandparent_content": "Điều 8. Thẩm quyền quyết định bán tài sản nhà nước",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "40/2009/QH12",
+        "dieu",
+        "Điều 29. Thu hồi chứng chỉ hành nghề, đình chỉ hành nghề",
+        "",
+        ""
+      ],
+      "so_hieu": "40/2009/QH12",
+      "clause_type": "dieu",
+      "content": "Điều 29. Thu hồi chứng chỉ hành nghề, đình chỉ hành nghề",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "105/2006/NĐ-CP",
+        "khoan",
+        "1. Giám định bổ sung được thực hiện trong trường hợp kết luận giám định chưa đầy đủ, rõ ràng về các nội dung cần giám định hoặc có phát sinh tình tiết mới cần làm rõ. Yêu cầu giám định bổ sung và việc thực hiện giám định bổ sung phải tuân theo các quy định đối với giám định lần đầu.",
+        "Điều 50. Giám định bổ sung, giám định lại",
+        ""
+      ],
+      "so_hieu": "105/2006/NĐ-CP",
+      "clause_type": "khoan",
+      "content": "1. Giám định bổ sung được thực hiện trong trường hợp kết luận giám định chưa đầy đủ, rõ ràng về các nội dung cần giám định hoặc có phát sinh tình tiết mới cần làm rõ. Yêu cầu giám định bổ sung và việc thực hiện giám định bổ sung phải tuân theo các quy định đối với giám định lần đầu.",
+      "parent_content": "Điều 50. Giám định bổ sung, giám định lại",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "297/QĐ-UBND",
+        "diem",
+        "b) Thường xuyên rà soát, cập nhật các quy trình nội bộ giải quyết thủ tục hành chính được phê duyệt mới, sửa đổi, bổ sung, thay thế, bãi bỏ để triển khai thực hiện.",
+        "3. Cơ quan, đơn vị thực hiện thủ tục hành chính có trách nhiệm:",
+        "Điều 2. Phương thức thực hiện"
+      ],
+      "so_hieu": "297/QĐ-UBND",
+      "clause_type": "diem",
+      "content": "b) Thường xuyên rà soát, cập nhật các quy trình nội bộ giải quyết thủ tục hành chính được phê duyệt mới, sửa đổi, bổ sung, thay thế, bãi bỏ để triển khai thực hiện.",
+      "parent_content": "3. Cơ quan, đơn vị thực hiện thủ tục hành chính có trách nhiệm:",
+      "grandparent_content": "Điều 2. Phương thức thực hiện",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "81/2015/QH13",
+        "dieu",
+        "Điều 73. Quy định chi tiết\r\nỦy ban thường vụ Quốc hội, Tổng Kiểm toán nhà nước quy định chi tiết các điều, khoản được giao trong Luật.\r\nLuật này đã được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XIII, kỳ họp thứ 9 thông qua ngày 24 tháng 6 năm 2015.\r\n[TABLE] <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><!--VABWAFAATABfADIAMAAyADUAMAAxADAAOAA=-->\r\n<tbody><tr>\r\n<td style=\"padding:0cm 5.4pt 0cm 5.4pt\" valign=\"top\">\r\n<p style=\"margin-top:6.0pt\"> </p>\r\n</td>\r\n<td style=\"padding:0cm 5.4pt 0cm 5.4pt\" valign=\"top\">\r\n<p align=\"center\" style=\"margin-top:6.0pt;text-align:center\"><b>CHỦ TỊCH QUỐC HỘI<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n  Nguyễn Sinh Hùng</b></p>\r\n</td>\r\n</tr>\r\n</tbody></table> [#TABLE]",
+        "",
+        ""
+      ],
+      "so_hieu": "81/2015/QH13",
+      "clause_type": "dieu",
+      "content": "Điều 73. Quy định chi tiết\r\nỦy ban thường vụ Quốc hội, Tổng Kiểm toán nhà nước quy định chi tiết các điều, khoản được giao trong Luật.\r\nLuật này đã được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XIII, kỳ họp thứ 9 thông qua ngày 24 tháng 6 năm 2015.\r\n[TABLE] <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><!--VABWAFAATABfADIAMAAyADUAMAAxADAAOAA=-->\r\n<tbody><tr>\r\n<td style=\"padding:0cm 5.4pt 0cm 5.4pt\" valign=\"top\">\r\n<p style=\"margin-top:6.0pt\"> </p>\r\n</td>\r\n<td style=\"padding:0cm 5.4pt 0cm 5.4pt\" valign=\"top\">\r\n<p align=\"center\" style=\"margin-top:6.0pt;text-align:center\"><b>CHỦ TỊCH QUỐC HỘI<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n  Nguyễn Sinh Hùng</b></p>\r\n</td>\r\n</tr>\r\n</tbody></table> [#TABLE]",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "01082/QĐ-UBND",
+        "dieu",
+        "Điều 1. Công bố kèm theo Quyết định này thủ tục hành chính được sửa đổi, bổ sung lĩnh vực lâm nghiệp và kiểm lâm thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường, chi tiết tại Phụ lục kèm theo.",
+        "",
+        ""
+      ],
+      "so_hieu": "01082/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 1. Công bố kèm theo Quyết định này thủ tục hành chính được sửa đổi, bổ sung lĩnh vực lâm nghiệp và kiểm lâm thuộc phạm vi chức năng quản lý của Sở Nông nghiệp và Môi trường, chi tiết tại Phụ lục kèm theo.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "27/2026/TT-BGDĐT",
+        "diem",
+        "a) Hướng dẫn được đồng nghiệp xây dựng và thực hiện kế hoạch, chương trình các môn học bồi dưỡng dự bị đại học; vận dụng sáng tạo hoặc phổ biến, hướng dẫn đồng nghiệp sử dụng kết quả nghiên cứu khoa học hoặc sáng kiến để nâng cao chất lượng dạy học và giáo dục;",
+        "3. Đối với hạng I",
+        "Điều 6. Tiêu chuẩn về năng lực chuyên môn, nghiệp vụ"
+      ],
+      "so_hieu": "27/2026/TT-BGDĐT",
+      "clause_type": "diem",
+      "content": "a) Hướng dẫn được đồng nghiệp xây dựng và thực hiện kế hoạch, chương trình các môn học bồi dưỡng dự bị đại học; vận dụng sáng tạo hoặc phổ biến, hướng dẫn đồng nghiệp sử dụng kết quả nghiên cứu khoa học hoặc sáng kiến để nâng cao chất lượng dạy học và giáo dục;",
+      "parent_content": "3. Đối với hạng I",
+      "grandparent_content": "Điều 6. Tiêu chuẩn về năng lực chuyên môn, nghiệp vụ",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "105/2006/NĐ-CP",
+        "khoan",
+        "3. Trong trường hợp đơn yêu cầu xử lý xâm phạm chưa đủ tài liệu, chứng cứ, hiện vật cần thiết, thì cơ quan xử lý xâm phạm yêu cầu người nộp đơn bổ sung tài liệu, chứng cứ và ấn định thời hạn hợp lý nhưng không quá ba mươi ngày để người yêu cầu xử lý xâm phạm bổ sung tài liệu, chứng cứ cần thiết.",
+        "Điều 27. Nộp đơn và giải quyết đơn yêu cầu xử lý xâm phạm",
+        ""
+      ],
+      "so_hieu": "105/2006/NĐ-CP",
+      "clause_type": "khoan",
+      "content": "3. Trong trường hợp đơn yêu cầu xử lý xâm phạm chưa đủ tài liệu, chứng cứ, hiện vật cần thiết, thì cơ quan xử lý xâm phạm yêu cầu người nộp đơn bổ sung tài liệu, chứng cứ và ấn định thời hạn hợp lý nhưng không quá ba mươi ngày để người yêu cầu xử lý xâm phạm bổ sung tài liệu, chứng cứ cần thiết.",
+      "parent_content": "Điều 27. Nộp đơn và giải quyết đơn yêu cầu xử lý xâm phạm",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "70/2006/QH11",
+        "khoan",
+        "2. Hồ sơ, thủ tục chấp thuận việc chia, tách, sáp nhập, hợp nhất, chuyển đổi được thực hiện theo quy định của Bộ Tài chính.",
+        "Điều 69. Chia, tách, sáp nhập, hợp nhất, chuyển đổi công ty chứng khoán, công ty quản lý quỹ",
+        ""
+      ],
+      "so_hieu": "70/2006/QH11",
+      "clause_type": "khoan",
+      "content": "2. Hồ sơ, thủ tục chấp thuận việc chia, tách, sáp nhập, hợp nhất, chuyển đổi được thực hiện theo quy định của Bộ Tài chính.",
+      "parent_content": "Điều 69. Chia, tách, sáp nhập, hợp nhất, chuyển đổi công ty chứng khoán, công ty quản lý quỹ",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "571/QĐ-UBND",
+        "dieu",
+        "Điều 1. Công bố kèm theo Quyết định này 01 thủ tục hành chính được sửa đổi, 02 thủ tục hành chính ban hành mới thuộc lĩnh vực nông, lâm nghiệp áp dụng tại cấp huyện trên địa bàn tỉnh Lào Cai.\r\n(có phụ lục kèm theo)",
+        "",
+        ""
+      ],
+      "so_hieu": "571/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 1. Công bố kèm theo Quyết định này 01 thủ tục hành chính được sửa đổi, 02 thủ tục hành chính ban hành mới thuộc lĩnh vực nông, lâm nghiệp áp dụng tại cấp huyện trên địa bàn tỉnh Lào Cai.\r\n(có phụ lục kèm theo)",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "297/QĐ-UBND",
+        "khoan",
+        "2. Sở Nông nghiệp và Môi trường tiếp tục theo dõi, kịp thời tham mưu điều chỉnh quy trình nội bộ giải quyết thủ tục hành chính khi văn bản quy định thủ tục hành chính được ban hành mới, thay thế, sửa đổi, bổ sung, bãi bỏ.",
+        "Điều 2. Phương thức thực hiện",
+        ""
+      ],
+      "so_hieu": "297/QĐ-UBND",
+      "clause_type": "khoan",
+      "content": "2. Sở Nông nghiệp và Môi trường tiếp tục theo dõi, kịp thời tham mưu điều chỉnh quy trình nội bộ giải quyết thủ tục hành chính khi văn bản quy định thủ tục hành chính được ban hành mới, thay thế, sửa đổi, bổ sung, bãi bỏ.",
+      "parent_content": "Điều 2. Phương thức thực hiện",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "27/2026/TT-BGDĐT",
+        "diem",
+        "đ) Hỗ trợ đồng nghiệp trong hoạt động tư vấn tâm lý, hướng nghiệp cho học sinh dự bị đại học; chủ động đề xuất các hoạt động giáo dục gìn giữ bản sắc văn hóa dân tộc, xây dựng khối đại đoàn kết toàn dân tộc trong nhà trường; tham gia đánh giá, hướng dẫn học sinh hoặc giáo viên trong các cuộc thi hoặc hội thi trong trường dự bị đại học;",
+        "2. Đối với hạng II\r\nGiáo viên dự bị đại học hạng II phải thực hiện các nhiệm vụ quy định tại khoản 1 Điều này và các nhiệm vụ sau:",
+        "Điều 3. Nhiệm vụ của giáo viên dự bị đại học"
+      ],
+      "so_hieu": "27/2026/TT-BGDĐT",
+      "clause_type": "diem",
+      "content": "đ) Hỗ trợ đồng nghiệp trong hoạt động tư vấn tâm lý, hướng nghiệp cho học sinh dự bị đại học; chủ động đề xuất các hoạt động giáo dục gìn giữ bản sắc văn hóa dân tộc, xây dựng khối đại đoàn kết toàn dân tộc trong nhà trường; tham gia đánh giá, hướng dẫn học sinh hoặc giáo viên trong các cuộc thi hoặc hội thi trong trường dự bị đại học;",
+      "parent_content": "2. Đối với hạng II\r\nGiáo viên dự bị đại học hạng II phải thực hiện các nhiệm vụ quy định tại khoản 1 Điều này và các nhiệm vụ sau:",
+      "grandparent_content": "Điều 3. Nhiệm vụ của giáo viên dự bị đại học",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "3029/QĐ-UBND",
+        "dieu",
+        "Điều 1. Phê duyệt điều chỉnh, bổ sung Kế hoạch sử dụng đất năm 2022 của huyện Hải Hà với các nội dung như sau:",
+        "",
+        ""
+      ],
+      "so_hieu": "3029/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 1. Phê duyệt điều chỉnh, bổ sung Kế hoạch sử dụng đất năm 2022 của huyện Hải Hà với các nội dung như sau:",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "70/2006/QH11",
+        "diem",
+        "đ) Bị đình chỉ, huỷ bỏ đợt chào bán chứng chỉ quỹ đại chúng.",
+        "3. Trong thời hạn hai mươi bốn giờ, kể từ khi xảy ra một trong các sự kiện sau đây của quỹ đại chúng, công ty quản lý quỹ phải báo cáo Sở giao dịch chứng khoán hoặc Trung tâm giao dịch chứng khoán để các tổ chức này công bố thông tin theo quy định tại khoản 2 Điều 107 của Luật này:",
+        "Điều 105. Công bố thông tin về quỹ đại chúng"
+      ],
+      "so_hieu": "70/2006/QH11",
+      "clause_type": "diem",
+      "content": "đ) Bị đình chỉ, huỷ bỏ đợt chào bán chứng chỉ quỹ đại chúng.",
+      "parent_content": "3. Trong thời hạn hai mươi bốn giờ, kể từ khi xảy ra một trong các sự kiện sau đây của quỹ đại chúng, công ty quản lý quỹ phải báo cáo Sở giao dịch chứng khoán hoặc Trung tâm giao dịch chứng khoán để các tổ chức này công bố thông tin theo quy định tại khoản 2 Điều 107 của Luật này:",
+      "grandparent_content": "Điều 105. Công bố thông tin về quỹ đại chúng",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "1387/QĐ-UBND",
+        "dieu",
+        "Điều 1. Công bố kèm theo Quyết định này Danh mục thủ tục hành chính sửa đổi, bổ sung (03 TTHC cấp tỉnh), bãi bỏ (02 TTHC cấp tỉnh) trong lĩnh vực đầu tư theo phương thức đối tác công tư; đấu thầu lựa chọn nhà đầu tư thuộc thẩm quyền giải quyết của cấp tỉnh, do Sở Tài chính thực hiện việc tiếp nhận hồ sơ và trả kết quả (Chi tiết tại Danh mục Phụ lục kèm theo Quyết định).",
+        "",
+        ""
+      ],
+      "so_hieu": "1387/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 1. Công bố kèm theo Quyết định này Danh mục thủ tục hành chính sửa đổi, bổ sung (03 TTHC cấp tỉnh), bãi bỏ (02 TTHC cấp tỉnh) trong lĩnh vực đầu tư theo phương thức đối tác công tư; đấu thầu lựa chọn nhà đầu tư thuộc thẩm quyền giải quyết của cấp tỉnh, do Sở Tài chính thực hiện việc tiếp nhận hồ sơ và trả kết quả (Chi tiết tại Danh mục Phụ lục kèm theo Quyết định).",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "104/2016/QH14",
+        "khoan",
+        "2. Trường hợp phát hiện thông tin do cơ quan khác tạo ra nhưng do mình công khai không chính xác thì cơ quan đã công khai thông tin có trách nhiệm kịp thời đính chính, công khai thông tin đã được đính chính.",
+        "Điều 22. Xử lý thông tin công khai không chính xác",
+        ""
+      ],
+      "so_hieu": "104/2016/QH14",
+      "clause_type": "khoan",
+      "content": "2. Trường hợp phát hiện thông tin do cơ quan khác tạo ra nhưng do mình công khai không chính xác thì cơ quan đã công khai thông tin có trách nhiệm kịp thời đính chính, công khai thông tin đã được đính chính.",
+      "parent_content": "Điều 22. Xử lý thông tin công khai không chính xác",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "35/2015/QĐ-UBND",
+        "diem",
+        "a) Căn cứ dự toán hàng năm hoặc dự toán bổ sung đã được cấp có thẩm quyền phê duyệt, Chủ tịch Ủy ban nhân dân tỉnh quyết định việc bảo dưỡng, sửa chữa đối với tài sản là nhà, công trình kiến trúc của các cơ quan, tổ chức, đơn vị thuộc phạm vi quản lý có giá trị từ 01 tỷ đồng trở lên.",
+        "1. Đối với tài sản là nhà, công trình kiến trúc:",
+        "Điều 10. Thẩm quyền quyết định bảo dưỡng, sửa chữa tài sản nhà nước\r\nTài sản nhà nước phải được bảo dưỡng, sửa chữa theo đúng chế độ, tiêu chuẩn, định mức kinh tế - kỹ thuật do cơ quan có thẩm quyền ban hành. Thẩm quyền quyết định bảo dưỡng, sửa chữa tài sản nhà nước như sau:"
+      ],
+      "so_hieu": "35/2015/QĐ-UBND",
+      "clause_type": "diem",
+      "content": "a) Căn cứ dự toán hàng năm hoặc dự toán bổ sung đã được cấp có thẩm quyền phê duyệt, Chủ tịch Ủy ban nhân dân tỉnh quyết định việc bảo dưỡng, sửa chữa đối với tài sản là nhà, công trình kiến trúc của các cơ quan, tổ chức, đơn vị thuộc phạm vi quản lý có giá trị từ 01 tỷ đồng trở lên.",
+      "parent_content": "1. Đối với tài sản là nhà, công trình kiến trúc:",
+      "grandparent_content": "Điều 10. Thẩm quyền quyết định bảo dưỡng, sửa chữa tài sản nhà nước\r\nTài sản nhà nước phải được bảo dưỡng, sửa chữa theo đúng chế độ, tiêu chuẩn, định mức kinh tế - kỹ thuật do cơ quan có thẩm quyền ban hành. Thẩm quyền quyết định bảo dưỡng, sửa chữa tài sản nhà nước như sau:",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "03/VBHN-BXD",
+        "diem",
+        "a) Tùy theo điều kiện của địa phương, Chủ tịch Ủy ban nhân dân cấp tỉnh quyết định thành lập Ban Quản lý khu vực phát triển đô thị theo các quy định tại khoản 2 Điều này, Ban Quản lý khu vực phát triển đô thị là đơn vị sự nghiệp trực thuộc Ủy ban nhân dân cấp tỉnh, có tư cách pháp nhân, có con dấu riêng, chịu sự chỉ đạo, quản lý về tổ chức và hoạt động của Ủy ban nhân dân cấp tỉnh, chịu sự chỉ đạo, hướng dẫn về chuyên môn nghiệp vụ của Sở Xây dựng và các Sở quản lý chuyên ngành tại địa phương;",
+        "1. Vị trí, chức năng của Ban Quản lý khu vực phát triển đô thị:",
+        "Điều 13. Ban Quản lý khu vực phát triển đô thị"
+      ],
+      "so_hieu": "03/VBHN-BXD",
+      "clause_type": "diem",
+      "content": "a) Tùy theo điều kiện của địa phương, Chủ tịch Ủy ban nhân dân cấp tỉnh quyết định thành lập Ban Quản lý khu vực phát triển đô thị theo các quy định tại khoản 2 Điều này, Ban Quản lý khu vực phát triển đô thị là đơn vị sự nghiệp trực thuộc Ủy ban nhân dân cấp tỉnh, có tư cách pháp nhân, có con dấu riêng, chịu sự chỉ đạo, quản lý về tổ chức và hoạt động của Ủy ban nhân dân cấp tỉnh, chịu sự chỉ đạo, hướng dẫn về chuyên môn nghiệp vụ của Sở Xây dựng và các Sở quản lý chuyên ngành tại địa phương;",
+      "parent_content": "1. Vị trí, chức năng của Ban Quản lý khu vực phát triển đô thị:",
+      "grandparent_content": "Điều 13. Ban Quản lý khu vực phát triển đô thị",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "1860/QĐ-UBND",
+        "khoan",
+        "7. Tình hình thực hiện các dự án sử dụng vốn đầu tư phát triển cho khoa học và công nghệ:\r\nNhằm tăng cường tiềm lực về KH&CN, tỉnh đã triển khai đầu tư xây dựng các dự án bắt đầu từ năm 2016, tỉnh đã triển khai thực hiện 04 dự án phát triển cơ sở vật chất về khoa học và công nghệ, 01 dự án trong giai đoạn chuẩn bị đầu tư (Dự án Đầu tư trang thiết bị cho Trung tâm Ứng dụng tiến bộ khoa học và công nghệ giai đoạn 2016 – 2020) với tổng mức đầu tư của 05 dự án là 407,144 tỷ đồng gồm:\r\n- Dự án đầu tư xây dựng Trung tâm Công nghệ sinh học An Giang;\r\n- Dự án Tăng cường trang thiết bị Trung tâm Công nghệ sinh học An Giang;\r\n- Dự án Đầu tư mua sắm thay thế thiết bị chuẩn đo lường giai đoạn 2016-2020;\r\n- Dự án Đầu tư trang thiết bị cho Trung tâm Ứng dụng tiến bộ khoa học và công nghệ giai đoạn 2016 - 2020;\r\n- Dự án đầu tư xây dựng Trụ sở Sở Khoa học và Công nghệ An Giang.\r\nNhìn chung, việc đầu tư phát triển tiềm lực KH&CN của tỉnh cho các tổ chức KH&CN của các Sở, ngành rất được quan tâm và tạo thuận lợi cho việc triển khai thực hiện, cụ thể:\r\n- Năm 2016 bố trí kế hoạch vốn 40,578 tỷ đồng, trong đó chuẩn bị đầu tư: 0,2 tỷ đồng, thực hiện đầu tư: 40,378 tỷ đồng, giải ngân: 40,341 tỷ đồng.\r\n- Năm 2017 bố trí kế hoạch vốn 78,555 tỷ đồng, trong đó thực hiện đầu tư: 78,555 tỷ đồng, giải ngân: 67,043 tỷ đồng.\r\n- Năm 2018 bố trí kế hoạch vốn 49,474 tỷ đồng, trong đó thực hiện đầu tư: 49,474 tỷ đồng, giải ngân: 48,075 tỷ đồng. Có 01 dự án kết thúc (Dự án Đầu tư mua sắm thay thế thiết bị chuẩn đo lường giai đoạn 2016-2020)\r\n- Năm 2019 04 dự án còn lại được bố trí kế hoạch vốn 30,463 tỷ đồng, trong đó thực hiện đầu tư: 30,463 tỷ đồng, ước giải ngân: 30,050 tỷ đồng.",
+        "Điều 1. Phê duyệt Kế hoạch hoạt động khoa học và công nghệ tỉnh An Giang năm 2020, với các nội dung cụ thể như sau:\r\nA. ĐÁNH GIÁ TÌNH HÌNH THỰC HIỆN KẾ HOẠCH VÀ DỰ TOÁN NGÂN SÁCH KHOA HỌC VÀ CÔNG NGHỆ\r\nI. Tình hình thực hiện cơ chế, chính sách về khoa học và công nghệ",
+        ""
+      ],
+      "so_hieu": "1860/QĐ-UBND",
+      "clause_type": "khoan",
+      "content": "7. Tình hình thực hiện các dự án sử dụng vốn đầu tư phát triển cho khoa học và công nghệ:\r\nNhằm tăng cường tiềm lực về KH&CN, tỉnh đã triển khai đầu tư xây dựng các dự án bắt đầu từ năm 2016, tỉnh đã triển khai thực hiện 04 dự án phát triển cơ sở vật chất về khoa học và công nghệ, 01 dự án trong giai đoạn chuẩn bị đầu tư (Dự án Đầu tư trang thiết bị cho Trung tâm Ứng dụng tiến bộ khoa học và công nghệ giai đoạn 2016 – 2020) với tổng mức đầu tư của 05 dự án là 407,144 tỷ đồng gồm:\r\n- Dự án đầu tư xây dựng Trung tâm Công nghệ sinh học An Giang;\r\n- Dự án Tăng cường trang thiết bị Trung tâm Công nghệ sinh học An Giang;\r\n- Dự án Đầu tư mua sắm thay thế thiết bị chuẩn đo lường giai đoạn 2016-2020;\r\n- Dự án Đầu tư trang thiết bị cho Trung tâm Ứng dụng tiến bộ khoa học và công nghệ giai đoạn 2016 - 2020;\r\n- Dự án đầu tư xây dựng Trụ sở Sở Khoa học và Công nghệ An Giang.\r\nNhìn chung, việc đầu tư phát triển tiềm lực KH&CN của tỉnh cho các tổ chức KH&CN của các Sở, ngành rất được quan tâm và tạo thuận lợi cho việc triển khai thực hiện, cụ thể:\r\n- Năm 2016 bố trí kế hoạch vốn 40,578 tỷ đồng, trong đó chuẩn bị đầu tư: 0,2 tỷ đồng, thực hiện đầu tư: 40,378 tỷ đồng, giải ngân: 40,341 tỷ đồng.\r\n- Năm 2017 bố trí kế hoạch vốn 78,555 tỷ đồng, trong đó thực hiện đầu tư: 78,555 tỷ đồng, giải ngân: 67,043 tỷ đồng.\r\n- Năm 2018 bố trí kế hoạch vốn 49,474 tỷ đồng, trong đó thực hiện đầu tư: 49,474 tỷ đồng, giải ngân: 48,075 tỷ đồng. Có 01 dự án kết thúc (Dự án Đầu tư mua sắm thay thế thiết bị chuẩn đo lường giai đoạn 2016-2020)\r\n- Năm 2019 04 dự án còn lại được bố trí kế hoạch vốn 30,463 tỷ đồng, trong đó thực hiện đầu tư: 30,463 tỷ đồng, ước giải ngân: 30,050 tỷ đồng.",
+      "parent_content": "Điều 1. Phê duyệt Kế hoạch hoạt động khoa học và công nghệ tỉnh An Giang năm 2020, với các nội dung cụ thể như sau:\r\nA. ĐÁNH GIÁ TÌNH HÌNH THỰC HIỆN KẾ HOẠCH VÀ DỰ TOÁN NGÂN SÁCH KHOA HỌC VÀ CÔNG NGHỆ\r\nI. Tình hình thực hiện cơ chế, chính sách về khoa học và công nghệ",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "17/2025/QĐ-UBND",
+        "dieu",
+        "Điều 16. Chế độ báo cáo\r\nĐịnh kỳ trước ngày 10 tháng 12 hàng năm hoặc đột xuất (khi có yêu cầu) các sở, ban, ngành; Ủy ban Mặt trận Tổ quốc Việt Nam, các tổ chức chính trị - xã hội các cấp trên địa bàn tỉnh Quảng Ngãi; Ủy ban nhân dân cấp xã; Hội Bảo vệ người tiêu dùng tỉnh, Hiệp hội Doanh nghiệp tỉnh và các tổ chức, cá nhân khác có liên quan đến công tác bảo vệ quyền lợi người tiêu dùng tổng hợp, báo cáo kết quả thực hiện về Ủy ban nhân dân tỉnh (thông qua Sở Công Thương).\r\nTrong quá trình thực hiện, nếu có khó khăn, vướng mắc, các cơ quan, đơn vị, địa phương phản ánh kịp thời về Sở Công Thương để tổng hợp, báo cáo Ủy ban nhân dân tỉnh xem xét, sửa đổi, bổ sung Quy chế để đảm bảo quy định và phù hợp với tình hình thực tế./.",
+        "",
+        ""
+      ],
+      "so_hieu": "17/2025/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 16. Chế độ báo cáo\r\nĐịnh kỳ trước ngày 10 tháng 12 hàng năm hoặc đột xuất (khi có yêu cầu) các sở, ban, ngành; Ủy ban Mặt trận Tổ quốc Việt Nam, các tổ chức chính trị - xã hội các cấp trên địa bàn tỉnh Quảng Ngãi; Ủy ban nhân dân cấp xã; Hội Bảo vệ người tiêu dùng tỉnh, Hiệp hội Doanh nghiệp tỉnh và các tổ chức, cá nhân khác có liên quan đến công tác bảo vệ quyền lợi người tiêu dùng tổng hợp, báo cáo kết quả thực hiện về Ủy ban nhân dân tỉnh (thông qua Sở Công Thương).\r\nTrong quá trình thực hiện, nếu có khó khăn, vướng mắc, các cơ quan, đơn vị, địa phương phản ánh kịp thời về Sở Công Thương để tổng hợp, báo cáo Ủy ban nhân dân tỉnh xem xét, sửa đổi, bổ sung Quy chế để đảm bảo quy định và phù hợp với tình hình thực tế./.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "35-L/CTN",
+        "dieu",
+        "Điều 197.\r\nBộ luật này có hiệu lực kể từ ngày 01 tháng 01 năm 1995.\r\nNhững quy định trước đây trái với Bộ luật này đều bãi bỏ.",
+        "",
+        ""
+      ],
+      "so_hieu": "35-L/CTN",
+      "clause_type": "dieu",
+      "content": "Điều 197.\r\nBộ luật này có hiệu lực kể từ ngày 01 tháng 01 năm 1995.\r\nNhững quy định trước đây trái với Bộ luật này đều bãi bỏ.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "35/2015/QĐ-UBND",
+        "diem",
+        "b) Căn cứ dự toán được giao hàng năm hoặc dự toán bổ sung đã được cấp có thẩm quyền phê duyệt, thủ trưởng sở, ban, ngành và Chủ tịch Ủy ban nhân dân các huyện, thành phố quyết định việc bảo dưỡng, sửa chữa đối với tài sản là nhà, công trình kiến trúc của các cơ quan, tổ chức, đơn vị thuộc và trực thuộc quản lý có giá trị dưới 01 tỷ đồng.\r\nTrình tự, thủ tục bảo dưỡng, sửa chữa tài sản thực hiện theo quy định của pháp luật về đầu tư xây dựng cơ bản.",
+        "1. Đối với tài sản là nhà, công trình kiến trúc:",
+        "Điều 10. Thẩm quyền quyết định bảo dưỡng, sửa chữa tài sản nhà nước\r\nTài sản nhà nước phải được bảo dưỡng, sửa chữa theo đúng chế độ, tiêu chuẩn, định mức kinh tế - kỹ thuật do cơ quan có thẩm quyền ban hành. Thẩm quyền quyết định bảo dưỡng, sửa chữa tài sản nhà nước như sau:"
+      ],
+      "so_hieu": "35/2015/QĐ-UBND",
+      "clause_type": "diem",
+      "content": "b) Căn cứ dự toán được giao hàng năm hoặc dự toán bổ sung đã được cấp có thẩm quyền phê duyệt, thủ trưởng sở, ban, ngành và Chủ tịch Ủy ban nhân dân các huyện, thành phố quyết định việc bảo dưỡng, sửa chữa đối với tài sản là nhà, công trình kiến trúc của các cơ quan, tổ chức, đơn vị thuộc và trực thuộc quản lý có giá trị dưới 01 tỷ đồng.\r\nTrình tự, thủ tục bảo dưỡng, sửa chữa tài sản thực hiện theo quy định của pháp luật về đầu tư xây dựng cơ bản.",
+      "parent_content": "1. Đối với tài sản là nhà, công trình kiến trúc:",
+      "grandparent_content": "Điều 10. Thẩm quyền quyết định bảo dưỡng, sửa chữa tài sản nhà nước\r\nTài sản nhà nước phải được bảo dưỡng, sửa chữa theo đúng chế độ, tiêu chuẩn, định mức kinh tế - kỹ thuật do cơ quan có thẩm quyền ban hành. Thẩm quyền quyết định bảo dưỡng, sửa chữa tài sản nhà nước như sau:",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "03/VBHN-BXD",
+        "khoan",
+        "11. Hướng dẫn, kiểm tra, thanh tra, giải quyết khiếu nại tố cáo và xử lý vi phạm trong lĩnh vực phát triển đô thị theo thẩm quyền.",
+        "Điều 41. Bộ Xây dựng",
+        ""
+      ],
+      "so_hieu": "03/VBHN-BXD",
+      "clause_type": "khoan",
+      "content": "11. Hướng dẫn, kiểm tra, thanh tra, giải quyết khiếu nại tố cáo và xử lý vi phạm trong lĩnh vực phát triển đô thị theo thẩm quyền.",
+      "parent_content": "Điều 41. Bộ Xây dựng",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "06/2017/QĐ-UBND",
+        "dieu",
+        "Điều 29. Các sở, ban, ngành, đoàn thể tỉnh; Ủy ban nhân dân các huyện, thị xã, thành phố; các tổ chức chính trị, tổ chức chính trị - xã hội, tổ chức xã hội, tổ chức kinh tế, đơn vị vũ trang nhân dân của Trung ương và địa phương đóng trên địa bàn tỉnh Điện Biên chịu trách nhiệm tổ chức thực hiện nghiêm túc Quy chế này và các quy định của pháp luật có liên quan về Bảo vệ bí mật nhà nước.\r\nThường xuyên tổ chức tuyên truyền, giáo dục cho cán bộ, công chức, viên chức, người lao động thuộc phạm vi quản lý nâng cao trình độ nhận thức, ý thức trách nhiệm, thực hiện nghiêm công tác bảo vệ bí mật nhà nước tại cơ quan, tổ chức, địa phương mình.\r\nQuá trình thực hiện nếu có khó khăn, vướng mắc, phát sinh, các cơ quan, tổ chức và cá nhân kịp thời phản ánh về Công an tỉnh để tổng hợp, báo cáo Ủy ban nhân dân tỉnh xem xét, quyết định sửa đổi, bổ sung cho phù hợp./.",
+        "",
+        ""
+      ],
+      "so_hieu": "06/2017/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 29. Các sở, ban, ngành, đoàn thể tỉnh; Ủy ban nhân dân các huyện, thị xã, thành phố; các tổ chức chính trị, tổ chức chính trị - xã hội, tổ chức xã hội, tổ chức kinh tế, đơn vị vũ trang nhân dân của Trung ương và địa phương đóng trên địa bàn tỉnh Điện Biên chịu trách nhiệm tổ chức thực hiện nghiêm túc Quy chế này và các quy định của pháp luật có liên quan về Bảo vệ bí mật nhà nước.\r\nThường xuyên tổ chức tuyên truyền, giáo dục cho cán bộ, công chức, viên chức, người lao động thuộc phạm vi quản lý nâng cao trình độ nhận thức, ý thức trách nhiệm, thực hiện nghiêm công tác bảo vệ bí mật nhà nước tại cơ quan, tổ chức, địa phương mình.\r\nQuá trình thực hiện nếu có khó khăn, vướng mắc, phát sinh, các cơ quan, tổ chức và cá nhân kịp thời phản ánh về Công an tỉnh để tổng hợp, báo cáo Ủy ban nhân dân tỉnh xem xét, quyết định sửa đổi, bổ sung cho phù hợp./.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "70/2006/QH11",
+        "khoan",
+        "2. Trường hợp tổ chức phát hành là công ty mẹ thì tổ chức phát hành phải nộp báo cáo tài chính hợp nhất theo quy định của pháp luật về kế toán.",
+        "Điều 16. Báo cáo tài chính",
+        ""
+      ],
+      "so_hieu": "70/2006/QH11",
+      "clause_type": "khoan",
+      "content": "2. Trường hợp tổ chức phát hành là công ty mẹ thì tổ chức phát hành phải nộp báo cáo tài chính hợp nhất theo quy định của pháp luật về kế toán.",
+      "parent_content": "Điều 16. Báo cáo tài chính",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "34/2021/TT-BGDĐT",
+        "diem",
+        "b) Đối với trường hợp dự xét thăng hạng từ hạng III lên hạng II: Sử dụng quy định về nhiệm vụ của hạng II để làm căn cứ xét thăng hạng. Lấy điểm chấm minh chứng về các nhiệm vụ của hạng II mà giáo viên hạng III đã thực hiện trong 06 năm liền kề trước thời điểm hết hạn nộp hồ sơ đăng ký dự xét thăng hạng theo thứ tự từ cao xuống thấp cho đến hết chỉ tiêu thăng hạng được cấp có thẩm quyền giao. Hướng dẫn minh chứng và chấm điểm được quy định tại phụ lục kèm theo Thông tư này;",
+        "2. Trường hợp số lượng hồ sơ xét thăng hạng đáp ứng yêu cầu tại khoản 1 Điều này nhiều hơn số chỉ tiêu thăng hạng được cấp có thẩm quyền giao thì thực hiện như sau:",
+        "Điều 7. Xác định người trúng tuyển trong kỳ xét thăng hạng chức danh nghề nghiệp"
+      ],
+      "so_hieu": "34/2021/TT-BGDĐT",
+      "clause_type": "diem",
+      "content": "b) Đối với trường hợp dự xét thăng hạng từ hạng III lên hạng II: Sử dụng quy định về nhiệm vụ của hạng II để làm căn cứ xét thăng hạng. Lấy điểm chấm minh chứng về các nhiệm vụ của hạng II mà giáo viên hạng III đã thực hiện trong 06 năm liền kề trước thời điểm hết hạn nộp hồ sơ đăng ký dự xét thăng hạng theo thứ tự từ cao xuống thấp cho đến hết chỉ tiêu thăng hạng được cấp có thẩm quyền giao. Hướng dẫn minh chứng và chấm điểm được quy định tại phụ lục kèm theo Thông tư này;",
+      "parent_content": "2. Trường hợp số lượng hồ sơ xét thăng hạng đáp ứng yêu cầu tại khoản 1 Điều này nhiều hơn số chỉ tiêu thăng hạng được cấp có thẩm quyền giao thì thực hiện như sau:",
+      "grandparent_content": "Điều 7. Xác định người trúng tuyển trong kỳ xét thăng hạng chức danh nghề nghiệp",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "2674/QĐ-UBND",
+        "khoan",
+        "1. Tổ chức công bố, công khai điều chỉnh bổ sung kế hoạch sử dụng đất theo đúng quy định,",
+        "Điều 2. Căn cứ vào Điều 1 của Quyết định này, Ủy ban nhân dân thành phố Huế có trách nhiệm:",
+        ""
+      ],
+      "so_hieu": "2674/QĐ-UBND",
+      "clause_type": "khoan",
+      "content": "1. Tổ chức công bố, công khai điều chỉnh bổ sung kế hoạch sử dụng đất theo đúng quy định,",
+      "parent_content": "Điều 2. Căn cứ vào Điều 1 của Quyết định này, Ủy ban nhân dân thành phố Huế có trách nhiệm:",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "131/QĐ-UBND",
+        "khoan",
+        "6. Trong quá trình tổ chức thực hiện nếu có khó khăn, vướng mắc, các cơ quan, đơn vị, tổ chức, cá nhân phản ánh về Ủy ban nhân dân tỉnh để xem xét sửa đổi, bổ sung.",
+        "Điều 7. Trách nhiệm của các Sở, Ban, ngành được giao nhiệm vụ có sử dụng nguồn kinh phí từ Quỹ:",
+        ""
+      ],
+      "so_hieu": "131/QĐ-UBND",
+      "clause_type": "khoan",
+      "content": "6. Trong quá trình tổ chức thực hiện nếu có khó khăn, vướng mắc, các cơ quan, đơn vị, tổ chức, cá nhân phản ánh về Ủy ban nhân dân tỉnh để xem xét sửa đổi, bổ sung.",
+      "parent_content": "Điều 7. Trách nhiệm của các Sở, Ban, ngành được giao nhiệm vụ có sử dụng nguồn kinh phí từ Quỹ:",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "59/2024/QH15",
+        "khoan",
+        "6. Trường hợp người chưa thành niên là bị can, bị cáo đang bị tạm giam mà có thông báo áp dụng thủ tục xử lý chuyển hướng thì cơ quan tiến hành tố tụng xem xét tiếp tục tạm giam hoặc hủy bỏ, thay thế bằng biện pháp ngăn chặn khác.",
+        "Điều 138. Áp dụng biện pháp tạm giam",
+        ""
+      ],
+      "so_hieu": "59/2024/QH15",
+      "clause_type": "khoan",
+      "content": "6. Trường hợp người chưa thành niên là bị can, bị cáo đang bị tạm giam mà có thông báo áp dụng thủ tục xử lý chuyển hướng thì cơ quan tiến hành tố tụng xem xét tiếp tục tạm giam hoặc hủy bỏ, thay thế bằng biện pháp ngăn chặn khác.",
+      "parent_content": "Điều 138. Áp dụng biện pháp tạm giam",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "303/2006/QĐ-UBND",
+        "dieu",
+        "Điều 1:Bổ sung dự toán chi ngân sách năm 2005 từ nguồn tăng thu ngân sách năm 2005 là: 279,8 tỷ (theo danh mục đính kèm).",
+        "",
+        ""
+      ],
+      "so_hieu": "303/2006/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 1:Bổ sung dự toán chi ngân sách năm 2005 từ nguồn tăng thu ngân sách năm 2005 là: 279,8 tỷ (theo danh mục đính kèm).",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "104/2016/QH14",
+        "khoan",
+        "3. Trường hợp phát hiện thông tin do mình tạo ra nhưng được cơ quan khác công khai không chính xác thì cơ quan tạo ra thông tin có trách nhiệm yêu cầu cơ quan đã công khai thông tin kịp thời đính chính, công khai thông tin đã được đính chính.",
+        "Điều 22. Xử lý thông tin công khai không chính xác",
+        ""
+      ],
+      "so_hieu": "104/2016/QH14",
+      "clause_type": "khoan",
+      "content": "3. Trường hợp phát hiện thông tin do mình tạo ra nhưng được cơ quan khác công khai không chính xác thì cơ quan tạo ra thông tin có trách nhiệm yêu cầu cơ quan đã công khai thông tin kịp thời đính chính, công khai thông tin đã được đính chính.",
+      "parent_content": "Điều 22. Xử lý thông tin công khai không chính xác",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "01082/QĐ-UBND",
+        "khoan",
+        "2. Rà soát quy trình nội bộ giải quyết thủ tục hành chính đã được Chủ tịch UBND tỉnh phê duyệt để tham mưu quy trình mới, sửa đổi, bổ sung hoặc thay thế đảm bảo theo quy định.",
+        "Điều 2. Giao Sở Nông nghiệp và Môi trường căn cứ Danh mục thủ tục hành chính được công bố tại Điều 1 Quyết định này có trách nhiệm:",
+        ""
+      ],
+      "so_hieu": "01082/QĐ-UBND",
+      "clause_type": "khoan",
+      "content": "2. Rà soát quy trình nội bộ giải quyết thủ tục hành chính đã được Chủ tịch UBND tỉnh phê duyệt để tham mưu quy trình mới, sửa đổi, bổ sung hoặc thay thế đảm bảo theo quy định.",
+      "parent_content": "Điều 2. Giao Sở Nông nghiệp và Môi trường căn cứ Danh mục thủ tục hành chính được công bố tại Điều 1 Quyết định này có trách nhiệm:",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "101/2025/QH15",
+        "khoan",
+        "2. Chính phủ quy định chi tiết điểm d khoản 1 Điều này.",
+        "Điều 16. Các trường hợp từ chối tiếp nhận người đang chấp hành án phạt tù ở nước ngoài về Việt Nam",
+        ""
+      ],
+      "so_hieu": "101/2025/QH15",
+      "clause_type": "khoan",
+      "content": "2. Chính phủ quy định chi tiết điểm d khoản 1 Điều này.",
+      "parent_content": "Điều 16. Các trường hợp từ chối tiếp nhận người đang chấp hành án phạt tù ở nước ngoài về Việt Nam",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "19/2004/QĐ-UB",
+        "dieu",
+        "Điều 1: Quy chế này hướng dẫn xây dựng Nhà văn hoá (thiết chế văn hoá) làng, thôn, bản, khu phố.",
+        "",
+        ""
+      ],
+      "so_hieu": "19/2004/QĐ-UB",
+      "clause_type": "dieu",
+      "content": "Điều 1: Quy chế này hướng dẫn xây dựng Nhà văn hoá (thiết chế văn hoá) làng, thôn, bản, khu phố.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "43/2003/QĐ-BNV",
+        "khoan",
+        "2. Tổ chức mới được thành lập trên cơ sở chuyển đổi doanh nghiệp, sáp nhập hoặc hợp nhất hai hoặc nhiều hội viên của Hiệp hội Ngân hàng, nếu không có yêu cầu khác đương nhiên là hội viên Hiệp hội Ngân hàng.",
+        "Điều 9. Đại diện của hội viên tại Hiệp hội Ngân hàng.",
+        ""
+      ],
+      "so_hieu": "43/2003/QĐ-BNV",
+      "clause_type": "khoan",
+      "content": "2. Tổ chức mới được thành lập trên cơ sở chuyển đổi doanh nghiệp, sáp nhập hoặc hợp nhất hai hoặc nhiều hội viên của Hiệp hội Ngân hàng, nếu không có yêu cầu khác đương nhiên là hội viên Hiệp hội Ngân hàng.",
+      "parent_content": "Điều 9. Đại diện của hội viên tại Hiệp hội Ngân hàng.",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "3029/QĐ-UBND",
+        "khoan",
+        "1. Bổ sung 01 công trình, dự án với tổng diện tích 3,75 ha vào Kế hoạch sử dụng đất năm 2022 của huyện Hải Hà (Chi tiết theo biểu 01 kèm theo).",
+        "Điều 1. Phê duyệt điều chỉnh, bổ sung Kế hoạch sử dụng đất năm 2022 của huyện Hải Hà với các nội dung như sau:",
+        ""
+      ],
+      "so_hieu": "3029/QĐ-UBND",
+      "clause_type": "khoan",
+      "content": "1. Bổ sung 01 công trình, dự án với tổng diện tích 3,75 ha vào Kế hoạch sử dụng đất năm 2022 của huyện Hải Hà (Chi tiết theo biểu 01 kèm theo).",
+      "parent_content": "Điều 1. Phê duyệt điều chỉnh, bổ sung Kế hoạch sử dụng đất năm 2022 của huyện Hải Hà với các nội dung như sau:",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "533/QĐ-BHXH",
+        "diem",
+        "d. Tổng hợp tình hình, đề xuất, kiến nghị hủy bỏ, bãi bỏ, sửa đổi, đơn giản hóa hoặc giữ nguyên các thủ tục hành chính, mẫu đơn, mẫu tờ khai hành chính, các yêu cầu hoặc điều kiện thủ tục hành chính thuộc thẩm quyền, phạm vi quản lý của Bảo hiểm xã hội Việt Nam.",
+        "3. Nhiệm vụ:",
+        "Điều 2. Vị trí, chức năng, nhiệm vụ của Tổ công tác"
+      ],
+      "so_hieu": "533/QĐ-BHXH",
+      "clause_type": "diem",
+      "content": "d. Tổng hợp tình hình, đề xuất, kiến nghị hủy bỏ, bãi bỏ, sửa đổi, đơn giản hóa hoặc giữ nguyên các thủ tục hành chính, mẫu đơn, mẫu tờ khai hành chính, các yêu cầu hoặc điều kiện thủ tục hành chính thuộc thẩm quyền, phạm vi quản lý của Bảo hiểm xã hội Việt Nam.",
+      "parent_content": "3. Nhiệm vụ:",
+      "grandparent_content": "Điều 2. Vị trí, chức năng, nhiệm vụ của Tổ công tác",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "123/2024/NQ-HĐND",
+        "khoan",
+        "3. Trường hợp văn bản được dẫn chiếu tại Nghị quyết này được sửa đổi, bổ sung, thay thế bằng các văn bản khác của cấp có thẩm quyền thì áp dụng theo các văn bản sửa đổi, bổ sung, thay thế.",
+        "Điều 15. Tổ chức thực hiện",
+        ""
+      ],
+      "so_hieu": "123/2024/NQ-HĐND",
+      "clause_type": "khoan",
+      "content": "3. Trường hợp văn bản được dẫn chiếu tại Nghị quyết này được sửa đổi, bổ sung, thay thế bằng các văn bản khác của cấp có thẩm quyền thì áp dụng theo các văn bản sửa đổi, bổ sung, thay thế.",
+      "parent_content": "Điều 15. Tổ chức thực hiện",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "104/2016/QH14",
+        "khoan",
+        "4. Trường hợp công dân cho rằng thông tin công khai không chính xác thì kiến nghị với cơ quan đã công khai thông tin đó. Chậm nhất là 15 ngày kể từ ngày nhận được kiến nghị, cơ quan đó có trách nhiệm kiểm tra tính chính xác của thông tin và trả lời cho công dân; trường hợp xác định thông tin công khai không chính xác thì phải kịp thời đính chính, công khai thông tin đã được đính chính.",
+        "Điều 22. Xử lý thông tin công khai không chính xác",
+        ""
+      ],
+      "so_hieu": "104/2016/QH14",
+      "clause_type": "khoan",
+      "content": "4. Trường hợp công dân cho rằng thông tin công khai không chính xác thì kiến nghị với cơ quan đã công khai thông tin đó. Chậm nhất là 15 ngày kể từ ngày nhận được kiến nghị, cơ quan đó có trách nhiệm kiểm tra tính chính xác của thông tin và trả lời cho công dân; trường hợp xác định thông tin công khai không chính xác thì phải kịp thời đính chính, công khai thông tin đã được đính chính.",
+      "parent_content": "Điều 22. Xử lý thông tin công khai không chính xác",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "146/2025/QH15",
+        "khoan",
+        "8. Bãi bỏ một số điều, khoản, điểm và cụm từ sau đây:",
+        "Điều 2. Sửa đổi, bổ sung một số điều của Luật Bảo vệ và kiểm dịch thực vật",
+        ""
+      ],
+      "so_hieu": "146/2025/QH15",
+      "clause_type": "khoan",
+      "content": "8. Bãi bỏ một số điều, khoản, điểm và cụm từ sau đây:",
+      "parent_content": "Điều 2. Sửa đổi, bổ sung một số điều của Luật Bảo vệ và kiểm dịch thực vật",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "24/2023/QH15",
+        "khoan",
+        "4. Chính phủ quy định chi tiết khoản 2 và khoản 3 Điều này.",
+        "Điều 21. Cung cấp dịch vụ viễn thông qua biên giới đến người sử dụng dịch vụ viễn thông trên lãnh thổ Việt Nam",
+        ""
+      ],
+      "so_hieu": "24/2023/QH15",
+      "clause_type": "khoan",
+      "content": "4. Chính phủ quy định chi tiết khoản 2 và khoản 3 Điều này.",
+      "parent_content": "Điều 21. Cung cấp dịch vụ viễn thông qua biên giới đến người sử dụng dịch vụ viễn thông trên lãnh thổ Việt Nam",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "59/2024/QH15",
+        "dieu",
+        "Điều 92. Đình chỉ thi hành quyết định áp dụng biện pháp xử lý chuyển hướng",
+        "",
+        ""
+      ],
+      "so_hieu": "59/2024/QH15",
+      "clause_type": "dieu",
+      "content": "Điều 92. Đình chỉ thi hành quyết định áp dụng biện pháp xử lý chuyển hướng",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "03/VBHN-BXD",
+        "khoan",
+        "2. Chủ trì, phối hợp với các Bộ ngành liên quan hướng dẫn các địa phương thực hiện các ưu đãi đầu tư cho các dự án đầu tư phát triển đô thị.",
+        "Điều 42. Bộ Kế hoạch và Đầu tư",
+        ""
+      ],
+      "so_hieu": "03/VBHN-BXD",
+      "clause_type": "khoan",
+      "content": "2. Chủ trì, phối hợp với các Bộ ngành liên quan hướng dẫn các địa phương thực hiện các ưu đãi đầu tư cho các dự án đầu tư phát triển đô thị.",
+      "parent_content": "Điều 42. Bộ Kế hoạch và Đầu tư",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "43/2003/QĐ-BNV",
+        "khoan",
+        "3. Trường hợp tổ chức là hội viên Hiệp hội Ngân hàng không thuộc trường hợp tại khoản 2 Điều này, khi chia, tách, hợp nhất, sáp nhập thì giải quyết quyền lợi và nghĩa vụ của hội viên đó với Hiệp hội Ngân hàng theo quy định của pháp luật và Điều lệ Hiệp hội Ngân hàng.",
+        "Điều 9. Đại diện của hội viên tại Hiệp hội Ngân hàng.",
+        ""
+      ],
+      "so_hieu": "43/2003/QĐ-BNV",
+      "clause_type": "khoan",
+      "content": "3. Trường hợp tổ chức là hội viên Hiệp hội Ngân hàng không thuộc trường hợp tại khoản 2 Điều này, khi chia, tách, hợp nhất, sáp nhập thì giải quyết quyền lợi và nghĩa vụ của hội viên đó với Hiệp hội Ngân hàng theo quy định của pháp luật và Điều lệ Hiệp hội Ngân hàng.",
+      "parent_content": "Điều 9. Đại diện của hội viên tại Hiệp hội Ngân hàng.",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "59/2024/QH15",
+        "khoan",
+        "2. Chỉ áp dụng biện pháp tạm giữ, tạm giam đối với người chưa thành niên khi có căn cứ cho rằng việc áp dụng các biện pháp ngăn chặn khác không hiệu quả.\r\nCơ quan, người có thẩm quyền tiến hành tố tụng phải thường xuyên theo dõi, rà soát, kiểm tra việc tạm giữ, tạm giam đối với người chưa thành niên bị tạm giữ, tạm giam; nếu phát hiện không còn căn cứ hoặc không còn cần thiết tạm giữ, tạm giam thì phải kịp thời ra quyết định hủy bỏ, thay thế bằng biện pháp ngăn chặn khác.",
+        "Điều 15. Hạn chế tối đa việc áp dụng biện pháp ngăn chặn, biện pháp cưỡng chế",
+        ""
+      ],
+      "so_hieu": "59/2024/QH15",
+      "clause_type": "khoan",
+      "content": "2. Chỉ áp dụng biện pháp tạm giữ, tạm giam đối với người chưa thành niên khi có căn cứ cho rằng việc áp dụng các biện pháp ngăn chặn khác không hiệu quả.\r\nCơ quan, người có thẩm quyền tiến hành tố tụng phải thường xuyên theo dõi, rà soát, kiểm tra việc tạm giữ, tạm giam đối với người chưa thành niên bị tạm giữ, tạm giam; nếu phát hiện không còn căn cứ hoặc không còn cần thiết tạm giữ, tạm giam thì phải kịp thời ra quyết định hủy bỏ, thay thế bằng biện pháp ngăn chặn khác.",
+      "parent_content": "Điều 15. Hạn chế tối đa việc áp dụng biện pháp ngăn chặn, biện pháp cưỡng chế",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "104/2016/QH14",
+        "khoan",
+        "3. Trường hợp Ủy ban nhân dân cấp xã không thể xác định được tính chính xác của thông tin do mình nắm giữ thì chậm nhất là 05 ngày làm việc kể từ ngày phát hiện hoặc nhận được đề nghị của người yêu cầu cung cấp thông tin, Ủy ban nhân dân cấp xã phải đề nghị cơ quan tạo ra thông tin xem xét. Chậm nhất là 15 ngày kể từ ngày nhận được đề nghị, cơ quan tạo ra thông tin phải xác định tính chính xác của thông tin và trả lời cho Ủy ban nhân dân cấp xã; nếu thông tin đã cung cấp không chính xác thì phải gửi kèm theo thông tin chính xác.\r\nChậm nhất là 03 ngày làm việc kể từ ngày nhận được trả lời, Ủy ban nhân dân cấp xã phải đính chính lại thông tin hoặc thông báo cho người yêu cầu cung cấp thông tin biết.",
+        "Điều 32. Xử lý thông tin cung cấp theo yêu cầu không chính xác",
+        ""
+      ],
+      "so_hieu": "104/2016/QH14",
+      "clause_type": "khoan",
+      "content": "3. Trường hợp Ủy ban nhân dân cấp xã không thể xác định được tính chính xác của thông tin do mình nắm giữ thì chậm nhất là 05 ngày làm việc kể từ ngày phát hiện hoặc nhận được đề nghị của người yêu cầu cung cấp thông tin, Ủy ban nhân dân cấp xã phải đề nghị cơ quan tạo ra thông tin xem xét. Chậm nhất là 15 ngày kể từ ngày nhận được đề nghị, cơ quan tạo ra thông tin phải xác định tính chính xác của thông tin và trả lời cho Ủy ban nhân dân cấp xã; nếu thông tin đã cung cấp không chính xác thì phải gửi kèm theo thông tin chính xác.\r\nChậm nhất là 03 ngày làm việc kể từ ngày nhận được trả lời, Ủy ban nhân dân cấp xã phải đính chính lại thông tin hoặc thông báo cho người yêu cầu cung cấp thông tin biết.",
+      "parent_content": "Điều 32. Xử lý thông tin cung cấp theo yêu cầu không chính xác",
+      "grandparent_content": "",
+      "ground_truth": [],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": []
+    }
+  ]
+}

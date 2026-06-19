@@ -1,0 +1,256 @@
+[
+  {
+    "sample_type": "vanban_level_clause",
+    "description": "Ví dụ trích xuất quan hệ cấp Văn bản (thường chứa các căn cứ ban hành và sửa đổi/thay thế ở phần đầu văn bản)",
+    "input": {
+      "clause_metadata": {
+        "so_hieu": "06/2017/QĐ-UBND",
+        "title": "Quyết định quy chế Bảo vệ bí mật nhà nước Điện Biên",
+        "document_type": "Quyết định",
+        "clause_type": "vanban"
+      },
+      "parameters_passed_to_extractor": {
+        "clause": {
+          "com_type": "vanban",
+          "com_key": "eval_1001",
+          "com_title": "QUYẾT ĐỊNH\r\nBAN HÀNH QUY CHẾ BẢO VỆ BÍ MẬT NHÀ NƯỚC TRÊN ĐỊA BÀN TỈNH ĐIỆN BIÊN\r\nỦY BAN NHÂN DÂN TỈNH ĐIỆN BIÊN\r\nCăn cứ Luật Tổ chức chính quyền địa phương ngày 19 tháng 6 năm 2015;\r\nCăn cứ Luật Ban hành văn bản quy phạm pháp luật ngày 22 tháng 6 năm 2015;\r\nCăn cứ Pháp lệnh Bảo vệ bí mật nhà nước ngày 28 tháng 12 năm 2000;\r\nCăn cứ Nghị định số 33/2002/NĐ-CP ngày 28 tháng 3 năm 2002 của Chính phủ quy định chi tiết thi hành Pháp lệnh Bảo vệ bí mật nhà nước; Thông tư số 33/2015/TT-BCA ngày 20 tháng 7 năm 2015 của Bộ Công an hướng dẫn thực hiện một số điều của Nghị định 33/2002/NĐ-CP của Chính phủ quy định chi tiết thi hành Pháp lệnh Bảo vệ bí mật nhà nước;\r\nTheo đề nghị của Giám đốc Công an tỉnh.\r\nQUYẾT ĐỊNH:"
+        },
+        "data_hierarchy": [
+          {
+            "com_type": "vanban",
+            "com_key": "eval_1001",
+            "com_title": "QUYẾT ĐỊNH\r\nBAN HÀNH QUY CHẾ BẢO VỆ BÍ MẬT NHÀ NƯỚC TRÊN ĐỊA BÀN TỈNH ĐIỆN BIÊN\r\nỦY BAN NHÂN DÂN TỈNH ĐIỆN BIÊN\r\nCăn cứ Luật Tổ chức chính quyền địa phương ngày 19 tháng 6 năm 2015;\r\nCăn cứ Luật Ban hành văn bản quy phạm pháp luật ngày 22 tháng 6 năm 2015;\r\nCăn cứ Pháp lệnh Bảo vệ bí mật nhà nước ngày 28 tháng 12 năm 2000;\r\nCăn cứ Nghị định số 33/2002/NĐ-CP ngày 28 tháng 3 năm 2002 của Chính phủ quy định chi tiết thi hành Pháp lệnh Bảo vệ bí mật nhà nước; Thông tư số 33/2015/TT-BCA ngày 20 tháng 7 năm 2015 của Bộ Công an hướng dẫn thực hiện một số điều của Nghị định 33/2002/NĐ-CP của Chính phủ quy định chi tiết thi hành Pháp lệnh Bảo vệ bí mật nhà nước;\r\nTheo đề nghị của Giám đốc Công an tỉnh.\r\nQUYẾT ĐỊNH:"
+          }
+        ],
+        "child_to_parent": {}
+      }
+    },
+    "raw_extractor_output": [
+      {
+        "clause_type": "vanban",
+        "clause_key": "eval_1001",
+        "relations": [
+          {
+            "relation": "can_cu",
+            "tail": [
+              {
+                "luat": {
+                  "information": "Luật Tổ chức chính quyền địa phương ngày 19 tháng 6 năm 2015",
+                  "position_start": 7,
+                  "position_end": 67,
+                  "_raw_position_start": 120,
+                  "_raw_position_end": 179
+                }
+              },
+              {
+                "luat": {
+                  "information": "Luật Ban hành văn bản quy phạm pháp luật ngày 22 tháng 6 năm 2015",
+                  "position_start": 76,
+                  "position_end": 141,
+                  "_raw_position_start": 190,
+                  "_raw_position_end": 254
+                }
+              },
+              {
+                "phaplenh": {
+                  "information": "Pháp lệnh Bảo vệ bí mật nhà nước ngày 28 tháng 12 năm 2000",
+                  "position_start": 150,
+                  "position_end": 208,
+                  "_raw_position_start": 265,
+                  "_raw_position_end": 322
+                }
+              },
+              {
+                "nghidinh": {
+                  "information": "Nghị định số 33/2002/NĐ-CP ngày 28 tháng 3 năm 2002",
+                  "position_start": 217,
+                  "position_end": 268,
+                  "_raw_position_start": 333,
+                  "_raw_position_end": 383
+                }
+              },
+              {
+                "thongtu": {
+                  "information": "Thông tư số 33/2015/TT-BCA ngày 20 tháng 7 năm 2015",
+                  "position_start": 344,
+                  "position_end": 395,
+                  "_raw_position_start": 460,
+                  "_raw_position_end": 510
+                }
+              },
+              {
+                "nghidinh": {
+                  "information": "Nghị định 33/2002/NĐ-CP",
+                  "position_start": 447,
+                  "position_end": 470,
+                  "_raw_position_start": 563,
+                  "_raw_position_end": 585
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "flat_evaluation_predictions": [
+      {
+        "reference": "Luật Tổ chức chính quyền địa phương ngày 19 tháng 6 năm 2015",
+        "relation": "can_cu"
+      },
+      {
+        "reference": "Luật Ban hành văn bản quy phạm pháp luật ngày 22 tháng 6 năm 2015",
+        "relation": "can_cu"
+      },
+      {
+        "reference": "Pháp lệnh Bảo vệ bí mật nhà nước ngày 28 tháng 12 năm 2000",
+        "relation": "can_cu"
+      },
+      {
+        "reference": "Nghị định số 33/2002/NĐ-CP ngày 28 tháng 3 năm 2002",
+        "relation": "can_cu"
+      },
+      {
+        "reference": "Thông tư số 33/2015/TT-BCA ngày 20 tháng 7 năm 2015",
+        "relation": "can_cu"
+      },
+      {
+        "reference": "Nghị định 33/2002/NĐ-CP",
+        "relation": "can_cu"
+      }
+    ],
+    "ground_truth_from_csv": [
+      {
+        "reference": "Luật Tổ chức chính quyền địa phương ngày 19 tháng 6 năm 2015",
+        "relation": "can_cu"
+      },
+      {
+        "reference": "Luật Ban hành văn bản quy phạm pháp luật ngày 22 tháng 6 năm 2015",
+        "relation": "can_cu"
+      },
+      {
+        "reference": "Pháp lệnh Bảo vệ bí mật nhà nước ngày 28 tháng 12 năm 2000",
+        "relation": "can_cu"
+      },
+      {
+        "reference": "Nghị định số 33/2002/NĐ-CP ngày 28 tháng 3 năm 2002",
+        "relation": "can_cu"
+      },
+      {
+        "reference": "Thông tư số 33/2015/TT-BCA ngày 20 tháng 7 năm 2015",
+        "relation": "can_cu"
+      }
+    ]
+  },
+  {
+    "sample_type": "khoan_level_clause",
+    "description": "Ví dụ trích xuất quan hệ cấp khoan (sử dụng ngữ cảnh parent/grandparent để tham chiếu ngược dòng)",
+    "input": {
+      "clause_metadata": {
+        "so_hieu": "01/2026/QH15",
+        "title": "Luật Tiếp cận thông tin",
+        "document_type": "Luật",
+        "clause_type": "khoan"
+      },
+      "parameters_passed_to_extractor": {
+        "clause": {
+          "com_type": "khoan",
+          "com_key": "eval_2002",
+          "com_title": "2. Luật Tiếp cận thông tin số 104/2016/QH13 hết hiệu lực từ ngày Luật này có hiệu lực thi hành, trừ quy định tại khoản 4 Điều 31 của Luật này."
+        },
+        "data_hierarchy": [
+          {
+            "com_type": "dieu",
+            "com_key": "eval_2002_parent",
+            "com_title": "Điều 30. Hiệu lực thi hành"
+          },
+          {
+            "com_type": "khoan",
+            "com_key": "eval_2002",
+            "com_title": "2. Luật Tiếp cận thông tin số 104/2016/QH13 hết hiệu lực từ ngày Luật này có hiệu lực thi hành, trừ quy định tại khoản 4 Điều 31 của Luật này."
+          }
+        ],
+        "child_to_parent": {
+          "eval_2002": "eval_2002_parent"
+        }
+      }
+    },
+    "raw_extractor_output": [
+      {
+        "clause_type": "khoan",
+        "clause_key": "eval_2002",
+        "relations": [
+          {
+            "relation": "thay_the",
+            "tail": [
+              {
+                "khoan": {
+                  "information": "khoản 4",
+                  "position_start": 113,
+                  "position_end": 120,
+                  "_raw_position_start": 113,
+                  "_raw_position_end": 119
+                },
+                "dieu": {
+                  "information": "Điều 31",
+                  "position_start": 121,
+                  "position_end": 128,
+                  "_raw_position_start": 121,
+                  "_raw_position_end": 127
+                },
+                "luat": {
+                  "information": "Luật Tiếp cận thông tin số 104/2016/QH13",
+                  "position_start": 3,
+                  "position_end": 43,
+                  "_raw_position_start": 3,
+                  "_raw_position_end": 42
+                }
+              }
+            ]
+          },
+          {
+            "relation": "dan_chieu",
+            "tail": [
+              {
+                "khoan": {
+                  "information": "khoản 4",
+                  "position_start": 113,
+                  "position_end": 141
+                },
+                "dieu": {
+                  "information": "Điều 31",
+                  "position_start": 113,
+                  "position_end": 141
+                },
+                "luat": {
+                  "information": "Luật 01/2026/QH15",
+                  "position_start": 113,
+                  "position_end": 141
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "flat_evaluation_predictions": [
+      {
+        "reference": "khoản 4 Điều 31 Luật Tiếp cận thông tin số 104/2016/QH13",
+        "relation": "thay_the"
+      },
+      {
+        "reference": "khoản 4 Điều 31 Luật 01/2026/QH15",
+        "relation": "dan_chieu"
+      }
+    ],
+    "ground_truth_from_csv": [
+      {
+        "reference": "Luật Tiếp cận thông tin số 104/2016/QH13",
+        "relation": "thay_the"
+      },
+      {
+        "reference": "khoản 4 Điều 31 Luật 01/2026/QH16",
+        "relation": "dan_chieu"
+      }
+    ]
+  }
+]

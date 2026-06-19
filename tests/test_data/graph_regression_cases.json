@@ -1,0 +1,1189 @@
+{
+  "metadata": {
+    "source": "docs/graph_bug_handoff.xlsx",
+    "created_at": "2026-04-24",
+    "purpose": "Golden regression data for legal graph extraction, resolver, and build risks.",
+    "note": "All EC-01..EC-30 cases are executable with mocked regression fixtures. Real-data integration still requires environment-specific ID lists and database credentials."
+  },
+  "coverage_matrix": [
+    {
+      "id": "EC-01",
+      "priority": "P0",
+      "layer": "unit",
+      "status": "active",
+      "title": "điểm d và điểm đ không được trộn",
+      "executable_case_ids": [
+        "EC-01-d-va-d-stroke-khong-duoc-tron"
+      ]
+    },
+    {
+      "id": "EC-02",
+      "priority": "P0",
+      "layer": "unit",
+      "status": "active",
+      "title": "điểm d1 không được cắt thành điểm d",
+      "executable_case_ids": [
+        "EC-02-d1-khong-bi-cat-thanh-d"
+      ]
+    },
+    {
+      "id": "EC-03",
+      "priority": "P0",
+      "layer": "unit",
+      "status": "active",
+      "title": "range điểm d đến điểm e phải có điểm đ",
+      "executable_case_ids": [
+        "EC-03-range-d-den-e-phai-co-d-stroke"
+      ]
+    },
+    {
+      "id": "EC-04",
+      "priority": "P0",
+      "layer": "resolver",
+      "status": "active",
+      "title": "so_hieu exact suffix phải thắng wildcard prefix",
+      "executable_case_ids": [
+        "EC-04-exact-so-hieu-phai-thang-wildcard",
+        "EC-04-ambiguous-cung-prefix-phai-reject"
+      ]
+    },
+    {
+      "id": "EC-05",
+      "priority": "P0",
+      "layer": "resolver",
+      "status": "active",
+      "title": "cùng số khác loại/cơ quan không được resolve nhầm",
+      "executable_case_ids": [
+        "EC-05-cung-so-khac-loai-qdtg-khong-duoc-lay-ubnd"
+      ]
+    },
+    {
+      "id": "EC-06",
+      "priority": "P0",
+      "layer": "resolver",
+      "status": "active",
+      "title": "cùng số khác địa phương phải match đúng tỉnh/cơ quan",
+      "executable_case_ids": [
+        "EC-06-cung-so-khac-dia-phuong-phai-match-dung-co-quan"
+      ]
+    },
+    {
+      "id": "EC-07",
+      "priority": "P0",
+      "layer": "golden",
+      "status": "active",
+      "title": "bãi bỏ toàn bộ danh sách nhiều dòng phải lấy đủ target",
+      "executable_case_ids": [
+        "EC-07-bai-bo-danh-sach-nhieu-dong"
+      ]
+    },
+    {
+      "id": "EC-08",
+      "priority": "P0",
+      "layer": "golden",
+      "status": "active",
+      "title": "hủy bỏ A và B phải lấy đủ A/B",
+      "executable_case_ids": [
+        "EC-08-huy-bo-a-va-b-phai-lay-du-target"
+      ]
+    },
+    {
+      "id": "EC-09",
+      "priority": "P0",
+      "layer": "unit",
+      "status": "active",
+      "title": "bãi bỏ cụm từ là SĐBS",
+      "executable_case_ids": [
+        "EC-09-bai-bo-cum-tu-la-sdbs"
+      ]
+    },
+    {
+      "id": "EC-10",
+      "priority": "P0",
+      "layer": "unit",
+      "status": "active",
+      "title": "thay thế cụm từ là SĐBS",
+      "executable_case_ids": [
+        "EC-10-thay-the-cum-tu-la-sdbs"
+      ]
+    },
+    {
+      "id": "EC-11",
+      "priority": "P0",
+      "layer": "unit",
+      "status": "active",
+      "title": "thay thế một số cụm từ là SĐBS",
+      "executable_case_ids": [
+        "EC-11-thay-the-mot-so-cum-tu-la-sdbs"
+      ]
+    },
+    {
+      "id": "EC-12",
+      "priority": "P1",
+      "layer": "unit",
+      "status": "active",
+      "title": "hết hiệu lực kể từ ngày Luật này có hiệu lực là thay_the",
+      "executable_case_ids": [
+        "EC-12-het-hieu-luc-theo-luat-nay-la-thay-the"
+      ]
+    },
+    {
+      "id": "EC-13",
+      "priority": "P1",
+      "layer": "unit",
+      "status": "active",
+      "title": "hết hiệu lực theo ngày cụ thể là bai_bo/status",
+      "executable_case_ids": [
+        "EC-13-het-hieu-luc-ngay-cu-the-la-bai-bo"
+      ]
+    },
+    {
+      "id": "EC-14",
+      "priority": "P1",
+      "layer": "unit",
+      "status": "active",
+      "title": "ngưng hiệu lực toàn bộ phải nhận diện",
+      "executable_case_ids": [
+        "EC-14-ngung-hieu-luc-toan-bo"
+      ]
+    },
+    {
+      "id": "EC-15",
+      "priority": "P1",
+      "layer": "unit",
+      "status": "active",
+      "title": "đình chỉ trong mô tả không phải relation",
+      "executable_case_ids": [
+        "EC-15-dinh-chi-mo-ta-khong-phai-quan-he"
+      ]
+    },
+    {
+      "id": "EC-16",
+      "priority": "P0",
+      "layer": "unit",
+      "status": "active",
+      "title": "quy định chi tiết ưu tiên hơn hướng dẫn thi hành",
+      "executable_case_ids": [
+        "EC-16-quy-dinh-chi-tiet-va-huong-dan-thi-hanh"
+      ]
+    },
+    {
+      "id": "EC-17",
+      "priority": "P0",
+      "layer": "golden",
+      "status": "active",
+      "title": "Lý do bãi bỏ không được tạo bai_bo",
+      "executable_case_ids": [
+        "EC-17-ly-do-bai-bo-khong-tao-bai-bo"
+      ]
+    },
+    {
+      "id": "EC-18",
+      "priority": "P0",
+      "layer": "golden",
+      "status": "active",
+      "title": "title lồng tên luật không được lấy thừa target",
+      "executable_case_ids": [
+        "EC-18-title-long-ten-luat-khong-lay-thua-target"
+      ]
+    },
+    {
+      "id": "EC-19",
+      "priority": "P1",
+      "layer": "resolver",
+      "status": "active",
+      "title": "dẫn chiếu theo tên luật lấy bản mới nhất hợp lệ",
+      "executable_case_ids": [
+        "EC-19-dan-chieu-ten-luat-lay-ban-moi-nhat-hop-le"
+      ]
+    },
+    {
+      "id": "EC-20",
+      "priority": "P1",
+      "layer": "resolver",
+      "status": "active",
+      "title": "dẫn chiếu có năm rõ không auto lấy bản mới nhất",
+      "executable_case_ids": [
+        "EC-20-dan-chieu-co-nam-ro-khong-auto-moi-nhat"
+      ]
+    },
+    {
+      "id": "EC-21",
+      "priority": "P1",
+      "layer": "unit",
+      "status": "active",
+      "title": "Điều này/khoản này/điểm này resolve đúng self-reference",
+      "executable_case_ids": [
+        "EC-21-dieu-khoan-diem-nay"
+      ]
+    },
+    {
+      "id": "EC-22",
+      "priority": "P1",
+      "layer": "unit",
+      "status": "active",
+      "title": "range điểm a đến g trong Điều này expand đủ",
+      "executable_case_ids": [
+        "EC-22-range-a-den-g-dieu-nay"
+      ]
+    },
+    {
+      "id": "EC-23",
+      "priority": "P1",
+      "layer": "integration",
+      "status": "active",
+      "title": "UI lấy relation từ cls_graph và bổ sung TVPL",
+      "executable_case_ids": [
+        "EC-23-inferred-relation-keeps-clause-detail",
+        "EC-23-ui-primary-cls-graph-supplement-tvpl"
+      ]
+    },
+    {
+      "id": "EC-24",
+      "priority": "P1",
+      "layer": "integration",
+      "status": "active",
+      "title": "rebuild phải clear dữ liệu graph cũ",
+      "executable_case_ids": [
+        "EC-24-clear-before-build-phai-xoa-node-cu"
+      ]
+    },
+    {
+      "id": "EC-25",
+      "priority": "P2",
+      "layer": "integration",
+      "status": "active",
+      "title": "document thiếu full text/cls_parsing không được crash",
+      "executable_case_ids": [
+        "EC-25-missing-cls-parsing-skip-no-crash"
+      ]
+    },
+    {
+      "id": "EC-26",
+      "priority": "P2",
+      "layer": "integration",
+      "status": "active",
+      "title": "LLM fallback không overwrite rule-based tốt",
+      "executable_case_ids": [
+        "EC-26-llm-fallback-khong-overwrite-rule-based"
+      ]
+    },
+    {
+      "id": "EC-27",
+      "priority": "P1",
+      "layer": "golden",
+      "status": "active",
+      "title": "VBHN/hợp nhất tạo relation hop_nhat theo benchmark",
+      "executable_case_ids": [
+        "EC-27-vbhn-option-b-tao-hop-nhat"
+      ]
+    },
+    {
+      "id": "EC-28",
+      "priority": "P1",
+      "layer": "unit",
+      "status": "active",
+      "title": "đính chính một số nội dung của văn bản",
+      "executable_case_ids": [
+        "EC-28-dinh-chinh-mot-so-noi-dung"
+      ]
+    },
+    {
+      "id": "EC-29",
+      "priority": "P1",
+      "layer": "unit",
+      "status": "active",
+      "title": "kéo dài thời hạn áp dụng",
+      "executable_case_ids": [
+        "EC-29-keo-dai-thoi-han-ap-dung"
+      ]
+    },
+    {
+      "id": "EC-30",
+      "priority": "P1",
+      "layer": "resolver",
+      "status": "active",
+      "title": "reference không số, title gần giống phải reject nếu ambiguous",
+      "executable_case_ids": [
+        "EC-30-title-only-fuzzy-ambiguous-phai-reject"
+      ]
+    }
+  ],
+  "reference_component_cases": [
+    {
+      "id": "EC-01-d-va-d-stroke-khong-duoc-tron",
+      "status": "active",
+      "priority": "P0",
+      "content": "Sửa đổi điểm d, điểm đ, điểm e khoản 1 Điều 10 của Luật số 13/2017/QH14.",
+      "expected_references": [
+        {
+          "diem": "điểm d",
+          "khoan": "khoản 1",
+          "dieu": "Điều 10",
+          "luat": "Luật số 13/2017/QH14"
+        },
+        {
+          "diem": "điểm đ",
+          "khoan": "khoản 1",
+          "dieu": "Điều 10",
+          "luat": "Luật số 13/2017/QH14"
+        },
+        {
+          "diem": "điểm e",
+          "khoan": "khoản 1",
+          "dieu": "Điều 10",
+          "luat": "Luật số 13/2017/QH14"
+        }
+      ],
+      "negative_references": [
+        {
+          "diem": "điểm d",
+          "khoan": "khoản 1",
+          "dieu": "Điều 10",
+          "luat": "Luật số 13/2017/QH14",
+          "reason": "Không được dùng điểm d để thay cho điểm đ."
+        }
+      ]
+    },
+    {
+      "id": "EC-02-d1-khong-bi-cat-thanh-d",
+      "status": "active",
+      "priority": "P0",
+      "content": "Sửa đổi điểm d1 khoản 1 Điều 10 của Luật số 13/2017/QH14.",
+      "expected_references": [
+        {
+          "diem": "điểm d1",
+          "khoan": "khoản 1",
+          "dieu": "Điều 10",
+          "luat": "Luật số 13/2017/QH14"
+        }
+      ],
+      "negative_references": [
+        {
+          "diem": "điểm d",
+          "khoan": "khoản 1",
+          "dieu": "Điều 10",
+          "luat": "Luật số 13/2017/QH14",
+          "reason": "điểm d1 không được bị cắt còn điểm d."
+        }
+      ]
+    }
+  ],
+  "internal_reference_cases": [
+    {
+      "id": "EC-03-range-d-den-e-phai-co-d-stroke",
+      "status": "active",
+      "priority": "P0",
+      "clause_key": "khoan_1_dieu_10",
+      "cls_document_type": "Luật",
+      "cls_so_hieu": "13/2017/QH14",
+      "clauses": [
+        {
+          "com_key": "dieu_10",
+          "com_type": "dieu"
+        },
+        {
+          "com_key": "khoan_1_dieu_10",
+          "com_type": "khoan"
+        }
+      ],
+      "child_to_parent": {
+        "khoan_1_dieu_10": "dieu_10"
+      },
+      "content": "Các quyền quy định tại từ điểm d đến điểm e khoản 1 Điều này được áp dụng tương ứng.",
+      "expected_diem_sequence": [
+        "điểm d",
+        "điểm đ",
+        "điểm e"
+      ]
+    },
+    {
+      "id": "EC-21-dieu-khoan-diem-nay",
+      "status": "active",
+      "priority": "P1",
+      "clause_key": "diem_a_khoan_1_dieu_5",
+      "cls_document_type": "Luật",
+      "cls_so_hieu": "13/2017/QH14",
+      "clauses": [
+        {
+          "com_key": "dieu_5",
+          "com_type": "dieu"
+        },
+        {
+          "com_key": "khoan_1_dieu_5",
+          "com_type": "khoan"
+        },
+        {
+          "com_key": "diem_a_khoan_1_dieu_5",
+          "com_type": "diem"
+        }
+      ],
+      "child_to_parent": {
+        "khoan_1_dieu_5": "dieu_5",
+        "diem_a_khoan_1_dieu_5": "khoan_1_dieu_5"
+      },
+      "content": "Quyền này được thực hiện theo điểm này, khoản này và Điều này.",
+      "expected_reference_signatures": [
+        {
+          "diem": "điểm a",
+          "khoan": "khoản 1",
+          "dieu": "Điều 5",
+          "luat": "Luật 13/2017/QH14"
+        },
+        {
+          "khoan": "khoản 1",
+          "dieu": "Điều 5",
+          "luat": "Luật 13/2017/QH14"
+        },
+        {
+          "dieu": "Điều 5",
+          "luat": "Luật 13/2017/QH14"
+        }
+      ]
+    },
+    {
+      "id": "EC-22-range-a-den-g-dieu-nay",
+      "status": "active",
+      "priority": "P1",
+      "clause_key": "khoan_2_dieu_22",
+      "cls_document_type": "Luật",
+      "cls_so_hieu": "59/2024/QH15",
+      "clauses": [
+        {
+          "com_key": "dieu_22",
+          "com_type": "dieu"
+        },
+        {
+          "com_key": "khoan_2_dieu_22",
+          "com_type": "khoan"
+        }
+      ],
+      "child_to_parent": {
+        "khoan_2_dieu_22": "dieu_22"
+      },
+      "content": "Các quyền quy định tại các điểm từ điểm a đến điểm g khoản 1 Điều này.",
+      "expected_diem_sequence": [
+        "điểm a",
+        "điểm b",
+        "điểm c",
+        "điểm d",
+        "điểm đ",
+        "điểm e",
+        "điểm g"
+      ]
+    }
+  ],
+  "relation_type_cases": [
+    {
+      "id": "EC-09-bai-bo-cum-tu-la-sdbs",
+      "status": "active",
+      "priority": "P0",
+      "content": "Bãi bỏ cụm từ “an toàn thông tin mạng” tại khoản 3 Điều 19 của Luật số 19/2023/QH15.",
+      "reference_text": "Luật số 19/2023/QH15",
+      "reference_key": "luat",
+      "expected_relation": "sua_doi_bo_sung",
+      "forbidden_relations": [
+        "bai_bo",
+        "thay_the"
+      ]
+    },
+    {
+      "id": "EC-10-thay-the-cum-tu-la-sdbs",
+      "status": "active",
+      "priority": "P0",
+      "content": "Thay thế cụm từ “an toàn thông tin” tại điểm b khoản 2 Điều 36 của Luật số 33/2024/QH15 bằng cụm từ “an ninh mạng”.",
+      "reference_text": "Luật số 33/2024/QH15",
+      "reference_key": "luat",
+      "expected_relation": "sua_doi_bo_sung",
+      "forbidden_relations": [
+        "thay_the"
+      ]
+    },
+    {
+      "id": "EC-11-thay-the-mot-so-cum-tu-la-sdbs",
+      "status": "active",
+      "priority": "P0",
+      "content": "Thay thế một số cụm từ của Luật Phí và lệ phí số 97/2015/QH13.",
+      "reference_text": "Luật Phí và lệ phí số 97/2015/QH13",
+      "reference_key": "luat",
+      "expected_relation": "sua_doi_bo_sung",
+      "forbidden_relations": [
+        "thay_the"
+      ]
+    },
+    {
+      "id": "EC-12-het-hieu-luc-theo-luat-nay-la-thay-the",
+      "status": "active",
+      "priority": "P1",
+      "content": "Luật Quản lý thuế số 38/2019/QH14 hết hiệu lực kể từ ngày Luật này có hiệu lực thi hành.",
+      "reference_text": "Luật Quản lý thuế số 38/2019/QH14",
+      "reference_key": "luat",
+      "expected_relation": "thay_the",
+      "forbidden_relations": [
+        "bai_bo"
+      ]
+    },
+    {
+      "id": "EC-13-het-hieu-luc-ngay-cu-the-la-bai-bo",
+      "status": "active",
+      "priority": "P1",
+      "content": "Nghị định số 69/2010/NĐ-CP hết hiệu lực kể từ ngày 01 tháng 01 năm 2026.",
+      "reference_text": "Nghị định số 69/2010/NĐ-CP",
+      "reference_key": "nghidinh",
+      "expected_relation": "bai_bo",
+      "forbidden_relations": [
+        "thay_the"
+      ]
+    },
+    {
+      "id": "EC-14-ngung-hieu-luc-toan-bo",
+      "status": "active",
+      "priority": "P1",
+      "content": "Ngưng hiệu lực toàn bộ Thông tư số 24/2019/TT-BGTVT.",
+      "reference_text": "Thông tư số 24/2019/TT-BGTVT",
+      "reference_key": "thongtu",
+      "expected_relation": "ngung_hieu_luc",
+      "forbidden_relations": [
+        "dinh_chi"
+      ]
+    },
+    {
+      "id": "EC-15-dinh-chi-mo-ta-khong-phai-quan-he",
+      "status": "active",
+      "priority": "P1",
+      "content": "Việc đình chỉ công tác được thực hiện theo quy định của Luật Cán bộ, công chức.",
+      "reference_text": "Luật Cán bộ, công chức",
+      "reference_key": "luat",
+      "expected_relation": "dan_chieu",
+      "forbidden_relations": [
+        "dinh_chi"
+      ]
+    },
+    {
+      "id": "EC-16-quy-dinh-chi-tiet-va-huong-dan-thi-hanh",
+      "status": "active",
+      "priority": "P0",
+      "content": "Thông tư này quy định chi tiết và hướng dẫn thi hành một số điều của Luật Xuất bản.",
+      "reference_text": "Luật Xuất bản",
+      "reference_key": "luat",
+      "expected_relation": "quy_dinh_chi_tiet",
+      "forbidden_relations": [
+        "huong_dan"
+      ]
+    },
+    {
+      "id": "EC-28-dinh-chinh-mot-so-noi-dung",
+      "status": "active",
+      "priority": "P1",
+      "content": "Đính chính một số nội dung của Thông tư số 01/2020/TT-BTTTT.",
+      "reference_text": "Thông tư số 01/2020/TT-BTTTT",
+      "reference_key": "thongtu",
+      "expected_relation": "dinh_chinh",
+      "forbidden_relations": []
+    },
+    {
+      "id": "EC-29-keo-dai-thoi-han-ap-dung",
+      "status": "active",
+      "priority": "P1",
+      "content": "Tiếp tục kéo dài thời hạn áp dụng Nghị quyết số 13/2020/NQ-HĐND đến hết năm học 2021-2022.",
+      "reference_text": "Nghị quyết số 13/2020/NQ-HĐND",
+      "reference_key": "nghiquyet",
+      "expected_relation": "keo_dai_hieu_luc",
+      "forbidden_relations": []
+    }
+  ],
+  "es_resolver_cases": [
+    {
+      "id": "EC-04-exact-so-hieu-phai-thang-wildcard",
+      "status": "active",
+      "priority": "P0",
+      "query": {
+        "so_hieu": "1234/HN-VN",
+        "loai_van_ban": "Công văn",
+        "co_quan_ban_hanh": "",
+        "ngay_ban_hanh": null,
+        "thang_ban_hanh": null,
+        "nam_ban_hanh": null,
+        "cls_nam_ban_hanh": 2025
+      },
+      "hits": [
+        {
+          "_score": 15.0,
+          "_source": {
+            "ID": 200,
+            "so_hieu": "1234/HN-VP",
+            "loai_van_ban": "Công văn",
+            "ngay_ban_hanh": "2025-02-01T00:00:00Z",
+            "tieu_de": "Sai suffix nhưng cùng prefix"
+          }
+        },
+        {
+          "_score": 14.0,
+          "_source": {
+            "ID": 100,
+            "so_hieu": "1234/HN-VN",
+            "loai_van_ban": "Công văn",
+            "ngay_ban_hanh": "2025-01-01T00:00:00Z",
+            "tieu_de": "Đúng suffix"
+          }
+        }
+      ],
+      "expected_id": 100,
+      "negative_ids": [
+        200
+      ]
+    },
+    {
+      "id": "EC-04-ambiguous-cung-prefix-phai-reject",
+      "status": "active",
+      "priority": "P0",
+      "query": {
+        "so_hieu": "1234/HN-VN",
+        "loai_van_ban": "Công văn",
+        "co_quan_ban_hanh": "",
+        "ngay_ban_hanh": null,
+        "thang_ban_hanh": null,
+        "nam_ban_hanh": null,
+        "cls_nam_ban_hanh": 2025
+      },
+      "hits": [
+        {
+          "_score": 10.0,
+          "_source": {
+            "ID": 201,
+            "so_hieu": "1234/HN-VP",
+            "loai_van_ban": "Công văn",
+            "ngay_ban_hanh": "2025-02-01T00:00:00Z",
+            "tieu_de": "Sai suffix"
+          }
+        },
+        {
+          "_score": 9.95,
+          "_source": {
+            "ID": 100,
+            "so_hieu": "1234/HN-VN",
+            "loai_van_ban": "Công văn",
+            "ngay_ban_hanh": "2025-01-01T00:00:00Z",
+            "tieu_de": "Đúng suffix nhưng score gần"
+          }
+        }
+      ],
+      "expected_id": null,
+      "negative_ids": [
+        201,
+        100
+      ]
+    },
+    {
+      "id": "EC-05-cung-so-khac-loai-qdtg-khong-duoc-lay-ubnd",
+      "status": "active",
+      "priority": "P0",
+      "query": {
+        "so_hieu": "45/QĐ-TTg",
+        "loai_van_ban": "Quyết định",
+        "co_quan_ban_hanh": "Thủ tướng Chính phủ",
+        "ngay_ban_hanh": null,
+        "thang_ban_hanh": null,
+        "nam_ban_hanh": null,
+        "cls_nam_ban_hanh": 2025
+      },
+      "hits": [
+        {
+          "_score": 11.0,
+          "_source": {
+            "ID": 301,
+            "so_hieu": "45/QĐ-UBND",
+            "loai_van_ban": "Quyết định",
+            "ngay_ban_hanh": "2025-02-01T00:00:00Z",
+            "tieu_de": "Sai cơ quan"
+          }
+        },
+        {
+          "_score": 10.5,
+          "_source": {
+            "ID": 300,
+            "so_hieu": "45/QĐ-TTg",
+            "loai_van_ban": "Quyết định",
+            "ngay_ban_hanh": "2025-01-01T00:00:00Z",
+            "tieu_de": "Đúng cơ quan"
+          }
+        }
+      ],
+      "expected_id": 300,
+      "negative_ids": [
+        301
+      ]
+    },
+    {
+      "id": "EC-06-cung-so-khac-dia-phuong-phai-match-dung-co-quan",
+      "status": "active",
+      "priority": "P0",
+      "query": {
+        "so_hieu": "1234/QĐ-UBND",
+        "loai_van_ban": "Quyết định",
+        "co_quan_ban_hanh": "Ủy ban nhân dân thành phố Hà Nội",
+        "ngay_ban_hanh": null,
+        "thang_ban_hanh": null,
+        "nam_ban_hanh": null,
+        "cls_nam_ban_hanh": 2025
+      },
+      "hits": [
+        {
+          "_score": 12.0,
+          "_source": {
+            "ID": 401,
+            "so_hieu": "1234/QĐ-UBND",
+            "loai_van_ban": "Quyết định",
+            "co_quan_ban_hanh": "Ủy ban nhân dân Thành phố Hồ Chí Minh",
+            "ngay_ban_hanh": "2025-03-01T00:00:00Z",
+            "tieu_de": "Sai địa phương nhưng cùng số hiệu"
+          }
+        },
+        {
+          "_score": 11.5,
+          "_source": {
+            "ID": 400,
+            "so_hieu": "1234/QĐ-UBND",
+            "loai_van_ban": "Quyết định",
+            "co_quan_ban_hanh": "Ủy ban nhân dân thành phố Hà Nội",
+            "ngay_ban_hanh": "2025-02-01T00:00:00Z",
+            "tieu_de": "Đúng địa phương"
+          }
+        }
+      ],
+      "expected_id": 400,
+      "negative_ids": [
+        401
+      ]
+    },
+    {
+      "id": "EC-06-day-du-so-hieu-khong-duoc-fallback-sang-so-hieu-khac",
+      "status": "active",
+      "priority": "P0",
+      "query": {
+        "so_hieu": "18/2018/NQ-HĐND",
+        "loai_van_ban": "Nghị quyết",
+        "co_quan_ban_hanh": "Hội đồng nhân dân tỉnh Bến Tre",
+        "ngay_ban_hanh": 7,
+        "thang_ban_hanh": 12,
+        "nam_ban_hanh": 2018,
+        "cls_nam_ban_hanh": 2025
+      },
+      "hits": [
+        {
+          "_score": 11.0,
+          "_source": {
+            "ID": 1282018,
+            "so_hieu": "128/2018/NQ-HĐND",
+            "loai_van_ban": "Nghị quyết",
+            "co_quan_ban_hanh": "Hội đồng nhân dân tỉnh Bến Tre",
+            "ngay_ban_hanh": "2018-12-07T00:00:00Z",
+            "tieu_de": "Sai số hiệu nhưng gần giống query"
+          }
+        }
+      ],
+      "expected_id": null,
+      "negative_ids": [
+        1282018
+      ]
+    }
+  ],
+  "law_dataframe_cases": [
+    {
+      "id": "EC-19-dan-chieu-ten-luat-lay-ban-moi-nhat-hop-le",
+      "status": "active",
+      "priority": "P1",
+      "so_hieu": "",
+      "tieu_de": "Luật Thanh tra",
+      "loai_van_ban": "luat",
+      "nam": null,
+      "cls_nam_ban_hanh": 2026,
+      "expected_doc_id": 2025
+    },
+    {
+      "id": "EC-20-dan-chieu-co-nam-ro-khong-auto-moi-nhat",
+      "status": "active",
+      "priority": "P1",
+      "so_hieu": "",
+      "tieu_de": "Luật Thanh tra",
+      "loai_van_ban": "luat",
+      "nam": 2010,
+      "cls_nam_ban_hanh": 2026,
+      "expected_doc_id": 2010
+    }
+  ],
+  "title_only_policy_cases": [
+    {
+      "id": "EC-30-title-only-fuzzy-ambiguous-phai-reject",
+      "status": "active",
+      "priority": "P1",
+      "so_hieu": "",
+      "tieu_de": "Luật Giao thông",
+      "loai_van_ban": "luat",
+      "nam": null,
+      "cls_nam_ban_hanh": 2026,
+      "law_dataframe": [
+        {
+          "doc_id": 501,
+          "so_hieu": "23/2008/QH12",
+          "tieu_de": "Luật Giao thông đường bộ",
+          "loai_van_ban": "luat",
+          "nam_ban_hanh": 2008
+        },
+        {
+          "doc_id": 502,
+          "so_hieu": "36/2024/QH15",
+          "tieu_de": "Luật Trật tự, an toàn giao thông đường bộ",
+          "loai_van_ban": "luat",
+          "nam_ban_hanh": 2024
+        }
+      ],
+      "expected_empty": true,
+      "reason": "Title-only fuzzy/substring match có nhiều ứng viên gần giống phải reject, không chọn theo score/ngày."
+    }
+  ],
+  "relation_extraction_cases": [
+    {
+      "id": "EC-07-bai-bo-danh-sach-nhieu-dong",
+      "status": "active",
+      "priority": "P0",
+      "cls_so_hieu": "99/2025/QH15",
+      "cls_title": "",
+      "cls_document_type": "Luật",
+      "data": [
+        {
+          "com_type": "dieu",
+          "com_key": "dieu_1",
+          "com_title": "Điều 1. Bãi bỏ toàn bộ các văn bản sau:"
+        },
+        {
+          "com_type": "khoan",
+          "com_key": "khoan_1_dieu_1",
+          "com_title": "Nghị định số 10/2020/NĐ-CP ngày 01 tháng 01 năm 2020."
+        },
+        {
+          "com_type": "khoan",
+          "com_key": "khoan_2_dieu_1",
+          "com_title": "Thông tư số 20/2021/TT-BTC ngày 02 tháng 02 năm 2021."
+        }
+      ],
+      "expected_relation_counts": {
+        "bai_bo": 2
+      },
+      "expected_tail_contains": [
+        "Nghị định số 10/2020/NĐ-CP",
+        "Thông tư số 20/2021/TT-BTC"
+      ]
+    },
+    {
+      "id": "EC-08-huy-bo-a-va-b-phai-lay-du-target",
+      "status": "active",
+      "priority": "P0",
+      "cls_so_hieu": "98/2025/QH15",
+      "cls_title": "",
+      "cls_document_type": "Luật",
+      "data": [
+        {
+          "com_type": "dieu",
+          "com_key": "dieu_1",
+          "com_title": "Điều 1. Hủy bỏ Quyết định số 11/2020/QĐ-UBND ngày 01 tháng 01 năm 2020 và Quyết định số 12/2020/QĐ-UBND ngày 02 tháng 01 năm 2020."
+        }
+      ],
+      "expected_relation_counts": {
+        "huy_bo": 2
+      },
+      "expected_tail_contains": [
+        "Quyết định số 11/2020/QĐ-UBND",
+        "Quyết định số 12/2020/QĐ-UBND"
+      ]
+    },
+    {
+      "id": "EC-17-ly-do-bai-bo-khong-tao-bai-bo",
+      "status": "active",
+      "priority": "P0",
+      "cls_so_hieu": "97/2025/QH15",
+      "cls_title": "",
+      "cls_document_type": "Luật",
+      "data": [
+        {
+          "com_type": "dieu",
+          "com_key": "dieu_1",
+          "com_title": "Lý do bãi bỏ Luật Đầu tư công số 39/2019/QH14 là văn bản đã hết hiệu lực trên thực tế."
+        }
+      ],
+      "expected_relation_counts": {},
+      "forbidden_relations": [
+        "bai_bo"
+      ]
+    },
+    {
+      "id": "EC-18-title-long-ten-luat-khong-lay-thua-target",
+      "status": "active",
+      "priority": "P0",
+      "cls_so_hieu": "96/2025/QH15",
+      "cls_title": "Luật sửa đổi, bổ sung một số điều của Luật Thuế giá trị gia tăng và Luật Quản lý thuế",
+      "cls_document_type": "Luật",
+      "law_titles": [
+        "Luật Thuế giá trị gia tăng",
+        "Luật Quản lý thuế"
+      ],
+      "data": [
+        {
+          "com_type": "dieu",
+          "com_key": "dieu_1",
+          "com_title": "Điều 1. Sửa đổi, bổ sung một số điều:"
+        },
+        {
+          "com_type": "khoan",
+          "com_key": "khoan_1_dieu_1",
+          "com_title": "Sửa đổi khoản 1 Điều 4 như sau:"
+        }
+      ],
+      "expected_relation_counts": {},
+      "forbidden_relations": [
+        "sua_doi_bo_sung"
+      ]
+    },
+    {
+      "id": "EC-26-llm-fallback-khong-overwrite-rule-based",
+      "status": "active",
+      "priority": "P2",
+      "cls_so_hieu": "95/2025/QH15",
+      "cls_title": "",
+      "cls_document_type": "Luật",
+      "law_titles": [
+        "Luật Dược"
+      ],
+      "use_llm": true,
+      "data": [
+        {
+          "com_type": "dieu",
+          "com_key": "dieu_1",
+          "com_title": "Điều 1. Sửa đổi, bổ sung Điều 5 của Luật Dược."
+        }
+      ],
+      "llm_targets": [
+        {
+          "relation_type": "huong_dan",
+          "position_start": 0,
+          "position_end": 8,
+          "reference": {
+            "luat": {
+              "information": "Luật Dược",
+              "position_start": 38,
+              "position_end": 46
+            }
+          }
+        }
+      ],
+      "expected_relation_counts": {
+        "sua_doi": 1
+      },
+      "forbidden_relations": [
+        "huong_dan"
+      ]
+    },
+    {
+      "id": "EC-28-thay-the-heading-sau-day-lay-du-target-gian-tiep",
+      "status": "active",
+      "priority": "P0",
+      "cls_so_hieu": "26/2025/NQ-HĐND",
+      "cls_title": "",
+      "cls_document_type": "Nghị quyết",
+      "law_titles": [],
+      "data": [
+        {
+          "com_type": "vanban",
+          "com_key": null,
+          "com_title": "6. Các nội dung quy định về mức thu, chế độ thu, nộp, quản lý và sử dụng phí bình tuyển, công nhận cây mẹ, cây đầu dòng (trừ cây lâm nghiệp, rừng giống) quy định tại các Nghị quyết sau đây hết hiệu lực thi hành kể từ ngày Nghị quyết này có hiệu lực thi hành:\nb) Điểm a khoản 1 Điều 3 Nghị quyết số 06/2023/NQ-HĐND ngày 12 tháng 10 năm 2023 của Hội đồng nhân dân tỉnh Vĩnh Long về Quy định miễn, giảm phí, lệ phí sử dụng dịch vụ công trực tuyến, thanh toán trực tuyến trên địa bàn tỉnh Vĩnh Long.\nd) Khoản 1, khoản 2 Điều 4 Nghị quyết số 17/2024/NQ-HĐND ngày 01 tháng 11 năm 2024 của Hội đồng nhân dân tỉnh Trà Vinh về quy định phí bình tuyển, công nhận cây mẹ, cây đầu dòng, vườn giống cây lâm nghiệp, rừng giống trên địa bàn tỉnh Trà Vinh."
+        }
+      ],
+      "expected_relation_counts": {
+        "thay_the": 3
+      },
+      "expected_tail_contains": [
+        "điểm a",
+        "khoản 1",
+        "khoản 2",
+        "Nghị quyết số 06/2023/NQ-HĐND",
+        "Nghị quyết số 17/2024/NQ-HĐND"
+      ]
+    },
+    {
+      "id": "EC-27-vbhn-option-b-tao-hop-nhat",
+      "status": "active",
+      "priority": "P1",
+      "cls_so_hieu": "01/VBHN-BGDĐT",
+      "cls_title": "Văn bản hợp nhất Nghị định về bồi hoàn học bổng và chi phí đào tạo",
+      "cls_document_type": "Văn bản hợp nhất",
+      "law_titles": [],
+      "data": [
+        {
+          "com_type": "vanban",
+          "com_key": null,
+          "com_title": "NGHỊ ĐỊNH\nQUY ĐỊNH VỀ BỒI HOÀN HỌC BỔNG VÀ CHI PHÍ ĐÀO TẠO\nNghị định số 143/2013/NĐ-CP ngày 24 tháng 10 năm 2013 của Chính phủ quy định về bồi hoàn học bổng và chi phí đào tạo, có hiệu lực kể từ ngày 10 tháng 12 năm 2013, được sửa đổi, bổ sung bởi:\nNghị định số 51/2026/NĐ-CP ngày 02 tháng 02 năm 2026 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 143/2013/NĐ-CP.\nCăn cứ Luật Tổ chức Chính phủ ngày 25 tháng 12 năm 2001;"
+        }
+      ],
+      "expected_relation_counts": {
+        "hop_nhat": 2
+      },
+      "forbidden_relations": [
+        "thay_the",
+        "bai_bo",
+        "sua_doi_bo_sung",
+        "can_cu"
+      ],
+      "expected_tail_contains": [
+        "Nghị định số 143/2013/NĐ-CP",
+        "Nghị định số 51/2026/NĐ-CP"
+      ]
+    }
+  ],
+  "build_graph_cases": [
+    {
+      "id": "EC-24-clear-before-build-phai-xoa-node-cu",
+      "status": "active",
+      "priority": "P1",
+      "ids_to_process": [
+        100,
+        200
+      ],
+      "expected_clear_call": [
+        100,
+        200
+      ]
+    }
+  ],
+  "inferred_relation_cases": [
+    {
+      "id": "EC-23-inferred-relation-keeps-clause-detail",
+      "status": "active",
+      "priority": "P1",
+      "cls_ID": 900,
+      "cls_graph": {
+        "success": [
+          {
+            "source_key": "khoan_1_dieu_10",
+            "source_type": "khoan",
+            "success": [
+              {
+                "relationship": "sua_doi_bo_sung",
+                "target_doc_id": 100,
+                "target_key": "diem_đ_khoan_4_dieu_20"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_inferred_relation": "sua_doi_bo_sung",
+      "expected_original_relation": "sua_doi_bo_sung",
+      "expected_target_doc_id": 100,
+      "expected_id_relations": {
+        "khoan_1_dieu_10#900": [
+          "diem_đ_khoan_4_dieu_20#100"
+        ]
+      }
+    }
+  ],
+  "ui_relation_source_cases": [
+    {
+      "id": "EC-23-ui-primary-cls-graph-supplement-tvpl",
+      "status": "active",
+      "priority": "P0",
+      "description": "UI phải ưu tiên quan hệ từ cls_graph; TVPL chỉ bổ sung metadata hoặc quan hệ chưa có trong cls_graph.",
+      "cls_ID": 901,
+      "cls_graph": {
+        "success": [
+          {
+            "source_key": "dieu_1",
+            "source_type": "dieu",
+            "success": [
+              {
+                "relationship": "quy_dinh_chi_tiet",
+                "target_doc_id": 700,
+                "target_key": "dieu_5"
+              }
+            ]
+          }
+        ]
+      },
+      "tvpl_relations": [
+        {
+          "source": "TVPL",
+          "relationship": "huong_dan",
+          "target_doc_id": 700,
+          "target_key": "dieu_5",
+          "url": "https://thuvienphapluat.vn/van-ban-gia-lap-700.html"
+        },
+        {
+          "source": "TVPL",
+          "relationship": "quy_dinh_chi_tiet",
+          "target_doc_id": 701,
+          "target_key": "dieu_6",
+          "url": "https://thuvienphapluat.vn/van-ban-gia-lap-701.html"
+        }
+      ],
+      "expected_primary_source": "cls_graph",
+      "expected_primary_relation": "quy_dinh_chi_tiet",
+      "expected_primary_target_doc_id": 700,
+      "expected_supplement_sources": [
+        "TVPL"
+      ],
+      "forbidden_primary_relation": "huong_dan"
+    }
+  ],
+  "processor_runtime_cases": [
+    {
+      "id": "EC-25-missing-cls-parsing-skip-no-crash",
+      "status": "active",
+      "priority": "P2",
+      "documents": [
+        {
+          "cls_ID": 2501,
+          "cls_info": {
+            "so_hieu": "01/2025/QH15",
+            "loai_van_ban": "Luật",
+            "ngay_ban_hanh": "2025-01-01"
+          }
+        },
+        {
+          "cls_ID": 2502,
+          "cls_info": {
+            "so_hieu": "02/2025/QH15",
+            "loai_van_ban": "Luật",
+            "ngay_ban_hanh": "2025-01-02"
+          },
+          "cls_parsing": null
+        },
+        {
+          "cls_ID": 2503,
+          "cls_info": {
+            "so_hieu": "03/2025/QH15",
+            "loai_van_ban": "Luật",
+            "ngay_ban_hanh": "2025-01-03"
+          },
+          "cls_parsing": []
+        }
+      ],
+      "expected_result": false,
+      "expected_bulk_buffer_size": 0
+    }
+  ],
+  "runtime_cases": [
+    {
+      "id": "RUNTIME-01-requirements-phai-co-langextract",
+      "status": "active",
+      "priority": "P2",
+      "requirement": "langextract",
+      "reason": "LLM fallback import langextract nhưng requirements.txt hiện chưa khai báo."
+    },
+    {
+      "id": "RUNTIME-02-requirements-phai-co-regex",
+      "status": "active",
+      "priority": "P2",
+      "requirement": "regex",
+      "reason": "TextProcessor import regex."
+    }
+  ],
+  "tracked_not_automated_cases": []
+}

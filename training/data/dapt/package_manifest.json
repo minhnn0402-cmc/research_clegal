@@ -1,0 +1,16 @@
+[
+  {
+    "source": "training\\data\\dapt\\train.jsonl",
+    "destination": "training\\data\\dapt\\train.jsonl.gz",
+    "uncompressed_bytes": 59357257,
+    "compressed_bytes": 7885790,
+    "sha256_uncompressed": "2013a0300626ac9aa190ccb28887dd84f89ae551a341221a37e43229e3c7f308"
+  },
+  {
+    "source": "training\\data\\dapt\\validation.jsonl",
+    "destination": "training\\data\\dapt\\validation.jsonl.gz",
+    "uncompressed_bytes": 2473894,
+    "compressed_bytes": 340324,
+    "sha256_uncompressed": "122c68ae1ab12bea0bdf986b5231bb6a383142c9bc2a4bd606ee74781b8b200f"
+  }
+]

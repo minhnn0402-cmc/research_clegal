@@ -1,0 +1,488 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="Luồng thuật toán" id="algo-flow-v3">
+    <mxGraphModel dx="1434" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2620" pageHeight="3700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="300" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;fillColor=#0d47a1;fontColor=#ffffff;strokeColor=#0d47a1;" value="LUỒNG THUẬT TOÁN: BÓC TÁCH QUAN HỆ PHÁP LÝ &amp; KẾT HỢP TVPL&lt;br&gt;Dự án: cls-sync-data-btp  |  Phase 1: src/extract_relations.py  |  Phase 2: src/build_graph.py  |  v3.1 — 16/06/2026" vertex="1">
+          <mxGeometry height="48" width="2000" x="20" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="2" parent="1" style="rounded=0;fillColor=#EFF7FF;strokeColor=#6c8ebf;opacity=40;" value="" vertex="1">
+          <mxGeometry height="3240" width="960" x="20" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=13;fillColor=#023d8a;fontColor=#ffffff;strokeColor=#023d8a;" value="PHASE 1 — TRÍCH XUẤT MỐI QUAN HỆ&#xa;src/extract_relations.py  ›  RelationsProcessorService  ›  RelationsExtractor  ›  ReferenceResolutionService" vertex="1">
+          <mxGeometry height="50" width="960" x="20" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="50" parent="1" style="rounded=0;fillColor=#F5F0FF;strokeColor=#9673a6;opacity=40;" value="" vertex="1">
+          <mxGeometry height="2530" width="960" x="1060" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="51" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=13;fillColor=#6a0dad;fontColor=#ffffff;strokeColor=#6a0dad;" value="PHASE 2 — XÂY DỰNG ĐỒ THỊ NEO4J&#xa;src/build_graph.py  ›  LegalKnowledgeGraphBuilder  ›  Neo4j  (chạy SAU khi Phase 1 hoàn tất)" vertex="1">
+          <mxGeometry height="50" width="960" x="1060" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="301" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=11;rotation=-90;fillColor=none;strokeColor=none;fontColor=#b45f06;" value="&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;Phase 1 to Phase 2  |  SEQUENTIAL  |  Phase 2 phải chờ Phase 1 hoàn tất&lt;/font&gt;" vertex="1">
+          <mxGeometry height="600" width="50" x="975" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" value="Bắt đầu Phase 1" vertex="1">
+          <mxGeometry height="50" width="200" x="370" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="shape=mxgraph.flowchart.database;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;boundedLbl=1;backgroundOutline=1;size=10;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;Input: doc_ids.json + MongoDB CLS&lt;br&gt;(collection cls_parsing — gzip JSON per document)" vertex="1">
+          <mxGeometry height="75" width="680" x="130" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="BatchProcessor&#xa;Tải docs theo lô (chunks 50k ID). Hỗ trợ checkpoint (chỉ khi --parallel-workers=1)." vertex="1">
+          <mxGeometry height="70" width="680" x="130" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#555555;dashed=1;fontSize=11;verticalAlign=top;fontStyle=2;" value="Per document — ThreadPoolExecutor (N workers song song)" vertex="1">
+          <mxGeometry height="100" width="800" x="80" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Giải nén cls_parsing (gzip → danh sách điều khoản)" vertex="1">
+          <mxGeometry height="60" width="680" x="130" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="HierarchyBuilder — Xây cây phân cấp (chương / mục / phần / điều / khoản / điểm)" vertex="1">
+          <mxGeometry height="60" width="680" x="130" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#555555;dashed=1;fontSize=11;verticalAlign=top;fontStyle=2;" value="Per clause — Nested ThreadPoolExecutor (8–16 workers)" vertex="1">
+          <mxGeometry height="80" width="800" x="80" y="785" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="Là VBHN?&#xa;(Văn bản hợp nhất)" vertex="1">
+          <mxGeometry height="85" width="220" x="360" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" value="_extract_vbhn_relations()&#xa;(logic đặc biệt cho VBHN)" vertex="1">
+          <mxGeometry height="85" width="190" x="750" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="Là &#39;vanban&#39; type?" vertex="1">
+          <mxGeometry height="85" width="220" x="360" y="1045" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" value="Tách phần &#39;Căn cứ&#39;&#xa;extract_can_cu_section()" vertex="1">
+          <mxGeometry height="85" width="190" x="750" y="1045" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="extract_references()&lt;br&gt;Tìm danh sách điều khoản/văn bản là thực thể có thể tồn tại quan hệ với văn bản đang xét" vertex="1">
+          <mxGeometry height="70" width="680" x="130" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="extract_relation_types()  +  DistractorFilter&lt;br&gt;Phát hiện danh sách quan hệ; lọc false-positive bằng DistractorFilter (context-based rules)" vertex="1">
+          <mxGeometry height="70" width="680" x="130" y="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="match_relations()&lt;br&gt;Ghép reference với relation type theo vị trí xuất hiện và phạm vi (scope)" vertex="1">
+          <mxGeometry height="70" width="680" x="130" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="Tìm được relation types?" vertex="1">
+          <mxGeometry height="85" width="220" x="360" y="1520" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" value="LLM Fallback&#xa;LangExtractRelationFallback&#xa;(khi use_llm=True)" vertex="1">
+          <mxGeometry height="85" width="190" x="750" y="1520" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="_resolve_internal_dan_chieu()&#xa;Resolve &#39;Điều này&#39;, &#39;Luật này&#39;, &#39;khoản này&#39; → clause key cụ thể" vertex="1">
+          <mxGeometry height="70" width="680" x="130" y="1655" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="_build_relations()&#xa;Gom nhóm theo relation type, dedup, mở rộng multiple references (khoản 3, 4 và 5)" vertex="1">
+          <mxGeometry height="70" width="680" x="130" y="1765" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Merge: can_cu_relations + generic_relations → clause relation list" vertex="1">
+          <mxGeometry height="60" width="680" x="130" y="1875" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=12;fillColor=#d0e0d0;strokeColor=#82b366;" value="POST-PROCESSING  (src/services/extraction/reference_resolution_service.py)" vertex="1">
+          <mxGeometry height="30" width="800" x="80" y="1975" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="post_process_relations()&#xa;Extract unique doc refs từ tất cả quan hệ, tạo cache key = (doc_type + information)" vertex="1">
+          <mxGeometry height="70" width="680" x="130" y="2045" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="Có trong shared_cache?&#xa;(cross-document thread-safe cache)" vertex="1">
+          <mxGeometry height="85" width="240" x="350" y="2165" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="Xử lý inline&#xa;(không cần ES call)" vertex="1">
+          <mxGeometry height="85" width="190" x="750" y="2165" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Pre-fetch parallel: ThreadPoolExecutor (32 workers)&#xa;Dispatch ES lookups cho từng unique doc chưa có trong cache" vertex="1">
+          <mxGeometry height="70" width="680" x="130" y="2300" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="Loại luật?&#xa;(Luật / Hiến pháp / Bộ luật / Pháp lệnh)" vertex="1">
+          <mxGeometry height="85" width="240" x="350" y="2420" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" value="filter_law_df()&#xa;(in-memory law_dataframe CSV)&#xa;neu khong tim thay:&#xa;_search_law_number_in_es()&#xa;→ _search_law_title_in_es()" vertex="1">
+          <mxGeometry height="115" width="190" x="750" y="2400" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="shape=mxgraph.flowchart.database;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;boundedLbl=1;backgroundOutline=1;size=10;" value="search_reference_in_es()&#xa;ES index: law_documents_t4 (75% token overlap, date filter, doc-type matching)" vertex="1">
+          <mxGeometry height="75" width="680" x="130" y="2560" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Lưu kết quả vào shared_cache (thread-safe Lock)" vertex="1">
+          <mxGeometry height="60" width="680" x="130" y="2675" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="_process_single_reference()&#xa;Lấy doc_id → lọc self-reference (trừ dan_chieu) → tạo clause_key (vd: diem_a_khoan_2_dieu_42)" vertex="1">
+          <mxGeometry height="70" width="680" x="130" y="2775" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Tách kết quả: success_results / failed_results" vertex="1">
+          <mxGeometry height="60" width="680" x="130" y="2885" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" style="shape=mxgraph.flowchart.database;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;boundedLbl=1;backgroundOutline=1;size=10;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Bulk write MongoDB IE&lt;br&gt;cls_graph.success + cls_graph.failed&lt;br&gt;(buffer 500 ops → bulk_write ordered=False)" vertex="1">
+          <mxGeometry height="80" width="680" x="130" y="2985" as="geometry" />
+        </mxCell>
+        <mxCell id="37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="InferredRelationsBuilder - Tạo quan hệ gián tiếp (sau khi xử lý hết tất cả docs)&lt;br&gt;RelationTransformer.transform_cls_graph() → ghi cls_graph.inferred_relations vào MongoDB IE" vertex="1">
+          <mxGeometry height="70" width="680" x="130" y="3105" as="geometry" />
+        </mxCell>
+        <mxCell id="38" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" value="Kết thúc Phase 1" vertex="1">
+          <mxGeometry height="50" width="200" x="370" y="3215" as="geometry" />
+        </mxCell>
+        <mxCell id="52" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" value="Bắt đầu Phase 2&#xa;(SAU khi Phase 1 hoàn tất)" vertex="1">
+          <mxGeometry height="50" width="260" x="1400" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="53" parent="1" style="shape=mxgraph.flowchart.database;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;boundedLbl=1;backgroundOutline=1;size=10;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;Input: MongoDB IE (cls_graph.success, cls_graph.inferred_relations)&lt;br&gt;+ MongoDB CLS (cls_luoc_do)" vertex="1">
+          <mxGeometry height="80" width="700" x="1180" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="54" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="LegalKnowledgeGraphBuilder&#xa;Init connections; chia doc_ids thành chunks, xử lý song song ThreadPoolExecutor" vertex="1">
+          <mxGeometry height="70" width="700" x="1180" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="55" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="[Bước 1] Build Nodes&#xa;neo4j_repository.bulk_upsert_nodes()&#xa;VAN_BAN (ID=cls_ID) + DIEU_KHOAN (ID=component_key#cls_ID)" vertex="1">
+          <mxGeometry height="75" width="700" x="1180" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="56" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="[Bước 2] Build BAO_GOM&#xa;Quan hệ chứa đựng VAN_BAN → DIEU_KHOAN (từ IE cls_graph hierarchy)" vertex="1">
+          <mxGeometry height="65" width="700" x="1180" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="57" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="[Bước 3] Build Status Relationships + bao_gom_sau_bo_sung&lt;br&gt;Từ IE cls_graph.success → Neo4j; loai_quan_he=&#39;truc_tiep&#39;&lt;br&gt;bo_sung: walks DIEU_KHOAN ancestors → MERGE bao_gom_sau_bo_sung (PRESERVED)" vertex="1">
+          <mxGeometry height="80" width="700" x="1180" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="315" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="[Bước 3 POST] Propagate bo_sung → Synthetic Children&lt;br&gt;_propagate_bo_sung_to_synthetic_children()&lt;br&gt;MATCH creator→parent via bo_sung · MATCH parent→child via bao_gom_sau_bo_sung *1..3&lt;br&gt;WHERE child chưa có bo_sung creator → MERGE creator→child :bo_sung" vertex="1">
+          <mxGeometry height="80" width="700" x="1180" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="[Bước 3B] Build Inferred Relationships&lt;br&gt;Từ IE cls_graph.inferred_relations → Neo4j; loai_quan_he=&#39;gian_tiep&#39;" vertex="1">
+          <mxGeometry height="70" width="700" x="1180" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="59" parent="1" style="rounded=1;fillColor=#FFF4E5;strokeColor=#d79b00;strokeWidth=2;opacity=60;" value="" vertex="1">
+          <mxGeometry height="640" width="870" x="1125" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="200" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=12;fillColor=#d79b00;fontColor=#ffffff;strokeColor=#d79b00;" value="TVPL PHASE — Kết hợp quan hệ từ nguồn TVPL" vertex="1">
+          <mxGeometry height="30" width="870" x="1125" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="61" parent="1" style="shape=mxgraph.flowchart.database;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;boundedLbl=1;backgroundOutline=1;size=10;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;Đọc cls_luoc_do từ MongoDB CLS (PROD)&lt;br&gt;24 loại key: van_ban_thay_the, van_ban_bi_dinh_chinh, van_ban_huong_dan..." vertex="1">
+          <mxGeometry height="75" width="580" x="1240" y="1005" as="geometry" />
+        </mxCell>
+        <mxCell id="62" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="source == &#39;tvpl&#39;?" vertex="1">
+          <mxGeometry height="85" width="230" x="1415" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="65" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" value="Xác định chiều quan hệ theo REVERSED_RELATIONS dict&#xa;True = list → current doc (newer→older)  |  False = current → list doc" vertex="1">
+          <mxGeometry height="65" width="700" x="1180" y="1265" as="geometry" />
+        </mxCell>
+        <mxCell id="66" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="Quan hệ cùng loại đã&#xa;tồn tại trong Neo4j?" vertex="1">
+          <mxGeometry height="85" width="250" x="1405" y="1380" as="geometry" />
+        </mxCell>
+        <mxCell id="201" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" value="SKIP&#xa;Algorithm ưu tiên hơn TVPL" vertex="1">
+          <mxGeometry height="85" width="185" x="1795" y="1380" as="geometry" />
+        </mxCell>
+        <mxCell id="67" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;" value="Write TVPL relationship&lt;br&gt;nguon_cap_nhat=&#39;tvpl&#39;" vertex="1">
+          <mxGeometry height="70" width="700" x="1180" y="1515" as="geometry" />
+        </mxCell>
+        <mxCell id="68" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="strict-mode bật?&#xa;(shadow-strict / strict-auto-heal / strict-no-heal)" vertex="1">
+          <mxGeometry height="85" width="270" x="1395" y="1645" as="geometry" />
+        </mxCell>
+        <mxCell id="69" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="GraphRelationshipWriteCoordinator&#xa;• Dedup by (rel_type, head_ID, tail_ID)&#xa;• Partition: writable / blocked (node missing / mismatch)&#xa;• Auto-heal missing nodes nếu strict-auto-heal&#xa;• Ghi audit log: summary.json + detail.ndjson" vertex="1">
+          <mxGeometry height="100" width="700" x="1180" y="1780" as="geometry" />
+        </mxCell>
+        <mxCell id="70" parent="1" style="shape=mxgraph.flowchart.database;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;boundedLbl=1;backgroundOutline=1;size=10;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;Neo4j: bulk_create_*_relationships()&lt;br&gt;apoc.merge.node + apoc.merge.relationship (upsert)" vertex="1">
+          <mxGeometry height="75" width="700" x="1180" y="1920" as="geometry" />
+        </mxCell>
+        <mxCell id="71" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Enrich skeleton nodes&#xa;Điền thuộc tính còn thiếu cho nodes tạo bởi apoc.merge (không có MATCH)" vertex="1">
+          <mxGeometry height="65" width="700" x="1180" y="2035" as="geometry" />
+        </mxCell>
+        <mxCell id="72" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="--with-luoc-do-export?" vertex="1">
+          <mxGeometry height="85" width="240" x="1410" y="2150" as="geometry" />
+        </mxCell>
+        <mxCell id="73" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="Neo4jToLuocDoPreparation.export()&#xa;Neo4j relationships → MongoDB cls_luoc_do" vertex="1">
+          <mxGeometry height="65" width="265" x="1735" y="2160" as="geometry" />
+        </mxCell>
+        <mxCell id="74" parent="1" style="shape=mxgraph.flowchart.database;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;boundedLbl=1;backgroundOutline=1;size=10;fontStyle=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;NEO4J GRAPH OUTPUT&lt;br&gt;• VAN_BAN nodes (ID = cls_ID)&lt;br&gt;• DIEU_KHOAN nodes (ID = component_key#cls_ID)&lt;br&gt;• Quan hệ trực tiếp: loai_quan_he=&#39;truc_tiep&#39;&lt;br&gt;• Quan hệ gián tiếp: loai_quan_he=&#39;gian_tiep&#39;&lt;br&gt;• Quan hệ TVPL: nguon_quan_he=&#39;tvpl&#39;" vertex="1">
+          <mxGeometry height="140" width="700" x="1180" y="2310" as="geometry" />
+        </mxCell>
+        <mxCell id="75" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" value="Kết thúc Phase 2" vertex="1">
+          <mxGeometry height="50" width="240" x="1410" y="2502.5" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="4" style="endArrow=classic;html=1;" target="5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="5" style="endArrow=classic;html=1;" target="6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="6" style="endArrow=classic;html=1;" target="9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="9" style="endArrow=classic;html=1;" target="10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="10" style="endArrow=classic;html=1;" target="13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="13" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;fontColor=#d79b00;" target="14" value="Có">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="14" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;" target="24" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="953" />
+              <mxPoint x="970" y="1905" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="13" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;" target="15" value="Không">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="15" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;fontColor=#d79b00;" target="16" value="Có">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="16" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;" target="17" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="1087" />
+              <mxPoint x="960" y="1215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="15" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;" target="17" value="Không">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="17" style="endArrow=classic;html=1;" target="18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="18" style="endArrow=classic;html=1;" target="19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="19" style="endArrow=classic;html=1;" target="20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="20" style="endArrow=classic;html=1;fontSize=10;fontStyle=1;fontColor=#d79b00;" target="21" value="Không + use_llm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="21" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;" target="22" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="1562" />
+              <mxPoint x="960" y="1690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="20" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;" target="22" value="Có">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="22" style="endArrow=classic;html=1;" target="23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="23" style="endArrow=classic;html=1;" target="24" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="24" style="endArrow=classic;html=1;" target="26" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="26" style="endArrow=classic;html=1;" target="27" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="27" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;fontColor=#82b366;" target="28" value="HIT">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" source="28" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;" target="34" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="2208" />
+              <mxPoint x="970" y="2810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="1" source="27" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;" target="29" value="MISS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" edge="1" parent="1" source="29" style="endArrow=classic;html=1;" target="30" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e26" edge="1" parent="1" source="30" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;fontColor=#82b366;" target="31" value="Có">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e27" edge="1" parent="1" source="31" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;" target="33" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="2457" />
+              <mxPoint x="960" y="2705" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e28" edge="1" parent="1" source="30" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;" target="32" value="Không">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e29" edge="1" parent="1" source="32" style="endArrow=classic;html=1;" target="33" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e30" edge="1" parent="1" source="33" style="endArrow=classic;html=1;" target="34" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e31" edge="1" parent="1" source="34" style="endArrow=classic;html=1;" target="35" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e32" edge="1" parent="1" source="35" style="endArrow=classic;html=1;" target="36" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e33" edge="1" parent="1" source="36" style="endArrow=classic;html=1;" target="37" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e34" edge="1" parent="1" source="37" style="endArrow=classic;html=1;" target="38" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e50" edge="1" parent="1" source="52" style="endArrow=classic;html=1;" target="53" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e51" edge="1" parent="1" source="53" style="endArrow=classic;html=1;" target="54" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e52" edge="1" parent="1" source="54" style="endArrow=classic;html=1;" target="55" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e53" edge="1" parent="1" source="55" style="endArrow=classic;html=1;" target="56" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e54" edge="1" parent="1" source="56" style="endArrow=classic;html=1;" target="57" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e55" edge="1" parent="1" source="57" style="endArrow=classic;html=1;" target="315" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_315_58" edge="1" parent="1" source="315" style="endArrow=classic;html=1;" target="58" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e56" edge="1" parent="1" source="58" style="endArrow=classic;html=1;" target="61" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e57" edge="1" parent="1" source="61" style="endArrow=classic;html=1;" target="62" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e58" edge="1" parent="1" source="62" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;fontColor=#d79b00;" target="65" value="Có">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e59" edge="1" parent="1" source="62" style="endArrow=classic;html=1;fontSize=10;dashed=1;edgeStyle=orthogonalEdgeStyle;" target="68" value="Không (bỏ qua)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1140" y="1172" />
+              <mxPoint x="1140" y="1687" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e63" edge="1" parent="1" source="65" style="endArrow=classic;html=1;" target="66" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e64" edge="1" parent="1" source="66" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;fontColor=#b85450;" target="201" value="Có">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e65" edge="1" parent="1" source="201" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;" target="68" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2010" y="1422" />
+              <mxPoint x="2010" y="1687" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e66" edge="1" parent="1" source="66" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;fontColor=#82b366;" target="67" value="Không">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e67" edge="1" parent="1" source="67" style="endArrow=classic;html=1;" target="68" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e68" edge="1" parent="1" source="68" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;fontColor=#d79b00;" target="69" value="Có">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e69" edge="1" parent="1" source="68" style="endArrow=classic;html=1;fontSize=10;dashed=1;edgeStyle=orthogonalEdgeStyle;" target="70" value="Không (direct write)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2010" y="1700" />
+              <mxPoint x="2010" y="1957" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e70" edge="1" parent="1" source="69" style="endArrow=classic;html=1;" target="70" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e71" edge="1" parent="1" source="70" style="endArrow=classic;html=1;" target="71" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e72" edge="1" parent="1" source="71" style="endArrow=classic;html=1;" target="72" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e73" edge="1" parent="1" source="72" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;fontColor=#82b366;" target="73" value="Có">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e74" edge="1" parent="1" source="73" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="74" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2010" y="2193" />
+              <mxPoint x="2010" y="2380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e75" edge="1" parent="1" source="72" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;" target="74" value="Không">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e76" edge="1" parent="1" source="74" style="endArrow=classic;html=1;" target="75" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e100" edge="1" parent="1" source="36" style="endArrow=classic;html=1;fontSize=11;fontStyle=1;strokeColor=#6c8ebf;strokeWidth=2;dashed=1;edgeStyle=orthogonalEdgeStyle;" target="53" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="3025" />
+              <mxPoint x="1020" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23ysbeV23IqRzbt1sjMq-318" connectable="0" parent="e100" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;Phase 2 đọc output của Phase 1&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2358" y="3" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="302" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#f9a825;fontSize=11;align=left;verticalAlign=top;" value="Các loại quan hệ trực tiếp (loai_quan_he=truc_tiep):&lt;br&gt;sua_doi_bo_sung  |  sua_doi  |  bo_sung  |  thay_the  |  bai_bo  |  huy_bo&lt;br&gt;dinh_chinh  |  dinh_chi  |  huong_dan  |  quy_dinh_chi_tiet&lt;br&gt;dan_chieu  |  can_cu  |  keo_dai_hieu_luc  |  ngung_hieu_luc  |  hop_nhat&lt;br&gt;bao_gom_sau_bo_sung  (structural — PRESERVED by --reset-relations)" vertex="1">
+          <mxGeometry height="110" width="400" x="2040" y="662.5" as="geometry" />
+        </mxCell>
+        <mxCell id="a302" edge="1" parent="1" source="57" style="endArrow=none;dashed=1;html=1;strokeColor=#cccccc;" target="302" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="316" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#f9a825;fontSize=11;align=left;verticalAlign=top;" value="Optimization: Single MongoDB scan&lt;br&gt;build_nodes_and_bao_gom_phase()&lt;br&gt;Bước 1 (Nodes) + Bước 2 (BAO_GOM)&lt;br&gt;trong 1 lần đọc MongoDB khi cả 2 đều active&lt;br&gt;(tránh double scan MongoDB IE)" vertex="1">
+          <mxGeometry height="85" width="380" x="2040" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="a316" edge="1" parent="1" source="55" style="endArrow=none;dashed=1;html=1;strokeColor=#cccccc;" target="316" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="304" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#f9a825;fontSize=11;align=left;verticalAlign=top;" value="Nguyên tắc ưu tiên Algorithm &amp;gt; TVPL:&lt;br&gt;Cypher: OPTIONAL MATCH (head)-[existing]-&amp;gt;(tail)&lt;br&gt;WHERE type(existing) = rel.rel_type&lt;br&gt;→ Chỉ CREATE nếu existing IS NULL." vertex="1">
+          <mxGeometry height="77.5" width="400" x="2050" y="1383.75" as="geometry" />
+        </mxCell>
+        <mxCell id="a304" edge="1" parent="1" source="66" style="endArrow=none;dashed=1;html=1;strokeColor=#cccccc;" target="304" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="305" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#f9a825;fontSize=11;align=left;verticalAlign=top;" value="4 Graph Write Modes:&lt;br&gt;• legacy: ghi trực tiếp, không validate nốt tồn tại&lt;br&gt;• shadow-strict: validate những vẫn ghi tất cả(kể cả lỗi) - vẫn ghi như legacy, chỉ để đánh giá xem strict mode sẽ block bao nhiêu mối quan hệ trước khi thật sự bật strict.&lt;br&gt;• strict-auto-heal: validate; node thiếu → tự tạo từ MongoDB&lt;br&gt;• strict-no-heal: validate; node thiếu → skip + ghi audit&lt;br&gt;Audit output: reports/audit_summary.json + audit_detail.ndjson" vertex="1">
+          <mxGeometry height="120" width="400" x="2070" y="1627.5" as="geometry" />
+        </mxCell>
+        <mxCell id="a305" edge="1" parent="1" source="68" style="endArrow=none;dashed=1;html=1;strokeColor=#cccccc;" target="305" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="317" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#f9a825;fontSize=11;align=left;verticalAlign=top;" value="Bước tuỳ chọn (sau Bước 3B, trước Enrich):&lt;br&gt;• --reconcile-after-build: GraphReconciliationService&lt;br&gt;  So sánh IE ↔ Neo4j, báo cáo missing/extra edges&lt;br&gt;• --delete-orphan-nodes: xóa DIEU_KHOAN không có BAO_GOM&lt;br&gt;  (VAN_BAN bị xóa khỏi scope)&lt;br&gt;• --reset-relations: xóa status/inferred edges của in-scope nodes&lt;br&gt;  TRƯỚC khi build; preserves bao_gom + bao_gom_sau_bo_sung" vertex="1">
+          <mxGeometry height="120" width="420" x="2040" y="1940" as="geometry" />
+        </mxCell>
+        <mxCell id="306" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#f9a825;fontSize=11;align=left;verticalAlign=top;" value="BatchProcessor - Checkpoint:&lt;div&gt;&lt;br&gt;Ghi ID đã xử lý vao logs/checkpoints/ mỗi checkpoint_interval docs để có thể tiếp tục nếu như bị crash chương trình.&lt;br&gt;TẮT tự động khi --parallel-workers &amp;gt; 1 vì CheckpointManager không thread-safe.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="900" x="1080" y="2595" as="geometry" />
+        </mxCell>
+        <mxCell id="307" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#f9a825;fontSize=11;align=left;verticalAlign=top;" value="Thread Safety trong Phase 1:&lt;div&gt;&lt;br&gt;• RelationsExtractor: thread_local =&amp;gt; mỗi worker thread có 1 instance riêng (tránh race condition trên regex state)&lt;br&gt;• _es_cache + _es_cache_lock (Lock): cache kết quả ES lookup cross-document, thread-safe&lt;br&gt;• _lock (RLock): bảo vệ bulk MongoDB write buffer và cập nhật stats&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="900" x="1080" y="2705" as="geometry" />
+        </mxCell>
+        <mxCell id="308" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#f9a825;fontSize=11;align=left;verticalAlign=top;" value="LLM Fallback: Chỉ kích hoạt khi extract_relation_types() trả về rỗng VÀ flag --use-llm=True.&lt;div&gt;&lt;br&gt;ES Cache Strategy: shared_cache la cross-doc (toàn batch, thread-safe Lock) =&amp;gt; tránh lặp ES call cho cùng 1 văn bản được nhiều doc tham chiếu. local_cache là per-doc (không cần lock).&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="900" x="1080" y="2830" as="geometry" />
+        </mxCell>
+        <mxCell id="309" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#f9a825;fontSize=11;align=left;verticalAlign=top;" value="Chiến lược tìm văn bản tham chiếu:&lt;div&gt;&lt;br&gt;• Luật/ Hiến pháp / Bộ luật / =&amp;gt; filter_law_df() trả in-memory CSV — nhanh hơn ES. Nếu không tìm thấy =&amp;gt; _search_law_number_in_es() =&amp;gt; _search_law_title_in_es()&lt;br&gt;• Các loại văn bản khác (Nghị định, Thông tư, Quyết định...) =&amp;gt; search_reference_in_es() trên ES index law_documents_t4 (75% token overlap + date filter + loai_van_ban matching)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="900" x="1080" y="2945" as="geometry" />
+        </mxCell>
+        <mxCell id="310" parent="1" style="rounded=0;fillColor=#f8f9fa;strokeColor=#333333;" value="" vertex="1">
+          <mxGeometry height="310" width="1960" x="20" y="3360" as="geometry" />
+        </mxCell>
+        <mxCell id="311" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontStyle=1;fontSize=13;fillColor=#37474f;fontColor=#ffffff;strokeColor=#37474f;" value="CHÚ THÍCH / LEGEND" vertex="1">
+          <mxGeometry height="34" width="1960" x="20" y="3360" as="geometry" />
+        </mxCell>
+        <mxCell id="312" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=11;" value="&lt;b&gt;Màu sắc / Hình dạng:&lt;/b&gt;&lt;br&gt;&lt;table cellpadding=&quot;5&quot; cellspacing=&quot;3&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background:#d5e8d4;border:2px solid #82b366;width:28px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;Bắt đầu / Kết thúc (Ellipse xanh lá)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background:#dae8fc;border:2px solid #6c8ebf;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;Bước xử lý chính — Process (Rectangle xanh dương)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background:#fff2cc;border:2px solid #d6b656;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;Điểm quyết định — Decision (Diamond vàng)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background:#f8cecc;border:2px solid #b85450;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;Cơ sở dữ liệu MongoDB / Elasticsearch (Cylinder hồng)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background:#e1d5e7;border:2px solid #9673a6;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;Cơ sở dữ liệu Neo4j (Cylinder tím)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background:#ffe6cc;border:2px solid #d79b00;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;Bước xử lý TVPL (highlight cam)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background:#f5f5f5;border:2px dashed #555555;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;Nhóm thực thi song song — Parallel group (Dashed border)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background:#d5e8d4;border:2px solid #82b366;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;Cache hit / law_dataframe (Rectangle xanh lá)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="260" width="580" x="30" y="3400" as="geometry" />
+        </mxCell>
+        <mxCell id="313" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=11;" value="&lt;b&gt;Hướng mũi tên:&lt;/b&gt;&lt;br&gt;→ Solid: luồng xử lý chính&lt;br&gt;⇢ Dashed: luồng phụ (bypass / skip / optional)&lt;br&gt;⇢ Blue dashed (dày): kết nối phụ thuộc dữ liệu liên phase&lt;br&gt;⇢ Gray dashed: liên kết chú thích với bước tương ứng&lt;br&gt;&lt;br&gt;&lt;b&gt;Nhãn trên mũi tên:&lt;/b&gt;&lt;br&gt;• Có / Không: nhánh quyết định&lt;br&gt;• HIT / MISS: trạng thái cache lookup&lt;br&gt;• Bỏ qua: skip bước TVPL không hợp lệ&lt;br&gt;&lt;br&gt;&lt;b&gt;Parallel group (đường viền nét đứt):&lt;/b&gt;&lt;br&gt;Các bước bên trong chạy song song qua ThreadPoolExecutor.&lt;br&gt;Nested parallel: per-clause dùng riêng 8–16 workers.&lt;br&gt;Số workers ngoài = --parallel-workers (default 8)." vertex="1">
+          <mxGeometry height="260" width="420" x="625" y="3400" as="geometry" />
+        </mxCell>
+        <mxCell id="314" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=11;" value="&lt;b&gt;Ràng buộc hệ thống:&lt;/b&gt;&lt;br&gt;• Phase 1 và Phase 2 là &lt;b&gt;SEQUENTIAL&lt;/b&gt; — Phase 2 đọc output MongoDB IE của Phase 1. Không chạy song song.&lt;br&gt;• Checkpoint &lt;b&gt;DISABLED&lt;/b&gt; khi --parallel-workers &gt; 1 (CheckpointManager không thread-safe).&lt;br&gt;• Không khởi tạo DB driver trực tiếp — luôn dùng ConnectionManager với named connections.&lt;br&gt;• Neo4j: execute_read (queries), execute_write (mutations) + exponential backoff on transient errors.&lt;br&gt;• Bulk MongoDB write buffer = 500 ops → flush khi đầy hoặc kết thúc batch.&lt;br&gt;• --reset-relations: xóa status/inferred edges của in-scope nodes (preserves bao_gom + bao_gom_sau_bo_sung).&lt;br&gt;&lt;br&gt;&lt;b&gt;File nguồn chính:&lt;/b&gt;&lt;br&gt;• Phase 1: src/extract_relations.py · src/services/relations_processor_service.py · src/domain/extractors/&lt;br&gt;• Distractor filter: src/domain/extractors/distractor_filter.py&lt;br&gt;• Ref resolution: src/services/extraction/reference_resolution_service.py  (src/utils/post_processing.py = backward-compat shim)&lt;br&gt;• Phase 2: src/build_graph.py · src/app/build_graph_app.py · src/services/neo4j_preparation.py&lt;br&gt;• Target resolver: src/services/graph_target_resolver.py&lt;br&gt;• Reconciliation: src/services/graph_reconciliation_service.py&lt;br&gt;• TVPL: src/services/tvpl_relationship_service.py&lt;br&gt;• Write Coordinator: src/services/graph_relationship_write_coordinator.py" vertex="1">
+          <mxGeometry height="260" width="910" x="1060" y="3400" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,61 @@
+# VS Code settings
+.vscode/
+
+# Git history
+.history
+
+# Debug files
+/debug
+
+# Virtual environments
+.venv/
+.env
+.venv/
+
+# Python cache files
+__pycache__/
+
+# Log files
+logs/
+
+# .github 
+.github/
+
+# .md files
+AGENTS.md
+
+# Other files
+learning/
+data/doc_ids
+data/chunks
+
+evaluation/reports
+.cache
+.pytest_cache
+scratch/
+brain/
+reports/
+training/artifacts/
+training/data/generated/
+training/data/dapt/*
+!training/data/dapt/*.jsonl.gz
+!training/data/dapt/manifest.json
+!training/data/dapt/package_manifest.json
+training/cache/
+
+CLAUDE.md
+.claude/
+
+data/state_store.db
+data/stream_store
+
+.mcp.json
+
+.agents/
+.codex/
+_codex_work/
+
+.codegraph
+vault
+bugs
+data/doc_ids.json

@@ -1,0 +1,19 @@
+# Repository runtime (pandas, PyYAML, Unidecode, ...)
+-r ../requirements.txt
+
+# Phase 1 / Phase 6
+scikit-learn>=1.5,<2
+lightgbm>=4.5,<5
+joblib>=1.4,<2
+
+# Phase 3-5
+torch>=2.4
+transformers>=4.46,<5
+datasets>=3,<5
+accelerate>=1,<2
+sentencepiece>=0.2
+tokenizers>=0.20
+
+# Optional export/benchmark
+onnx>=1.17
+onnxruntime>=1.20

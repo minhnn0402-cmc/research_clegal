@@ -1,0 +1,1775 @@
+[36m[2026-06-15 12:06:47][0m [32m[INFO][0m [34mConfigLoader[0m: ConfigLoader initialized[0m
+[36m[2026-06-15 12:06:47][0m [32m[INFO][0m [34mConfigLoader[0m: loai_van_ban_mapping loaded[0m
+[36m[2026-06-15 12:06:47][0m [32m[INFO][0m [34mConfigLoader[0m: doc_number_patterns_for_regex loaded[0m
+[36m[2026-06-15 12:06:47][0m [32m[INFO][0m [34mConfigLoader[0m: Document and clause types loaded[0m
+[36m[2026-06-15 12:06:47][0m [32m[INFO][0m [34mConfigLoader[0m: Law documents CSV loaded[0m
+[36m[2026-06-15 12:06:47][0m [32m[INFO][0m [34mConfigLoader[0m: Law titles for regexing prepared[0m
+E:\tmp\VKQ\cls-sync-data-btp\.venv\Lib\site-packages\langextract\__init__.py:55: UserWarning: With 'config', schema constraints are still applied via examples. Or pass explicit schema in config.provider_kwargs.
+  return extract_func(*args, **kwargs)
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00]
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A[A
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A[A[A
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A[A[A[A
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m148[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m284[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m541[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m291[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m351[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m587[0m chars, processed=[92m0[0m chars:  [00:00]
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m746[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[A[A[A
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m875[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m587[0m chars, processed=[92m0[0m chars:  [00:04][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m587[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:07:03][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 587 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 587 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m284[0m chars, processed=[92m0[0m chars:  [00:04][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m284[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:07:03][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 284 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 284 chars of content
+E:\tmp\VKQ\cls-sync-data-btp\.venv\Lib\site-packages\langextract\__init__.py:55: UserWarning: With 'config', schema constraints are still applied via examples. Or pass explicit schema in config.provider_kwargs.
+  return extract_func(*args, **kwargs)
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m476[0m chars, processed=[92m0[0m chars:  [00:00]
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m269[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m541[0m chars, processed=[92m0[0m chars:  [00:10][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m541[0m chars, processed=[92m0[0m chars:  [00:10]
+[36m[2026-06-15 12:07:09][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 541 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 541 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m158[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m746[0m chars, processed=[92m0[0m chars:  [00:12][A[A[A[A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m746[0m chars, processed=[92m0[0m chars:  [00:12]
+[36m[2026-06-15 12:07:11][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 746 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 746 chars of content
+
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A[A[A[A
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m333[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m476[0m chars, processed=[92m0[0m chars:  [00:07][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m476[0m chars, processed=[92m0[0m chars:  [00:07]
+[36m[2026-06-15 12:07:12][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 476 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 476 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m875[0m chars, processed=[92m0[0m chars:  [00:13][A[A[A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m875[0m chars, processed=[92m0[0m chars:  [00:13]
+[36m[2026-06-15 12:07:12][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 875 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 875 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m351[0m chars, processed=[92m0[0m chars:  [00:13][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m351[0m chars, processed=[92m0[0m chars:  [00:13]
+[36m[2026-06-15 12:07:12][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 351 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 351 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m269[0m chars, processed=[92m0[0m chars:  [00:08][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m269[0m chars, processed=[92m0[0m chars:  [00:08]
+[36m[2026-06-15 12:07:13][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 2 targets from 269 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 2 targets from 269 chars of content
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m606[0m chars, processed=[92m0[0m chars:  [00:00]
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m500[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m668[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A[A[A
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m224[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[A[A
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m148[0m chars, processed=[92m0[0m chars:  [00:16][A[A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m148[0m chars, processed=[92m0[0m chars:  [00:16]
+[36m[2026-06-15 12:07:15][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 148 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 148 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m668[0m chars, processed=[92m0[0m chars:  [00:02][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m668[0m chars, processed=[92m0[0m chars:  [00:02]
+[36m[2026-06-15 12:07:16][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 668 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 668 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m171[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A[A
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m2,045[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m500[0m chars, processed=[92m0[0m chars:  [00:03][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m500[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:07:16][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 500 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 500 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m363[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m224[0m chars, processed=[92m0[0m chars:  [00:05][A[A[A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m224[0m chars, processed=[92m0[0m chars:  [00:05]
+[36m[2026-06-15 12:07:18][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 224 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 224 chars of content
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A[A[A
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m359[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[A[AWARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m363[0m chars, processed=[92m0[0m chars:  [00:04][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m363[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:07:21][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 363 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 363 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m158[0m chars, processed=[92m0[0m chars:  [00:11][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m158[0m chars, processed=[92m0[0m chars:  [00:11]
+[36m[2026-06-15 12:07:21][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 158 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 158 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m477[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m409[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m291[0m chars, processed=[92m0[0m chars:  [00:27][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m291[0m chars, processed=[92m0[0m chars:  [00:27]
+[36m[2026-06-15 12:07:26][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 291 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 291 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m171[0m chars, processed=[92m0[0m chars:  [00:10][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m171[0m chars, processed=[92m0[0m chars:  [00:10]
+[36m[2026-06-15 12:07:27][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 171 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 171 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m267[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m250[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m477[0m chars, processed=[92m0[0m chars:  [00:06][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m477[0m chars, processed=[92m0[0m chars:  [00:06]
+[36m[2026-06-15 12:07:28][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 477 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 477 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m311[0m chars, processed=[92m0[0m chars:  [00:00][AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m267[0m chars, processed=[92m0[0m chars:  [00:02][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m267[0m chars, processed=[92m0[0m chars:  [00:02]
+[36m[2026-06-15 12:07:30][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 267 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 267 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m406[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m606[0m chars, processed=[92m0[0m chars:  [00:19][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m606[0m chars, processed=[92m0[0m chars:  [00:19]
+[36m[2026-06-15 12:07:33][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 3 targets from 606 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 3 targets from 606 chars of content
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m368[0m chars, processed=[92m0[0m chars:  [00:00]WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m250[0m chars, processed=[92m0[0m chars:  [00:05][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m250[0m chars, processed=[92m0[0m chars:  [00:05]
+[36m[2026-06-15 12:07:33][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 250 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 250 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m660[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m406[0m chars, processed=[92m0[0m chars:  [00:03][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m406[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:07:34][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 406 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 406 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m409[0m chars, processed=[92m0[0m chars:  [00:12][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m409[0m chars, processed=[92m0[0m chars:  [00:12]
+[36m[2026-06-15 12:07:34][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 409 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 409 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m660[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m660[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:07:34][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 660 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 660 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m571[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m749[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m750[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m368[0m chars, processed=[92m0[0m chars:  [00:03][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m368[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:07:36][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 368 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 368 chars of content
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m715[0m chars, processed=[92m0[0m chars:  [00:00]WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m749[0m chars, processed=[92m0[0m chars:  [00:02][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m749[0m chars, processed=[92m0[0m chars:  [00:02]
+[36m[2026-06-15 12:07:37][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 749 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 749 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m500[0m chars, processed=[92m0[0m chars:  [00:00][A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m359[0m chars, processed=[92m0[0m chars:  [00:19][A[A[A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m359[0m chars, processed=[92m0[0m chars:  [00:19]
+[36m[2026-06-15 12:07:38][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 359 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 359 chars of content
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A[A[A
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m521[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m571[0m chars, processed=[92m0[0m chars:  [00:03][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m571[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:07:38][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 571 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 571 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m2,004[0m chars, processed=[92m0[0m chars:  [00:00][A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m715[0m chars, processed=[92m0[0m chars:  [00:05][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m715[0m chars, processed=[92m0[0m chars:  [00:05]
+[36m[2026-06-15 12:07:42][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 715 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 715 chars of content
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m521[0m chars, processed=[92m0[0m chars:  [00:03][A[A[A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m521[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:07:42][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 521 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 521 chars of content
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m311[0m chars, processed=[92m0[0m chars:  [00:00]
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A[A[A
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m368[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m500[0m chars, processed=[92m0[0m chars:  [00:04][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m500[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:07:43][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 500 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 500 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m615[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m615[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m615[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:07:44][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 615 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 615 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,102[0m chars, processed=[92m0[0m chars:  [00:00][A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m368[0m chars, processed=[92m0[0m chars:  [00:01][A[A[A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m368[0m chars, processed=[92m0[0m chars:  [00:01]
+[36m[2026-06-15 12:07:44][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 368 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 368 chars of content
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A[A[A
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m154[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,102[0m chars, processed=[92m0[0m chars:  [00:03][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,102[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:07:47][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 1103 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 1103 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m331[0m chars, processed=[92m0[0m chars:  [00:00][A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m311[0m chars, processed=[92m0[0m chars:  [00:05][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m311[0m chars, processed=[92m0[0m chars:  [00:05]
+[36m[2026-06-15 12:07:48][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 311 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 311 chars of content
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m345[0m chars, processed=[92m0[0m chars:  [00:00]WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m331[0m chars, processed=[92m0[0m chars:  [00:02][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m331[0m chars, processed=[92m0[0m chars:  [00:02]
+[36m[2026-06-15 12:07:50][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 331 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 331 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m191[0m chars, processed=[92m0[0m chars:  [00:00][A[A[AWARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m2,004[0m chars, processed=[92m0[0m chars:  [00:12][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m2,004[0m chars, processed=[92m0[0m chars:  [00:12]
+[36m[2026-06-15 12:07:51][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 3 targets from 2006 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 3 targets from 2006 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m191[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m191[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:07:51][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 191 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 191 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m422[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,104[0m chars, processed=[92m0[0m chars:  [00:00][A[A[AWARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m311[0m chars, processed=[92m0[0m chars:  [00:23][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m311[0m chars, processed=[92m0[0m chars:  [00:23]
+[36m[2026-06-15 12:07:52][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 311 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 311 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m432[0m chars, processed=[92m0[0m chars:  [00:00][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m345[0m chars, processed=[92m0[0m chars:  [00:05][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m345[0m chars, processed=[92m0[0m chars:  [00:05]
+[36m[2026-06-15 12:07:54][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 345 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 345 chars of content
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m475[0m chars, processed=[92m0[0m chars:  [00:00]
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m422[0m chars, processed=[92m0[0m chars:  [00:04][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m422[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:07:56][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 422 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 422 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m279[0m chars, processed=[92m0[0m chars:  [00:00][A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m475[0m chars, processed=[92m0[0m chars:  [00:02][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m475[0m chars, processed=[92m0[0m chars:  [00:02]
+[36m[2026-06-15 12:07:57][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 475 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 475 chars of content
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m236[0m chars, processed=[92m0[0m chars:  [00:00]WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m750[0m chars, processed=[92m0[0m chars:  [00:22][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m750[0m chars, processed=[92m0[0m chars:  [00:22]
+[36m[2026-06-15 12:07:58][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 750 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 750 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m416[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m154[0m chars, processed=[92m0[0m chars:  [00:14][A[A[A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m154[0m chars, processed=[92m0[0m chars:  [00:14]
+[36m[2026-06-15 12:07:59][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 154 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 154 chars of content
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A[A[A
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m302[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m236[0m chars, processed=[92m0[0m chars:  [00:02][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m236[0m chars, processed=[92m0[0m chars:  [00:02]
+[36m[2026-06-15 12:08:00][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 236 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 236 chars of content
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m302[0m chars, processed=[92m0[0m chars:  [00:01][A[A[A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m302[0m chars, processed=[92m0[0m chars:  [00:01]
+[36m[2026-06-15 12:08:01][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 302 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 302 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m416[0m chars, processed=[92m0[0m chars:  [00:02][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m416[0m chars, processed=[92m0[0m chars:  [00:02]
+[36m[2026-06-15 12:08:01][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 416 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 416 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,104[0m chars, processed=[92m0[0m chars:  [00:10][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,104[0m chars, processed=[92m0[0m chars:  [00:10]
+[36m[2026-06-15 12:08:02][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 1105 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 1105 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m279[0m chars, processed=[92m0[0m chars:  [00:06][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m279[0m chars, processed=[92m0[0m chars:  [00:06]
+[36m[2026-06-15 12:08:02][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 279 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 279 chars of content
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m911[0m chars, processed=[92m0[0m chars:  [00:00]
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m317[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,135[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m289[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A[A[A
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m257[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[A[A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m432[0m chars, processed=[92m0[0m chars:  [00:11][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m432[0m chars, processed=[92m0[0m chars:  [00:11]
+[36m[2026-06-15 12:08:04][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 3 targets from 432 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 3 targets from 432 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m533[0m chars, processed=[92m0[0m chars:  [00:00][AWARNING:absl:Skipping chunk: parse error: The extractions must be a sequence (list) of mappings.
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m911[0m chars, processed=[92m0[0m chars:  [00:02][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m911[0m chars, processed=[92m0[0m chars:  [00:02]
+[36m[2026-06-15 12:08:06][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 911 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 911 chars of content
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m349[0m chars, processed=[92m0[0m chars:  [00:00]WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,135[0m chars, processed=[92m0[0m chars:  [00:02][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,135[0m chars, processed=[92m0[0m chars:  [00:02]
+[36m[2026-06-15 12:08:06][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 1136 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 1136 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m395[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m395[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m395[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:08:07][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 395 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 395 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m235[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m349[0m chars, processed=[92m0[0m chars:  [00:01][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m349[0m chars, processed=[92m0[0m chars:  [00:01]
+[36m[2026-06-15 12:08:07][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 349 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 349 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m289[0m chars, processed=[92m0[0m chars:  [00:04][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m289[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:08:08][0m [33m[WARNING][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Skipping invalid relation type: can_c[0m
+WARNING:LegalRelationsEvaluator:[LLM Fallback] Skipping invalid relation type: can_c
+[36m[2026-06-15 12:08:08][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 289 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 289 chars of content
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m528[0m chars, processed=[92m0[0m chars:  [00:00]
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m537[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m317[0m chars, processed=[92m0[0m chars:  [00:05][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m317[0m chars, processed=[92m0[0m chars:  [00:05]
+[36m[2026-06-15 12:08:09][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 317 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 317 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m303[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m533[0m chars, processed=[92m0[0m chars:  [00:06][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m533[0m chars, processed=[92m0[0m chars:  [00:06]
+[36m[2026-06-15 12:08:11][0m [33m[WARNING][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Skipping invalid relation type: can_cu[0m
+WARNING:LegalRelationsEvaluator:[LLM Fallback] Skipping invalid relation type: can_cu
+[36m[2026-06-15 12:08:11][0m [33m[WARNING][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Skipping invalid relation type: can_cu[0m
+WARNING:LegalRelationsEvaluator:[LLM Fallback] Skipping invalid relation type: can_cu
+[36m[2026-06-15 12:08:11][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 533 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 533 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m285[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m235[0m chars, processed=[92m0[0m chars:  [00:03][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m235[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:08:11][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 235 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 235 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m378[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m285[0m chars, processed=[92m0[0m chars:  [00:01][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m285[0m chars, processed=[92m0[0m chars:  [00:01]
+[36m[2026-06-15 12:08:12][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 285 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 285 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m537[0m chars, processed=[92m0[0m chars:  [00:04][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m537[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:08:12][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 537 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 537 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m303[0m chars, processed=[92m0[0m chars:  [00:04][A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m303[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:08:13][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 303 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 303 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m378[0m chars, processed=[92m0[0m chars:  [00:01][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m378[0m chars, processed=[92m0[0m chars:  [00:01]
+[36m[2026-06-15 12:08:13][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 378 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 378 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m172[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m257[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m257[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m623[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m257[0m chars, processed=[92m0[0m chars:  [00:03][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m257[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:08:18][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 257 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 257 chars of content
+WARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m172[0m chars, processed=[92m0[0m chars:  [00:03][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m172[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:08:18][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 172 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 172 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m174[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m275[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m174[0m chars, processed=[92m0[0m chars:  [00:01][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m174[0m chars, processed=[92m0[0m chars:  [00:01]
+[36m[2026-06-15 12:08:20][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 174 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 174 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m206[0m chars, processed=[92m0[0m chars:  [00:00][AWARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m623[0m chars, processed=[92m0[0m chars:  [00:06][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m623[0m chars, processed=[92m0[0m chars:  [00:06]
+[36m[2026-06-15 12:08:21][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 623 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 623 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m542[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m206[0m chars, processed=[92m0[0m chars:  [00:01][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m206[0m chars, processed=[92m0[0m chars:  [00:01]
+[36m[2026-06-15 12:08:22][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 206 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 206 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m257[0m chars, processed=[92m0[0m chars:  [00:07][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m257[0m chars, processed=[92m0[0m chars:  [00:07]
+[36m[2026-06-15 12:08:22][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 257 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 257 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m345[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m901[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m345[0m chars, processed=[92m0[0m chars:  [00:00][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m345[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:08:23][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 345 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 345 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m145[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m275[0m chars, processed=[92m0[0m chars:  [00:05][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m275[0m chars, processed=[92m0[0m chars:  [00:05]
+[36m[2026-06-15 12:08:24][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 275 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 275 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m627[0m chars, processed=[92m0[0m chars:  [00:00][A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m145[0m chars, processed=[92m0[0m chars:  [00:02][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m145[0m chars, processed=[92m0[0m chars:  [00:02]
+[36m[2026-06-15 12:08:26][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 145 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 145 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m220[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m542[0m chars, processed=[92m0[0m chars:  [00:08][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m542[0m chars, processed=[92m0[0m chars:  [00:08]
+[36m[2026-06-15 12:08:30][0m [33m[WARNING][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Skipping invalid relation type: can_cu[0m
+WARNING:LegalRelationsEvaluator:[LLM Fallback] Skipping invalid relation type: can_cu
+[36m[2026-06-15 12:08:30][0m [33m[WARNING][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Skipping invalid relation type: can_cu[0m
+WARNING:LegalRelationsEvaluator:[LLM Fallback] Skipping invalid relation type: can_cu
+[36m[2026-06-15 12:08:30][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 542 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 542 chars of content
+WARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m901[0m chars, processed=[92m0[0m chars:  [00:08][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m901[0m chars, processed=[92m0[0m chars:  [00:08]
+[36m[2026-06-15 12:08:30][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 901 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 901 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m756[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m317[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m317[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m317[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:08:32][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 317 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 317 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m225[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m627[0m chars, processed=[92m0[0m chars:  [00:09][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m627[0m chars, processed=[92m0[0m chars:  [00:09]
+[36m[2026-06-15 12:08:33][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 627 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 627 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m327[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m327[0m chars, processed=[92m0[0m chars:  [00:00][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m327[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:08:34][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 327 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 327 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m310[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m225[0m chars, processed=[92m0[0m chars:  [00:03][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m225[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:08:36][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 225 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 225 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m257[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m756[0m chars, processed=[92m0[0m chars:  [00:05][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m756[0m chars, processed=[92m0[0m chars:  [00:05]
+[36m[2026-06-15 12:08:37][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 756 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 756 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m292[0m chars, processed=[92m0[0m chars:  [00:00][A[A[AWARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m220[0m chars, processed=[92m0[0m chars:  [00:11][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m220[0m chars, processed=[92m0[0m chars:  [00:11]
+[36m[2026-06-15 12:08:38][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 220 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 220 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m168[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m310[0m chars, processed=[92m0[0m chars:  [00:03][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m310[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:08:38][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 310 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 310 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m168[0m chars, processed=[92m0[0m chars:  [00:00][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m168[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:08:39][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 168 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 168 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m212[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m774[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m212[0m chars, processed=[92m0[0m chars:  [00:00][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m212[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:08:40][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 212 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 212 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m185[0m chars, processed=[92m0[0m chars:  [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m185[0m chars, processed=[92m0[0m chars:  [00:00][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m185[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:08:41][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 185 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 185 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m257[0m chars, processed=[92m0[0m chars:  [00:04][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m257[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:08:41][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 257 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 257 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m337[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m156[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m337[0m chars, processed=[92m0[0m chars:  [00:00][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m337[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:08:42][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 337 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 337 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m292[0m chars, processed=[92m0[0m chars:  [00:04][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m292[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:08:42][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 292 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 292 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m242[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m156[0m chars, processed=[92m0[0m chars:  [00:01][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m156[0m chars, processed=[92m0[0m chars:  [00:01]
+[36m[2026-06-15 12:08:43][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 156 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 156 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m558[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m381[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m558[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m558[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:08:44][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 558 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 558 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m338[0m chars, processed=[92m0[0m chars:  [00:00][A[A[AWARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m381[0m chars, processed=[92m0[0m chars:  [00:04][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m381[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:08:47][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 381 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 381 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m423[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m242[0m chars, processed=[92m0[0m chars:  [00:07][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m242[0m chars, processed=[92m0[0m chars:  [00:07]
+[36m[2026-06-15 12:08:50][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 242 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 242 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m337[0m chars, processed=[92m0[0m chars:  [00:00][AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m338[0m chars, processed=[92m0[0m chars:  [00:05][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m338[0m chars, processed=[92m0[0m chars:  [00:05]
+[36m[2026-06-15 12:08:50][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 338 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 338 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m546[0m chars, processed=[92m0[0m chars:  [00:00][A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m546[0m chars, processed=[92m0[0m chars:  [00:01][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m546[0m chars, processed=[92m0[0m chars:  [00:01]
+[36m[2026-06-15 12:08:51][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 546 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 546 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m736[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m774[0m chars, processed=[92m0[0m chars:  [00:14][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m774[0m chars, processed=[92m0[0m chars:  [00:14]
+[36m[2026-06-15 12:08:54][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 4 targets from 774 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 4 targets from 774 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m607[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m423[0m chars, processed=[92m0[0m chars:  [00:07][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m423[0m chars, processed=[92m0[0m chars:  [00:07]
+[36m[2026-06-15 12:08:55][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 423 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 423 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m414[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m607[0m chars, processed=[92m0[0m chars:  [00:02][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m607[0m chars, processed=[92m0[0m chars:  [00:02]
+[36m[2026-06-15 12:08:57][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 607 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 607 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m724[0m chars, processed=[92m0[0m chars:  [00:00][A[AWARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m337[0m chars, processed=[92m0[0m chars:  [00:07][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m337[0m chars, processed=[92m0[0m chars:  [00:07]
+[36m[2026-06-15 12:08:57][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 337 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 337 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m222[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m736[0m chars, processed=[92m0[0m chars:  [00:06][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m736[0m chars, processed=[92m0[0m chars:  [00:06]
+[36m[2026-06-15 12:08:58][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 736 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 736 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m434[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m434[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m434[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:08:59][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 434 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 434 chars of content
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m212[0m chars, processed=[92m0[0m chars:  [00:00][A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m724[0m chars, processed=[92m0[0m chars:  [00:03][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m724[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:09:00][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 724 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 724 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,057[0m chars, processed=[92m0[0m chars:  [00:00][A[AWARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m222[0m chars, processed=[92m0[0m chars:  [00:03][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m222[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:09:01][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 222 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 222 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m317[0m chars, processed=[92m0[0m chars:  [00:00][AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m317[0m chars, processed=[92m0[0m chars:  [00:01][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m317[0m chars, processed=[92m0[0m chars:  [00:01]
+[36m[2026-06-15 12:09:03][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 317 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 317 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m419[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m414[0m chars, processed=[92m0[0m chars:  [00:09][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m414[0m chars, processed=[92m0[0m chars:  [00:09]
+[36m[2026-06-15 12:09:05][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 2 targets from 414 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 2 targets from 414 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,057[0m chars, processed=[92m0[0m chars:  [00:04][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,057[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:09:05][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 1058 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 1058 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m395[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m304[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m419[0m chars, processed=[92m0[0m chars:  [00:02][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m419[0m chars, processed=[92m0[0m chars:  [00:02]
+[36m[2026-06-15 12:09:06][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 419 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 419 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m180[0m chars, processed=[92m0[0m chars:  [00:00][AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m304[0m chars, processed=[92m0[0m chars:  [00:03][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m304[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:09:09][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 304 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 304 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m284[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m180[0m chars, processed=[92m0[0m chars:  [00:03][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m180[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:09:09][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 180 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 180 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m681[0m chars, processed=[92m0[0m chars:  [00:00][AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m395[0m chars, processed=[92m0[0m chars:  [00:09][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m395[0m chars, processed=[92m0[0m chars:  [00:09]
+[36m[2026-06-15 12:09:15][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 395 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 395 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m284[0m chars, processed=[92m0[0m chars:  [00:05][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m284[0m chars, processed=[92m0[0m chars:  [00:05]
+[36m[2026-06-15 12:09:15][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 284 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 284 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m274[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m313[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m313[0m chars, processed=[92m0[0m chars:  [00:04][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m313[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:09:20][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 313 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 313 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m536[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m274[0m chars, processed=[92m0[0m chars:  [00:07][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m274[0m chars, processed=[92m0[0m chars:  [00:07]
+[36m[2026-06-15 12:09:24][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 274 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 274 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m583[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m681[0m chars, processed=[92m0[0m chars:  [00:18][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m681[0m chars, processed=[92m0[0m chars:  [00:18]
+[36m[2026-06-15 12:09:29][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 5 targets from 681 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 5 targets from 681 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m488[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m536[0m chars, processed=[92m0[0m chars:  [00:10][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m536[0m chars, processed=[92m0[0m chars:  [00:10]
+[36m[2026-06-15 12:09:31][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 3 targets from 536 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 3 targets from 536 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m2,105[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m583[0m chars, processed=[92m0[0m chars:  [00:08][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m583[0m chars, processed=[92m0[0m chars:  [00:08]
+[36m[2026-06-15 12:09:32][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 583 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 583 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m378[0m chars, processed=[92m0[0m chars:  [00:00][A[AWARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m488[0m chars, processed=[92m0[0m chars:  [00:04][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m488[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:09:33][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 488 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 488 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m373[0m chars, processed=[92m0[0m chars:  [00:00][AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m378[0m chars, processed=[92m0[0m chars:  [00:01][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m378[0m chars, processed=[92m0[0m chars:  [00:01]
+[36m[2026-06-15 12:09:34][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 378 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 378 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m361[0m chars, processed=[92m0[0m chars:  [00:00][A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m2,105[0m chars, processed=[92m0[0m chars:  [00:05][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m2,105[0m chars, processed=[92m0[0m chars:  [00:05]
+[36m[2026-06-15 12:09:36][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 2107 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 2107 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m540[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m373[0m chars, processed=[92m0[0m chars:  [00:03][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m373[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:09:37][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 373 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 373 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m2,158[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m361[0m chars, processed=[92m0[0m chars:  [00:06][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m361[0m chars, processed=[92m0[0m chars:  [00:06]
+[36m[2026-06-15 12:09:40][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 361 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 361 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m540[0m chars, processed=[92m0[0m chars:  [00:04][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m540[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:09:41][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 540 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 540 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m465[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m884[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m884[0m chars, processed=[92m0[0m chars:  [00:03][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m884[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:09:45][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 884 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 884 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m597[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m597[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m597[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:09:46][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 597 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 597 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m511[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m465[0m chars, processed=[92m0[0m chars:  [00:06][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m465[0m chars, processed=[92m0[0m chars:  [00:06]
+[36m[2026-06-15 12:09:48][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 465 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 465 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m273[0m chars, processed=[92m0[0m chars:  [00:00][A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m2,158[0m chars, processed=[92m0[0m chars:  [00:11][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m2,158[0m chars, processed=[92m0[0m chars:  [00:11]
+[36m[2026-06-15 12:09:49][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 5 targets from 2160 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 5 targets from 2160 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m715[0m chars, processed=[92m0[0m chars:  [00:00][AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m273[0m chars, processed=[92m0[0m chars:  [00:04][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m273[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:09:53][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 273 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 273 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m442[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m442[0m chars, processed=[92m0[0m chars:  [00:00][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m442[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:09:54][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 442 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 442 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m715[0m chars, processed=[92m0[0m chars:  [00:04][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m715[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:09:54][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 715 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 715 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m307[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m291[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m307[0m chars, processed=[92m0[0m chars:  [00:03][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m307[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:09:57][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 307 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 307 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m291[0m chars, processed=[92m0[0m chars:  [00:03][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m291[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:09:58][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 291 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 291 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m324[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m324[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m324[0m chars, processed=[92m0[0m chars:  [00:00][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m324[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:09:59][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 324 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 324 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m33[0m chars, processed=[92m0[0m chars:  [00:00][A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m33[0m chars, processed=[92m0[0m chars:  [00:02][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m33[0m chars, processed=[92m0[0m chars:  [00:02]
+[36m[2026-06-15 12:10:02][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 33 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 33 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m33[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m511[0m chars, processed=[92m0[0m chars:  [00:17][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m511[0m chars, processed=[92m0[0m chars:  [00:17]
+[36m[2026-06-15 12:10:04][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 4 targets from 511 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 4 targets from 511 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m873[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m324[0m chars, processed=[92m0[0m chars:  [00:07][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m324[0m chars, processed=[92m0[0m chars:  [00:07]
+[36m[2026-06-15 12:10:05][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 324 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 324 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,440[0m chars, processed=[92m0[0m chars:  [00:00][AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m33[0m chars, processed=[92m0[0m chars:  [00:04][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m33[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:10:06][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 33 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 33 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m451[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m451[0m chars, processed=[92m0[0m chars:  [00:00][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m451[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:10:07][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 451 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 451 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m592[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m873[0m chars, processed=[92m0[0m chars:  [00:05][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m873[0m chars, processed=[92m0[0m chars:  [00:05]
+[36m[2026-06-15 12:10:10][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 2 targets from 873 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 2 targets from 873 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m676[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m592[0m chars, processed=[92m0[0m chars:  [00:07][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m592[0m chars, processed=[92m0[0m chars:  [00:07]
+[36m[2026-06-15 12:10:15][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 592 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 592 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m516[0m chars, processed=[92m0[0m chars:  [00:00][A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m676[0m chars, processed=[92m0[0m chars:  [00:09][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m676[0m chars, processed=[92m0[0m chars:  [00:09]
+[36m[2026-06-15 12:10:20][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 676 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 676 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m423[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m516[0m chars, processed=[92m0[0m chars:  [00:05][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m516[0m chars, processed=[92m0[0m chars:  [00:05]
+[36m[2026-06-15 12:10:21][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 516 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 516 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m625[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m423[0m chars, processed=[92m0[0m chars:  [00:04][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m423[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:10:24][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 423 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 423 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,440[0m chars, processed=[92m0[0m chars:  [00:19][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,440[0m chars, processed=[92m0[0m chars:  [00:19]
+[36m[2026-06-15 12:10:25][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 4 targets from 1442 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 4 targets from 1442 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m380[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m562[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m562[0m chars, processed=[92m0[0m chars:  [00:04][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m562[0m chars, processed=[92m0[0m chars:  [00:04]
+[36m[2026-06-15 12:10:30][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 562 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 562 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m577[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m625[0m chars, processed=[92m0[0m chars:  [00:09][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m625[0m chars, processed=[92m0[0m chars:  [00:09]
+[36m[2026-06-15 12:10:31][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 625 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 625 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m380[0m chars, processed=[92m0[0m chars:  [00:06][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m380[0m chars, processed=[92m0[0m chars:  [00:06]
+[36m[2026-06-15 12:10:31][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 380 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 380 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m205[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m377[0m chars, processed=[92m0[0m chars:  [00:00][A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m377[0m chars, processed=[92m0[0m chars:  [00:00][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m377[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:10:32][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 377 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 377 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m219[0m chars, processed=[92m0[0m chars:  [00:00][A[AWARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m205[0m chars, processed=[92m0[0m chars:  [00:01][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m205[0m chars, processed=[92m0[0m chars:  [00:01]
+[36m[2026-06-15 12:10:33][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 205 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 205 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m577[0m chars, processed=[92m0[0m chars:  [00:03][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m577[0m chars, processed=[92m0[0m chars:  [00:03]
+[36m[2026-06-15 12:10:34][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 577 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 577 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m456[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,465[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m456[0m chars, processed=[92m0[0m chars:  [00:05][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m456[0m chars, processed=[92m0[0m chars:  [00:05]
+[36m[2026-06-15 12:10:39][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 456 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 456 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m508[0m chars, processed=[92m0[0m chars:  [00:00][AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,465[0m chars, processed=[92m0[0m chars:  [00:06][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m1,465[0m chars, processed=[92m0[0m chars:  [00:06]
+[36m[2026-06-15 12:10:41][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 1468 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 1468 chars of content
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A[A[A
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m395[0m chars, processed=[92m0[0m chars:  [00:00][A[A[A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m508[0m chars, processed=[92m0[0m chars:  [00:01][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m508[0m chars, processed=[92m0[0m chars:  [00:01]
+[36m[2026-06-15 12:10:41][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 508 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 508 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m219[0m chars, processed=[92m0[0m chars:  [00:08][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m219[0m chars, processed=[92m0[0m chars:  [00:08]
+[36m[2026-06-15 12:10:41][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 219 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 219 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m759[0m chars, processed=[92m0[0m chars:  [00:00][A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m885[0m chars, processed=[92m0[0m chars:  [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m885[0m chars, processed=[92m0[0m chars:  [00:00][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m885[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:10:43][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 885 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 885 chars of content
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m [00:00][A[A
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m418[0m chars, processed=[92m0[0m chars:  [00:00][A[AWARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m418[0m chars, processed=[92m0[0m chars:  [00:00][A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m418[0m chars, processed=[92m0[0m chars:  [00:00]
+[36m[2026-06-15 12:10:44][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 418 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 418 chars of content
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m759[0m chars, processed=[92m0[0m chars:  [00:10][A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m759[0m chars, processed=[92m0[0m chars:  [00:10]
+[36m[2026-06-15 12:10:53][0m [33m[WARNING][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Skipping invalid relation type: bai-bo[0m
+WARNING:LegalRelationsEvaluator:[LLM Fallback] Skipping invalid relation type: bai-bo
+[36m[2026-06-15 12:10:53][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 2 targets from 759 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 2 targets from 759 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m395[0m chars, processed=[92m0[0m chars:  [00:18][A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m395[0m chars, processed=[92m0[0m chars:  [00:18]
+[36m[2026-06-15 12:10:59][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 395 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 395 chars of content
+WARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m333[0m chars, processed=[92m0[0m chars:  [10:12][A[A[A[A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m333[0m chars, processed=[92m0[0m chars:  [10:12]
+[36m[2026-06-15 12:17:23][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 333 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 333 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+WARNING:absl:Skipping chunk: schema error: Extraction text must be a string, integer, or float.
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m2,045[0m chars, processed=[92m0[0m chars:  [10:50][A[A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m2,045[0m chars, processed=[92m0[0m chars:  [10:50]
+[36m[2026-06-15 12:18:06][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 3 targets from 2047 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 3 targets from 2047 chars of content
+
+
+
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m257[0m chars, processed=[92m0[0m chars:  [10:05][A[A[A[A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m257[0m chars, processed=[92m0[0m chars:  [10:05]
+[36m[2026-06-15 12:18:09][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 1 targets from 257 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 1 targets from 257 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m528[0m chars, processed=[92m0[0m chars:  [10:09][94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m528[0m chars, processed=[92m0[0m chars:  [10:09]
+[36m[2026-06-15 12:18:17][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 528 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 528 chars of content
+WARNING:absl:Skipping chunk: parse error: Content must contain an 'extractions' key.
+
+
+
+[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m212[0m chars, processed=[92m0[0m chars:  [10:05][A[A[A[94m[1mLangExtract[0m: model=[92mcmc-legal-27[0m, current=[92m212[0m chars, processed=[92m0[0m chars:  [10:05]
+[36m[2026-06-15 12:19:05][0m [35m[DEBUG][0m [34mLegalRelationsEvaluator[0m: [LLM Fallback] Extracted 0 targets from 212 chars of content[0m
+DEBUG:LegalRelationsEvaluator:[LLM Fallback] Extracted 0 targets from 212 chars of content
+A2 rule+current-fallback OVERALL: P=0.878 R=0.908 F1=0.892 (TP=1622 FP=226 FN=165)

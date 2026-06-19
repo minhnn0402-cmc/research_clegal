@@ -1,0 +1,131 @@
+{
+  "requested": 3000,
+  "exported": 3000,
+  "complete": true,
+  "output": "C:\\Users\\minhnn\\Documents\\cmcai\\CAI_Legal\\research\\data\\exported_docs.jsonl",
+  "output_bytes": 124268232,
+  "targets": {
+    "Y1/R1": 480,
+    "Y1/R2": 360,
+    "Y1/R3": 180,
+    "Y1/R4": 180,
+    "Y2/R1": 360,
+    "Y2/R2": 270,
+    "Y2/R3": 135,
+    "Y2/R4": 135,
+    "Y3/R1": 240,
+    "Y3/R2": 180,
+    "Y3/R3": 90,
+    "Y3/R4": 90,
+    "Y4/R1": 120,
+    "Y4/R2": 90,
+    "Y4/R3": 45,
+    "Y4/R4": 45
+  },
+  "accepted_by_cell": {
+    "Y1/R1": 480,
+    "Y1/R2": 360,
+    "Y1/R3": 180,
+    "Y1/R4": 43,
+    "Y2/R1": 360,
+    "Y2/R2": 270,
+    "Y2/R3": 135,
+    "Y2/R4": 60,
+    "Y3/R1": 240,
+    "Y3/R2": 180,
+    "Y3/R3": 90,
+    "Y3/R4": 6,
+    "Y4/R1": 120,
+    "Y4/R2": 74,
+    "Y4/R3": 37,
+    "Y4/R4": 29
+  },
+  "year_distribution": {
+    "Y1": 1231,
+    "Y2": 927,
+    "Y3": 572,
+    "Y4": 270
+  },
+  "relation_sampling_distribution": {
+    "R1": 1297,
+    "R2": 931,
+    "R3": 634,
+    "R4": 138
+  },
+  "document_type_distribution": {
+    "Luật": 24,
+    "Quyết định": 1200,
+    "Nghị quyết": 799,
+    "Văn bản hợp nhất": 355,
+    "Nghị định": 160,
+    "Thông tư": 348,
+    "Công văn": 52,
+    "Thông tư liên tịch": 22,
+    "Pháp lệnh": 7,
+    "Bộ luật": 1,
+    "Sắc lệnh": 30,
+    "Chỉ thị": 1,
+    "Hiến pháp": 1
+  },
+  "authority_distribution": {
+    "central": 1696,
+    "local": 1304
+  },
+  "rejections": {
+    "no_supported_clause_text": 3191,
+    "oversized_clause": 24,
+    "document_type_cap": 1718
+  },
+  "attempted_full_documents": 8093,
+  "max_documents_per_type": 1200,
+  "removed_fields": [
+    "raw_text",
+    "cls_html",
+    "cls_luoc_do",
+    "download_links",
+    "com_html",
+    "*_embedding",
+    "com_titles_content",
+    "com_titles_content_embedding"
+  ],
+  "metadata_scan": {
+    "metadata_scanned": 200000
+  },
+  "config": {
+    "database": "vanbanphapluat",
+    "collection": "cls_ver2",
+    "seed": 13,
+    "reserve_multiplier": 5,
+    "scan_limit_per_year": 50000,
+    "allowed_document_types": [
+      "Hiến pháp",
+      "Bộ luật",
+      "Luật",
+      "Pháp lệnh",
+      "Nghị định",
+      "Nghị quyết",
+      "Nghị quyết liên tịch",
+      "Thông tư",
+      "Thông tư liên tịch",
+      "Quyết định",
+      "Chỉ thị",
+      "Công văn",
+      "Công điện",
+      "Lệnh",
+      "Sắc lệnh",
+      "Văn bản hợp nhất"
+    ],
+    "year_weights": {
+      "Y1": 0.4,
+      "Y2": 0.3,
+      "Y3": 0.2,
+      "Y4": 0.1
+    },
+    "relation_weights": {
+      "R1": 0.4,
+      "R2": 0.3,
+      "R3": 0.15,
+      "R4": 0.15
+    }
+  }
+}

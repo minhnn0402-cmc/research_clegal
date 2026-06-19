@@ -1,0 +1,90 @@
+{
+  "input": {
+    "so_hieu": "01/2026/QH15",
+    "title": "Luật Tiếp cận thông tin",
+    "clause_type": "khoan",
+    "content": "2. Luật Tiếp cận thông tin số 104/2016/QH13 hết hiệu lực từ ngày Luật này có hiệu lực thi hành, trừ quy định tại khoản 4 Điều 31 của Luật này.",
+    "parent_content": "Điều 30. Hiệu lực thi hành",
+    "grandparent_content": ""
+  },
+  "output": {
+    "raw_extractor_output": [
+      {
+        "clause_type": "khoan",
+        "clause_key": "eval_2002",
+        "relations": [
+          {
+            "relation": "thay_the",
+            "tail": [
+              {
+                "khoan": {
+                  "information": "khoản 4",
+                  "position_start": 113,
+                  "position_end": 120,
+                  "_raw_position_start": 113,
+                  "_raw_position_end": 119
+                },
+                "dieu": {
+                  "information": "Điều 31",
+                  "position_start": 121,
+                  "position_end": 128,
+                  "_raw_position_start": 121,
+                  "_raw_position_end": 127
+                },
+                "luat": {
+                  "information": "Luật Tiếp cận thông tin số 104/2016/QH13",
+                  "position_start": 3,
+                  "position_end": 43,
+                  "_raw_position_start": 3,
+                  "_raw_position_end": 42
+                }
+              }
+            ]
+          },
+          {
+            "relation": "dan_chieu",
+            "tail": [
+              {
+                "khoan": {
+                  "information": "khoản 4",
+                  "position_start": 113,
+                  "position_end": 141
+                },
+                "dieu": {
+                  "information": "Điều 31",
+                  "position_start": 113,
+                  "position_end": 141
+                },
+                "luat": {
+                  "information": "Luật 01/2026/QH15",
+                  "position_start": 113,
+                  "position_end": 141
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "flat_evaluation_predictions": [
+      {
+        "reference": "khoản 4 Điều 31 Luật Tiếp cận thông tin số 104/2016/QH13",
+        "relation": "thay_the"
+      },
+      {
+        "reference": "khoản 4 Điều 31 Luật 01/2026/QH15",
+        "relation": "dan_chieu"
+      }
+    ],
+    "ground_truth": [
+      {
+        "reference": "Luật Tiếp cận thông tin số 104/2016/QH13",
+        "relation": "thay_the"
+      },
+      {
+        "reference": "khoản 4 Điều 31 Luật 01/2026/QH16",
+        "relation": "dan_chieu"
+      }
+    ]
+  }
+}

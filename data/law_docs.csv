@@ -1,0 +1,733 @@
+STT,doc_id,so_hieu,loai_van_ban,tieu_de,nam_ban_hanh
+0,1105,không số,luat,luật cải cách ruộng đất,1953
+1,888,không số,luat,luật bầu cử đại biểu quốc hội,1959
+2,887,không số,luat,luật hôn nhân và gia đình,1959
+3,886,không số,luat,luật nghĩa vụ quân sự,1960
+4,884,không số,luat,luật tổ chức hội đồng chính phủ,1960
+5,883,không số,luat,luật tổ chức quốc hội,1960
+6,882,không số,luat,luật tổ chức tòa án nhân dân,1960
+7,881,không số,luat,luật tổ chức viện kiểm sát nhân dân,1960
+8,1533,không số,luat,luật bầu cử đại biểu quốc hội,1980
+9,3871,không số,luat,luật nghĩa vụ quân sự,1981
+10,3483,không số,luat,luật bầu cử đại biểu hội đồng nhân dân,1983
+11,3637,không số,luat,luật tổ chức hội đồng nhân dân và uỷ ban nhân dân,1983
+12,2798,không số,luat,luật hôn nhân và gia đình,1986
+13,2566,không số,luat,luật đất đai,1987
+14,2565,không số,luat,luật đầu tư nước ngoài tại việt nam,1987
+15,2564,không số,luat,luật thuế xuất khẩu thuế nhập khẩu hàng mậu dịch,1987
+16,2558,không số,luat,luật quốc tịch việt nam,1988
+17,2325,không số,luat,"luật sửa đổi, bổ sung luật tổ chức tòa án nhân dân",1988
+18,2324,không số,luat,"luật sửa đổi, bổ sung luật tổ chức viện kiểm sát nhân dân",1988
+19,1817,không số,luat,luật công ty,1990
+20,1816,không số,luat,luật doanh nghiệp tư nhân,1990
+21,1815,không số,luat,"luật sửa đổi, bổ sung một số điều của luật nghĩa vụ quân sự",1990
+22,1814,không số,luat,"luật sửa đổi, bổ sung một số điều của luật về sỹ quan quân đội nhân dân việt nam",1990
+23,11596,không số,luat,luật bảo vệ chăm sóc và giáo dục trẻ em,1991
+24,11593,không số,luat,luật bảo vệ và phát triển rừng,1991
+25,11595,không số,luat,luật phổ cập giáo dục tiểu học,1991
+26,11594,không số,luat,"luật sửa đổi, bổ sung một số điều của bộ luật hình sự",1991
+27,10822,không số,luat,"luật sửa đổi, bổ sung một số điều của bộ luật hình sự",1992
+28,10821,không số,luat,"luật sửa đổi, bổ sung một số điều của bộ luật tố tụng hình sự",1992
+29,10820,không số,luat,"luật sửa đổi, bổ sung một số điều của luật đầu tư nước ngoài tại việt nam",1992
+30,11226,không số,luat,luật tổ chức chính phủ,1992
+31,11225,không số,luat,luật tổ chức tòa án nhân dân,1992
+32,11224,không số,luat,luật tổ chức viện kiểm sát nhân dân,1992
+33,10435,không số,luat,luật bảo vệ môi trường,1993
+34,10802,không số,luat,luật đất đai,1993
+35,10434,không số,luat,luật phá sản doanh nghiệp,1993
+36,10808,20-l/ctn,luat,"luật sửa đổi, bổ sung một số điều của luật thuế doanh thu",1993
+37,10807,không số,luat,"luật sửa đổi, bổ sung một số điều của luật thuế lợi tức",1993
+38,10806,không số,luat,"luật sửa đổi, bổ sung một số điều của luật thuế tiêu thụ đặc biệt",1993
+39,10805,không số,luat,"luật sửa đổi, bổ sung một số điều của luật thuế xuất khẩu thuế nhập khẩu",1993
+40,10433,29-l/ctn,luat,"luật sửa đổi, bổ sung một số điều của luật tổ chức tòa án nhân dân",1993
+41,10803,không số,luat,luật thuế sử dụng đất nông nghiệp,1993
+42,10804,không số,luat,luật xuất bản,1993
+43,10426,35-l/ctn,luat,luật bầu cử đại biểu hội đồng nhân dân,1994
+44,10425,không số,luat,luật khuyến khích đầu tư trong nước,1994
+45,10422,không số,luat,"luật sửa đổi, bổ sung một số điều của luật nghĩa vụ quân sự",1994
+46,10424,không số,luat,luật sửa đổi một số điều của luật công ty,1994
+47,10423,không số,luat,luật sửa đổi một số điều của luật doanh nghiệp tư nhân,1994
+48,10421,không số,luat,luật thuế chuyển quyền sử dụng đất,1994
+49,10420,không số,luat,luật tổ chức hội đồng nhân dân và uỷ ban nhân dân,1994
+50,9955,không số,luat,luật doanh nghiệp nhà nước,1995
+51,9954,không số,luat,"luật sửa đổi, bổ sung một số điều của luật hàng không dân dụng việt nam",1995
+52,9703,không số,luat,"luật sửa đổi, bổ sung một số điều của luật thuế doanh thu",1995
+53,9684,không số,luat,"luật sửa đổi, bổ sung một số điều của luật thuế tiêu thụ đặc biệt",1995
+54,9702,không số,luat,"luật sửa đổi, bổ sung một số điều của luật tổ chức tòa án nhân dân",1995
+55,9028,không số,luat,luật ban hành văn bản quy phạm pháp luật,1996
+56,9414,không số,luat,luật hợp tác xã,1996
+57,9413,không số,luat,luật khoáng sản,1996
+58,9412,không số,luat,luật ngân sách nhà nước,1996
+59,30962,06/1997/qh10,luat,luật ngân sách nhà nước,1997
+60,8611,không số,luat,luật bầu cử đại biểu quốc hội,1997
+61,8205,02/1997/qh10,luat,luật các tổ chức tín dụng,1997
+62,8222,01/1997/qh10,luat,luật ngân hàng nhà nước,1997
+63,8533,không số,luat,"luật sửa đổi, bổ sung một số điều của bộ luật hình sự",1997
+64,8534,không số,luat,luật thuế giá trị gia tăng,1997
+65,8535,không số,luat,luật thuế thu nhập doanh nghiệp,1997
+66,8532,không số,luat,luật thương mại,1997
+67,7342,11/1998/qh10,luat,luật giáo dục,1998
+68,7343,09/1998/qh10,luat,luật khiếu nại tố cáo,1998
+69,7750,03/1998/qh10,luat,luật khuyến khích đầu tư trong nước (sửa đổi),1998
+70,7754,07/1998/qh10,luat,luật quốc tịch việt nam,1998
+71,7344,10/1998/qh10,luat,"luật sửa đổi, bổ sung một số điều của luật đất đai",1998
+72,7753,06/1998/qh10,luat,"luật sửa đổi, bổ sung một số điều của luật ngân sách nhà nước",1998
+73,7751,04/1998/qh10,luat,"luật sửa đổi, bổ sung một số điều của luật thuế xuất khẩu thuế nhập khẩu",1998
+74,7752,08/1998/qh10,luat,luật tài nguyên nước,1998
+75,7755,05/1998/qh10,luat,luật thuế tiêu thụ đặc biệt,1998
+76,7040,13/1999/qh10,luat,luật doanh nghiệp,1999
+77,7041,14/1999/qh10,luat,luật mặt trận tổ quốc việt nam,1999
+78,7039,12/1999/qh10,luat,"luật sửa đổi, bổ sung một số điều của luật báo chí",1999
+79,6155,17/1999/qh10,luat,"luật sửa đổi, bổ sung một số điều của luật thuế chuyển quyền sử dụng đất",1999
+80,6153,16/1999/qh10,luat,luật sỹ quan quân đội nhân dân việt nam,1999
+81,6117,22/2000/qh10,luat,luật hôn nhân và gia đình,2000
+82,6118,21/2000/qh10,luat,luật khoa học và công nghệ,2000
+83,5748,24/2000/qh10,luat,luật kinh doanh bảo hiểm,2000
+84,5740,23/2000/qh10,luat,luật phòng chống ma túy,2000
+85,6140,20/2000/qh10,luat,"luật sửa đổi, bổ sung một số điều của bộ luật tố tụng hình sự",2000
+86,6141,19/2000/qh10,luat,"luật sửa đổi, bổ sung một số điều của luật dầu khí",2000
+87,6147,18/2000/qh10,luat,"luật sửa đổi, bổ sung một số điều của luật đầu tư nước ngoài tại việt nam",2000
+88,23259,28/2001/qh10,luat,luật di sản văn hoá,2001
+89,23289,26/2001/qh10,luat,luật giao thông đường bộ,2001
+90,23258,29/2001/qh10,luat,luật hải quan,2001
+91,23260,27/2001/qh10,luat,luật phòng cháy và chữa cháy,2001
+92,22842,31/2001/qh10,luat,"luật sửa đổi, bổ sung một số điều của luật bầu cử đại biểu quốc hội",2001
+93,23290,25/2001/qh10,luat,"luật sửa đổi, bổ sung một số điều của luật đất đai",2001
+94,22843,32/2001/qh10,luat,luật tổ chức chính phủ,2001
+95,22840,30/2001/qh10,luat,luật tổ chức quốc hội,2001
+96,18433,01/2002/qh11,luat,luật ngân sách nhà nước,2002
+97,22507,35/2002/qh10,luat,"luật sửa đổi, bổ sung một số điều của bộ luật lao động",2002
+98,21594,02/2002/qh11,luat,"luật sửa đổi, bổ sung một số điều của luật ban hành văn bản quy phạm pháp luật",2002
+99,22506,33/2002/qh10,luat,luật tổ chức tòa án nhân dân,2002
+100,113148,33/2002/qh10,luat,luật tổ chức tòa án nhân dân năm 2002,2002
+101,22392,34/2002/qh10,luat,luật tổ chức viện kiểm sát nhân dân,2002
+102,19421,12/2003/qh11,luat,luật bầu cử đại biểu hội đồng nhân dân,2003
+103,19423,06/2003/qh11,luat,luật biên giới quốc gia,2003
+104,19419,13/2003/qh11,luat,luật đất đai,2003
+105,19417,14/2003/qh11,luat,luật doanh nghiệp nhà nước,2003
+106,21002,05/2003/qh11,luat,luật hoạt động giám sát của quốc hội,2003
+107,19412,18/2003/qh11,luat,luật hợp tác xã,2003
+108,20996,03/2003/qh11,luat,luật kế toán,2003
+109,20998,10/2003/qh11,luat,"luật sửa đổi, bổ sung một số điều của luật ngân hàng nhà nước việt nam",2003
+110,20992,07/2003/qh11,luat,"luật sửa đổi, bổ sung một số điều của luật thuế giá trị gia tăng",2003
+111,20987,08/2003/qh11,luat,"luật sửa đổi, bổ sung một số điều của luật thuế tiêu thụ đặc biệt",2003
+112,19415,15/2003/qh11,luat,luật thi đua khen thưởng,2003
+113,21004,04/2003/qh11,luat,luật thống kê,2003
+114,20984,09/2003/qh11,luat,luật thuế thu nhập doanh nghiệp,2003
+115,25193,17/2003/qh11,luat,luật thủy sản,2003
+116,20068,11/2003/qh11,luat,luật tổ chức hội đồng nhân dân và uỷ ban nhân dân,2003
+117,19414,16/2003/qh11,luat,luật xây dựng,2003
+118,18562,32/2004/qh11,luat,luật an ninh quốc gia,2004
+119,17855,31/2004/qh11,luat,luật ban hành văn bản quy phạm pháp luật,2004
+120,19477,25/2004/qh11,luat,luật bảo vệ chăm sóc và giáo dục trẻ em,2004
+121,18564,29/2004/qh11,luat,luật bảo vệ và phát triển rừng,2004
+122,18566,27/2004/qh11,luat,luật cạnh tranh,2004
+123,18565,28/2004/qh11,luat,luật điện lực,2004
+124,19476,23/2004/qh11,luat,luật giao thông đường thủy nội địa,2004
+125,19474,21/2004/qh11,luat,luật phá sản,2004
+126,19471,20/2004/qh11,luat,"luật sửa đổi, bổ sung một số điều của luật các tổ chức tín dụng",2004
+127,19473,26/2004/qh11,luat,"luật sửa đổi, bổ sung một số điều của luật khiếu nại tố cáo",2004
+128,19470,22/2004/qh11,luat,luật thanh tra,2004
+129,18563,30/2004/qh11,luat,luật xuất bản,2004
+130,16729,52/2005/qh11,luat,luật bảo vệ môi trường,2005
+131,16876,49/2005/qh11,luat,luật các công cụ chuyển nhượng,2005
+132,16753,54/2005/qh11,luat,luật công an nhân dân,2005
+133,16750,61/2005/qh11,luat,luật đấu thầu,2005
+134,16718,59/2005/qh11,luat,luật đầu tư,2005
+135,16726,60/2005/qh11,luat,luật doanh nghiệp,2005
+136,18132,44/2005/qh11,luat,luật du lịch,2005
+137,18127,34/2005/qh11,luat,luật dược,2005
+138,18126,35/2005/qh11,luat,luật đường sắt,2005
+139,17067,51/2005/qh11,luat,luật giao dịch điện tử,2005
+140,18129,38/2005/qh11,luat,luật giáo dục,2005
+141,18124,37/2005/qh11,luat,luật kiểm toán nhà nước,2005
+142,18125,41/2005/qh11,luat,luật ký kết gia nhập và thực hiện điều ước quốc tế,2005
+143,16755,56/2005/qh11,luat,luật nhà ở,2005
+144,16872,55/2005/qh11,luat,luật phòng chống tham nhũng,2005
+145,18130,39/2005/qh11,luat,luật quốc phòng,2005
+146,16748,50/2005/qh11,luat,luật sở hữu trí tuệ,2005
+147,18123,42/2005/qh11,luat,"luật sửa đổi, bổ sung một số điều của luật hải quan",2005
+148,16756,58/2005/qh11,luat,"luật sửa đổi, bổ sung một số điều của luật khiếu nại tố cáo",2005
+149,18134,46/2005/qh11,luat,"luật sửa đổi, bổ sung một số điều của luật khoáng sản",2005
+150,18122,43/2005/qh11,luat,"luật sửa đổi, bổ sung một số điều của luật nghĩa vụ quân sự",2005
+151,18135,47/2005/qh11,luat,"luật sửa đổi, bổ sung một số điều của luật thi đua khen thưởng",2005
+152,17065,57/2005/qh11,luat,"luật sửa đổi, bổ sung một số điều của luật thuế tiêu thụ đặc biệt và luật thuế giá trị gia tăng",2005
+153,17069,48/2005/qh11,luat,luật thực hành tiết kiệm chống lãng phí,2005
+154,18133,45/2005/qh11,luat,luật thuế xuất khẩu thuế nhập khẩu,2005
+155,26117,36/2005/qh11,luat,luật thương mại,2005
+156,15057,71/2006/qh11,luat,luật bảo hiểm xã hội,2006
+157,14838,73/2006/qh11,luat,luật bình đẳng giới,2006
+158,15052,70/2006/qh11,luat,luật chứng khoán,2006
+159,14830,80/2006/qh11,luat,luật chuyển giao công nghệ,2006
+160,14916,82/2006/qh11,luat,luật công chứng,2006
+161,15066,67/2006/qh11,luat,luật công nghệ thông tin,2006
+162,14834,81/2006/qh11,luat,luật cư trú,2006
+163,14835,76/2006/qh11,luat,luật dạy nghề,2006
+164,14831,79/2006/qh11,luat,luật đê điều,2006
+165,15082,62/2006/qh11,luat,luật điện ảnh,2006
+166,15068,66/2006/qh11,luat,luật hàng không dân dụng việt nam,2006
+167,14836,75/2006/qh11,luat,luật hiến lấy ghép mô bộ phận cơ thể người và hiến lấy xác,2006
+168,15080,63/2006/qh11,luat,luật kinh doanh bất động sản,2006
+169,80881,72/2006/qh11,luat,luật người lao động việt nam đi làm việc ở nước ngoài,2006
+170,14276,72/2006/qh11,luat,luật người lao động việt nam đi làm việc ở nước ngoài theo hợp đồng,2006
+171,15078,64/2006/qh11,luat,luật phòng chống nhiễm vi rút gây ra hội chứng suy giảm miễn dịch mắc phải ở người (hiv/aids),2006
+172,14832,78/2006/qh11,luat,luật quản lý thuế,2006
+173,15076,65/2006/qh11,luat,luật sư,2006
+174,14837,74/2006/qh11,luat,"luật sửa đổi, bổ sung một số điều của bộ luật lao động",2006
+175,14833,77/2006/qh11,luat,luật thể dục thể thao,2006
+176,15062,68/2006/qh11,luat,luật tiêu chuẩn và quy chuẩn kỹ thuật,2006
+177,15060,69/2006/qh11,luat,luật trợ giúp pháp lý,2006
+178,12896,05/2007/qh12,luat,luật chất lượng sản phẩm hàng hoá,2007
+179,12891,07/2007/qh12,luat,luật đặc xá,2007
+180,24161,06/2007/qh12,luat,luật hóa chất,2007
+181,12902,02/2007/qh12,luat,luật phòng chống bạo lực gia đình,2007
+182,12900,03/2007/qh12,luat,luật phòng chống bệnh truyền nhiễm,2007
+183,14456,84/2007/qh11,luat,"luật sửa đổi, bổ sung điều 73 của bộ luật lao động",2007
+184,13639,01/2007/qh12,luat,"luật sửa đổi, bổ sung một số điều của luật phòngchống tham nhũng",2007
+185,14166,83/2007/qh11,luat,"luật sửa đổi, bổ sung một số điều của luật tổ chức quốc hội",2007
+186,12898,04/2007/qh12,luat,luật thuế thu nhập cá nhân,2007
+187,26995,08/2007/qh12,luat,luật tương trợ tư pháp,2007
+188,12803,17/2008/qh12,luat,luật ban hành văn bản quy phạm pháp luật,2008
+189,12326,25/2008/qh12,luat,luật bảo hiểm y tế,2008
+190,12352,22/2008/qh12,luat,luật cán bộ công chức,2008
+191,12354,21/2008/qh12,luat,luật công nghệ cao,2008
+192,12356,20/2008/qh12,luat,luật đa dạng sinh học,2008
+193,12333,23/2008/qh12,luat,luật giao thông đường bộ,2008
+194,12808,11/2008/qh12,luat,luật hoạt động chữ thập đỏ,2008
+195,12804,18/2008/qh12,luat,luật năng lượng nguyên tử,2008
+196,12810,09/2008/qh12,luat,luật quản lý sử dụng tài sản nhà nước,2008
+197,12331,24/2008/qh12,luat,luật quốc tịch việt nam,2008
+198,12809,10/2008/qh12,luat,"luật sửa đổi, bổ sung một số điều của luật dầu khí",2008
+199,12802,16/2008/qh12,luat,"luật sửa đổi, bổ sung một số điều của luật phòng chống ma túy",2008
+200,12805,19/2008/qh12,luat,"luật sửa đổi, bổ sung một số điều của luật sĩ quan quân đội nhân dân việt nam",2008
+201,12801,12/2008/qh12,luat,"luật sửa đổi, bổ sung một số điều của luật xuất bản",2008
+202,12318,26/2008/qh12,luat,luật thi hành án dân sự,2008
+203,12806,13/2008/qh12,luat,luật thuế giá trị gia tăng,2008
+204,12807,14/2008/qh12,luat,luật thuế thu nhập doanh nghiệp,2008
+205,12324,27/2008/qh12,luat,luật thuế tiêu thụ đặc biệt,2008
+206,12811,15/2008/qh12,luat,luật trưng mua trưng dụng tài sản,2008
+207,11747,33/2009/qh12,luat,luật cơ quan đại diện nước cộng hòa xã hội chủ nghĩa việt nam ở nước ngoài,2009
+208,23777,43/2009/qh12,luat,luật dân quân tự vệ,2009
+209,25170,40/2009/qh12,luat,luật khám bệnh chữa bệnh,2009
+210,80765,40/2009/qh12,luat,luật khám chữa bệnh,2009
+211,11761,28/2009/qh12,luat,luật lý lịch tư pháp,2009
+212,25164,39/2009/qh12,luat,luật người cao tuổi,2009
+213,11760,29/2009/qh12,luat,luật quản lý nợ công,2009
+214,11757,30/2009/qh12,luat,luật quy hoạch đô thị,2009
+215,11745,34/2009/qh12,luat,"luật sửa đổi, bổ sung điều 126 của luật nhà ở và điều 121 của luật đất đai",2009
+216,11708,37/2009/qh12,luat,"luật sửa đổi, bổ sung một số điều của bộ luật hình sự",2009
+217,11706,38/2009/qh12,luat,"luật sửa đổi, bổ sung một số điều của các luật liên quan đến đầu tư xây dựng cơ bản",2009
+218,11750,32/2009/qh12,luat,"luật sửa đổi, bổ sung một số điều của luật di sản văn hóa",2009
+219,11752,31/2009/qh12,luat,"luật sửa đổi, bổ sung một số điều của luật điện ảnh",2009
+220,23779,44/2009/qh12,luat,"luật sửa đổi, bổ sung một số điều của luật giáo dục",2009
+221,11716,36/2009/qh12,luat,"luật sửa đổi, bổ sung một số điều của luật sở hữu trí tuệ",2009
+222,23856,42/2009/qh12,luat,luật tần số vô tuyến điện,2009
+223,23778,45/2009/qh12,luat,luật thuế tài nguyên,2009
+224,11743,35/2009/qh12,luat,luật trách nhiệm bồi thường của nhà nước,2009
+225,23776,41/2009/qh12,luat,luật viễn thông,2009
+226,25495,55/2010/qh12,luat,luật an toàn thực phẩm,2010
+227,26356,59/2010/qh12,luat,luật bảo vệ quyền lợi người tiêu dùng,2010
+228,25701,49/2010/qh12,luat,luật bưu chính,2010
+229,25693,47/2010/qh12,luat,luật các tổ chức tín dụng,2010
+230,26349,60/2010/qh12,luat,luật khoáng sản,2010
+231,25692,46/2010/qh12,luat,luật ngân hàng nhà nước việt nam,2010
+232,25702,51/2010/qh12,luat,luật người khuyết tật,2010
+233,25699,52/2010/qh12,luat,luật nuôi con nuôi,2010
+234,25703,50/2010/qh12,luat,luật sử dụng năng lượng tiết kiệm và hiệu quả,2010
+235,26111,63/2010/qh12,luat,"luật sửa đổi, bổ sung một số điều của luật bầu cử đại biểu quốc hội và luật bầu cử đại biểu hội đồng nhân dân",2010
+236,26350,62/2010/qh12,luat,"luật sửa đổi, bổ sung một số điều của luật chứng khoán",2010
+237,26357,61/2010/qh12,luat,"luật sửa đổi, bổ sung một số điều của luật kinh doanh bảo hiểm",2010
+238,26353,56/2010/qh12,luat,luật thanh tra,2010
+239,25681,53/2010/qh12,luat,luật thi hành án hình sự,2010
+240,26354,57/2010/qh12,luat,luật thuế bảo vệ môi trường,2010
+241,25819,48/2010/qh12,luat,luật thuế sử dụng đất phi nông nghiệp,2010
+242,26351,64/2010/qh12,luat,luật tố tụng hành chính,2010
+243,25700,54/2010/qh12,luat,luật trọng tài thương mại,2010
+244,26355,58/2010/qh12,luat,luật viên chức,2010
+245,27327,05/2011/qh13,luat,luật cơ yếu,2011
+246,27308,04/2011/qh13,luat,luật đo lường,2011
+247,27325,02/2011/qh13,luat,luật khiếu nại,2011
+248,26750,67/2011/qh12,luat,luật kiểm toán độc lập,2011
+249,27323,01/2011/qh13,luat,luật lưu trữ,2011
+250,26741,66/2011/qh12,luat,luật phòng chống mua bán người,2011
+251,26674,65/2011/qh12,luat,"luật sửa đổi, bổ sung một số điều của bộ luật tố tụng dân sự",2011
+252,27305,03/2011/qh13,luat,luật tố cáo,2011
+253,27704,06/2012/qh13,luat,luật bảo hiểm tiền gửi,2012
+254,27694,18/2012/qh13,luat,luật biển việt nam,2012
+255,27625,12/2012/qh13,luat,luật công đoàn,2012
+256,28029,22/2012/qh13,luat,luật dự trữ quốc gia,2012
+257,27624,11/2012/qh13,luat,luật giá,2012
+258,27623,13/2012/qh13,luat,luật giám định tư pháp,2012
+259,27706,08/2012/qh13,luat,luật giáo dục đại học,2012
+260,28067,23/2012/qh13,luat,luật hợp tác xã,2012
+261,27698,14/2012/qh13,luat,luật phổ biến giáo dục pháp luật,2012
+262,27705,07/2012/qh13,luat,luật phòng chống rửa tiền,2012
+263,27707,09/2012/qh13,luat,luật phòng chống tác hại của thuốc lá,2012
+264,27617,16/2012/qh13,luat,luật quảng cáo,2012
+265,28068,24/2012/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật điện lực",2012
+266,28059,27/2012/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật phòng chống tham nhũng",2012
+267,28026,21/2012/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật quản lý thuế",2012
+268,28019,20/2012/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật luật sư",2012
+269,28058,26/2012/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật thuế thu nhập cá nhân",2012
+270,27616,17/2012/qh13,luat,luật tài nguyên nước,2012
+271,28031,25/2012/qh13,luat,luật thủ đô,2012
+272,27621,15/2012/qh13,luat,luật xử lý vi phạm hành chính,2012
+273,28015,19/2012/qh13,luat,luật xuất bản,2012
+274,32909,41/2013/qh13,luat,luật bảo vệ và kiểm dịch thực vật,2013
+275,32833,45/2013/qh13,luat,luật đất đai,2013
+276,32842,43/2013/qh13,luat,luật đấu thầu,2013
+277,32521,30/2013/qh13,luat,luật giáo dục quốc phòng và an ninh,2013
+278,32515,35/2013/qh13,luat,luật hòa giải ở cơ sở,2013
+279,32522,29/2013/qh13,luat,luật khoa học và công nghệ,2013
+280,32495,28/2013/qh13,luat,luật phòng chống khủng bố,2013
+281,32516,33/2013/qh13,luat,luật phòng chống thiên tai,2013
+282,32513,37/2013/qh13,luat,"luật sửa đổi, bổ sung điều 170 của luật doanh nghiệp",2013
+283,32514,36/2013/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật cư trú",2013
+284,32910,40/2013/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật phòng cháy và chữa cháy",2013
+285,32911,39/2013/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật thi đua khen thưởng",2013
+286,30614,31/2013/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật thuế giá trị gia tăng",2013
+287,30615,32/2013/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật thuế thu nhập doanh nghiệp",2013
+288,32905,44/2013/qh13,luat,luật thực hành tiết kiệm chống lãng phí,2013
+289,32908,42/2013/qh13,luat,luật tiếp công dân,2013
+290,32912,38/2013/qh13,luat,luật việc làm,2013
+291,46744,58/2014/qh13,luat,luật bảo hiểm xã hội,2014
+292,36884,55/2014/qh13,luat,luật bảo vệ môi trường,2014
+293,46743,59/2014/qh13,luat,luật căn cước công dân,2014
+294,46817,73/2014/qh13,luat,luật công an nhân dân,2014
+295,36877,53/2014/qh13,luat,luật công chứng,2014
+296,46750,67/2014/qh13,luat,luật đầu tư,2014
+297,36865,49/2014/qh13,luat,luật đầu tư công,2014
+298,46751,68/2014/qh13,luat,luật doanh nghiệp,2014
+299,46822,74/2014/qh13,luat,luật giáo dục nghề nghiệp,2014
+300,36878,54/2014/qh13,luat,luật hải quan,2014
+301,46746,60/2014/qh13,luat,luật hộ tịch,2014
+302,36870,52/2014/qh13,luat,luật hôn nhân và gia đình,2014
+303,46749,66/2014/qh13,luat,luật kinh doanh bất động sản,2014
+304,46742,65/2014/qh13,luat,luật nhà ở,2014
+305,36823,47/2014/qh13,luat,luật nhập cảnh xuất cảnh quá cảnh cư trú của người nước ngoài tại việt nam,2014
+306,36869,51/2014/qh13,luat,luật phá sản,2014
+307,46790,69/2014/qh13,luat,luật quản lý sử dụng vốn nhà nước đầu tư vào sản xuất kinh doanh tại doanh nghiệp,2014
+308,40742,71/2014/qh13,luat,"luật sửa đổi, bổ sung một số điều của các luật về thuế",2014
+309,36793,46/2014/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật bảo hiểm y tế",2014
+310,36824,48/2014/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật giao thông đường thủy nội địa",2014
+311,46747,61/2014/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật hàng không dân dụng việt nam",2014
+312,36891,56/2014/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật quốc tịch việt nam",2014
+313,46814,72/2014/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật sĩ quan quân đội nhân dân việt nam",2014
+314,46740,64/2014/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật thi hành án dân sự",2014
+315,46809,70/2014/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật thuế tiêu thụ đặc biệt",2014
+316,44168,57/2014/qh13,luat,luật tổ chức quốc hội,2014
+317,44169,62/2014/qh13,luat,luật tổ chức tòa án nhân dân,2014
+318,43951,63/2014/qh13,luat,luật tổ chức viện kiểm sát nhân dân,2014
+319,36867,50/2014/qh13,luat,luật xây dựng,2014
+320,95908,86/2015/qh13,luat,luật an toàn thông tin mạng,2015
+321,70811,84/2015/qh13,luat,luật an toàn vệ sinh lao động,2015
+322,70800,80/2015/qh13,luat,luật ban hành văn bản quy phạm pháp luật,2015
+323,70812,85/2015/qh13,luat,luật bầu cử đại biểu quốc hội và đại biểu hội đồng nhân dân,2015
+324,95914,87/2015/qh13,luat,luật hoạt động giám sát của quốc hội và hội đồng nhân dân,2015
+325,95924,88/2015/qh13,luat,luật kế toán,2015
+326,96020,90/2015/qh13,luat,luật khí tượng thủy văn,2015
+327,70801,81/2015/qh13,luat,luật kiểm toán nhà nước,2015
+328,70822,75/2015/qh13,luat,luật mặt trận tổ quốc việt nam,2015
+329,70807,83/2015/qh13,luat,luật ngân sách nhà nước,2015
+330,70817,78/2015/qh13,luat,luật nghĩa vụ quân sự,2015
+331,96119,97/2015/qh13,luat,luật phí và lệ phí,2015
+332,96120,98/2015/qh13,luat,luật quân nhân chuyên nghiệp công nhân và viên chức quốc phòng,2015
+333,70804,82/2015/qh13,luat,luật tài nguyên môi trường biển và hải đảo,2015
+334,96116,94/2015/qh13,luat,luật thi hành tạm giữ tạm giam,2015
+335,95927,89/2015/qh13,luat,luật thống kê,2015
+336,70803,79/2015/qh13,luat,luật thú y,2015
+337,70821,76/2015/qh13,luat,luật tổ chức chính phủ,2015
+338,70819,77/2015/qh13,luat,luật tổ chức chính quyền địa phương,2015
+339,96121,99/2015/qh13,luat,luật tổ chức cơ quan điều tra hình sự,2015
+340,96035,93/2015/qh13,luat,luật tố tụng hành chính,2015
+341,96118,96/2015/qh13,luat,luật trưng cầu ý dân,2015
+342,101872,103/2016/qh13,luat,luật báo chí,2016
+343,121748,01/2016/qh14,luat,luật đấu giá tài sản,2016
+344,101899,108/2016/qh13,luat,luật điều ước quốc tế,2016
+345,101886,105/2016/qh13,luat,luật dược,2016
+346,121546,03/2016/qh14,luat,"luật sửa đổi, bổ sung điều 6 và phụ lục 4 về danh mục ngành nghề đầu tư kinh doanh có điều kiện của luật đầu tư",2016
+347,101890,106/2016/qh13,luat,"luật sửa đổi, bổ sung một số điều của luật thuế giá trị gia tăng, luật thuế tiêu thụ đặc biệt và luật quản lý thuế",2016
+348,101897,107/2016/qh13,luat,luật thuế xuất khẩu thuế nhập khẩu,2016
+349,101873,104/2016/qh13,luat,luật tiếp cận thông tin,2016
+350,117201,02/2016/qh14,luat,luật tín ngưỡng tôn giáo,2016
+351,101871,102/2016/qh13,luat,luật trẻ em,2016
+352,124614,13/2017/qh14,luat,luật cảnh vệ,2017
+353,123514,07/2017/qh14,luat,luật chuyển giao công nghệ,2017
+354,129350,09/2017/qh14,luat,luật du lịch,2017
+355,126171,06/2017/qh14,luat,luật đường sắt,2017
+356,128706,04/2017/qh14,luat,luật hỗ trợ doanh nghiệp nhỏ và vừa,2017
+357,126306,16/2017/qh14,luat,luật lâm nghiệp,2017
+358,123028,05/2017/qh14,luat,luật quản lý ngoại thương,2017
+359,126321,20/2017/qh14,luat,luật quản lý nợ công,2017
+360,122988,15/2017/qh14,luat,luật quản lý sử dụng tài sản công,2017
+361,124150,14/2017/qh14,luat,luật quản lý sử dụng vũ khí vật liệu nổ và công cụ hỗ trợ,2017
+362,131014,21/2017/qh14,luat,luật quy hoạch,2017
+363,122826,12/2017/qh14,luat,"luật sửa đổi, bổ sung một số điều của bộ luật hình sự",2017
+364,126820,17/2017/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật các tổ chức tín dụng",2017
+365,128203,19/2017/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật cơ quan đại diện nước cộng hòa xã hội chủ nghĩa việt nam ở nước ngoài",2017
+366,126723,08/2017/qh14,luat,luật thủy lợi,2017
+367,126307,18/2017/qh14,luat,luật thủy sản,2017
+368,122863,10/2017/qh14,luat,luật trách nhiệm bồi thường của nhà nước,2017
+369,122827,11/2017/qh14,luat,luật trợ giúp pháp lý,2017
+370,132957,24/2018/qh14,luat,luật an ninh mạng,2018
+371,141824,29/2018/qh14,luat,luật bảo vệ bí mật nhà nước,2018
+372,136051,33/2018/qh14,luat,luật cảnh sát biển việt nam,2018
+373,133401,23/2018/qh14,luat,luật cạnh tranh,2018
+374,137311,32/2018/qh14,luat,luật chăn nuôi,2018
+375,137283,37/2018/qh14,luat,luật công an nhân dân,2018
+376,141383,30/2018/qh14,luat,luật đặc xá,2018
+377,133032,27/2018/qh14,luat,luật đo đạc và bản đồ,2018
+378,137284,36/2018/qh14,luat,luật phòng chống tham nhũng,2018
+379,132955,22/2018/qh14,luat,luật quốc phòng,2018
+380,130821,28/2018/qh14,luat,"luật sửa đổi, bổ sung một số điều của 11 luật có liên quan đến quy hoạch",2018
+381,132982,35/2018/qh14,luat,"luật sửa đổi, bổ sung một số điều của 37 luật có liên quan đến quy hoạch",2018
+382,137459,34/2018/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật giáo dục đại học",2018
+383,133028,26/2018/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật thể dục thể thao",2018
+384,130780,25/2018/qh14,luat,luật tố cáo,2018
+385,137312,31/2018/qh14,luat,luật trồng trọt,2018
+386,135883,33/2018/qh14,luat,luật cảnh sát biển việt nam,2019
+387,139885,54/2019/qh14,luat,luật chứng khoán,2019
+388,139879,48/2019/qh14,luat,luật dân quân tự vệ,2019
+389,136038,39/2019/qh14,luat,luật đầu tư công,2019
+390,136042,43/2019/qh14,luat,luật giáo dục,2019
+391,136039,40/2019/qh14,luat,luật kiến trúc,2019
+392,139892,53/2019/qh14,luat,luật lực lượng dự bị động viên,2019
+393,136043,44/2019/qh14,luat,luật phòng chống tác hại của rượu bia,2019
+394,136036,38/2019/qh14,luat,luật quản lý thuế,2019
+395,139884,52/2019/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật cán bộ công chức và luật viên chức",2019
+396,139886,55/2019/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật kiểm toán nhà nước",2019
+397,136041,42/2019/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật kinh doanh bảo hiểm luật sở hữu trí tuệ",2019
+398,139883,51/2019/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật nhập cảnh xuất cảnh quá cảnh cư trú của người nước ngoài tại việt nam",2019
+399,139882,50/2019/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật quản lý sử dụng vũ khí vật liệu nổ và công cụ hỗ trợ",2019
+400,139878,47/2019/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật tổ chức chính phủ và luật tổ chức chính quyền địa phương",2019
+401,162690,41/2019/qh14,luat,luật thi hành án hình sự,2019
+402,139877,46/2019/qh14,luat,luật thư viện,2019
+403,139880,49/2019/qh14,luat,luật xuất cảnh nhập cảnh của công dân việt nam,2019
+404,146609,72/2020/qh14,luat,luật bảo vệ môi trường,2020
+405,146652,66/2020/qh14,luat,luật biên phòng việt nam,2020
+406,146648,68/2020/qh14,luat,luật cư trú,2020
+407,142867,61/2020/qh14,luat,luật đầu tư,2020
+408,142882,64/2020/qh14,luat,luật đầu tư theo phương thức đối tác công tư,2020
+409,142881,59/2020/qh14,luat,luật doanh nghiệp,2020
+410,147588,58/2020/qh14,luat,luật hòa giải đối thoại tại tòa án,2020
+411,146643,69/2020/qh14,luat,luật người lao động việt nam đi làm việc ở nước ngoài theo hợp đồng,2020
+412,166391,63/2020/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật ban hành văn bản quy phạm pháp luật",2020
+413,142852,56/2020/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật giám định tư pháp",2020
+414,146632,71/2020/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật phòng chống nhiễm vi rút gây ra hội chứng suy giảm miễn dịch mắc phải ở người (hiv/aids)",2020
+415,153788,60/2020/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật phòng chống thiên tai và luật đê điều",2020
+416,169441,65/2020/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật tổ chức quốc hội",2020
+417,144268,62/2020/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật xây dựng",2020
+418,146541,67/2020/qh14,luat,"luật sửa đổi, bổ sung một số điều của luật xử lý vi phạm hành chính",2020
+419,142850,57/2020/qh14,luat,luật thanh niên,2020
+420,146640,70/2020/qh14,luat,luật thỏa thuận quốc tế,2020
+421,152501,73/2021/qh14,luat,luật phòng chống ma túy,2021
+422,153151,02/2021/qh15,luat,"luật sửa đổi, bổ sung một số điều của bộ luật tố tụng hình sự",2021
+423,152571,01/2021/qh15,luat,"luật sửa đổi, bổ sung một số điều và phụ lục danh mục chỉ tiêu thống kê quốc gia của luật thống kê",2021
+424,156829,04/2022/qh15,luat,luật cảnh sát cơ động,2022
+425,161042,12/2022/qh15,luat,luật dầu khí,2022
+426,158993,05/2022/qh15,luat,luật điện ảnh,2022
+427,163515,08/2022/qh15,luat,luật kinh doanh bảo hiểm,2022
+428,167755,13/2022/qh15,luat,luật phòng chống bạo lực gia đình,2022
+429,157721,14/2022/qh15,luat,luật phòng chống rửa tiền,2022
+430,152951,03/2022/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật đầu tư công luật đầu tư theo phương thức đối tác công tư luật đầu tư luật nhà ở luật đấu thầu luật điện lực luật doanh nghiệp luật thuế tiêu thụ đặc biệt và luật thi hành án dân sự",2022
+431,157722,07/2022/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật sở hữu trí tuệ",2022
+432,160606,09/2022/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật tần số vô tuyến điện",2022
+433,170446,11/2022/qh15,luat,luật thanh tra,2022
+434,168080,06/2022/qh15,luat,luật thi đua khen thưởng,2022
+435,161986,10/2022/qh15,luat,luật thực hiện dân chủ ở cơ sở,2022
+436,161263,19/2023/qh15,luat,luật bảo vệ quyền lợi người tiêu dùng,2023
+437,165958,26/2023/qh15,luat,luật căn cước,2023
+438,166581,22/2023/qh15,luat,luật đấu thầu,2023
+439,167565,16/2023/qh15,luat,luật giá,2023
+440,165913,20/2023/qh15,luat,luật giao dịch điện tử,2023
+441,166269,17/2023/qh15,luat,luật hợp tác xã,2023
+442,168125,15/2023/qh15,luat,luật khám bệnh chữa bệnh 2023,2023
+443,169027,29/2023/qh15,luat,luật kinh doanh bất động sản,2023
+444,168904,30/2023/qh15,luat,luật lực lượng tham gia bảo vệ an ninh trật tự ở cơ sở,2023
+445,169032,27/2023/qh15,luat,luật nhà ở,2023
+446,167216,18/2023/qh15,luat,luật phòng thủ dân sự,2023
+447,167658,21/2023/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật công an nhân dân",2023
+448,162469,23/2023/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật xuất cảnh nhập cảnh của công dân việt nam và luật nhập cảnh xuất cảnh quá cảnh cư trú của người nước ngoài tại việt nam",2023
+449,167282,28/2023/qh15,luat,luật tài nguyên nước 2023,2023
+450,165912,24/2023/qh15,luat,luật viễn thông,2023
+451,169571,25/2023/qh15,luat,luật quản lý bảo vệ công trình quốc phòng và khu quân sự,2023
+452,175027,41/2024/qh15,luat,luật bảo hiểm xã hội,2024
+453,166170,32/2024/qh15,luat,luật các tổ chức tín dụng,2024
+454,172799,46/2024/qh15,luat,luật công chứng,2024
+455,172553,50/2024/qh15,luat,luật công đoàn,2024
+456,172437,38/2024/qh15,luat,luật công nghiệp quốc phòng an ninh và động viên công nghiệp,2024
+457,177815,31/2024/qh15,luat,luật đất đai,2024
+458,174098,58/2024/qh15,luat,luật đầu tư công,2024
+459,173024,45/2024/qh15,luat,luật di sản văn hóa,2024
+460,174000,54/2024/qh15,luat,luật địa chất và khoáng sản,2024
+461,173332,61/2024/qh15,luat,luật luật điện lực,2024
+462,174877,60/2024/qh15,luat,luật dữ liệu,2024
+463,175084,44/2024/qh15,luat,"luật sửa đổi, bổ sung một số điều của Luật Dược",2024
+464,172475,35/2024/qh15,luat,luật đường bộ,2024
+465,170517,33/2024/qh15,luat,luật lưu trữ,2024
+466,173974,55/2024/qh15,luat,luật phòng cháy chữa cháy và cứu nạn cứu hộ,2024
+467,173982,53/2024/qh15,luat,luật phòng chống mua bán người,2024
+468,173624,49/2024/qh15,luat,luật phòng không nhân dân,2024
+469,170609,42/2024/qh15,luat,luật quản lý sử dụng vũ khí vật liệu nổ và công cụ hỗ trợ,2024
+470,172548,47/2024/qh15,luat,luật quy hoạch đô thị và nông thôn,2024
+471,170622,40/2024/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật cảnh vệ",2024
+472,173331,56/2024/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật chứng khoán luật kế toán luật kiểm toán độc lập luật ngân sách nhà nước luật quản lý sử dụng tài sản công luật quản lý thuế luật thuế thu nhập cá nhân luật dự trữ quốc gia luật xử lý vi phạm hành chính",2024
+473,170509,43/2024/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật đất đai, luật nhà ở, luật kinh doanh bất động sản và luật các tổ chức tín dụng",2024
+474,169991,37/2024/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật đấu giá tài sản",2024
+475,173625,52/2024/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật sĩ quan quân đội nhân dân việt nam",2024
+476,173404,57/2024/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật quy hoạch, luật đầu tư, luật đầu tư theo phương thức đối tác công tư và luật đấu thầu",2024
+477,169990,39/2024/qh15,luat,luật thủ đô,2024
+478,174917,48/2024/qh15,luat,luật thuế giá trị gia tăng,2024
+479,170620,36/2024/qh15,luat,luật trật tự an toàn giao thông đường bộ,2024
+480,175266,62/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật tổ chức quốc hội",2025
+481,175258,63/2025/qh15,luat,luật tổ chức chính phủ,2025
+482,999999999649675,72/2025/qh15,luat,luật tổ chức chính quyền địa phương,2025
+483,3274,không số,boluat,bộ luật hình sự,1985
+484,2559,không số,boluat,bộ luật tố tụng hình sự,1988
+485,2066,42-lct/hđnn8,boluat,bộ luật hàng hải,1990
+486,10427,không số,boluat,bộ luật lao động,1994
+487,9683,không số,boluat,bộ luật dân sự,1995
+488,6157,15/1999/qh10,boluat,bộ luật hình sự,1999
+489,19411,19/2003/qh11,boluat,bộ luật tố tụng hình sự,2003
+490,19482,24/2004/qh11,boluat,bộ luật tố tụng dân sự,2004
+491,18131,40/2005/qh11,boluat,bộ luật hàng hải việt nam,2005
+492,18128,33/2005/qh11,boluat,bộ luật dân sự,2005
+493,27615,10/2012/qh13,boluat,bộ luật lao động,2012
+494,95942,91/2015/qh13,boluat,bộ luật dân sự,2015
+495,96122,100/2015/qh13,boluat,bộ luật hình sự,2015
+496,96115,92/2015/qh13,boluat,bộ luật tố tụng dân sự,2015
+497,96172,101/2015/qh13,boluat,bộ luật tố tụng hình sự,2015
+498,96117,95/2015/qh13,boluat,bộ luật hàng hải,2015
+499,139264,45/2019/qh14,boluat,bộ luật lao động,2019
+500,535,không số,hienphap,hiến pháp,1946
+501,889,không số,hienphap,hiến pháp,1959
+502,11234,không số,hienphap,hiến pháp,1992
+503,22313,không số,hienphap,hiến pháp,2001
+504,32801,không số,hienphap,hiến pháp,2013
+505,999999999580434,34/2024/qh15,luat,luật tổ chức tòa án nhân dân,2024
+506,175425,59/2024/qh15,luat,luật tư pháp người chưa thành niên,2024
+507,999999999662829,99/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của bộ luật tố tụng hình sự",2025
+508,175440,64/2025/qh15,luat,luật ban hành văn bản quy phạm pháp luật,2025
+509,999999999662673,87/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật ban hành văn bản quy phạm pháp luật",2025
+510,957,110-sl/l.12,luat,luật tổ chức chính quyền địa phương,1958
+511,958,109-sl/l11,luat,luật quy định chế độ phục vụ của sỹ quan quân đội nhân dân việt nam,1958
+512,1005,108-sl/l10,luat,luật công đoàn,1957
+513,1012,004/slt,sacluat,sắc luật bầu cử hội đồng nhân dân và uỷ ban hành chính các cấp,1957
+514,1016,003/slt,sacluat,sắc luật quyền tự do xuất bản,1957
+515,1017,002/slt,sacluat,"sắc luật quy định những trường hợp phạm pháp quả tang, những trường hợp khẩn cấp và những trường hợp khám người phạm pháp quả tang",1957
+516,1031,103-sl/l005,luat,"luật đảm bảo quyền tự do thân thể và quyền bất khả xâm phạm đối với nhà ở, đồ vật, thư tín của nhân dân",1957
+517,1032,101-sl/l003,luat,luật quy định quyền tự do hội họp,1957
+518,1034,001/slt,sacluat,sắc luật cấm chỉ mọi hành động đầu cơ về kinh tế,1957
+519,1258,45/lct,luat,luật nghĩa vụ quân sự,1965
+520,1339,50/lct,luat,luật nghĩa vụ quân sự,1962
+521,1534,không số,hienphap,hiến pháp,1980
+522,2064,270b-nq/hđnn8,luat,luật thuế tiêu thụ đặc biệt,1990
+523,2067,41-lct/hđnn8,luat,luật đầu tư nước ngoài tại việt nam,1990
+524,2068,39-lct/hđnn8,luat,bộ luật tố tụng hình sự,1990
+525,2069,40-lct/hđnn8,luat,luật công đoàn,1990
+526,2082,30-lct/hđnn8,luat,bộ luật hình sự,1989
+527,2083,29-lct/hđnn8,luat,luật báo chí,1989
+528,2313,19/lct/hđnn8,luat,luật tổ chức hội đồng nhân dân và uỷ ban nhân dân,1989
+529,2314,20-lct/hđnn8,luat,luật bầu cử đại biểu hội đồng nhân dân,1989
+530,2315,21-lct/hđnn8,luat,luật bảo vệ sức khỏe nhân dân,1989
+531,3870,6-lct/hđnn7,luat,luật sỹ quan quân đội nhân dân,1981
+532,4089,2-lct/hđnn7,luat,luật tổ chức hội đồng bộ trưởng,1981
+533,4090,3-lct/hđnn7,luat,luật tổ chức viện kiểm sát nhân dân,1981
+534,4091,3-lct/hđnn7,luat,luật tổ chức toà án nhân dân,1981
+535,4092,1-lct/hđnn7,luat,luật tổ chức quốc hội và hội đồng nhà nước,1981
+536,9027,52-l/ctn,luat,luật đầu tư nước ngoài tại việt nam,1996
+537,10426,không số,luat,luật bầu cử đại biểu hội đồng nhân dân,1994
+538,10433,không số,luat,"luật sửa đổi, bổ sung một số điều của luật tổ chức tòa án nhân dân",1993
+539,10808,không số,luat,"luật sửa đổi, bổ sung một số điều của luật thuế doanh thu",1993
+540,10809,18-l/ctn,luat,luật dầu khí,1993
+541,11232,66-lct/hđnn8,luat,luật tổ chức quốc hội,1992
+542,11233,67-lct/hđnn8,luat,luật bầu cử đại biểu quốc hội,1992
+543,11237,64-ltc/hđnn8,luat,"luật thuế xuất khẩu, thuế nhập khẩu",1991
+544,11238,63-lct/hđnn8,luat,luật hàng không dân dụng,1991
+545,25506,không số,luat,luật bảo vệ sức khỏe nhân dân,1989
+546,31076,58-lct/hđnn8,luat,luật bảo vệ và phát triển rừng,1991
+547,107134,58-l/ctn,luat,luật thương mại,1997
+548,113342,19/2012/qhh13,luat,luật xuất bản,2012
+549,113665,53/2005/qh11,luat,luật thanh niên,2005
+550,175363,65/2025/qh15,luat,luật tổ chức chính quyền địa phương,2025
+551,999999999505750,51/2024/qh15,luat,luật bảo hiểm y tế sửa đổi 2024,2024
+552,999999999171954,02/sl,sacluat,"sắc luật quy định việc bắt, giam, khám người, khám nhà ở, khám đồ vật",1976
+553,999999999329011,03/2016/qh14,luat,luật sửa đổi phụ lục 4 danh mục ngành nghề đầu tư kinh doanh có điều kiện,2016
+554,99999999946057,17-1999/qh10,luat,luật thuế chuyển quyền sử dụng đất,1999
+555,99999999941102,07/1997/qh10,luat,luật về các tổ chức tín dụng,1997
+556,99999999940644,57-l/ctn,luat,luật thuế thu nhập doanh nghiệp,1997
+557,99999999940645,57/1997/l-ctn,luat,luật thuế giá trị gia tăng,1997
+558,99999999940647,58/l-ctn,luat,luật thương mại,1997
+559,99999999940541,56/1997/l-ctn,luat,luật bầu cử đại biểu quốc hội,1997
+560,99999999939369,43-l/ctn,luat,luật thuế doanh thu sửa đổi,1995
+561,99999999939370,43-l/ctn,luat,"luật sửa đổi, bổ sung một số điều của luật tổ chức toà án nhân dân",1995
+562,99999999939390,43-l/ctn,luat,"luật sửa đổi, bổ sung một số điều của luật thuế tiêu thụ đặc biệt",1995
+563,99999999938708,35-l/ctn,luat,luật thuế chuyển quyền sử dụng đất,1994
+564,99999999938703,35-l/ctn,luat,luật bầu cử đại biểu hội đồng nhân dân,1994
+565,99999999938709,35-l/ctn,luat,luật bầu cử đại biểu hội đồng nhân dân,1994
+566,99999999938695,30-l/ctn,luat,luật phá sản doanh nghiệp,1993
+567,99999999938480,23-l/ctn,luat,luật thuế sử dụng đất nông nghiệp,1993
+568,99999999938479,22-l/ctn,luat,luật xuất bản,1993
+569,99999999938476,19-l/ctn,luat,luật thuế lợi tức sửa đổi,1993
+570,99999999938475,20-l/ctn,luat,luật thuế doanh thu sửa đổi,1993
+571,99999999938478,17-l/ctn,luat,"luật thuế xuất khẩu, thuế nhập khẩu",1993
+572,99999999938463,6-l/ctn,luat,"luật sửa đổi, bổ sung một số điều của luật đầu tư nước ngoài tại việt nam",1992
+573,99999999938477,21-l/ctn,luat,"luật sửa đổi, bổ sung một số điều của luật thuế tiêu thụ đặc biệt",1993
+574,99999999938248,03-lctn,luat,luật tổ chức viện kiểm sát nhân dân,1992
+575,99999999938247,2/l-ctn,luat,luật tổ chức toà án nhân dân,1992
+576,99999999938065,56-lct/hđnn8,luat,luật phổ cập giáo dục tiểu học,1991
+577,99999999938064,57-lct/hđnn8,luat,"luật bảo vệ, chăm sóc và giáo dục trẻ em",1991
+578,99999999938055,46-lct/hđnn8,luat,"luật sửa đổi, bổ sung một số điều của luật nghĩa vụ quân sự",1990
+579,99999999938056,45-lct/hđnn8,luat,"luật sửa đổi, bổ sung một số điều của luật sỹ quan quân đội nhân dân việt nam",1990
+580,99999999937680,12-lct/hđnn8,luat,"luật sửa đổi, bổ sung một số điều của luật tổ chức toà án nhân dân",1988
+581,99999999937681,11-lct/hđnn8,luat,"luật sửa đổi, bổ sung một số điều của luật tổ chức viện kiểm sát nhân dân",1988
+582,99999999937475,8-lct/hđnn8,luat,luật quốc tịch việt nam,1988
+583,99999999937468,4-hđnn8,luat,luật đầu tư nước ngoài tại việt nam,1987
+584,99999999937469,5-hđnn8,luat,luật thuế xuất khẩu thuế nhập khẩu hàng mậu dịch,1987
+585,99999999937246,21-lct/hđnn7,luat,luật hôn nhân và gia đình,1986
+586,99999999936991,13-lct/hđnn7,luat,luật bầu cử đại biểu hội đồng nhân dân,1983
+587,99999999936949,250-lct,luat,luật bầu cử đại biểu quốc hội,1980
+588,99999999936863,20/lct,luat,luật tổ chức viện kiểm sát nhân dân,1960
+589,99999999936860,18/lct,luat,luật tổ chức hội đồng chính phủ,1960
+590,99999999936861,17/lct,luat,luật tổ chức quốc hội,1960
+591,99999999936858,11/sl,luat,luật nghĩa vụ quân sự,1960
+592,99999999936862,19/lct,luat,luật tổ chức toà án nhân dân,1960
+593,99999999936856,3/sl,luat,luật bầu cử đại biểu quốc hội,1959
+594,99999999936857,2/sl,luat,luật hôn nhân và gia đình,1959
+595,99999999936835,109-sl/l011,luat,luật chế độ phục vụ của sỹ quan quân đội nhân dân,1958
+596,99999999936836,110-sl/l011,luat,luật tổ chức chính quyền địa phương,1958
+597,99999999936821,108-sl/l.10,luat,luật công đoàn,1957
+598,99999999936792,102-sl/l-004,luat,luật quyền lập hội,1957
+599,99999999936793,101-sl/l.003,luat,luật quyền tự do hội họp,1957
+600,99999999936795,103-sl/l.005,luat,"luật đảm bảo quyền tự do thân thể và quyền bất khả xâm phạm đối với nhà ở, đồ vật, thư tín của nhân dân",1957
+601,99999999936743,197/sl,luat,luật cải cách ruộng đất,1953
+602,99999999937474,7-lct/hđnn8,boluat,bộ luật tố tụng hình sự,1988
+603,99999999938066,55-lct/hđnn8,luat,"bộ luật sửa đổi, bổ sung một số điều của bộ luật hình sự",1991
+604,99999999938461,4-l/ctn,luat,"bộ luật sửa đổi, bổ sung một số điều của bộ luật hình sự",1992
+605,99999999938462,5-l/ctn,luat,"bộ luật sửa đổi, bổ sung một số điều của bộ luật tố tụng hình sự",1992
+606,99999999938702,35-l/ctn,boluat,bộ luật lao động,1994
+607,99999999939391,44-l/ctn,boluat,bộ luật dân sự,1995
+608,99999999938238,68-lct/hđnn8,hienphap,hiến pháp,1992
+609,99999999941101,06/1997/qh10,luat,luật ngân hàng nhà nước,1997
+610,99999999939622,47-l/ctn,luat,luật hợp tác xã,1996
+611,99999999939623,47-l/ctn,luat,luật khoáng sản,1996
+612,99999999939624,47-l/ctn,luat,luật khoáng sản,1996
+613,99999999939099,39-l/ctn,luat,luật doanh nghiệp nhà nước,1995
+614,99999999939100,39-l/ctn,luat,"luật sửa đổi, bổ sung một số điều của luật hàng không dân dụng việt nam",1995
+615,99999999938704,35-l/ctn,luat,luật khuyến khích đầu tư trong nước,1994
+616,99999999938705,35-l/ctn,luat,"luật sửa đổi, bổ sung một số điều của luật công ty",1994
+617,99999999938706,35-l/ctn,luat,"luật sửa đổi, bổ sung một số điều của luật doanh nghiệp tư nhân",1994
+618,99999999938707,35-l/ctn,luat,"luật sửa đổi, bổ sung một số điều của luật nghĩa vụ quân sự",1994
+619,99999999938696,29-l/ctn,luat,luật bảo vệ môi trường,1993
+620,99999999938694,29-l/ctn,luat,"luật sửa đổi, bổ sung một số điều của luật tổ chức toà án nhân dân",1993
+621,99999999938481,24-l/ctn,luat,luật đất đai,1993
+622,99999999938246,1/l-ctn,luat,luật tổ chức chính phủ,1992`
+623,99999999938053,47-lct/hđnn8,luat,luật công ty,1990
+624,99999999938054,48-lct/hđnn8,luat,luật doanh nghiệp tư nhân,1990
+625,99999999937692,19-lct/hđnn8,luat,luật tổ chức hội đồng nhân dân và uỷ ban nhân dân,1989
+626,99999999937467,3-lct/hđnn8,luat,luật đất đai,1987
+627,99999999936985,11-lct/hđnn7,luat,luật tổ chức hội đồng nhân dân và uỷ ban nhân dân,1983
+628,99999999936880,51/lct,luat,luật tổ chức hội đồng nhân dân và uỷ ban hành chính các cấp,1962
+629,999999999662379,90/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật đấu thầu, luật thuế giá trị gia tăng, luật thuế xuất khẩu, luật thuế nhập khẩu, luật đầu tư, luật đầu tư công, luật quản lý",2025
+630,999999999662377,86/2025/qh15,luat,luật sửa đổi bộ luật hình sự,2025
+631,999999999650061,89/2025/qh15,luat,luật ngân sách nhà nước,2025
+632,999999999621345,73/2025/qh15,luat,luật nhà giáo,2025
+633,999999999659899,76/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật doanh nghiệp",2025
+634,999999999621341,71/2025/qh15,luat,luật công nghiệp công nghệ số,2025
+635,999999999660522,79/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật quốc tịch việt nam",2025
+636,999999999660530,82/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật tổ chức viện kiểm sát nhân dân",2025
+637,999999999649688,80/2025/qh15,luat,luật cán bộ công chức,2025
+638,999999999660533,81/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật tổ chức tòa án nhân dân",2025
+639,999999999555035,75/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật quảng cáo",2025
+640,999999999659898,88/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật xử lý vi phạm hành chính",2025
+641,999999999651570,85/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của bộ luật tố tụng dân sự, luật tố tụng hành chính",2025
+642,999999999663709,97/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật mặt trận tổ quốc việt nam, luật công đoàn, luật thanh niên và luật thực hiện dân chủ ở cơ sở",2025
+643,999999999663780,83/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật bầu cử đại biểu quốc hội và đại biểu hội đồng nhân dân",2025
+644,99999999936969,6-lct/hđnn7,luat,luật nghĩa vụ quân sự,1981
+645,99999999937895,270b-nq/hđnn8,luat,luật thuế doanh thu,1990
+646,99999999937896,270b-nq/hđnn8,luat,"luật công bố và thi hành luật thuế doanh thu, luật thuế tiêu thụ đặc biệt và luật thuế lợi tức",1990
+647,99999999940086,52-l/ctn,luat,luật ban hành văn bản quy phạm pháp luật,1996
+648,99999999948837,30/2001/qh10,luat,luật tổ chức quốc hội,2001
+649,999999999625628,91/2025/qh15,luat,luật bảo vệ dữ liệu cá nhân,2025
+650,999999999530912,74/2025/qh15,luat,luật việc làm,2025
+651,999999999578018,68/2025/qh15,luat,luật quản lý và đầu tư vốn nhà nước tại doanh nghiệp,2025
+652,999999999580121,70/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật tiêu chuẩn và quy chuẩn kỹ thuật",2025
+653,999999999580594,67/2025/qh15,luat,luật thuế thu nhập doanh nghiệp,2025
+654,999999999581164,93/2025/qh15,luat,"luật khoa học, công nghệ và đổi mới sáng tạo",2025
+655,999999999603983,69/2025/qh15,luat,luật hóa chất,2025
+656,999999999621225,66/2025/qh15,luat,luật thuế tiêu thụ đặc biệt,2025
+657,999999999622480,95/2025/qh15,luat,luật đường sắt,2025
+658,999999999643029,77/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật sử dụng năng lượng tiết kiệm và hiệu quả",2025
+659,999999999643689,94/2025/qh15,luat,luật năng lượng nguyên tử,2025
+660,999999999648594,96/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật các tổ chức tín dụng",2025
+661,999999999655378,84/2025/qh15,luat,luật thanh tra,2025
+662,999999999623226,78/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật chất lượng sản phẩm hàng hoá",2025
+663,999999999659897,92/2025/qh15,luat,luật tham gia lực lượng gìn giữ hòa bình của liên hợp quốc,2025
+664,999999999662116,98/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của 11 luật về quân sự, quốc phòng",2025
+665,99999999981043,không số,luat,luật về trọng tài thương mại quốc tế của ủy ban liên hiệp quốc về luật thương mại quốc tế,1985
+666,999999999581548,126/2025/qh15,luat,luật báo chí,2025
+667,999999999586814,112/2025/qh15,luat,luật quy hoạch,2025
+668,999999999628717,106/2025/qh15,luat,luật thi hành án dân sự,2025
+669,999999999633465,104/2025/qh15,luat,luật tình trạng khẩn cấp,2025
+670,999999999663779,125/2025/qh15,luat,luật dự thảo giáo dục đại học,2025
+671,999999999665870,109/2025/qh15,luat,luật thuế thu nhập cá nhân,2025
+672,999999999666019,120/2025/qh15,luat,"luật phòng, chống ma túy",2025
+673,999999999666020,116/2025/qh15,luat,luật an ninh mạng,2025
+674,999999999667661,105/2025/qh15,luat,luật giám định tư pháp,2025
+675,999999999667663,111/2025/qh15,luat,luật bảo hiểm tiền gửi,2025
+676,999999999675211,133/2025/qh15,luat,luật công nghệ cao,2025
+677,999999999675213,135/2025/qh15,luat,luật xây dựng,2025
+678,999999999675262,148/2025/qh15,luat,luật chuyển đổi số,2025
+679,999999999675264,115/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật chuyển giao công nghệ",2025
+680,999999999675268,108/2025/qh15,luat,luật quản lý thuế,2025
+681,999999999679013,134/2025/qh15,luat,luật trí tuệ nhân tạo,2025
+682,999999999679014,128/2025/qh15,luat,"luật thi hành tạm giữ, tạm giam và cấm đi khỏi nơi cư trú",2025
+683,999999999681550,143/2025/qh15,luat,luật đầu tư,2025
+684,999999999682798,118/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự",2025
+685,999999999684512,139/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật kinh doanh bảo hiểm",2025
+686,999999999684669,145/2025/qh15,luat,luật dự trữ quốc gia,2025
+687,999999999685733,132/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật phòng, chống tham nhũng",2025
+688,999999999685866,117/2025/qh15,luat,luật bảo vệ bí mật nhà nước,2025
+689,999999999685933,119/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật công nghiệp quốc phòng an ninh và động viên công nghiệp",2025
+690,999999999686325,127/2025/qh15,luat,luật thi hành án hình sự,2025
+691,999999999686527,138/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật thống kê",2025
+692,999999999686550,141/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật quản lý nợ công",2025
+693,999999999686937,136/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật tiếp công dân, luật khiếu nại, luật tố cáo",2025
+694,535,không số,hienphap,hiến pháp nước cộng hòa xã hội chủ nghĩa việt nam,1946
+695,889,không số,hienphap,hiến pháp nước cộng hòa xã hội chủ nghĩa việt nam,1959
+696,11234,không số,hienphap,hiến pháp nước cộng hòa xã hội chủ nghĩa việt nam,1992
+697,22313,không số,hienphap,hiến pháp nước cộng hòa xã hội chủ nghĩa việt nam,2001
+698,32801,không số,hienphap,hiến pháp nước cộng hòa xã hội chủ nghĩa việt nam,2013
+699,1534,không số,hienphap,hiến pháp nước cộng hòa xã hội chủ nghĩa việt nam,1980
+700,99999999938238,68-lct/hđnn8,hienphap,hiến pháp nước cộng hòa xã hội chủ nghĩa việt nam,1992
+701,999999999346850,107/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật lý lịch tư pháp",2025
+702,999999999689140,121/2025/qh15,luat,luật hoạt động giám sát của quốc hội và hội đồng nhân dân,2025
+703,999999999689370,113/2025/qh15,luat,luật dân số,2025
+704,999999999689413,123/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật giáo dục",2025
+705,999999999690978,114/2025/qh15,luat,luật phòng bệnh,2025
+706,999999999675210,142/2025/qh15,luat,"luật phục hồi, phá sản",2025
+707,999999999624015,102/2025/qh15,luat,luật tương trợ tư pháp về dân sự,2025
+708,999999999686537,101/2025/qh15,luat,luật chuyển giao người đang chấp hành án phạt tù,2025
+709,999999999686538,103/2025/qh15,luat,luật tương trợ tư pháp về hình sự,2025
+710,999999999688908,100/2025/qh15,luat,"luật quy định phân công quản lý nhà nước về vật tư nông nghiệp, an toàn thực phẩm nông, lâm, thủy sản và muối thuộc phạm vi quản lý nghành nông nghiệp và phát triển nông thôn trên địa bàn tỉnh hòa bình do tỉnh phú thọ ban hành",2025
+711,999999999581160,110/2025/qh15,luat,"luật thực hành tiết kiệm, chống lãng phí",2025
+712,999999999662035,122/2025/qh15,luat,luật thương mại điện tử,2025
+713,999999999675261,129/2025/qh15,luat,luật viên chức,2025
+714,999999999675263,140/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật giá",2025
+715,999999999675267,131/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật sở hữu trí tuệ",2025
+716,999999999686549,137/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật điều ước quốc tế",2025
+717,999999999687560,124/2025/qh15,luat,luật giáo dục nghề nghiệp,2025
+718,999999999687674,130/2025/qh15,luat,luật hàng không dân dụng việt nam,2025
+719,139880,49/2019/qh14,luat,"luật xuất cảnh, nhập cảnh của công dân việt nam",2019
+720,999999999675259,146/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của 15 luật trong lĩnh vực nông nghiệp và môi trường",2025
+721,999999999675265,147/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật địa chất và khoáng sản",2025
+722,999999999679698,149/2025/qh15,luat,"luật sửa đổi, bổ sung một số điều của luật thuế giá trị gia tăng",2025
+723,999999999681012,04/2026/qh16,luat,"luật sửa đổi, bổ sung một số điều của luật công chứng",2026
+724,999999999694806,03/2026/qh16,luat,luật hộ tịch,2026
+725,999999999703956,09/2026/qh16,luat,"luật sửa đổi, bổ sung một số điều của luật thuế thu nhập cá nhân, luật thuế giá trị gia tăng, luật thuế thu nhập doanh nghiệp và luật thuế tiêu thụ đặc biệt",2026
+726,999999999704653,06/2026/qh16,luat,"luật sửa đổi, bố sung một số điều của luật thi đua, khen thưởng",2026
+727,999999999704788,01/2026/qh16,luat,luật tiếp cận thông tin,2026
+728,999999999704791,07/2026/qh16,luat,"luật tín ngưỡng, tôn giáo",2026
+729,999999999704792,05/2026/qh16,luat,"luật sửa đổi, bổ sung một số điều của luật trợ giúp pháp lý",2026
+730,999999999704810,8/2026/qh16,luat,"luật sửa đổi, bổ sung một số điều của luật cơ quan đại diện nước cộng hòa xã hội chủ nghĩa việt nam ở nước ngoài",2026
+731,999999999706740,02/2026/qh16,luat,"luật law no. 02/2026/qh16 dated april 23,",2026

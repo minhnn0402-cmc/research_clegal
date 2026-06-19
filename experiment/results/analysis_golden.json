@@ -1,0 +1,2733 @@
+{
+  "tag": "golden",
+  "table": [
+    {
+      "architecture": "a0_rule_only",
+      "precision": 0.8913,
+      "precision_ci95": [
+        0.8761,
+        0.9048
+      ],
+      "recall": 0.9037,
+      "f1": 0.8975,
+      "tp": 1615,
+      "fp": 197,
+      "fn": 172
+    },
+    {
+      "architecture": "a1_llm_extractor",
+      "precision": 0.6502,
+      "precision_ci95": [
+        0.6241,
+        0.6755
+      ],
+      "recall": 0.4796,
+      "f1": 0.552,
+      "tp": 857,
+      "fp": 461,
+      "fn": 930
+    },
+    {
+      "architecture": "a3_gate_all",
+      "precision": 0.9332,
+      "precision_ci95": [
+        0.9193,
+        0.9449
+      ],
+      "recall": 0.7661,
+      "f1": 0.8414,
+      "tp": 1369,
+      "fp": 98,
+      "fn": 418
+    },
+    {
+      "architecture": "a3_gate_targeted",
+      "precision": 0.9078,
+      "precision_ci95": [
+        0.8934,
+        0.9205
+      ],
+      "recall": 0.8875,
+      "f1": 0.8976,
+      "tp": 1586,
+      "fp": 161,
+      "fn": 201
+    }
+  ],
+  "mcnemar_vs_a0": {
+    "a1_llm_extractor": {
+      "only_a0_recovered": 818,
+      "only_system_recovered": 60,
+      "chi2": 652.6754,
+      "p_value": 0.0
+    },
+    "a3_gate_all": {
+      "only_a0_recovered": 246,
+      "only_system_recovered": 0,
+      "chi2": 244.0041,
+      "p_value": 0.0
+    },
+    "a3_gate_targeted": {
+      "only_a0_recovered": 29,
+      "only_system_recovered": 0,
+      "chi2": 27.0345,
+      "p_value": 0.0
+    }
+  },
+  "label_audit": {
+    "a0_rule_only": {
+      "total_fp": 197,
+      "total_fn": 172,
+      "amend_granularity_fp": 4,
+      "amend_granularity_fn": 4,
+      "fp_causes": {
+        "relation_type_confusion": 89,
+        "other_spurious_target": 100,
+        "self_reference": 3,
+        "amend_granularity": 4,
+        "passive_history": 1
+      },
+      "fn_causes": {
+        "relation_type_confusion": 80,
+        "missed_entirely": 71,
+        "partial_reference": 17,
+        "amend_granularity": 4
+      },
+      "note": "amend_granularity items share a reference with a gold/predicted item but differ only in sua_doi/bo_sung/sua_doi_bo_sung. These are label-scheme artifacts, not semantic extraction errors."
+    },
+    "a1_llm_extractor": {
+      "total_fp": 461,
+      "total_fn": 930,
+      "amend_granularity_fp": 32,
+      "amend_granularity_fn": 32,
+      "fp_causes": {
+        "relation_type_confusion": 239,
+        "amend_granularity": 32,
+        "other_spurious_target": 166,
+        "passive_history": 4,
+        "self_reference": 15,
+        "name_as_keyword": 5
+      },
+      "fn_causes": {
+        "missed_entirely": 630,
+        "relation_type_confusion": 229,
+        "amend_granularity": 32,
+        "partial_reference": 39
+      },
+      "note": "amend_granularity items share a reference with a gold/predicted item but differ only in sua_doi/bo_sung/sua_doi_bo_sung. These are label-scheme artifacts, not semantic extraction errors."
+    },
+    "a3_gate_all": {
+      "total_fp": 98,
+      "total_fn": 418,
+      "amend_granularity_fp": 4,
+      "amend_granularity_fn": 4,
+      "fp_causes": {
+        "relation_type_confusion": 43,
+        "other_spurious_target": 50,
+        "amend_granularity": 4,
+        "passive_history": 1
+      },
+      "fn_causes": {
+        "missed_entirely": 354,
+        "relation_type_confusion": 42,
+        "partial_reference": 18,
+        "amend_granularity": 4
+      },
+      "note": "amend_granularity items share a reference with a gold/predicted item but differ only in sua_doi/bo_sung/sua_doi_bo_sung. These are label-scheme artifacts, not semantic extraction errors."
+    },
+    "a3_gate_targeted": {
+      "total_fp": 161,
+      "total_fn": 201,
+      "amend_granularity_fp": 4,
+      "amend_granularity_fn": 4,
+      "fp_causes": {
+        "relation_type_confusion": 66,
+        "other_spurious_target": 87,
+        "self_reference": 3,
+        "amend_granularity": 4,
+        "passive_history": 1
+      },
+      "fn_causes": {
+        "missed_entirely": 116,
+        "relation_type_confusion": 63,
+        "partial_reference": 18,
+        "amend_granularity": 4
+      },
+      "note": "amend_granularity items share a reference with a gold/predicted item but differ only in sua_doi/bo_sung/sua_doi_bo_sung. These are label-scheme artifacts, not semantic extraction errors."
+    }
+  },
+  "gate_diffs": {
+    "a3_gate_all": {
+      "pruned_true_positives": 246,
+      "pruned_false_positives": 99,
+      "precision_gain_items": [
+        {
+          "relation": "bai_bo",
+          "reference": "Thông tư số 18/2018/TT-BYT ngày 22 tháng 8 năm 2018",
+          "so_hieu": "26/2025/TT-BYT",
+          "content": "Thông tư số 18/2018/TT-BYT ngày 22 tháng 8 năm 2018 sửa đổi, bổ sung một số điều của Thông tư số 52/2017/TT-BYT ngày 29 "
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "khoản 1 Điều 95 Luật tư pháp người chưa thành niên 2024",
+          "so_hieu": "59/2024/QH15",
+          "content": "3. Khi có một trong các căn cứ quy định tại khoản 1 Điều này, cơ quan thi hành án hình sự Công an cấp huyện nơi người ph"
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "khoản 2 Điều 95 Luật tư pháp người chưa thành niên 2024",
+          "so_hieu": "59/2024/QH15",
+          "content": "3. Khi có một trong các căn cứ quy định tại khoản 1 Điều này, cơ quan thi hành án hình sự Công an cấp huyện nơi người ph"
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "khoản 3 Điều 95 Luật tư pháp người chưa thành niên 2024",
+          "so_hieu": "59/2024/QH15",
+          "content": "3. Khi có một trong các căn cứ quy định tại khoản 1 Điều này, cơ quan thi hành án hình sự Công an cấp huyện nơi người ph"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "điểm a khoản 1 Điều 41 Luật viễn thông 2023",
+          "so_hieu": "24/2023/QH15",
+          "content": "4. Tổ chức, doanh nghiệp bị thu hồi giấy phép trong trường hợp quy định tại điểm a khoản 1 Điều này hoặc bị buộc chấm dứ"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "điểm a khoản 2 Điều 41 Luật viễn thông 2023",
+          "so_hieu": "24/2023/QH15",
+          "content": "4. Tổ chức, doanh nghiệp bị thu hồi giấy phép trong trường hợp quy định tại điểm a khoản 1 Điều này hoặc bị buộc chấm dứ"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật được thông qua tại kỳ họp thứ 2 Quốc hội khóa XIII",
+          "so_hieu": "304/QĐ-TTg",
+          "content": "Điều 1. Ban hành kèm theo Quyết định này Chương trình xây dựng văn bản quy định chi tiết thi hành các Luật được thông qu"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 42/2015/QĐ-UBND",
+          "so_hieu": "24/2023/QĐ-UBND",
+          "content": "3. Các nội dung tại Quyết định số 42/2015/QĐ-UBND và Quyết định số 11/2020/QĐ-UBND ngày 05 tháng 5 năm 2020 của Ủy ban n"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 11/2020/QĐ-UBND ngày 05 tháng 5 năm 2020",
+          "so_hieu": "24/2023/QĐ-UBND",
+          "content": "3. Các nội dung tại Quyết định số 42/2015/QĐ-UBND và Quyết định số 11/2020/QĐ-UBND ngày 05 tháng 5 năm 2020 của Ủy ban n"
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Luật Sở hữu trí tuệ",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "2. Bảo đảm thực hiện chính sách, pháp luật về sở hữu trí tuệ tại địa phương phù hợp và tuân thủ quy định của Luật Sở hữu"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 540/QĐ-UBND ngày 28/02/2022",
+          "so_hieu": "3029/QĐ-UBND",
+          "content": "Điều 2. Căn cứ vào Điều 1 của Quyết định này, Ủy ban nhân dân huyện Hải Hà, Sở Tài nguyên và Môi trường có trách nhiệm:\r"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định số 2844/QĐ-UBND ngày 07/10/2010",
+          "so_hieu": "3840/QĐ-UBND",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký, đồng thời thay thế các thủ tục thuộc lĩnh vực nội vụ được quy"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "điểm b khoản 3 Điều 172 Bộ luật Hình sự số 100/2015/QH13",
+          "so_hieu": "12/2017/QH14",
+          "content": "c) Bỏ điểm đ khoản 2, điểm b khoản 3, điểm b khoản 4 Điều 172; điểm g khoản 2, điểm b khoản 3, điểm b khoản 4 Điều 174;"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Điều 2 Nghị quyết số 08/2008/NQ-HĐND",
+          "so_hieu": "02/2011/NQ-HĐND",
+          "content": "a) Điều 2 Nghị quyết số 08/2008/NQ-HĐND ."
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 1 Điều 203 Luật Sở hữu trí tuệ và quy định chi tiết tại khoản này",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "4. Trong trường hợp người yêu cầu xử lý xâm phạm là người được chuyển nhượng quyền sở hữu đối tượng quyền sở hữu trí tuệ"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 203 Luật Sở hữu trí tuệ và quy định chi tiết tại khoản này",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "4. Trong trường hợp người yêu cầu xử lý xâm phạm là người được chuyển nhượng quyền sở hữu đối tượng quyền sở hữu trí tuệ"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 3 Điều 203 Luật Sở hữu trí tuệ và quy định chi tiết tại khoản này",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "4. Trong trường hợp người yêu cầu xử lý xâm phạm là người được chuyển nhượng quyền sở hữu đối tượng quyền sở hữu trí tuệ"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Điều 1 Nghị quyết số 23/2009/NQ-HĐND ngày 08 tháng 12 năm 2009",
+          "so_hieu": "02/2011/NQ-HĐND",
+          "content": "b) Điều 1 Nghị quyết số 23/2009/NQ-HĐND ngày 08 tháng 12 năm 2009 của Hội đồng nhân dân tỉnh Bến Tre khoá VII về việc sử"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm a khoản 1 Điều 3 Nghị quyết số 08/2008/NQ-HĐND ngày 23 tháng 7 năm 2008",
+          "so_hieu": "02/2011/NQ-HĐND",
+          "content": "a) Điểm a, Khoản 1, Điều 3 Nghị quyết số 08/2008/NQ-HĐND ngày 23 tháng 7 năm 2008 của Hội đồng nhân dân tỉnh Bến Tre kho"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị quyết 49/NQ",
+          "so_hieu": "102/2007/NQ-HĐND",
+          "content": "2. Về phương hướng, nhiệm vụ năm 2008.\r\na- Mục tiêu tổng quát: Kiên trì mục tiêu tăng trưởng kinh tế cao. Huy động các n"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 1 Điều 45 Luật Quản lý, sử dụng tài sản công",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "4. Thủ trưởng các cơ quan, tổ chức, đơn vị trực tiếp quản lý, sử dụng tài sản quyết định thanh lý tài sản công là tài sả"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 45 Luật Quản lý, sử dụng tài sản công",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "4. Thủ trưởng các cơ quan, tổ chức, đơn vị trực tiếp quản lý, sử dụng tài sản quyết định thanh lý tài sản công là tài sả"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 3 Điều 45 Luật Quản lý, sử dụng tài sản công",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "4. Thủ trưởng các cơ quan, tổ chức, đơn vị trực tiếp quản lý, sử dụng tài sản quyết định thanh lý tài sản công là tài sả"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm a khoản 1 Điều 213 Luật Sở hữu trí tuệ",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "6. Sản phẩm có yếu tố xâm phạm quy định tại điểm a và điểm d khoản 1, điểm b và điểm c khoản 2 Điều này bị coi là hàng h"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm d khoản 1 Điều 213 Luật Sở hữu trí tuệ",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "6. Sản phẩm có yếu tố xâm phạm quy định tại điểm a và điểm d khoản 1, điểm b và điểm c khoản 2 Điều này bị coi là hàng h"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm b khoản 2 Điều 213 Luật Sở hữu trí tuệ",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "6. Sản phẩm có yếu tố xâm phạm quy định tại điểm a và điểm d khoản 1, điểm b và điểm c khoản 2 Điều này bị coi là hàng h"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm c khoản 2 Điều 213 Luật Sở hữu trí tuệ",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "6. Sản phẩm có yếu tố xâm phạm quy định tại điểm a và điểm d khoản 1, điểm b và điểm c khoản 2 Điều này bị coi là hàng h"
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Kế hoạch thực hiện Chương trình hành động số 18-Ctr/TU ngày 28 tháng 02 năm 2013",
+          "so_hieu": "1860/QĐ-UBND",
+          "content": "QUYẾT ĐỊNH\r\nPHÊ DUYỆT KẾ HOẠCH HOẠT ĐỘNG KHOA HỌC VÀ CÔNG NGHỆ TỈNH AN GIANG NĂM 2020\r\nCHỦ TỊCH ỦY BAN NHÂN DÂN TỈNH AN "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị định 105/2006/NĐ-CP",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "3. Việc áp dụng quy định tại Nghị định này đối với các đối tượng sở hữu trí tuệ khác tuân theo quy định tại khoản 1, kho"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 1 Điều 41 Luật Quản lý, sử dụng tài sản công",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "3. Giám đốc Sở Tài chính quyết định thu hồi đối với tài sản khác của các cơ quan, tổ chức, đơn vị cấp tỉnh, trừ tài sản "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 41 Luật Quản lý, sử dụng tài sản công",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "3. Giám đốc Sở Tài chính quyết định thu hồi đối với tài sản khác của các cơ quan, tổ chức, đơn vị cấp tỉnh, trừ tài sản "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 1 Điều 42 Luật Quản lý, sử dụng tài sản công",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "3. Thủ trưởng các cơ quan, tổ chức, đơn vị cấp tỉnh quyết định điều chuyển tài sản công giữa các cơ quan, tổ chức, đơn v"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 42 Luật Quản lý, sử dụng tài sản công",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "3. Thủ trưởng các cơ quan, tổ chức, đơn vị cấp tỉnh quyết định điều chuyển tài sản công giữa các cơ quan, tổ chức, đơn v"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm a Nghị định số 175/2024/NĐ-CP",
+          "so_hieu": "23/2026/QĐ-UBND",
+          "content": "c) Sở Công Thương đối với dự án, công trình quy định tại điểm d khoản 6 Điều 121 Nghị định số 175/2024/NĐ-CP (trừ dự án,"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 1 Điều 41 Luật Quản lý, sử dụng tài sản công",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "4. Thủ trưởng cơ quan, tổ chức, đơn vị cấp tỉnh, Chủ tịch Ủy ban nhân dân cấp huyện quyết định thu hồi đối với tài sản k"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 41 Luật Quản lý, sử dụng tài sản công",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "4. Thủ trưởng cơ quan, tổ chức, đơn vị cấp tỉnh, Chủ tịch Ủy ban nhân dân cấp huyện quyết định thu hồi đối với tài sản k"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 3 Điều 41 Luật Quản lý, sử dụng tài sản công",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "4. Thủ trưởng cơ quan, tổ chức, đơn vị cấp tỉnh, Chủ tịch Ủy ban nhân dân cấp huyện quyết định thu hồi đối với tài sản k"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 1 Điều 7 Nghị quyết 123/2024/NQ-HĐND",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "4. Thủ trưởng cơ quan, tổ chức, đơn vị cấp tỉnh, Chủ tịch Ủy ban nhân dân cấp huyện quyết định thu hồi đối với tài sản k"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 7 Nghị quyết 123/2024/NQ-HĐND",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "4. Thủ trưởng cơ quan, tổ chức, đơn vị cấp tỉnh, Chủ tịch Ủy ban nhân dân cấp huyện quyết định thu hồi đối với tài sản k"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 5477/QĐ-UBND",
+          "so_hieu": "5477/QĐ-UBND",
+          "content": "Điều 2. Quyết định này có hiệu lực kể từ ngày ký và thay thế nội dung bảng giá ca máy và thiết bị thi công xây dựng công"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 1214/QĐ-BCT",
+          "so_hieu": "1214/QĐ-BCT",
+          "content": "Điều 1. Ban hành kèm theo Quyết định này Hướng dẫn thực hiện và xét công nhận Tiêu chí cơ sở hạ tầng thương mại nông thô"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Nghị định số 104/2004/NĐ-CP ngày 23 tháng 3 năm 2004",
+          "so_hieu": "90/2007/QĐ-BNN",
+          "content": "1. Văn bản quy phạm pháp luật sau khi được ban hành, đăng Công báo nếu phát hiện có sai sót thì phải được đính chính the"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Thông tư số 04/2005/TT-VPCP ngày 21 tháng 3 năm 2005",
+          "so_hieu": "90/2007/QĐ-BNN",
+          "content": "1. Văn bản quy phạm pháp luật sau khi được ban hành, đăng Công báo nếu phát hiện có sai sót thì phải được đính chính the"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Luật ban hành văn bản quy phạm pháp luật",
+          "so_hieu": "90/2007/QĐ-BNN",
+          "content": "2. Việc đính chính văn bản quy phạm pháp luật đã ban hành hoặc được đăng Công báo phải dựa trên cơ sở đối chiếu với văn "
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Nghị định số 161/2005/NĐ-CP",
+          "so_hieu": "90/2007/QĐ-BNN",
+          "content": "2. Việc đính chính văn bản quy phạm pháp luật đã ban hành hoặc được đăng Công báo phải dựa trên cơ sở đối chiếu với văn "
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Luật Quản lý thuế",
+          "so_hieu": "105/2010/TT-BTC",
+          "content": "1. Việc đăng ký thuế, khai thuế, nộp thuế, quyết toán thuế được thực hiện theo quy định của Luật Quản lý thuế và các văn"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "điểm a khoản 2 Điều 107 Luật quản lý thuế số 78/2006/QH11",
+          "so_hieu": "54/2014/QH13",
+          "content": "6. Sửa cụm từ “kể từ ngày đăng ký tờ khai” tại điểm a khoản 2 Điều 107 thành cụm từ “kể từ ngày thông quan”."
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Nghị định số 63/2015/NĐ-CP",
+          "so_hieu": "154/2016/TT-BQP",
+          "content": "1. Tổ chức phổ biến, quán triệt, chỉ đạo, hướng dẫn thực hiện theo quy định tại Nghị định số 63/2015/NĐ-CP và Thông tư n"
+        },
+        {
+          "relation": "quy_dinh_chi_tiet",
+          "reference": "Luật Quốc tịch Việt Nam về việc xác định quốc tịch của trẻ em khi thực hiện thủ tục về khai sinh",
+          "so_hieu": "191/2025/NĐ-CP",
+          "content": "Điều 1. Phạm vi điều chỉnh\r\nNghị định này quy định chi tiết khoản 6 Điều 5, khoản 5 Điều 11, khoản 3 Điều 13, Điều 19, k"
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Nghị quyết số 156-HĐBT ngày 30-11-1984",
+          "so_hieu": "12/VGNN-PPCĐ",
+          "content": "3. Chỉ đạo các xí nghiệp quốc doanh (bao gồm cả lâm trường, nông trường) do Trung ương và địa phương quản lý xây dựng ph"
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Nghị quyết 51-HĐBT ngày 22-12-1985",
+          "so_hieu": "12/VGNN-PPCĐ",
+          "content": "3. Chỉ đạo các xí nghiệp quốc doanh (bao gồm cả lâm trường, nông trường) do Trung ương và địa phương quản lý xây dựng ph"
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Nghị quyết số 52-HĐBT ngày 23-2-1985",
+          "so_hieu": "12/VGNN-PPCĐ",
+          "content": "3. Chỉ đạo các xí nghiệp quốc doanh (bao gồm cả lâm trường, nông trường) do Trung ương và địa phương quản lý xây dựng ph"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật Công",
+          "so_hieu": "89/2000/QĐ/UB-LĐLĐ",
+          "content": "Điều 1\r\n- Mối quan hệ giữa UBND tỉnh và Liên đoàn Lao động tỉnh đã được quy định trong Luật Công ngày đoàn ngày 30/6/199"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 27 Pháp lệnh Thi hành án dân sự có thể",
+          "so_hieu": "173/2004/NĐ-CP",
+          "content": "2. Trong trường hợp tạm đình chỉ thi hành án theo quyết định kháng nghị của người có thẩm quyền quy định tại khoản 2 Điề"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm c khoản 4 Quyết định 1347/QĐ-UBND-HC",
+          "so_hieu": "1347/QĐ-UBND-HC",
+          "content": "b) Quyết định kỷ luật:\r\n- Trình tự ra quyết định kỷ luật:\r\n+ Trong thời hạn 05 ngày làm việc kể từ ngày kết thúc họp, Hộ"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Nghị quyết số 14/2018/NQ-HĐND ngày 07 tháng 12 năm 2018",
+          "so_hieu": "14/2020/NQ-HĐND",
+          "content": "Điều 1. Điều chỉnh, bổ sung và kéo dài thời gian thực hiện, giải ngân Kế hoạch vốn đầu tư công nguồn vốn ngân sách nhà n"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Nghị quyết số 02/2019/NQ-HĐND ngày 03 tháng 7 năm 2019",
+          "so_hieu": "14/2020/NQ-HĐND",
+          "content": "Điều 1. Điều chỉnh, bổ sung và kéo dài thời gian thực hiện, giải ngân Kế hoạch vốn đầu tư công nguồn vốn ngân sách nhà n"
+        },
+        {
+          "relation": "keo_dai_hieu_luc",
+          "reference": "Nghị quyết số 02/2019/NQ-HĐND ngày 03 tháng 7 năm 2019",
+          "so_hieu": "14/2020/NQ-HĐND",
+          "content": "Điều 1. Điều chỉnh, bổ sung và kéo dài thời gian thực hiện, giải ngân Kế hoạch vốn đầu tư công nguồn vốn ngân sách nhà n"
+        },
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "khoản 1 Quyết định số 28/2017/QĐ-UBND ngày 05/12/2017",
+          "so_hieu": "32/2017/QĐ-UBND",
+          "content": "3. Các nội dung ngưng hiệu lực quy định tại Khoản 1, Khoản 2 Điều này tiếp tục có hiệu lực kể từ ngày 01/4/2018."
+        },
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "khoản 2 Quyết định số 28/2017/QĐ-UBND ngày 05/12/2017",
+          "so_hieu": "32/2017/QĐ-UBND",
+          "content": "3. Các nội dung ngưng hiệu lực quy định tại Khoản 1, Khoản 2 Điều này tiếp tục có hiệu lực kể từ ngày 01/4/2018."
+        },
+        {
+          "relation": "keo_dai_hieu_luc",
+          "reference": "điểm a khoản 1 Điều 1 Thông tư 08/2013/TT-BNV",
+          "so_hieu": "08/2013/TT-BNV",
+          "content": "d) Trường hợp vừa không hoàn thành nhiệm vụ được giao vừa bị kỷ luật thì thời gian kéo dài nâng bậc lương thường xuyên l"
+        },
+        {
+          "relation": "keo_dai_hieu_luc",
+          "reference": "điểm b khoản 1 Điều 1 Thông tư 08/2013/TT-BNV",
+          "so_hieu": "08/2013/TT-BNV",
+          "content": "d) Trường hợp vừa không hoàn thành nhiệm vụ được giao vừa bị kỷ luật thì thời gian kéo dài nâng bậc lương thường xuyên l"
+        },
+        {
+          "relation": "keo_dai_hieu_luc",
+          "reference": "điểm c khoản 1 Điều 1 Thông tư 08/2013/TT-BNV",
+          "so_hieu": "08/2013/TT-BNV",
+          "content": "d) Trường hợp vừa không hoàn thành nhiệm vụ được giao vừa bị kỷ luật thì thời gian kéo dài nâng bậc lương thường xuyên l"
+        },
+        {
+          "relation": "keo_dai_hieu_luc",
+          "reference": "khoản 6 Điều 2 Thông tư 08/2013/TT-BNV",
+          "so_hieu": "08/2013/TT-BNV",
+          "content": "đ) Trường hợp cán bộ, công chức, viên chức và người lao động là đảng viên bị kỷ luật Đảng thì thực hiện theo quy định tạ"
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "điểm b khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "so_hieu": "1933/2011/QĐ-UBND",
+          "content": "2. Hủy bỏ một phần hoặc toàn bộ nội dung của văn bản trong trường hợp một phần hoặc toàn bộ văn bản được ban hành trái t"
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "điểm c khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "so_hieu": "1933/2011/QĐ-UBND",
+          "content": "2. Hủy bỏ một phần hoặc toàn bộ nội dung của văn bản trong trường hợp một phần hoặc toàn bộ văn bản được ban hành trái t"
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "điểm d khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "so_hieu": "1933/2011/QĐ-UBND",
+          "content": "2. Hủy bỏ một phần hoặc toàn bộ nội dung của văn bản trong trường hợp một phần hoặc toàn bộ văn bản được ban hành trái t"
+        },
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "khoản 2 Điều 16 Quyết định: số 44/2017/QĐ-UBND ngày 13 tháng 10 năm 2017",
+          "so_hieu": "88/2025/QĐ-UBND",
+          "content": "2. Quyết định này thay thế các Quyết định: số 44/2017/QĐ-UBND ngày 13 tháng 10 năm 2017 của Ủy ban nhân dân tỉnh về việc"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "QUYẾT ĐỊNH SỐ 58/2013/QĐ-TTG NGÀY 15/10/2013",
+          "so_hieu": "269/QĐ-BTC",
+          "content": "QUYẾT ĐỊNH\r\nVỀ VIỆC ĐÍNH CHÍNH THÔNG TƯ SỐ 147/2014/TT-BTC NGÀY 08/10/2014 CỦA BỘ TÀI CHÍNH HƯỚNG DẪN MỘT SỐ ĐIỀU CỦA QU"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Điều 28 Quyết định số 58/2013/QĐ-TTg ngày 15/10/2013",
+          "so_hieu": "269/QĐ-BTC",
+          "content": "1. Tại Điều 28 Thông tư số 147/2014/TT-BTC:\r\nĐã in số thứ tự Điều 28.\r\nNay sửa lại là Điều 27."
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Điều 27 Quyết định số 58/2013/QĐ-TTg ngày 15/10/2013",
+          "so_hieu": "269/QĐ-BTC",
+          "content": "1. Tại Điều 28 Thông tư số 147/2014/TT-BTC:\r\nĐã in số thứ tự Điều 28.\r\nNay sửa lại là Điều 27."
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Quyết định số 58/2013/QĐ-TTg ngày 15/10/2013",
+          "so_hieu": "269/QĐ-BTC",
+          "content": "Điều 1. Đính chính Điều 28 Thông tư số 147/2014/TT-BTC ngày 08/10/2014 của Bộ Tài chính hướng dẫn một số điều của Quyết "
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Nghị định số 46/2026/NĐ-CP ngày 26 tháng 01 năm 2026",
+          "so_hieu": "47/2026/NĐ-CP",
+          "content": "1. Nghị quyết này có hiệu lực thi hành kể từ ngày ký ban hành và thay thế Nghị quyết số 09/2026/NQ-CP ngày 04 tháng 02 n"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "Nghị quyết số 66.13/2026/NQ-CP ngày 27 tháng 01 năm 2026",
+          "so_hieu": "47/2026/NĐ-CP",
+          "content": "1. Nghị quyết này có hiệu lực thi hành kể từ ngày ký ban hành và thay thế Nghị quyết số 09/2026/NQ-CP ngày 04 tháng 02 n"
+        },
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "Điều 1 Nghị định 15/2018/NĐ-CP ngày 02 tháng 02 năm 2018",
+          "so_hieu": "09/2026/NQ-CP",
+          "content": "Điều 2. Áp dụng văn bản quy phạm pháp luật trong thời gian tạm ngưng hiệu lực\r\nTrong thời gian tạm ngưng hiệu lực theo q"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "Thông tư số 11/2026/TT-BCT",
+          "so_hieu": "906/QĐ-BCT",
+          "content": "Điều 2. Giao Cục Công nghiệp nghiên cứu, xây dựng Thông tư sửa đổi, bổ sung hoặc thay thế Thông tư số 11/2026/TT-BCT the"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật Nhà ở số 27/2023/QH15",
+          "so_hieu": "100/VBHN-VPQH",
+          "content": "LUẬT\r\nCÁC TỔ CHỨC TÍN DỤNG\r\nLuật Các tổ chức tín dụng số 32/2024/QH15 ngày 18 tháng 01 năm 2024 của Quốc hội, có hiệu lự"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật Kinh doanh bất động sản số 29/2023/QH15",
+          "so_hieu": "100/VBHN-VPQH",
+          "content": "LUẬT\r\nCÁC TỔ CHỨC TÍN DỤNG\r\nLuật Các tổ chức tín dụng số 32/2024/QH15 ngày 18 tháng 01 năm 2024 của Quốc hội, có hiệu lự"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật Các tổ chức tín dụng số 32/2024/QH15",
+          "so_hieu": "100/VBHN-VPQH",
+          "content": "LUẬT\r\nCÁC TỔ CHỨC TÍN DỤNG\r\nLuật Các tổ chức tín dụng số 32/2024/QH15 ngày 18 tháng 01 năm 2024 của Quốc hội, có hiệu lự"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 1 Thông tư số 263/2016/TT-BTC ngày 14 tháng 11 năm 2016",
+          "so_hieu": "29/2026/TT-BTC",
+          "content": "a) Lệ phí nộp đơn đăng ký bảo hộ quyền sở hữu công nghiệp (gồm cả đơn tách, đơn chuyển đổi) và lệ phí cấp Văn bằng bảo h"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 2 Thông tư số 263/2016/TT-BTC ngày 14 tháng 11 năm 2016",
+          "so_hieu": "29/2026/TT-BTC",
+          "content": "a) Lệ phí nộp đơn đăng ký bảo hộ quyền sở hữu công nghiệp (gồm cả đơn tách, đơn chuyển đổi) và lệ phí cấp Văn bằng bảo h"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm A Thông tư số 263/2016/TT-BTC ngày 14 tháng 11 năm 2016",
+          "so_hieu": "29/2026/TT-BTC",
+          "content": "a) Lệ phí nộp đơn đăng ký bảo hộ quyền sở hữu công nghiệp (gồm cả đơn tách, đơn chuyển đổi) và lệ phí cấp Văn bằng bảo h"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 1 Thông tư số 23/2019/TT-BTC ngày 19 tháng 4 năm 2019",
+          "so_hieu": "29/2026/TT-BTC",
+          "content": "b) Phí thẩm định điều kiện thuộc lĩnh vực an ninh, lệ phí cấp giấy phép quản lý pháo, lệ phí cấp giấy phép quản lý vũ kh"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Thông tư số 75/2022/TT-BTC ngày 22 tháng 12 năm 2022",
+          "so_hieu": "29/2026/TT-BTC",
+          "content": "c) Lệ phí đăng ký cư trú quy định tại Thông tư số 75/2022/TT-BTC ngày 22 tháng 12 năm 2022 của Bộ trưởng Bộ Tài chính qu"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị quyết số 148/NQ",
+          "so_hieu": "80/NQ-CP",
+          "content": "1. Nghị quyết này có hiệu lực thi hành kể từ ngày ký ban hành và thay thế cho Chương trình hành động của Chính phủ được "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị quyết số 148/NQ",
+          "so_hieu": "80/NQ-CP",
+          "content": "2. Các nội dung đã thực hiện theo Chương trình hành động ban hành kèm theo Nghị quyết số 148/NQ-CP ngày 11 tháng 11 năm "
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "Điều 3 Thông tư số 40/2020/TT-BGDĐT",
+          "so_hieu": "26/2026/TT-BGDĐT",
+          "content": "2. Điều 3, Điều 5, Điều 6 và Điều 7 của Thông tư số 40/2020/TT-BGDĐT quy định mã số, tiêu chuẩn chức danh nghề nghiệp, b"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "Điều 5 Thông tư số 40/2020/TT-BGDĐT",
+          "so_hieu": "26/2026/TT-BGDĐT",
+          "content": "2. Điều 3, Điều 5, Điều 6 và Điều 7 của Thông tư số 40/2020/TT-BGDĐT quy định mã số, tiêu chuẩn chức danh nghề nghiệp, b"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "Điều 6 Thông tư số 40/2020/TT-BGDĐT",
+          "so_hieu": "26/2026/TT-BGDĐT",
+          "content": "2. Điều 3, Điều 5, Điều 6 và Điều 7 của Thông tư số 40/2020/TT-BGDĐT quy định mã số, tiêu chuẩn chức danh nghề nghiệp, b"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "Điều 7 Thông tư số 40/2020/TT-BGDĐT",
+          "so_hieu": "26/2026/TT-BGDĐT",
+          "content": "2. Điều 3, Điều 5, Điều 6 và Điều 7 của Thông tư số 40/2020/TT-BGDĐT quy định mã số, tiêu chuẩn chức danh nghề nghiệp, b"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 1744/QĐ-BGTVT",
+          "so_hieu": "662/QĐ-BXD",
+          "content": "Điều 2. Quyết định này có hiệu lực kể từ ngày ký.\r\nNội dung công bố thủ tục hành chính quy định tại Mục 1, 2, 4, 23, 25,"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định số 3969/QĐ-BNNMT ngày 25 tháng 9 năm 2025",
+          "so_hieu": "1026/QĐ-BNNMT",
+          "content": "1. Sửa đổi, bổ sung các nội dung công bố tại các số thứ tự 1, 2 của khoản A Mục II Phần I; số thứ tự 1 của khoản B Mục I"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định số 2417/QĐ-BNNMT ngày 28 tháng 6 năm 2025",
+          "so_hieu": "1026/QĐ-BNNMT",
+          "content": "2. Bãi bỏ các nội dung công bố tại Quyết định số 2417/QĐ-BNNMT ngày 28 tháng 6 năm 2025 của Bộ trưởng Bộ Nông nghiệp và "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định số 3969/QĐ-BNNMT ngày 25 tháng 9 năm 2025",
+          "so_hieu": "1026/QĐ-BNNMT",
+          "content": "2. Bãi bỏ các nội dung công bố tại Quyết định số 2417/QĐ-BNNMT ngày 28 tháng 6 năm 2025 của Bộ trưởng Bộ Nông nghiệp và "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định số 216/QĐ-BTC ngày 03/02/2026",
+          "so_hieu": "1135/QĐ-BTС",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nBãi bỏ nội dung công bố thủ tục hành chính số thứ tự 35, 36,"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định số 5132/QĐ-BQP ngày 13/10/2025",
+          "so_hieu": "1679/QĐ-BQP",
+          "content": "Điều 2. Thủ tục hành chính được sửa đổi, bổ sung tại Quyết định này thay thế thủ tục hành chính tương ứng đã được công b"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định số 337/QĐ-BTC ngày 27/02/2024",
+          "so_hieu": "4191/QĐ-BTC",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nBãi bỏ STT 1 Phần I, Phần II tại Quyết định số 2096/QĐ-BTC n"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định số 2292/QĐ-BTC ngày 26/9/2024",
+          "so_hieu": "4191/QĐ-BTC",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nBãi bỏ STT 1 Phần I, Phần II tại Quyết định số 2096/QĐ-BTC n"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định số 3727/QĐ-BKHCN ngày 06 tháng 12 năm 2018",
+          "so_hieu": "1310/QĐ-BKHCN",
+          "content": "b) 03 thủ tục hành chính được công bố tại Quyết định số 3727/QĐ-BKHCN ngày 06 tháng 12 năm 2018 của Bộ trưởng Bộ Khoa họ"
+        }
+      ],
+      "recall_loss_items": [
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "THÔNG TƯ SỐ 01/2017/TT-VPCP NGÀY 31 THÁNG 3 NĂM 2017",
+          "so_hieu": "2/2022/TT-VPCP",
+          "content": "THÔNG TƯ\r\nBÃI BỎ MỘT PHẦN THÔNG TƯ SỐ 01/2017/TT-VPCP NGÀY 31 THÁNG 3 NĂM 2017 HƯỚNG DẪN THỰC HIỆN QUY ĐỊNH VỀ CÔNG BÁO "
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật Dự trữ quốc gia số 22/2012/QH13",
+          "so_hieu": "145/2025/QH15",
+          "content": "1. Luật Dự trữ quốc gia số 22/2012/QH13 được sửa đổi, bổ sung một số điều theo Luật số 21/2017/QH14 và Luật số 56/2024/Q"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "điểm b khoản 5 Điều 36 Nghị định số 26/2019/NĐ-CP",
+          "so_hieu": "309/2025/NĐ-CP",
+          "content": "Điều 1. Bãi bỏ cụm từ “và quy định khác có liên quan” tại điểm b khoản 5 Điều 36 Nghị định số 26/2019/NĐ-CP đã được sửa "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật Ngân sách nhà nước để thực hiện các biện pháp bảo đảm tái hòa nhập cộng đồng",
+          "so_hieu": "49/2020/NĐ-CP",
+          "content": "1. Bố trí ngân sách theo quy định của Luật Ngân sách nhà nước để thực hiện các biện pháp bảo đảm tái hòa nhập cộng đồng;"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật Bảo vệ bí mật nhà nước số 29/2018/QH14",
+          "so_hieu": "117/2025/QH15",
+          "content": "2. Luật Bảo vệ bí mật nhà nước số 29/2018/QH14 đã được sửa đổi, bổ sung một số điều theo Luật số 81/2025/QH15 hết hiệu l"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật 111/2025/QH15",
+          "so_hieu": "111/2025/QH15",
+          "content": "3. Tiếp nhận hỗ trợ theo nguyên tắc có hoàn trả từ ngân sách nhà nước theo quyết định của Thủ tướng Chính phủ hoặc vay c"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Nghị định số 108/2014/NĐ-CP ngày 20 tháng 11 năm 2014",
+          "so_hieu": "29/2023/NĐ-CP",
+          "content": "a) Nghị định số 108/2014/NĐ-CP ngày 20 tháng 11 năm 2014 của Chính phủ về chính sách tinh giản biên chế;"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật Quản lý thuế số 38/2019/QH14",
+          "so_hieu": "108/2025/QH15",
+          "content": "1. Luật Quản lý thuế số 38/2019/QH14 đã được sửa đổi, bổ sung một số điều theo Luật số 56/2024/QH15 (sau đây gọi là Luật"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Bộ luật Hình sự, do cá nhân hoặc tổ chức thực hiện trên không gian mạng bằng việc sử dụng công nghệ thông tin hoặc phương tiện điện tử",
+          "so_hieu": "116/2025/QH15",
+          "content": "1. Tội phạm mạng là hành vi nguy hiểm cho xã hội được quy định trong Bộ luật Hình sự, do cá nhân hoặc tổ chức thực hiện "
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Luật Phí và lệ phí số 97/2015/QH13",
+          "so_hieu": "116/2025/QH15",
+          "content": "Thay thế một số cụm từ của Luật Phí và lệ phí số 97/2015/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 90/2017/"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 4 Điều 43 Luật Dữ liệu số 60/2024/QH15",
+          "so_hieu": "116/2025/QH15",
+          "content": "Bãi bỏ cụm từ “pháp luật về an toàn thông tin mạng,” tại khoản 4 Điều 43."
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "điểm đ khoản 1 Điều 24 Luật Xử lý vi phạm hành chính số 15/2012/QH13",
+          "so_hieu": "116/2025/QH15",
+          "content": "Bãi bỏ cụm từ “an toàn thông tin mạng;” tại điểm đ khoản 1 Điều 24 của Luật Xử lý vi phạm hành chính số 15/2012/QH13 đã "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 3 Điều 51 Luật Đấu thầu số 22/2023/QH15",
+          "so_hieu": "116/2025/QH15",
+          "content": "Bãi bỏ cụm từ “an toàn thông tin,” tại khoản 3 Điều 51, khoản 1 và khoản 5 Điều 52 của Luật Đấu thầu số 22/2023/QH15 đã "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 1 Điều 52 Luật Đấu thầu số 22/2023/QH15",
+          "so_hieu": "116/2025/QH15",
+          "content": "Bãi bỏ cụm từ “an toàn thông tin,” tại khoản 3 Điều 51, khoản 1 và khoản 5 Điều 52 của Luật Đấu thầu số 22/2023/QH15 đã "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 5 Điều 52 Luật Đấu thầu số 22/2023/QH15",
+          "so_hieu": "116/2025/QH15",
+          "content": "Bãi bỏ cụm từ “an toàn thông tin,” tại khoản 3 Điều 51, khoản 1 và khoản 5 Điều 52 của Luật Đấu thầu số 22/2023/QH15 đã "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "điểm e khoản 1 Điều 23 Luật Phòng thủ dân sự số 18/2023/QH15",
+          "so_hieu": "116/2025/QH15",
+          "content": "Bãi bỏ cụm từ “an toàn thông tin,” tại khoản 3 Điều 51, khoản 1 và khoản 5 Điều 52 của Luật Đấu thầu số 22/2023/QH15 đã "
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật An toàn thông tin mạng số 86/2015/QH13",
+          "so_hieu": "116/2025/QH15",
+          "content": "1. Luật An toàn thông tin mạng số 86/2015/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 35/2018/QH14; Luật An n"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật An ninh mạng số 24/2018/QH14",
+          "so_hieu": "116/2025/QH15",
+          "content": "2. Luật An toàn thông tin mạng số 86/2015/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 35/2018/QH14; Luật An n"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật 116/2025/QH15",
+          "so_hieu": "116/2025/QH15",
+          "content": "1. Hệ thống thông tin đã được xác định cấp độ theo quy định của Luật An toàn thông tin mạng số 86/2015/QH13 đã được sửa "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 1 Điều 1 Quyết định số 11/2019/QĐ-UBND ngày 11 tháng 02 năm 2019",
+          "so_hieu": "15/2021/QĐ-UBND",
+          "content": "Bãi bỏ cụm từ tại Quyết định số 11/2019/QĐ-UBND ngày 11 tháng 02 năm 2019 của Ủy ban nhân dân tỉnh như sau: Bãi bỏ cụm t"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 143/2013/NĐ-CP ngày 24 tháng 10 năm 2013",
+          "so_hieu": "01/VBHN-BGDĐT",
+          "content": "NGHỊ ĐỊNH\r\nQUY ĐỊNH VỀ BỒI HOÀN HỌC BỔNG VÀ CHI PHÍ ĐÀO TẠO\r\nNghị định số 143/2013/NĐ-CP ngày 24 tháng 10 năm 2013 của C"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 51/2026/NĐ-CP ngày 02 tháng 02 năm 2026",
+          "so_hieu": "01/VBHN-BGDĐT",
+          "content": "NGHỊ ĐỊNH\r\nQUY ĐỊNH VỀ BỒI HOÀN HỌC BỔNG VÀ CHI PHÍ ĐÀO TẠO\r\nNghị định số 143/2013/NĐ-CP ngày 24 tháng 10 năm 2013 của C"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Thông tư số 84/2020/TT-BQP ngày 30 tháng 6 năm 2020",
+          "so_hieu": "32/VBHN-BQP",
+          "content": "THÔNG TƯ\r\nQUY ĐỊNH HÌNH THỨC, NỘI DUNG, THỜI GIAN SINH HOẠT CỦA QUÂN NHÂN DỰ BỊ\r\nThông tư số 84/2020/TT-BQP ngày 30 thán"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Thông tư số 65/2025/TT-BQP ngày 03 tháng 7 năm 2025",
+          "so_hieu": "32/VBHN-BQP",
+          "content": "THÔNG TƯ\r\nQUY ĐỊNH HÌNH THỨC, NỘI DUNG, THỜI GIAN SINH HOẠT CỦA QUÂN NHÂN DỰ BỊ\r\nThông tư số 84/2020/TT-BQP ngày 30 thán"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 65/2010/NĐ-CP ngày 11 tháng 6 năm 2010",
+          "so_hieu": "28/VBHN-BNNMT",
+          "content": "NGHỊ ĐỊNH\r\nQUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT ĐA DẠNG SINH HỌC\r\nNghị định số 65/2010/NĐ-CP ngà"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 160/2013/NĐ-CP ngày 12 tháng 11 năm 2013",
+          "so_hieu": "28/VBHN-BNNMT",
+          "content": "NGHỊ ĐỊNH\r\nQUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT ĐA DẠNG SINH HỌC\r\nNghị định số 65/2010/NĐ-CP ngà"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 59/2017/NĐ-CP ngày 12 tháng 5 năm 2017",
+          "so_hieu": "28/VBHN-BNNMT",
+          "content": "NGHỊ ĐỊNH\r\nQUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT ĐA DẠNG SINH HỌC\r\nNghị định số 65/2010/NĐ-CP ngà"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 43/2026/NĐ-CP ngày 26 tháng 01 năm 2026",
+          "so_hieu": "28/VBHN-BNNMT",
+          "content": "NGHỊ ĐỊNH\r\nQUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT ĐA DẠNG SINH HỌC\r\nNghị định số 65/2010/NĐ-CP ngà"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 11/2013/NĐ-CP ngày 14 tháng 01 năm 2013",
+          "so_hieu": "04/VBHN-BXD",
+          "content": "NGHỊ ĐỊNH\r\nVỀ QUẢN LÝ ĐẦU TƯ PHÁT TRIỂN ĐÔ THỊ\r\nNghị định số 11/2013/NĐ-CP ngày 14 tháng 01 năm 2013 của Chính phủ về qu"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 100/2018/NĐ-CP ngày 16 tháng 7 năm 2018",
+          "so_hieu": "04/VBHN-BXD",
+          "content": "NGHỊ ĐỊNH\r\nVỀ QUẢN LÝ ĐẦU TƯ PHÁT TRIỂN ĐÔ THỊ\r\nNghị định số 11/2013/NĐ-CP ngày 14 tháng 01 năm 2013 của Chính phủ về qu"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 31/2021/NĐ-CP ngày 26 tháng 3 năm 2021",
+          "so_hieu": "04/VBHN-BXD",
+          "content": "NGHỊ ĐỊNH\r\nVỀ QUẢN LÝ ĐẦU TƯ PHÁT TRIỂN ĐÔ THỊ\r\nNghị định số 11/2013/NĐ-CP ngày 14 tháng 01 năm 2013 của Chính phủ về qu"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 35/2023/NĐ-CP ngày 20 tháng 6 năm 2023",
+          "so_hieu": "04/VBHN-BXD",
+          "content": "NGHỊ ĐỊNH\r\nVỀ QUẢN LÝ ĐẦU TƯ PHÁT TRIỂN ĐÔ THỊ\r\nNghị định số 11/2013/NĐ-CP ngày 14 tháng 01 năm 2013 của Chính phủ về qu"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 96/2024/NĐ-CP ngày 24 tháng 7 năm 2024",
+          "so_hieu": "04/VBHN-BXD",
+          "content": "NGHỊ ĐỊNH\r\nVỀ QUẢN LÝ ĐẦU TƯ PHÁT TRIỂN ĐÔ THỊ\r\nNghị định số 11/2013/NĐ-CP ngày 14 tháng 01 năm 2013 của Chính phủ về qu"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 35/2026/NĐ-CP ngày 22 tháng 01 năm 2026",
+          "so_hieu": "04/VBHN-BXD",
+          "content": "NGHỊ ĐỊNH\r\nVỀ QUẢN LÝ ĐẦU TƯ PHÁT TRIỂN ĐÔ THỊ\r\nNghị định số 11/2013/NĐ-CP ngày 14 tháng 01 năm 2013 của Chính phủ về qu"
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Luật Bảo hiểm xã hội",
+          "so_hieu": "88/2025/TT-BCA",
+          "content": "Điều 21. Phạm vi điều chỉnh\r\nThông tư này hướng dẫn thực hiện các chế độ bảo hiểm xã hội bắt buộc và thực hiện quản lý t"
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Nghị định số 157/2025/NĐ-CP",
+          "so_hieu": "88/2025/TT-BCA",
+          "content": "Điều 21. Phạm vi điều chỉnh\r\nThông tư này hướng dẫn thực hiện các chế độ bảo hiểm xã hội bắt buộc và thực hiện quản lý t"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "Thông tư số 05/2020/TT-BNV ngày 09 tháng 11 năm 2020",
+          "so_hieu": "10/2024/TT-BNV",
+          "content": "Thông tư số 05/2020/TT-BNV ngày 09 tháng 11 năm 2020 của Bộ trưởng Bộ Nội vụ bãi bỏ khoản 7 Điều 2 Thông tư số 12/2019/T"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 1 Điều 10 Thông tư số 26/2019/TT-BYT ngày 30 tháng 8 năm 2019",
+          "so_hieu": "14/2022/TT-BYT",
+          "content": "Thông tư số 26/2019/TT-BYT ngày 30 tháng 8 năm 2019 của Bộ trưởng Bộ Y tế quy định về danh mục thuốc hiếm: Bãi bỏ Điều 9"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Thông tư số 14/2020/TT-BYT ngày 10 tháng 7 năm 2020",
+          "so_hieu": "14/2022/TT-BYT",
+          "content": "Thông tư số 14/2020/TT-BYT ngày 10 tháng 7 năm 2020 của Bộ trưởng Bộ Y tế quy định một số nội dung trong đấu thầu trang "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị định 125/2020/NĐ-CP",
+          "so_hieu": "125/2020/NĐ-CP",
+          "content": "2. Người nộp thuế áp dụng hóa đơn điện tử theo quy định của Luật Quản lý thuế số 38/2019/QH14 ngày 13 tháng 6 năm 2019 v"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 1 Điều 32 Luật quản lý thuế hoặc kể từ",
+          "so_hieu": "129/2013/NĐ-CP",
+          "content": "a) Không nộp hồ sơ đăng ký thuế; không nộp hồ sơ khai thuế hoặc nộp hồ sơ khai thuế sau 90 (chín mươi) ngày, kể từ ngày "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 32 Luật quản lý thuế hoặc kể từ",
+          "so_hieu": "129/2013/NĐ-CP",
+          "content": "a) Không nộp hồ sơ đăng ký thuế; không nộp hồ sơ khai thuế hoặc nộp hồ sơ khai thuế sau 90 (chín mươi) ngày, kể từ ngày "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 3 Điều 32 Luật quản lý thuế hoặc kể từ",
+          "so_hieu": "129/2013/NĐ-CP",
+          "content": "a) Không nộp hồ sơ đăng ký thuế; không nộp hồ sơ khai thuế hoặc nộp hồ sơ khai thuế sau 90 (chín mươi) ngày, kể từ ngày "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 5 Điều 32 Luật quản lý thuế hoặc kể từ",
+          "so_hieu": "129/2013/NĐ-CP",
+          "content": "a) Không nộp hồ sơ đăng ký thuế; không nộp hồ sơ khai thuế hoặc nộp hồ sơ khai thuế sau 90 (chín mươi) ngày, kể từ ngày "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị định 92/CP",
+          "so_hieu": "92/CP",
+          "content": "Điều 1. Ban hành kèm theo Nghị định này một số điều khoản sửa đổi bổ sung Điều lệ quản lý đầu tư và xây dựng ban hành kè"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 2 Điều 4 Nghị định số 49/2016/NĐ-CP ngày 27 tháng 5 năm 2016",
+          "so_hieu": "125/2020/NĐ-CP",
+          "content": "5. Bỏ cụm từ “hóa đơn” tại phần Tên, Căn cứ ban hành; khoản 2, 3 Điều 4; cụm từ “đình chỉ quyền tự in hóa đơn, quyền khở"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 3 Điều 4 Nghị định số 49/2016/NĐ-CP ngày 27 tháng 5 năm 2016",
+          "so_hieu": "125/2020/NĐ-CP",
+          "content": "5. Bỏ cụm từ “hóa đơn” tại phần Tên, Căn cứ ban hành; khoản 2, 3 Điều 4; cụm từ “đình chỉ quyền tự in hóa đơn, quyền khở"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "khoản 2 Thông tư số 10/2022/TT-BKHĐT ngày 15 tháng 6 năm 2022",
+          "so_hieu": "1373/QĐ-BKHĐT",
+          "content": "Điều 1. Đính chính lỗi kỹ thuật tại Thông tư số 10/2022/TT-BKHĐT ngày 15 tháng 6 năm 2022 của Bộ trưởng Bộ Kế hoạch và Đ"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Nghị định số 162/2013/NĐ-CP ngày 12 tháng 11 năm 2013",
+          "so_hieu": "82/2026/NĐ-CP",
+          "content": "Điều 23. Bãi bỏ, thay thế một số cụm từ tại Nghị định số 162/2013/NĐ-CP ngày 12 tháng 11 năm 2013 của Chính phủ quy định"
+        },
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "khoản 1 Điều 37 Thông tư số 08/2022/TT-BKHĐT ngày 31 tháng 5 năm 2022",
+          "so_hieu": "16/2022/TT-BKHĐT",
+          "content": "a) Ngưng hiệu lực thi hành từ ngày 01 tháng 8 năm 2022 đến ngày 15 tháng 9 năm 2022, trừ quy định về lộ trình áp dụng đấ"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Điều 3 Thông tư số 01/2021/TT-BYT ngày 25 tháng 01 năm 2021",
+          "so_hieu": "5335/QĐ-BYT",
+          "content": "2. Tại Điều 3 Thông tư số 02/2021/TT-BYT ngày 25 tháng 01 năm 2021 của Bộ trưởng Bộ Y tế quy định tiêu chuẩn, nhiệm vụ c"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Nghị định số 59/2006/NĐ-CP",
+          "so_hieu": "173/2024/NĐ-CP",
+          "content": "2. Bãi bỏ một phần Nghị định số 59/2006/NĐ-CP như sau:"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật Công nghệ cao số 21/2008/QH12",
+          "so_hieu": "133/2025/QH15",
+          "content": "2. Luật Công nghệ cao số 21/2008/QH12 được sửa đổi, bổ sung một số điều theo Luật số 32/2013/QH13, Luật số 67/2014/QH13,"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 7 Nghị quyết 49/2025/NQ-HĐND",
+          "so_hieu": "49/2025/NQ-HĐND",
+          "content": "b) Hỗ trợ theo quy định tại khoản 2, Điều 43, Luật Thủ đô: Các dự án đầu tư đáp ứng quy định tại khoản 1, Điều 43, Luật "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Điều 30 Nghị định 67/2026/NĐ-CP",
+          "so_hieu": "67/2026/NĐ-CP",
+          "content": "3. Các quy định tại Điều 30, Điều 31, Điều 32 của Nghị định này áp dụng đối với đối tượng áp dụng tương ứng quy định tại"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Điều 31 Nghị định 67/2026/NĐ-CP",
+          "so_hieu": "67/2026/NĐ-CP",
+          "content": "3. Các quy định tại Điều 30, Điều 31, Điều 32 của Nghị định này áp dụng đối với đối tượng áp dụng tương ứng quy định tại"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Điều 32 Nghị định 67/2026/NĐ-CP",
+          "so_hieu": "67/2026/NĐ-CP",
+          "content": "3. Các quy định tại Điều 30, Điều 31, Điều 32 của Nghị định này áp dụng đối với đối tượng áp dụng tương ứng quy định tại"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật Doanh nghiệp nhà nước và Điều lệ của Công ty UBND Thành phố phê duyệt",
+          "so_hieu": "64/2006/QĐ-UBND",
+          "content": "Điều 1. Chuyển Công ty Phát hành sách Hà Nội thành Công ty trách nhiệm hữu hạn Nhà nước một thành viên Sách Hà Nội;\r\n* T"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật Bảo vệ bí mật nhà nước số 29/2018/QH14",
+          "so_hieu": "117/2025/QH15",
+          "content": "Điều 28. Điều khoản chuyển tiếp\r\nQuyết định về danh mục bí mật nhà nước được ban hành theo quy định của Luật Bảo vệ bí m"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật 117/2025/QH15",
+          "so_hieu": "117/2025/QH15",
+          "content": "Điều 28. Điều khoản chuyển tiếp\r\nQuyết định về danh mục bí mật nhà nước được ban hành theo quy định của Luật Bảo vệ bí m"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Thông tư 29/2025/TT-BYT",
+          "so_hieu": "29/2025/TT-BYT",
+          "content": "1. Các hồ sơ đăng ký lưu hành thuốc cổ truyền, vị thuốc cổ truyền, dược liệu nộp trước ngày Thông tư này có hiệu lực thi"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Luật Công nghiệp công nghệ số số 71/2025/QH15",
+          "so_hieu": "134/2025/QH15",
+          "content": "Điều 33. Bãi bỏ một số chương, điều, khoản, điểm của Luật Công nghiệp công nghệ số số 71/2025/QH15\r\nBãi bỏ khoản 9 Điều "
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Nghị quyết số 14/2018/NQ-HĐND ngày 19 tháng 7 năm 2018",
+          "so_hieu": "06/2021/NQ-HĐND",
+          "content": "Điều 1. Hủy bỏ danh mục dự án ban hành kèm theo Nghị quyết số 14/2018/NQ-HĐND ngày 19 tháng 7 năm 2018 và sửa đổi, bổ su"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 36 Luật 59/2024/QH15",
+          "so_hieu": "59/2024/QH15",
+          "content": "3. Người chưa thành niên phạm tội có thể bị áp dụng một hoặc nhiều biện pháp xử lý chuyển hướng tại cộng đồng. Biện pháp"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 3 Điều 36 Luật 59/2024/QH15",
+          "so_hieu": "59/2024/QH15",
+          "content": "3. Người chưa thành niên phạm tội có thể bị áp dụng một hoặc nhiều biện pháp xử lý chuyển hướng tại cộng đồng. Biện pháp"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 930/QĐ-UBND ngày 30/6/2025",
+          "so_hieu": "335/QĐ-UBND",
+          "content": "1. Quyết định này bãi bỏ 18 thủ tục hành chính số thứ tự từ 04 đến 22 mục IV - Lĩnh vực tiêu chuẩn, đo lường, chất lượng"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 2159/QĐ-UBND ngày 24/12/2018",
+          "so_hieu": "335/QĐ-UBND",
+          "content": "2. Quyết định này bãi bỏ 01 thủ tục hành chính số thứ tự 04 Phần I - Danh mục thủ tục hành chính mới ban hành, lĩnh vực "
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Nghị quyết số 37/2012/QH13 ngày 23 tháng 11 năm 2012",
+          "so_hieu": "96/2019/QH14",
+          "content": "Điều 4. Hiệu lực thi hành\r\nNghị quyết số 37/2012/QH13 ngày 23 tháng 11 năm 2012 của Quốc hội về công tác phòng, chống vi"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Nghị quyết số 63/2013/QH13 ngày 27 tháng 11 năm 2013",
+          "so_hieu": "96/2019/QH14",
+          "content": "Điều 4. Hiệu lực thi hành\r\nNghị quyết số 37/2012/QH13 ngày 23 tháng 11 năm 2012 của Quốc hội về công tác phòng, chống vi"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Nghị quyết số 111/2015/QH13 ngày 27 tháng 11 năm 2015",
+          "so_hieu": "96/2019/QH14",
+          "content": "Điều 4. Hiệu lực thi hành\r\nNghị quyết số 37/2012/QH13 ngày 23 tháng 11 năm 2012 của Quốc hội về công tác phòng, chống vi"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị quyết số 52/2013/QH13 ngày 21 tháng 6 năm 2013",
+          "so_hieu": "96/2019/QH14",
+          "content": "Điều 4. Hiệu lực thi hành\r\nNghị quyết số 37/2012/QH13 ngày 23 tháng 11 năm 2012 của Quốc hội về công tác phòng, chống vi"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị quyết số 69/2013/QH13 ngày 29 tháng 11 năm 2013",
+          "so_hieu": "96/2019/QH14",
+          "content": "Điều 4. Hiệu lực thi hành\r\nNghị quyết số 37/2012/QH13 ngày 23 tháng 11 năm 2012 của Quốc hội về công tác phòng, chống vi"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị quyết số 75/2014/QH13 ngày 24 tháng 6 năm 2014",
+          "so_hieu": "96/2019/QH14",
+          "content": "Điều 4. Hiệu lực thi hành\r\nNghị quyết số 37/2012/QH13 ngày 23 tháng 11 năm 2012 của Quốc hội về công tác phòng, chống vi"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị quyết số 77/2014/QH13 ngày 10 tháng 11 năm 2014",
+          "so_hieu": "96/2019/QH14",
+          "content": "Điều 4. Hiệu lực thi hành\r\nNghị quyết số 37/2012/QH13 ngày 23 tháng 11 năm 2012 của Quốc hội về công tác phòng, chống vi"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị quyết số 96/2015/QH13 ngày 26 tháng 6 năm 2015",
+          "so_hieu": "96/2019/QH14",
+          "content": "Điều 4. Hiệu lực thi hành\r\nNghị quyết số 37/2012/QH13 ngày 23 tháng 11 năm 2012 của Quốc hội về công tác phòng, chống vi"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị quyết số 55/2017/QH14 ngày 24 tháng 11 năm 2017",
+          "so_hieu": "96/2019/QH14",
+          "content": "Điều 4. Hiệu lực thi hành\r\nNghị quyết số 37/2012/QH13 ngày 23 tháng 11 năm 2012 của Quốc hội về công tác phòng, chống vi"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Nghị định số 99/2019/NĐ-CP ngày 30 tháng 12 năm 2019",
+          "so_hieu": "91/2026/NĐ-CP",
+          "content": "3. Nghị định số 141/2013/NĐ-CP ngày 24 tháng 10 năm 2013 của Chính phủ quy định chi tiết và hướng dẫn thi hành một số đi"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị định 22/2024/NĐ-CP",
+          "so_hieu": "22/2024/NĐ-CP",
+          "content": "7. Thay thế Phụ lục ban hành kèm theo Nghị định số 61/2019/NĐ-CP ngày 10 tháng 7 năm 2019 của Chính phủ quy định chi tiế"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật 105/2025/QH15",
+          "so_hieu": "105/2025/QH15",
+          "content": "3. Người có thẩm quyền bổ nhiệm, bổ nhiệm lại, cấp, cấp lại, thu hồi thẻ giám định viên tư pháp, công nhận người, tổ chứ"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Thông tư số 80/2021/TT-BTC ngày 29 tháng 9 năm 2021",
+          "so_hieu": "373/2025/NĐ-CP",
+          "content": "2. Ban hành Mẫu số 01/TTĐB tại Phụ lục I kèm theo Nghị định này và bãi bỏ các Mẫu số 01/TTĐB, Mẫu số 02/TTĐB tại Phụ lục"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị định số 126/2020/NĐ-CP",
+          "so_hieu": "373/2025/NĐ-CP",
+          "content": "2. Ban hành Mẫu số 01/TTĐB tại Phụ lục I kèm theo Nghị định này và bãi bỏ các Mẫu số 01/TTĐB, Mẫu số 02/TTĐB tại Phụ lục"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị định 373/2025/NĐ-CP",
+          "so_hieu": "373/2025/NĐ-CP",
+          "content": "2. Trường hợp người nộp thuế đã kê khai thuế theo mẫu biểu quy định tại Nghị định số 126/2020/NĐ-CP ngày 19 tháng 10 năm"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Điều 1 Quyết định 305/QĐ-BCT",
+          "so_hieu": "305/QĐ-BCT",
+          "content": "Điều 2. Quyết định này có hiệu lực kể từ ngày ký.\r\nNội dung đính chính tại Điều 1 Quyết định này là một phần không tách "
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Nghị định số 71/2007/NĐ-CP ngày 03 tháng 5 năm 2007",
+          "so_hieu": "154/2013/NĐ-CP",
+          "content": "2. Các quy định tại Chương III Nghị định số 71/2007/NĐ-CP ngày 03 tháng 5 năm 2007 của Chính phủ quy định chi tiết và hư"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị định 67/2026/NĐ-CP",
+          "so_hieu": "67/2026/NĐ-CP",
+          "content": "2. Các quy định về quản lý chi phí đầu tư xây dựng tại Mục 1 Chương IV Nghị định này áp dụng đối với dự án đầu tư xây dự"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 4 Điều 60 Luật điện lực",
+          "so_hieu": "24/2012/QH13",
+          "content": "5. Bổ sung từ “biên giới” vào sau cụm từ “nông thôn, miền núi” tại tên Chương VIII; tên các điều 60, 61 và 64; các khoản"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 2 Điều 64 Luật điện lực",
+          "so_hieu": "24/2012/QH13",
+          "content": "5. Bổ sung từ “biên giới” vào sau cụm từ “nông thôn, miền núi” tại tên Chương VIII; tên các điều 60, 61 và 64; các khoản"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "QUYẾT ĐỊNH SỐ 216/2008/QĐ-UBND NGÀY 21 THÁNG 8 NĂM 2008",
+          "so_hieu": "49/2013/QĐ-UBND",
+          "content": "QUYẾT ĐỊNH\r\nVỀ VIỆC BÃI BỎ MỨC THU LỆ PHÍ ĐĂNG KÝ NUÔI CON NUÔI QUY ĐỊNH TẠI BIỂU MỨC THU LỆ PHÍ ĐĂNG KÝ HỘ TỊCH BAN HÀN"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 3 Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023",
+          "so_hieu": "27/2026/TT-BGDĐT",
+          "content": "2. Các điều sau: Điều 3, Điều 4, Điều 5, Điều 6 và Điều 11 của Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023 củ"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 4 Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023",
+          "so_hieu": "27/2026/TT-BGDĐT",
+          "content": "2. Các điều sau: Điều 3, Điều 4, Điều 5, Điều 6 và Điều 11 của Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023 củ"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 5 Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023",
+          "so_hieu": "27/2026/TT-BGDĐT",
+          "content": "2. Các điều sau: Điều 3, Điều 4, Điều 5, Điều 6 và Điều 11 của Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023 củ"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 6 Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023",
+          "so_hieu": "27/2026/TT-BGDĐT",
+          "content": "2. Các điều sau: Điều 3, Điều 4, Điều 5, Điều 6 và Điều 11 của Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023 củ"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 11 Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023",
+          "so_hieu": "27/2026/TT-BGDĐT",
+          "content": "2. Các điều sau: Điều 3, Điều 4, Điều 5, Điều 6 và Điều 11 của Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023 củ"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 11/2013/NĐ-CP ngày 14 tháng 01 năm 2013",
+          "so_hieu": "03/VBHN-BXD",
+          "content": "NGHỊ ĐỊNH\r\nVỀ QUẢN LÝ ĐẦU TƯ PHÁT TRIỂN ĐÔ THỊ\r\nNghị định số 11/2013/NĐ-CP ngày 14 tháng 01 năm 2013 của Chính phủ về qu"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 100/2018/NĐ-CP ngày 16 tháng 7 năm 2018",
+          "so_hieu": "03/VBHN-BXD",
+          "content": "NGHỊ ĐỊNH\r\nVỀ QUẢN LÝ ĐẦU TƯ PHÁT TRIỂN ĐÔ THỊ\r\nNghị định số 11/2013/NĐ-CP ngày 14 tháng 01 năm 2013 của Chính phủ về qu"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 31/2021/NĐ-CP ngày 26 tháng 3 năm 2021",
+          "so_hieu": "03/VBHN-BXD",
+          "content": "NGHỊ ĐỊNH\r\nVỀ QUẢN LÝ ĐẦU TƯ PHÁT TRIỂN ĐÔ THỊ\r\nNghị định số 11/2013/NĐ-CP ngày 14 tháng 01 năm 2013 của Chính phủ về qu"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 304/QĐ-TTg",
+          "so_hieu": "304/QĐ-TTg",
+          "content": "Điều 1. Ban hành kèm theo Quyết định này Chương trình xây dựng văn bản quy định chi tiết thi hành các Luật được thông qu"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật 59/2024/QH15",
+          "so_hieu": "59/2024/QH15",
+          "content": "7. Việc áp dụng thủ tục xử lý chuyển hướng không làm chấm dứt các hoạt động tố tụng cần thiết để giải quyết vụ án.\r\nTrườ"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Điều 1 Quyết định 3029/QĐ-UBND",
+          "so_hieu": "3029/QĐ-UBND",
+          "content": "Điều 2. Căn cứ vào Điều 1 của Quyết định này, Ủy ban nhân dân huyện Hải Hà, Sở Tài nguyên và Môi trường có trách nhiệm:\r"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 32/QĐ-UBND ngày 06/01/2021",
+          "so_hieu": "122/QĐ-UBND",
+          "content": "Điều 2. Bãi bỏ 39 thủ tục hành chính (Phụ lục II) tại Quyết định số 32/QĐ-UBND ngày 06/01/2021 của Chủ tịch UBND tỉnh về"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Luật Đê điều số 79/2006/QH11",
+          "so_hieu": "146/2025/QH15",
+          "content": "LUẬT\r\nSỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA 15 LUẬT TRONG LĨNH VỰC NÔNG NGHIỆP VÀ MÔI TRƯỜNG\r\nCăn cứ Hiến pháp nước Cộng hòa "
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Luật Lâm nghiệp số 16/2017/QH14",
+          "so_hieu": "146/2025/QH15",
+          "content": "LUẬT\r\nSỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA 15 LUẬT TRONG LĨNH VỰC NÔNG NGHIỆP VÀ MÔI TRƯỜNG\r\nCăn cứ Hiến pháp nước Cộng hòa "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm c khoản 1 Điều 198 Luật Sở hữu trí tuệ phải",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "4. Yêu cầu cơ quan nhà nước có thẩm quyền xử lý hành vi xâm phạm quy định tại điểm c khoản 1 Điều 198 của Luật Sở hữu tr"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 455/QĐ-BHXH",
+          "so_hieu": "455/QĐ-BHXH",
+          "content": "Điều 1. Ban hành kèm theo Quyết định này Kế hoạch triển khai thực hiện Nghị định số 43/2021/NĐ-CP ngày 31/3/2021 của Chí"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị quyết 02/2011/NQ-HĐND",
+          "so_hieu": "02/2011/NQ-HĐND",
+          "content": "2. Sử dụng số thu phí, lệ phí được trích lại:\r\nCơ quan thu phí, lệ phí sử dụng số tiền được trích lại để chi cho các côn"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm a khoản 1 Điều 12 Quyết định 23/2026/QĐ-UBND",
+          "so_hieu": "23/2026/QĐ-UBND",
+          "content": "a) Cơ quan chuyên môn về xây dựng chịu trách nhiệm ngăn chặn và xử lý đối với công trình cấp II trở lên (trừ công trình "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 1 Điều 24 Nghị định 105/2006/NĐ-CP",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "4. Trong trường hợp người yêu cầu xử lý xâm phạm là người được chuyển nhượng quyền sở hữu đối tượng quyền sở hữu trí tuệ"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 24 Nghị định 105/2006/NĐ-CP",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "4. Trong trường hợp người yêu cầu xử lý xâm phạm là người được chuyển nhượng quyền sở hữu đối tượng quyền sở hữu trí tuệ"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 3 Điều 24 Nghị định 105/2006/NĐ-CP",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "4. Trong trường hợp người yêu cầu xử lý xâm phạm là người được chuyển nhượng quyền sở hữu đối tượng quyền sở hữu trí tuệ"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật Ngân sách",
+          "so_hieu": "102/2007/NQ-HĐND",
+          "content": "2. Về phương hướng, nhiệm vụ năm 2008.\r\na- Mục tiêu tổng quát: Kiên trì mục tiêu tăng trưởng kinh tế cao. Huy động các n"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 1 Điều 10 Nghị quyết 123/2024/NQ-HĐND",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "4. Thủ trưởng các cơ quan, tổ chức, đơn vị trực tiếp quản lý, sử dụng tài sản quyết định thanh lý tài sản công là tài sả"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 10 Nghị quyết 123/2024/NQ-HĐND",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "4. Thủ trưởng các cơ quan, tổ chức, đơn vị trực tiếp quản lý, sử dụng tài sản quyết định thanh lý tài sản công là tài sả"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm a khoản 1 Điều 204 Luật Sở hữu trí tuệ gồm chi phí cho việc tạm giữ, bảo quản, lưu kho, lưu bãi đối với hàng hoá xâm phạm, chi phí thực hiện các biện pháp khẩn cấp tạm thời, chi phí hợp lý để thuê dịch vụ giám định, ngăn chặn, khắc phục hành vi xâm phạm và chi phí cho việc thông báo, cải chính trên phương tiện thông tin đại chúng liên quan đến hành vi xâm phạm",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "Điều 20. Chi phí hợp lý để ngăn chặn, khắc phục thiệt hại\r\nChi phí hợp lý để ngăn chặn, khắc phục thiệt hại quy định tại"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 06/2017/QĐ-UBND",
+          "so_hieu": "06/2017/QĐ-UBND",
+          "content": "Điều 1. Ban hành kèm theo Quyết định này Quy chế Bảo vệ bí mật nhà nước trên địa bàn tỉnh Điện Biên."
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 35/2015/QĐ-UBND",
+          "so_hieu": "35/2015/QĐ-UBND",
+          "content": "Điều 1. Ban hành kèm theo Quyết định này “Quy định phân cấp quản lý, sử dụng tài sản nhà nước trên địa bàn tỉnh Cao Bằng"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 131/QĐ-UBND",
+          "so_hieu": "131/QĐ-UBND",
+          "content": "Điều 1. Ban hành kèm theo Quyết định này Quy chế quản lý, sử dụng Quỹ Hỗ trợ các lễ hội và công tác xúc tiến đầu tư, du "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 919/QĐ-UBND",
+          "so_hieu": "919/QĐ-UBND",
+          "content": "Điều 1. Ban hành kèm theo Quyết định này Đề án “Tăng cường quản lý nhà nước trong hoạt động công chứng” trên địa bàn tỉn"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 17/2025/QĐ-UBND",
+          "so_hieu": "17/2025/QĐ-UBND",
+          "content": "Điều 1. Ban hành kèm theo Quyết định này Quy chế phối hợp quản lý Nhà nước về bảo vệ quyền lợi người tiêu dùng trên địa "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 23/2026/QĐ-UBND",
+          "so_hieu": "23/2026/QĐ-UBND",
+          "content": "Điều 1. Ban hành kèm theo Quyết định này Quy định về quản lý trật tự xây dựng và phân cấp quản lý trật tự xây dựng trên "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 134/QĐ-UB",
+          "so_hieu": "134/QĐ-UB",
+          "content": "Điều 1. – Nay ban hành kèm theo quyết định này tiêu chuẩn địa phương: 53 TCV 37-80 “Thức ăn hỗn hợp cho gia súc (heo, gà"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 1 Điều 7 Nghị quyết 123/2024/NQ-HĐND",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "3. Giám đốc Sở Tài chính quyết định thu hồi đối với tài sản khác của các cơ quan, tổ chức, đơn vị cấp tỉnh, trừ tài sản "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 7 Nghị quyết 123/2024/NQ-HĐND",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "3. Giám đốc Sở Tài chính quyết định thu hồi đối với tài sản khác của các cơ quan, tổ chức, đơn vị cấp tỉnh, trừ tài sản "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 252/2004/QĐ-UB",
+          "so_hieu": "252/2004/QĐ-UB",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành sau 15 ngày kể từ ngày ký.\r\nGiao Giám đốc Sở Tư pháp có trách nhiệm hướng dẫ"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 297/QĐ-UBND",
+          "so_hieu": "297/QĐ-UBND",
+          "content": "Điều 1. Ban hành kèm theo Quyết định này 23 quy trình nội bộ giải quyết thủ tục hành chính trong lĩnh vực Tài nguyên nướ"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 1 Điều 8 Nghị quyết 123/2024/NQ-HĐND",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "3. Thủ trưởng các cơ quan, tổ chức, đơn vị cấp tỉnh quyết định điều chuyển tài sản công giữa các cơ quan, tổ chức, đơn v"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 8 Nghị quyết 123/2024/NQ-HĐND",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "3. Thủ trưởng các cơ quan, tổ chức, đơn vị cấp tỉnh quyết định điều chuyển tài sản công giữa các cơ quan, tổ chức, đơn v"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm a khoản 2 Điều 3 Quyết định 23/2026/QĐ-UBND",
+          "so_hieu": "23/2026/QĐ-UBND",
+          "content": "c) Sở Công Thương đối với dự án, công trình quy định tại điểm d khoản 6 Điều 121 Nghị định số 175/2024/NĐ-CP (trừ dự án,"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "khoản 3 Điều 19 Luật Tài nguyên nước",
+          "so_hieu": "146/2025/QH15",
+          "content": "a) Bãi bỏ khoản 4 Điều 9; điểm d khoản 1 Điều 10; Điều 16; điểm c khoản 1, các khoản 3, 4 và 5 Điều 19; điểm b khoản 2 Đ"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "khoản 4 Điều 19 Luật Tài nguyên nước",
+          "so_hieu": "146/2025/QH15",
+          "content": "a) Bãi bỏ khoản 4 Điều 9; điểm d khoản 1 Điều 10; Điều 16; điểm c khoản 1, các khoản 3, 4 và 5 Điều 19; điểm b khoản 2 Đ"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "khoản 5 Điều 19 Luật Tài nguyên nước",
+          "so_hieu": "146/2025/QH15",
+          "content": "a) Bãi bỏ khoản 4 Điều 9; điểm d khoản 1 Điều 10; Điều 16; điểm c khoản 1, các khoản 3, 4 và 5 Điều 19; điểm b khoản 2 Đ"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 2 Điều 68 Luật Đa dạng sinh học",
+          "so_hieu": "146/2025/QH15",
+          "content": "b) Thay thế cụm từ “Bộ Tài nguyên và Môi trường” bằng cụm từ “Bộ Nông nghiệp và Môi trường” tại khoản 2 Điều 6; khoản 1 "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 3 Điều 7 Nghị quyết 123/2024/NQ-HĐND",
+          "so_hieu": "123/2024/NQ-HĐND",
+          "content": "4. Thủ trưởng cơ quan, tổ chức, đơn vị cấp tỉnh, Chủ tịch Ủy ban nhân dân cấp huyện quyết định thu hồi đối với tài sản k"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Thông tư 27/2026/TT-BGDĐT",
+          "so_hieu": "27/2026/TT-BGDĐT",
+          "content": "1. Cục Nhà giáo và Cán bộ quản lý giáo dục chủ trì, phối hợp với các cơ quan, đơn vị có liên quan giúp Bộ trưởng Bộ Giáo"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm a khoản 3 Điều 11 Nghị định 105/2006/NĐ-CP",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "a) Dấu hiệu bị nghi ngờ đáp ứng điều kiện quy định tại điểm a khoản 3 Điều này;"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 830/QĐ-UBND ngày 22/3/2024",
+          "so_hieu": "01082/QĐ-UBND",
+          "content": "Điều 3. Quyết định này có hiệu lực kể từ ngày ký.\r\nBãi bỏ nội dung đã công bố tại Quyết định số 830/QĐ-UBND ngày 22/3/20"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 82/2006/QĐ-BVHTT",
+          "so_hieu": "82/2006/QĐ-BVHTT",
+          "content": "Điều 1. Ban hành kèm theo Quyết định này Chương trình hành động của Bộ văn hóa - Thông tin Về thực hiện Luật phòng, chốn"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 10 Luật nhà ở bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "2. Thay cụm từ “Giấy chứng nhận quyền sở hữu nhà ở” tại các điều 10, 21, 22, 36, 57, 78, 93, 95, 125, 139 và khoản 2 Điề"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 21 Luật nhà ở bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "2. Thay cụm từ “Giấy chứng nhận quyền sở hữu nhà ở” tại các điều 10, 21, 22, 36, 57, 78, 93, 95, 125, 139 và khoản 2 Điề"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 22 Luật nhà ở bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "2. Thay cụm từ “Giấy chứng nhận quyền sở hữu nhà ở” tại các điều 10, 21, 22, 36, 57, 78, 93, 95, 125, 139 và khoản 2 Điề"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 36 Luật nhà ở bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "2. Thay cụm từ “Giấy chứng nhận quyền sở hữu nhà ở” tại các điều 10, 21, 22, 36, 57, 78, 93, 95, 125, 139 và khoản 2 Điề"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 57 Luật nhà ở bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "2. Thay cụm từ “Giấy chứng nhận quyền sở hữu nhà ở” tại các điều 10, 21, 22, 36, 57, 78, 93, 95, 125, 139 và khoản 2 Điề"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 78 Luật nhà ở bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "2. Thay cụm từ “Giấy chứng nhận quyền sở hữu nhà ở” tại các điều 10, 21, 22, 36, 57, 78, 93, 95, 125, 139 và khoản 2 Điề"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 93 Luật nhà ở bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "2. Thay cụm từ “Giấy chứng nhận quyền sở hữu nhà ở” tại các điều 10, 21, 22, 36, 57, 78, 93, 95, 125, 139 và khoản 2 Điề"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 95 Luật nhà ở bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "2. Thay cụm từ “Giấy chứng nhận quyền sở hữu nhà ở” tại các điều 10, 21, 22, 36, 57, 78, 93, 95, 125, 139 và khoản 2 Điề"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 125 Luật nhà ở bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "2. Thay cụm từ “Giấy chứng nhận quyền sở hữu nhà ở” tại các điều 10, 21, 22, 36, 57, 78, 93, 95, 125, 139 và khoản 2 Điề"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 139 Luật nhà ở bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "2. Thay cụm từ “Giấy chứng nhận quyền sở hữu nhà ở” tại các điều 10, 21, 22, 36, 57, 78, 93, 95, 125, 139 và khoản 2 Điề"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 2 Điều 66 Luật nhà ở bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "2. Thay cụm từ “Giấy chứng nhận quyền sở hữu nhà ở” tại các điều 10, 21, 22, 36, 57, 78, 93, 95, 125, 139 và khoản 2 Điề"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "điểm b khoản 2 Điều 106 Luật nhà ở bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "2. Thay cụm từ “Giấy chứng nhận quyền sở hữu nhà ở” tại các điều 10, 21, 22, 36, 57, 78, 93, 95, 125, 139 và khoản 2 Điề"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 2 Điều 124 Luật Bảo vệ môi trường",
+          "so_hieu": "146/2025/QH15",
+          "content": "đ) Thay thế cụm từ “cấp huyện” bằng cụm từ “cấp xã” tại điểm l khoản 3 Điều 52; khoản 5 Điều 52; khoản 5 Điều 56; điểm a"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "điểm c khoản 1 Điều 55 Luật Chăn nuôi",
+          "so_hieu": "146/2025/QH15",
+          "content": "a) Bãi bỏ khoản 4 Điều 15; Điều 16; điểm d khoản 2 Điều 22; điểm a khoản 3 và điểm c khoản 4 Điều 23; khoản 1 và khoản 5"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "khoản 4 Điều 59 Luật Chăn nuôi",
+          "so_hieu": "146/2025/QH15",
+          "content": "a) Bãi bỏ khoản 4 Điều 15; Điều 16; điểm d khoản 2 Điều 22; điểm a khoản 3 và điểm c khoản 4 Điều 23; khoản 1 và khoản 5"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "điểm d khoản 1 Điều 63 Luật Chăn nuôi",
+          "so_hieu": "146/2025/QH15",
+          "content": "a) Bãi bỏ khoản 4 Điều 15; Điều 16; điểm d khoản 2 Điều 22; điểm a khoản 3 và điểm c khoản 4 Điều 23; khoản 1 và khoản 5"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 3 Điều 4 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 6 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 43 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 46 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 47 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 49 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 50 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 51 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 90 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 105 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 106 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 119 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 122 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 124 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 125 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 126 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 127 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 128 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 129 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 130 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 131 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 136 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 144 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "Điều 146 Luật đất đai bằng cụm từ",
+          "so_hieu": "38/2009/QH12",
+          "content": "6. Thay cụm từ “Giấy chứng nhận quyền sử dụng đất” tại tên của Mục 5 Chương II, tại khoản 3 Điều 4, các điều 6, 42, 43, "
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật Thi đua, khen thưởng số 15/2003/QH11",
+          "so_hieu": "06/2022/QH15",
+          "content": "2. Luật Thi đua, khen thưởng số 15/2003/QH11 đã được sửa đổi, bổ sung một số điều theo Luật số 47/2005/QH11, Luật số 32/"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật Phòng cháy và chữa cháy số 27/2001/QH10",
+          "so_hieu": "55/2024/QH15",
+          "content": "2. Luật Phòng cháy và chữa cháy số 27/2001/QH10 đã được sửa đổi, bổ sung một số điều theo Luật số 40/2013/QH13 và Luật s"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Nghị quyết số 99/2019/QH14 ngày 27/11/2019",
+          "so_hieu": "55/2024/QH15",
+          "content": "3. Nghị quyết số 99/2019/QH14 ngày 27/11/2019 của Quốc hội về tiếp tục hoàn thiện, nâng cao hiệu lực, hiệu quả thực hiện"
+        },
+        {
+          "relation": "quy_dinh_chi_tiet",
+          "reference": "Điều 55 Luật Bảo vệ môi trường về trách nhiệm tái chế sản phẩm, bao bì và Điều 55",
+          "so_hieu": "110/2026/NĐ-CP",
+          "content": "Điều 1. Phạm vi điều chỉnh\r\nNghị định này quy định chi tiết Điều 54 Luật Bảo vệ môi trường về trách nhiệm tái chế sản ph"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật Chuyển giao công nghệ số 07/2017/QH14 ngày 19 tháng 6 năm 2017",
+          "so_hieu": "32/VBHN-VPQH",
+          "content": "LUẬT\r\nCHUYỂN GIAO CÔNG NGHỆ\r\nLuật Chuyển giao công nghệ số 07/2017/QH14 ngày 19 tháng 6 năm 2017 của Quốc hội, có hiệu l"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật Giá số 16/2023/QH15 ngày 19 tháng 6 năm 2023",
+          "so_hieu": "32/VBHN-VPQH",
+          "content": "LUẬT\r\nCHUYỂN GIAO CÔNG NGHỆ\r\nLuật Chuyển giao công nghệ số 07/2017/QH14 ngày 19 tháng 6 năm 2017 của Quốc hội, có hiệu l"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật Khoa học, công nghệ và đổi mới sáng tạo số 93/2025/QH15 ngày 27 tháng 6 năm 2025",
+          "so_hieu": "32/VBHN-VPQH",
+          "content": "LUẬT\r\nCHUYỂN GIAO CÔNG NGHỆ\r\nLuật Chuyển giao công nghệ số 07/2017/QH14 ngày 19 tháng 6 năm 2017 của Quốc hội, có hiệu l"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật số 115/2025/QH15",
+          "so_hieu": "32/VBHN-VPQH",
+          "content": "LUẬT\r\nCHUYỂN GIAO CÔNG NGHỆ\r\nLuật Chuyển giao công nghệ số 07/2017/QH14 ngày 19 tháng 6 năm 2017 của Quốc hội, có hiệu l"
+        },
+        {
+          "relation": "quy_dinh_chi_tiet",
+          "reference": "khoản 4 Điều 25 Luật Việc làm số 74/2025/QH15",
+          "so_hieu": "138/2026/NĐ-CP",
+          "content": "Điều 1. Phạm vi điều chỉnh\r\nNghị định này quy định chi tiết một số nội dung về phát triển kỹ năng nghề tại khoản 4 Điều "
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Thông tư số 23/2013/TT-BKHCN ngày 26 tháng 9 năm 2013",
+          "so_hieu": "02/VBHN-BKHCN",
+          "content": "THÔNG TƯ\r\nQUY ĐỊNH VỀ ĐO LƯỜNG ĐỐI VỚI PHƯƠNG TIỆN ĐO NHÓM 2\r\nThông tư số 23/2013/TT-BKHCN ngày 26 tháng 9 năm 2013 của "
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Thông tư số 07/2019/TT-BKHCN ngày 26 tháng 7 năm 2019",
+          "so_hieu": "02/VBHN-BKHCN",
+          "content": "THÔNG TƯ\r\nQUY ĐỊNH VỀ ĐO LƯỜNG ĐỐI VỚI PHƯƠNG TIỆN ĐO NHÓM 2\r\nThông tư số 23/2013/TT-BKHCN ngày 26 tháng 9 năm 2013 của "
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Thông tư số 03/2024/TT-BKHCN ngày 15 tháng 4 năm 2024",
+          "so_hieu": "02/VBHN-BKHCN",
+          "content": "THÔNG TƯ\r\nQUY ĐỊNH VỀ ĐO LƯỜNG ĐỐI VỚI PHƯƠNG TIỆN ĐO NHÓM 2\r\nThông tư số 23/2013/TT-BKHCN ngày 26 tháng 9 năm 2013 của "
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 82/2013/NĐ-CP ngày 19 tháng 7 năm 2013",
+          "so_hieu": "03/VBHN-BCA",
+          "content": "NGHỊ ĐỊNH\r\nBAN HÀNH CÁC DANH MỤC CHẤT MA TÚY VÀ TIỀN CHẤT\r\nNghị định số 82/2013/NĐ-CP ngày 19 tháng 7 năm 2013 của Chính"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 126/2015/NĐ-CP ngày 09 tháng 12 năm 2015",
+          "so_hieu": "03/VBHN-BCA",
+          "content": "NGHỊ ĐỊNH\r\nBAN HÀNH CÁC DANH MỤC CHẤT MA TÚY VÀ TIỀN CHẤT\r\nNghị định số 82/2013/NĐ-CP ngày 19 tháng 7 năm 2013 của Chính"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật Sở hữu trí tuệ số 50/2005/QH11 ngày 29 tháng 11 năm 2005",
+          "so_hieu": "155/VBHN-VPQH",
+          "content": "LUẬT\r\nSỞ HỮU TRÍ TUỆ\r\nLuật Sở hữu trí tuệ số 50/2005/QH11 ngày 29 tháng 11 năm 2005 của Quốc hội, có hiệu lực kể từ ngày"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật số 36/2009/QH12 ngày 19 tháng 6 năm 2009",
+          "so_hieu": "155/VBHN-VPQH",
+          "content": "LUẬT\r\nSỞ HỮU TRÍ TUỆ\r\nLuật Sở hữu trí tuệ số 50/2005/QH11 ngày 29 tháng 11 năm 2005 của Quốc hội, có hiệu lực kể từ ngày"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật số 42/2019/QH14 ngày 14 tháng 6 năm 2019",
+          "so_hieu": "155/VBHN-VPQH",
+          "content": "LUẬT\r\nSỞ HỮU TRÍ TUỆ\r\nLuật Sở hữu trí tuệ số 50/2005/QH11 ngày 29 tháng 11 năm 2005 của Quốc hội, có hiệu lực kể từ ngày"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật số 07/2022/QH15 ngày 16 tháng 6 năm 2022",
+          "so_hieu": "155/VBHN-VPQH",
+          "content": "LUẬT\r\nSỞ HỮU TRÍ TUỆ\r\nLuật Sở hữu trí tuệ số 50/2005/QH11 ngày 29 tháng 11 năm 2005 của Quốc hội, có hiệu lực kể từ ngày"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật Khoa học, công nghệ và đổi mới sáng tạo số 93/2025/QH15 ngày 27 tháng 6 năm 2025",
+          "so_hieu": "155/VBHN-VPQH",
+          "content": "LUẬT\r\nSỞ HỮU TRÍ TUỆ\r\nLuật Sở hữu trí tuệ số 50/2005/QH11 ngày 29 tháng 11 năm 2005 của Quốc hội, có hiệu lực kể từ ngày"
+        },
+        {
+          "relation": "quy_dinh_chi_tiet",
+          "reference": "khoản 5 Điều 27 Luật Quốc tịch Việt Nam và biện pháp thi hành",
+          "so_hieu": "191/2025/NĐ-CP",
+          "content": "Điều 1. Phạm vi điều chỉnh\r\nNghị định này quy định chi tiết khoản 6 Điều 5, khoản 5 Điều 11, khoản 3 Điều 13, Điều 19, k"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "THÔNG TƯ SỐ 17/2007/TT-BTC NGÀY 13/3/2007",
+          "so_hieu": "2327/QĐ-BTC",
+          "content": "EndHeader\r\nQUYẾT ĐỊNH\r\nVỀ VIỆC ĐÍNH CHÍNH THÔNG TƯ SỐ 17/2007/TT-BTC NGÀY 13/3/2007 CỦA BỘ TÀI CHÍNH\r\nBỘ TRƯỞNG BỘ TÀI C"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 38/2021/NĐ-CP ngày 29 tháng 3 năm 2021",
+          "so_hieu": "505/VBHN-BVHTTDL",
+          "content": "NGHỊ ĐỊNH\r\nQUY ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC VĂN HOÁ VÀ QUẢNG CÁO\r\nNghị định số 38/2021/NĐ-CP ngày 29 t"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 129/2021/NĐ-CP ngày 30 tháng 12 năm 2021",
+          "so_hieu": "505/VBHN-BVHTTDL",
+          "content": "NGHỊ ĐỊNH\r\nQUY ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC VĂN HOÁ VÀ QUẢNG CÁO\r\nNghị định số 38/2021/NĐ-CP ngày 29 t"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Nghị định số 128/2022/NĐ-CP ngày 30 tháng 12 năm 2022",
+          "so_hieu": "505/VBHN-BVHTTDL",
+          "content": "NGHỊ ĐỊNH\r\nQUY ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC VĂN HOÁ VÀ QUẢNG CÁO\r\nNghị định số 38/2021/NĐ-CP ngày 29 t"
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Luật Quốc tịch Việt Nam và quy định thủ tục, trình tự giải quyết việc xin nhập, xin trở lại, xin thôi quốc tịch Việt Nam, việc cấp Giấy chứng nhận có quốc tịch Việt Nam, Giấy xác nhận mất quốc tịch Việt Nam và việc hủy bỏ",
+          "so_hieu": "104/1998/NĐ-CP",
+          "content": "Điều 1. Phạm vi áp dụng\r\nNghị định này quy định chi tiết, hướng dẫn thi hành một số điều của Luật Quốc tịch Việt Nam và "
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 1 Điều 1 Quyết định 32/2017/QĐ-UBND",
+          "so_hieu": "32/2017/QĐ-UBND",
+          "content": "3. Các nội dung ngưng hiệu lực quy định tại Khoản 1, Khoản 2 Điều này tiếp tục có hiệu lực kể từ ngày 01/4/2018."
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 2 Điều 1 Quyết định 32/2017/QĐ-UBND",
+          "so_hieu": "32/2017/QĐ-UBND",
+          "content": "3. Các nội dung ngưng hiệu lực quy định tại Khoản 1, Khoản 2 Điều này tiếp tục có hiệu lực kể từ ngày 01/4/2018."
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 5 Điều 4 Luật Ban hành văn bản quy phạm pháp luật trái với",
+          "so_hieu": "121/2025/QH15",
+          "content": "2. Đình chỉ việc thi hành một phần hoặc toàn bộ văn bản quy phạm pháp luật quy định tại các khoản 5, 6, 7, 8 và 9 Điều 4"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 6 Điều 4 Luật Ban hành văn bản quy phạm pháp luật trái với",
+          "so_hieu": "121/2025/QH15",
+          "content": "2. Đình chỉ việc thi hành một phần hoặc toàn bộ văn bản quy phạm pháp luật quy định tại các khoản 5, 6, 7, 8 và 9 Điều 4"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 7 Điều 4 Luật Ban hành văn bản quy phạm pháp luật trái với",
+          "so_hieu": "121/2025/QH15",
+          "content": "2. Đình chỉ việc thi hành một phần hoặc toàn bộ văn bản quy phạm pháp luật quy định tại các khoản 5, 6, 7, 8 và 9 Điều 4"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 8 Điều 4 Luật Ban hành văn bản quy phạm pháp luật trái với",
+          "so_hieu": "121/2025/QH15",
+          "content": "2. Đình chỉ việc thi hành một phần hoặc toàn bộ văn bản quy phạm pháp luật quy định tại các khoản 5, 6, 7, 8 và 9 Điều 4"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 9 Điều 4 Luật Ban hành văn bản quy phạm pháp luật trái với",
+          "so_hieu": "121/2025/QH15",
+          "content": "2. Đình chỉ việc thi hành một phần hoặc toàn bộ văn bản quy phạm pháp luật quy định tại các khoản 5, 6, 7, 8 và 9 Điều 4"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật Bảo hiểm xã hội, mua bảo hiểm hưu trí tự nguyện, bảo hiểm nhân thọ không vượt quá mức do Chính phủ quy định và các khoản giảm trừ quy định tại Điều 10 và Điều 11 của Luật này",
+          "so_hieu": "109/2025/QH15",
+          "content": "2. Thu nhập tính thuế đối với thu nhập từ tiền lương, tiền công là tổng thu nhập chịu thuế quy định tại khoản 2 Điều 3 c"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 3 Điều 18 Nghị định số 27/2019/NĐ-CP",
+          "so_hieu": "27/2019/NĐ-CP",
+          "content": "a) Thay thế cụm từ “Bộ Tài nguyên và Môi trường” bằng cụm từ “Bộ Nông nghiệp và Môi trường” tại khoản 4 Điều 4 (được sửa"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "điểm c khoản 2 Điều 34 Nghị định số 27/2019/NĐ-CP",
+          "so_hieu": "27/2019/NĐ-CP",
+          "content": "a) Thay thế cụm từ “Bộ Tài nguyên và Môi trường” bằng cụm từ “Bộ Nông nghiệp và Môi trường” tại khoản 4 Điều 4 (được sửa"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Quyết định 592/QĐ-UBND",
+          "so_hieu": "592/QĐ-UBND",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký. Các nội dung khác tại các Quyết định của Ủy ban nhân dân tỉnh"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Điều 1 Nghị quyết 09/2026/NQ-CP",
+          "so_hieu": "09/2026/NQ-CP",
+          "content": "Điều 2. Áp dụng văn bản quy phạm pháp luật trong thời gian tạm ngưng hiệu lực\r\nTrong thời gian tạm ngưng hiệu lực theo q"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 4 Điều 31 Luật Tiếp cận thông tin số 104/2016/QH13",
+          "so_hieu": "01/2026/QH15",
+          "content": "2. Luật Tiếp cận thông tin số 104/2016/QH13 hết hiệu lực từ ngày Luật này có hiệu lực thi hành, trừ quy định tại khoản 4"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "khoản 4 Điều 31 Luật 01/2026/QH15",
+          "so_hieu": "01/2026/QH15",
+          "content": "2. Luật Tiếp cận thông tin số 104/2016/QH13 hết hiệu lực từ ngày Luật này có hiệu lực thi hành, trừ quy định tại khoản 4"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật Các tổ chức tín dụng số 32/2024/QH15 ngày 18 tháng 01 năm 2024",
+          "so_hieu": "100/VBHN-VPQH",
+          "content": "LUẬT\r\nCÁC TỔ CHỨC TÍN DỤNG\r\nLuật Các tổ chức tín dụng số 32/2024/QH15 ngày 18 tháng 01 năm 2024 của Quốc hội, có hiệu lự"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật số 43/2024/QH15 ngày 29 tháng 6 năm 2024",
+          "so_hieu": "100/VBHN-VPQH",
+          "content": "LUẬT\r\nCÁC TỔ CHỨC TÍN DỤNG\r\nLuật Các tổ chức tín dụng số 32/2024/QH15 ngày 18 tháng 01 năm 2024 của Quốc hội, có hiệu lự"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật số 96/2025/QH15 ngày 27 tháng 6 năm 2025",
+          "so_hieu": "100/VBHN-VPQH",
+          "content": "LUẬT\r\nCÁC TỔ CHỨC TÍN DỤNG\r\nLuật Các tổ chức tín dụng số 32/2024/QH15 ngày 18 tháng 01 năm 2024 của Quốc hội, có hiệu lự"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật Phục hồi, phá sản số 142/2025/QH15 ngày 11 tháng 12 năm 2025",
+          "so_hieu": "100/VBHN-VPQH",
+          "content": "LUẬT\r\nCÁC TỔ CHỨC TÍN DỤNG\r\nLuật Các tổ chức tín dụng số 32/2024/QH15 ngày 18 tháng 01 năm 2024 của Quốc hội, có hiệu lự"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật Chứng khoán số 54/2019/QH14 ngày 26 tháng 11 năm 2019",
+          "so_hieu": "102/VBHN-VPQH",
+          "content": "LUẬT\r\nCHỨNG KHOÁN\r\nLuật Chứng khoán số 54/2019/QH14 ngày 26 tháng 11 năm 2019 của Quốc hội, có hiệu lực kể từ ngày 01 th"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật số 56/2024/QH15 ngày 29 tháng 11 năm 2024",
+          "so_hieu": "102/VBHN-VPQH",
+          "content": "LUẬT\r\nCHỨNG KHOÁN\r\nLuật Chứng khoán số 54/2019/QH14 ngày 26 tháng 11 năm 2019 của Quốc hội, có hiệu lực kể từ ngày 01 th"
+        },
+        {
+          "relation": "hop_nhat",
+          "reference": "Luật Phục hồi, phá sản số 142/2025/QH15 ngày 11 tháng 12 năm 2025",
+          "so_hieu": "102/VBHN-VPQH",
+          "content": "LUẬT\r\nCHỨNG KHOÁN\r\nLuật Chứng khoán số 54/2019/QH14 ngày 26 tháng 11 năm 2019 của Quốc hội, có hiệu lực kể từ ngày 01 th"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 4347/QĐ-BVHTTDL ngày 14/11/2025",
+          "so_hieu": "725/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nCác thủ tục hành chính cấp tỉnh tương ứng đã công bố tại Quy"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 4508/QĐ-BVHTTDL ngày 28/11/2025",
+          "so_hieu": "725/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nCác thủ tục hành chính cấp tỉnh tương ứng đã công bố tại Quy"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 3684/QĐ-BVHTTDL ngày 27/12/2022",
+          "so_hieu": "4508/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nCác thủ tục hành chính tương ứng đã công bố tại các Quyết đị"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 1647/QĐ-BVHTTDL ngày 26/6/2023",
+          "so_hieu": "4508/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nCác thủ tục hành chính tương ứng đã công bố tại các Quyết đị"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 3808/QĐ-BVHTTDL ngày 11/12/2023",
+          "so_hieu": "4508/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nCác thủ tục hành chính tương ứng đã công bố tại các Quyết đị"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 775/QĐ-BVHTTDL ngày 28/3/2024",
+          "so_hieu": "4508/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nCác thủ tục hành chính tương ứng đã công bố tại các Quyết đị"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 3955/QĐ-BVHTTDL ngày 09/12/2024",
+          "so_hieu": "4508/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nCác thủ tục hành chính tương ứng đã công bố tại các Quyết đị"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 682/QĐ-BVHTTDL ngày 14/3/2025",
+          "so_hieu": "4508/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nCác thủ tục hành chính tương ứng đã công bố tại các Quyết đị"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 2069/QĐ-BVHTTDL ngày 19/6/2025",
+          "so_hieu": "4508/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nCác thủ tục hành chính tương ứng đã công bố tại các Quyết đị"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 2302/QĐ-BVHTTDL ngày 02/7/2025",
+          "so_hieu": "4508/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nCác thủ tục hành chính tương ứng đã công bố tại các Quyết đị"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 4347/QĐ-BVHTTDL ngày 14/11/2025",
+          "so_hieu": "4508/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nCác thủ tục hành chính tương ứng đã công bố tại các Quyết đị"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 682/QĐ-BVHTTDL ngày 14/3/2025",
+          "so_hieu": "893/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký đến hết ngày 28/02/2027.\r\nCác thủ tục hành chính tương ứng đã "
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 2069/QĐ-BVHTTDL ngày 19/6/2025",
+          "so_hieu": "893/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký đến hết ngày 28/02/2027.\r\nCác thủ tục hành chính tương ứng đã "
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 2302/QĐ-BVHTTDL ngày 02/4/2025",
+          "so_hieu": "893/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký đến hết ngày 28/02/2027.\r\nCác thủ tục hành chính tương ứng đã "
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 4508/QĐ-BVHTTDL ngày 28/11/2025",
+          "so_hieu": "893/QĐ-BVHTTDL",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký đến hết ngày 28/02/2027.\r\nCác thủ tục hành chính tương ứng đã "
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 461/QĐ-BXD ngày 21 tháng 04 năm 2025",
+          "so_hieu": "662/QĐ-BXD",
+          "content": "Điều 2. Quyết định này có hiệu lực kể từ ngày ký.\r\nNội dung công bố thủ tục hành chính quy định tại Mục 1, 2, 4, 23, 25,"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Thông tư số 25/2024/TT-BTNMT ngày 26 tháng 11 năm 2024",
+          "so_hieu": "19/2026/TT-BNNMT",
+          "content": "2. Bãi bỏ Tiểu mục 3 Chương II của Thông tư số 25/2024/TT-BTNMT ngày 26 tháng 11 năm 2024 của Bộ trưởng Bộ Tài nguyên và"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Thông tư số 05/2024/TT-BLĐTBXH ngày 10 tháng 5 năm 2024",
+          "so_hieu": "25/2026/TT-BGDĐT",
+          "content": "b) Quy định về chuẩn chuyên môn, nghiệp vụ của nhà giáo dạy trình độ cao đẳng quy định tại Chương II của Thông tư số 05/"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 2096/QĐ-BTC ngày 23/6/2025",
+          "so_hieu": "4191/QĐ-BTC",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nBãi bỏ STT 1 Phần I, Phần II tại Quyết định số 2096/QĐ-BTC n"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 1534/QĐ-BTC ngày 29/4/2025",
+          "so_hieu": "872/QĐ-BTC",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nBãi bỏ số thứ tự 23 Phần I tại Quyết định số 1534/QĐ-BTC ngà"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Quyết định số 2291/QĐ-BTC ngày 06 tháng 11 năm 2017",
+          "so_hieu": "1154/QĐ-BTC",
+          "content": "Điều 2. Quyết định này có hiệu lực thi hành kể từ ngày ký.\r\nBãi bỏ nội dung công bố thủ tục hành chính tại số thứ tự 9 P"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Thông tư số 02/2017/TT-BTP ngày 23 tháng 3 năm 2017",
+          "so_hieu": "22/2025/TT-BTP",
+          "content": "2. Bãi bỏ Chương V Thông tư số 02/2017/TT-BTP ngày 23 tháng 3 năm 2017 của Bộ trưởng Bộ Tư pháp hướng dẫn một số nội dun"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 2 Điều 4 Nghị định số 109/2013/NĐ-CP ngày 24 tháng 9 năm 2013",
+          "so_hieu": "125/2020/NĐ-CP",
+          "content": "b) Khoản 2 Điều 4 Chương 1, Chương 4, Điều 44 Chương 5 Nghị định số 109/2013/NĐ-CP ngày 24 tháng 9 năm 2013 của Chính ph"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 44 Nghị định số 109/2013/NĐ-CP ngày 24 tháng 9 năm 2013",
+          "so_hieu": "125/2020/NĐ-CP",
+          "content": "b) Khoản 2 Điều 4 Chương 1, Chương 4, Điều 44 Chương 5 Nghị định số 109/2013/NĐ-CP ngày 24 tháng 9 năm 2013 của Chính ph"
+        }
+      ]
+    },
+    "a3_gate_targeted": {
+      "pruned_true_positives": 29,
+      "pruned_false_positives": 36,
+      "precision_gain_items": [
+        {
+          "relation": "dinh_chi",
+          "reference": "khoản 1 Điều 95 Luật tư pháp người chưa thành niên 2024",
+          "so_hieu": "59/2024/QH15",
+          "content": "3. Khi có một trong các căn cứ quy định tại khoản 1 Điều này, cơ quan thi hành án hình sự Công an cấp huyện nơi người ph"
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "khoản 2 Điều 95 Luật tư pháp người chưa thành niên 2024",
+          "so_hieu": "59/2024/QH15",
+          "content": "3. Khi có một trong các căn cứ quy định tại khoản 1 Điều này, cơ quan thi hành án hình sự Công an cấp huyện nơi người ph"
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "khoản 3 Điều 95 Luật tư pháp người chưa thành niên 2024",
+          "so_hieu": "59/2024/QH15",
+          "content": "3. Khi có một trong các căn cứ quy định tại khoản 1 Điều này, cơ quan thi hành án hình sự Công an cấp huyện nơi người ph"
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Luật Sở hữu trí tuệ",
+          "so_hieu": "105/2006/NĐ-CP",
+          "content": "2. Bảo đảm thực hiện chính sách, pháp luật về sở hữu trí tuệ tại địa phương phù hợp và tuân thủ quy định của Luật Sở hữu"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Nghị định số 104/2004/NĐ-CP ngày 23 tháng 3 năm 2004",
+          "so_hieu": "90/2007/QĐ-BNN",
+          "content": "1. Văn bản quy phạm pháp luật sau khi được ban hành, đăng Công báo nếu phát hiện có sai sót thì phải được đính chính the"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Thông tư số 04/2005/TT-VPCP ngày 21 tháng 3 năm 2005",
+          "so_hieu": "90/2007/QĐ-BNN",
+          "content": "1. Văn bản quy phạm pháp luật sau khi được ban hành, đăng Công báo nếu phát hiện có sai sót thì phải được đính chính the"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Luật ban hành văn bản quy phạm pháp luật",
+          "so_hieu": "90/2007/QĐ-BNN",
+          "content": "2. Việc đính chính văn bản quy phạm pháp luật đã ban hành hoặc được đăng Công báo phải dựa trên cơ sở đối chiếu với văn "
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Nghị định số 161/2005/NĐ-CP",
+          "so_hieu": "90/2007/QĐ-BNN",
+          "content": "2. Việc đính chính văn bản quy phạm pháp luật đã ban hành hoặc được đăng Công báo phải dựa trên cơ sở đối chiếu với văn "
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Luật Quản lý thuế",
+          "so_hieu": "105/2010/TT-BTC",
+          "content": "1. Việc đăng ký thuế, khai thuế, nộp thuế, quyết toán thuế được thực hiện theo quy định của Luật Quản lý thuế và các văn"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "điểm a khoản 2 Điều 107 Luật quản lý thuế số 78/2006/QH11",
+          "so_hieu": "54/2014/QH13",
+          "content": "6. Sửa cụm từ “kể từ ngày đăng ký tờ khai” tại điểm a khoản 2 Điều 107 thành cụm từ “kể từ ngày thông quan”."
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Nghị định số 63/2015/NĐ-CP",
+          "so_hieu": "154/2016/TT-BQP",
+          "content": "1. Tổ chức phổ biến, quán triệt, chỉ đạo, hướng dẫn thực hiện theo quy định tại Nghị định số 63/2015/NĐ-CP và Thông tư n"
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Nghị quyết số 156-HĐBT ngày 30-11-1984",
+          "so_hieu": "12/VGNN-PPCĐ",
+          "content": "3. Chỉ đạo các xí nghiệp quốc doanh (bao gồm cả lâm trường, nông trường) do Trung ương và địa phương quản lý xây dựng ph"
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Nghị quyết 51-HĐBT ngày 22-12-1985",
+          "so_hieu": "12/VGNN-PPCĐ",
+          "content": "3. Chỉ đạo các xí nghiệp quốc doanh (bao gồm cả lâm trường, nông trường) do Trung ương và địa phương quản lý xây dựng ph"
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Nghị quyết số 52-HĐBT ngày 23-2-1985",
+          "so_hieu": "12/VGNN-PPCĐ",
+          "content": "3. Chỉ đạo các xí nghiệp quốc doanh (bao gồm cả lâm trường, nông trường) do Trung ương và địa phương quản lý xây dựng ph"
+        },
+        {
+          "relation": "keo_dai_hieu_luc",
+          "reference": "Nghị quyết số 02/2019/NQ-HĐND ngày 03 tháng 7 năm 2019",
+          "so_hieu": "14/2020/NQ-HĐND",
+          "content": "Điều 1. Điều chỉnh, bổ sung và kéo dài thời gian thực hiện, giải ngân Kế hoạch vốn đầu tư công nguồn vốn ngân sách nhà n"
+        },
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "khoản 1 Quyết định số 28/2017/QĐ-UBND ngày 05/12/2017",
+          "so_hieu": "32/2017/QĐ-UBND",
+          "content": "3. Các nội dung ngưng hiệu lực quy định tại Khoản 1, Khoản 2 Điều này tiếp tục có hiệu lực kể từ ngày 01/4/2018."
+        },
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "khoản 2 Quyết định số 28/2017/QĐ-UBND ngày 05/12/2017",
+          "so_hieu": "32/2017/QĐ-UBND",
+          "content": "3. Các nội dung ngưng hiệu lực quy định tại Khoản 1, Khoản 2 Điều này tiếp tục có hiệu lực kể từ ngày 01/4/2018."
+        },
+        {
+          "relation": "keo_dai_hieu_luc",
+          "reference": "điểm a khoản 1 Điều 1 Thông tư 08/2013/TT-BNV",
+          "so_hieu": "08/2013/TT-BNV",
+          "content": "d) Trường hợp vừa không hoàn thành nhiệm vụ được giao vừa bị kỷ luật thì thời gian kéo dài nâng bậc lương thường xuyên l"
+        },
+        {
+          "relation": "keo_dai_hieu_luc",
+          "reference": "điểm b khoản 1 Điều 1 Thông tư 08/2013/TT-BNV",
+          "so_hieu": "08/2013/TT-BNV",
+          "content": "d) Trường hợp vừa không hoàn thành nhiệm vụ được giao vừa bị kỷ luật thì thời gian kéo dài nâng bậc lương thường xuyên l"
+        },
+        {
+          "relation": "keo_dai_hieu_luc",
+          "reference": "điểm c khoản 1 Điều 1 Thông tư 08/2013/TT-BNV",
+          "so_hieu": "08/2013/TT-BNV",
+          "content": "d) Trường hợp vừa không hoàn thành nhiệm vụ được giao vừa bị kỷ luật thì thời gian kéo dài nâng bậc lương thường xuyên l"
+        },
+        {
+          "relation": "keo_dai_hieu_luc",
+          "reference": "khoản 6 Điều 2 Thông tư 08/2013/TT-BNV",
+          "so_hieu": "08/2013/TT-BNV",
+          "content": "đ) Trường hợp cán bộ, công chức, viên chức và người lao động là đảng viên bị kỷ luật Đảng thì thực hiện theo quy định tạ"
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "điểm b khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "so_hieu": "1933/2011/QĐ-UBND",
+          "content": "2. Hủy bỏ một phần hoặc toàn bộ nội dung của văn bản trong trường hợp một phần hoặc toàn bộ văn bản được ban hành trái t"
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "điểm c khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "so_hieu": "1933/2011/QĐ-UBND",
+          "content": "2. Hủy bỏ một phần hoặc toàn bộ nội dung của văn bản trong trường hợp một phần hoặc toàn bộ văn bản được ban hành trái t"
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "điểm d khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "so_hieu": "1933/2011/QĐ-UBND",
+          "content": "2. Hủy bỏ một phần hoặc toàn bộ nội dung của văn bản trong trường hợp một phần hoặc toàn bộ văn bản được ban hành trái t"
+        },
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "khoản 2 Điều 16 Quyết định: số 44/2017/QĐ-UBND ngày 13 tháng 10 năm 2017",
+          "so_hieu": "88/2025/QĐ-UBND",
+          "content": "2. Quyết định này thay thế các Quyết định: số 44/2017/QĐ-UBND ngày 13 tháng 10 năm 2017 của Ủy ban nhân dân tỉnh về việc"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "QUYẾT ĐỊNH SỐ 58/2013/QĐ-TTG NGÀY 15/10/2013",
+          "so_hieu": "269/QĐ-BTC",
+          "content": "QUYẾT ĐỊNH\r\nVỀ VIỆC ĐÍNH CHÍNH THÔNG TƯ SỐ 147/2014/TT-BTC NGÀY 08/10/2014 CỦA BỘ TÀI CHÍNH HƯỚNG DẪN MỘT SỐ ĐIỀU CỦA QU"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Điều 28 Quyết định số 58/2013/QĐ-TTg ngày 15/10/2013",
+          "so_hieu": "269/QĐ-BTC",
+          "content": "1. Tại Điều 28 Thông tư số 147/2014/TT-BTC:\r\nĐã in số thứ tự Điều 28.\r\nNay sửa lại là Điều 27."
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Điều 27 Quyết định số 58/2013/QĐ-TTg ngày 15/10/2013",
+          "so_hieu": "269/QĐ-BTC",
+          "content": "1. Tại Điều 28 Thông tư số 147/2014/TT-BTC:\r\nĐã in số thứ tự Điều 28.\r\nNay sửa lại là Điều 27."
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Quyết định số 58/2013/QĐ-TTg ngày 15/10/2013",
+          "so_hieu": "269/QĐ-BTC",
+          "content": "Điều 1. Đính chính Điều 28 Thông tư số 147/2014/TT-BTC ngày 08/10/2014 của Bộ Tài chính hướng dẫn một số điều của Quyết "
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Nghị định số 46/2026/NĐ-CP ngày 26 tháng 01 năm 2026",
+          "so_hieu": "47/2026/NĐ-CP",
+          "content": "1. Nghị quyết này có hiệu lực thi hành kể từ ngày ký ban hành và thay thế Nghị quyết số 09/2026/NQ-CP ngày 04 tháng 02 n"
+        },
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "Điều 1 Nghị định 15/2018/NĐ-CP ngày 02 tháng 02 năm 2018",
+          "so_hieu": "09/2026/NQ-CP",
+          "content": "Điều 2. Áp dụng văn bản quy phạm pháp luật trong thời gian tạm ngưng hiệu lực\r\nTrong thời gian tạm ngưng hiệu lực theo q"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 1 Thông tư số 263/2016/TT-BTC ngày 14 tháng 11 năm 2016",
+          "so_hieu": "29/2026/TT-BTC",
+          "content": "a) Lệ phí nộp đơn đăng ký bảo hộ quyền sở hữu công nghiệp (gồm cả đơn tách, đơn chuyển đổi) và lệ phí cấp Văn bằng bảo h"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 2 Thông tư số 263/2016/TT-BTC ngày 14 tháng 11 năm 2016",
+          "so_hieu": "29/2026/TT-BTC",
+          "content": "a) Lệ phí nộp đơn đăng ký bảo hộ quyền sở hữu công nghiệp (gồm cả đơn tách, đơn chuyển đổi) và lệ phí cấp Văn bằng bảo h"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm A Thông tư số 263/2016/TT-BTC ngày 14 tháng 11 năm 2016",
+          "so_hieu": "29/2026/TT-BTC",
+          "content": "a) Lệ phí nộp đơn đăng ký bảo hộ quyền sở hữu công nghiệp (gồm cả đơn tách, đơn chuyển đổi) và lệ phí cấp Văn bằng bảo h"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 1 Thông tư số 23/2019/TT-BTC ngày 19 tháng 4 năm 2019",
+          "so_hieu": "29/2026/TT-BTC",
+          "content": "b) Phí thẩm định điều kiện thuộc lĩnh vực an ninh, lệ phí cấp giấy phép quản lý pháo, lệ phí cấp giấy phép quản lý vũ kh"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Thông tư số 75/2022/TT-BTC ngày 22 tháng 12 năm 2022",
+          "so_hieu": "29/2026/TT-BTC",
+          "content": "c) Lệ phí đăng ký cư trú quy định tại Thông tư số 75/2022/TT-BTC ngày 22 tháng 12 năm 2022 của Bộ trưởng Bộ Tài chính qu"
+        }
+      ],
+      "recall_loss_items": [
+        {
+          "relation": "thay_the",
+          "reference": "Luật Dự trữ quốc gia số 22/2012/QH13",
+          "so_hieu": "145/2025/QH15",
+          "content": "1. Luật Dự trữ quốc gia số 22/2012/QH13 được sửa đổi, bổ sung một số điều theo Luật số 21/2017/QH14 và Luật số 56/2024/Q"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật Bảo vệ bí mật nhà nước số 29/2018/QH14",
+          "so_hieu": "117/2025/QH15",
+          "content": "2. Luật Bảo vệ bí mật nhà nước số 29/2018/QH14 đã được sửa đổi, bổ sung một số điều theo Luật số 81/2025/QH15 hết hiệu l"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Nghị định số 108/2014/NĐ-CP ngày 20 tháng 11 năm 2014",
+          "so_hieu": "29/2023/NĐ-CP",
+          "content": "a) Nghị định số 108/2014/NĐ-CP ngày 20 tháng 11 năm 2014 của Chính phủ về chính sách tinh giản biên chế;"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật Quản lý thuế số 38/2019/QH14",
+          "so_hieu": "108/2025/QH15",
+          "content": "1. Luật Quản lý thuế số 38/2019/QH14 đã được sửa đổi, bổ sung một số điều theo Luật số 56/2024/QH15 (sau đây gọi là Luật"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật An toàn thông tin mạng số 86/2015/QH13",
+          "so_hieu": "116/2025/QH15",
+          "content": "1. Luật An toàn thông tin mạng số 86/2015/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 35/2018/QH14; Luật An n"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật An ninh mạng số 24/2018/QH14",
+          "so_hieu": "116/2025/QH15",
+          "content": "2. Luật An toàn thông tin mạng số 86/2015/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 35/2018/QH14; Luật An n"
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Luật Bảo hiểm xã hội",
+          "so_hieu": "88/2025/TT-BCA",
+          "content": "Điều 21. Phạm vi điều chỉnh\r\nThông tư này hướng dẫn thực hiện các chế độ bảo hiểm xã hội bắt buộc và thực hiện quản lý t"
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Nghị định số 157/2025/NĐ-CP",
+          "so_hieu": "88/2025/TT-BCA",
+          "content": "Điều 21. Phạm vi điều chỉnh\r\nThông tư này hướng dẫn thực hiện các chế độ bảo hiểm xã hội bắt buộc và thực hiện quản lý t"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "khoản 2 Thông tư số 10/2022/TT-BKHĐT ngày 15 tháng 6 năm 2022",
+          "so_hieu": "1373/QĐ-BKHĐT",
+          "content": "Điều 1. Đính chính lỗi kỹ thuật tại Thông tư số 10/2022/TT-BKHĐT ngày 15 tháng 6 năm 2022 của Bộ trưởng Bộ Kế hoạch và Đ"
+        },
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "khoản 1 Điều 37 Thông tư số 08/2022/TT-BKHĐT ngày 31 tháng 5 năm 2022",
+          "so_hieu": "16/2022/TT-BKHĐT",
+          "content": "a) Ngưng hiệu lực thi hành từ ngày 01 tháng 8 năm 2022 đến ngày 15 tháng 9 năm 2022, trừ quy định về lộ trình áp dụng đấ"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "Điều 3 Thông tư số 01/2021/TT-BYT ngày 25 tháng 01 năm 2021",
+          "so_hieu": "5335/QĐ-BYT",
+          "content": "2. Tại Điều 3 Thông tư số 02/2021/TT-BYT ngày 25 tháng 01 năm 2021 của Bộ trưởng Bộ Y tế quy định tiêu chuẩn, nhiệm vụ c"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật Công nghệ cao số 21/2008/QH12",
+          "so_hieu": "133/2025/QH15",
+          "content": "2. Luật Công nghệ cao số 21/2008/QH12 được sửa đổi, bổ sung một số điều theo Luật số 32/2013/QH13, Luật số 67/2014/QH13,"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Nghị quyết số 37/2012/QH13 ngày 23 tháng 11 năm 2012",
+          "so_hieu": "96/2019/QH14",
+          "content": "Điều 4. Hiệu lực thi hành\r\nNghị quyết số 37/2012/QH13 ngày 23 tháng 11 năm 2012 của Quốc hội về công tác phòng, chống vi"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Nghị quyết số 63/2013/QH13 ngày 27 tháng 11 năm 2013",
+          "so_hieu": "96/2019/QH14",
+          "content": "Điều 4. Hiệu lực thi hành\r\nNghị quyết số 37/2012/QH13 ngày 23 tháng 11 năm 2012 của Quốc hội về công tác phòng, chống vi"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Nghị quyết số 111/2015/QH13 ngày 27 tháng 11 năm 2015",
+          "so_hieu": "96/2019/QH14",
+          "content": "Điều 4. Hiệu lực thi hành\r\nNghị quyết số 37/2012/QH13 ngày 23 tháng 11 năm 2012 của Quốc hội về công tác phòng, chống vi"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Nghị định số 99/2019/NĐ-CP ngày 30 tháng 12 năm 2019",
+          "so_hieu": "91/2026/NĐ-CP",
+          "content": "3. Nghị định số 141/2013/NĐ-CP ngày 24 tháng 10 năm 2013 của Chính phủ quy định chi tiết và hướng dẫn thi hành một số đi"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 3 Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023",
+          "so_hieu": "27/2026/TT-BGDĐT",
+          "content": "2. Các điều sau: Điều 3, Điều 4, Điều 5, Điều 6 và Điều 11 của Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023 củ"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 4 Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023",
+          "so_hieu": "27/2026/TT-BGDĐT",
+          "content": "2. Các điều sau: Điều 3, Điều 4, Điều 5, Điều 6 và Điều 11 của Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023 củ"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 5 Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023",
+          "so_hieu": "27/2026/TT-BGDĐT",
+          "content": "2. Các điều sau: Điều 3, Điều 4, Điều 5, Điều 6 và Điều 11 của Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023 củ"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 6 Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023",
+          "so_hieu": "27/2026/TT-BGDĐT",
+          "content": "2. Các điều sau: Điều 3, Điều 4, Điều 5, Điều 6 và Điều 11 của Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023 củ"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 11 Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023",
+          "so_hieu": "27/2026/TT-BGDĐT",
+          "content": "2. Các điều sau: Điều 3, Điều 4, Điều 5, Điều 6 và Điều 11 của Thông tư số 22/2023/TT-BGDĐT ngày 28 tháng 11 năm 2023 củ"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật Thi đua, khen thưởng số 15/2003/QH11",
+          "so_hieu": "06/2022/QH15",
+          "content": "2. Luật Thi đua, khen thưởng số 15/2003/QH11 đã được sửa đổi, bổ sung một số điều theo Luật số 47/2005/QH11, Luật số 32/"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Luật Phòng cháy và chữa cháy số 27/2001/QH10",
+          "so_hieu": "55/2024/QH15",
+          "content": "2. Luật Phòng cháy và chữa cháy số 27/2001/QH10 đã được sửa đổi, bổ sung một số điều theo Luật số 40/2013/QH13 và Luật s"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Nghị quyết số 99/2019/QH14 ngày 27/11/2019",
+          "so_hieu": "55/2024/QH15",
+          "content": "3. Nghị quyết số 99/2019/QH14 ngày 27/11/2019 của Quốc hội về tiếp tục hoàn thiện, nâng cao hiệu lực, hiệu quả thực hiện"
+        },
+        {
+          "relation": "dinh_chinh",
+          "reference": "THÔNG TƯ SỐ 17/2007/TT-BTC NGÀY 13/3/2007",
+          "so_hieu": "2327/QĐ-BTC",
+          "content": "EndHeader\r\nQUYẾT ĐỊNH\r\nVỀ VIỆC ĐÍNH CHÍNH THÔNG TƯ SỐ 17/2007/TT-BTC NGÀY 13/3/2007 CỦA BỘ TÀI CHÍNH\r\nBỘ TRƯỞNG BỘ TÀI C"
+        },
+        {
+          "relation": "huong_dan",
+          "reference": "Luật Quốc tịch Việt Nam và quy định thủ tục, trình tự giải quyết việc xin nhập, xin trở lại, xin thôi quốc tịch Việt Nam, việc cấp Giấy chứng nhận có quốc tịch Việt Nam, Giấy xác nhận mất quốc tịch Việt Nam và việc hủy bỏ",
+          "so_hieu": "104/1998/NĐ-CP",
+          "content": "Điều 1. Phạm vi áp dụng\r\nNghị định này quy định chi tiết, hướng dẫn thi hành một số điều của Luật Quốc tịch Việt Nam và "
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 4 Điều 31 Luật Tiếp cận thông tin số 104/2016/QH13",
+          "so_hieu": "01/2026/QH15",
+          "content": "2. Luật Tiếp cận thông tin số 104/2016/QH13 hết hiệu lực từ ngày Luật này có hiệu lực thi hành, trừ quy định tại khoản 4"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 2 Điều 4 Nghị định số 109/2013/NĐ-CP ngày 24 tháng 9 năm 2013",
+          "so_hieu": "125/2020/NĐ-CP",
+          "content": "b) Khoản 2 Điều 4 Chương 1, Chương 4, Điều 44 Chương 5 Nghị định số 109/2013/NĐ-CP ngày 24 tháng 9 năm 2013 của Chính ph"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 44 Nghị định số 109/2013/NĐ-CP ngày 24 tháng 9 năm 2013",
+          "so_hieu": "125/2020/NĐ-CP",
+          "content": "b) Khoản 2 Điều 4 Chương 1, Chương 4, Điều 44 Chương 5 Nghị định số 109/2013/NĐ-CP ngày 24 tháng 9 năm 2013 của Chính ph"
+        }
+      ]
+    }
+  },
+  "cost_extrapolation": {
+    "a1_llm_extractor": {
+      "15": {
+        "architecture": "a1_llm_extractor",
+        "assumptions": {
+          "docs": 600000,
+          "clauses_per_doc": 15,
+          "workers": 32
+        },
+        "calls_per_clause": 1.0,
+        "tokens_per_call": 1581.9,
+        "latency_s_mean": 9.297,
+        "total_calls_millions": 9.0,
+        "total_tokens_billions": 14.237,
+        "wall_clock_hours": 726.3,
+        "wall_clock_days": 30.26
+      },
+      "30": {
+        "architecture": "a1_llm_extractor",
+        "assumptions": {
+          "docs": 600000,
+          "clauses_per_doc": 30,
+          "workers": 32
+        },
+        "calls_per_clause": 1.0,
+        "tokens_per_call": 1581.9,
+        "latency_s_mean": 9.297,
+        "total_calls_millions": 18.0,
+        "total_tokens_billions": 28.474,
+        "wall_clock_hours": 1452.7,
+        "wall_clock_days": 60.53
+      },
+      "60": {
+        "architecture": "a1_llm_extractor",
+        "assumptions": {
+          "docs": 600000,
+          "clauses_per_doc": 60,
+          "workers": 32
+        },
+        "calls_per_clause": 1.0,
+        "tokens_per_call": 1581.9,
+        "latency_s_mean": 9.297,
+        "total_calls_millions": 36.0,
+        "total_tokens_billions": 56.947,
+        "wall_clock_hours": 2905.3,
+        "wall_clock_days": 121.05
+      }
+    },
+    "a3_gate_all": {
+      "15": {
+        "architecture": "a3_gate_all",
+        "assumptions": {
+          "docs": 600000,
+          "clauses_per_doc": 15,
+          "workers": 32
+        },
+        "calls_per_clause": 2.52,
+        "tokens_per_call": 557.9,
+        "latency_s_mean": 0.528,
+        "total_calls_millions": 22.68,
+        "total_tokens_billions": 12.654,
+        "wall_clock_hours": 104.0,
+        "wall_clock_days": 4.33
+      },
+      "30": {
+        "architecture": "a3_gate_all",
+        "assumptions": {
+          "docs": 600000,
+          "clauses_per_doc": 30,
+          "workers": 32
+        },
+        "calls_per_clause": 2.52,
+        "tokens_per_call": 557.9,
+        "latency_s_mean": 0.528,
+        "total_calls_millions": 45.36,
+        "total_tokens_billions": 25.307,
+        "wall_clock_hours": 207.9,
+        "wall_clock_days": 8.66
+      },
+      "60": {
+        "architecture": "a3_gate_all",
+        "assumptions": {
+          "docs": 600000,
+          "clauses_per_doc": 60,
+          "workers": 32
+        },
+        "calls_per_clause": 2.52,
+        "tokens_per_call": 557.9,
+        "latency_s_mean": 0.528,
+        "total_calls_millions": 90.73,
+        "total_tokens_billions": 50.614,
+        "wall_clock_hours": 415.8,
+        "wall_clock_days": 17.33
+      }
+    }
+  }
+}

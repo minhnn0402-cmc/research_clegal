@@ -1,0 +1,6 @@
+# Kaggle already provides a CUDA-compatible PyTorch build. Do not reinstall torch.
+transformers>=4.48,<5
+datasets>=3.2,<5
+accelerate>=1.2,<2
+sentencepiece>=0.2,<1
+safetensors>=0.5,<1

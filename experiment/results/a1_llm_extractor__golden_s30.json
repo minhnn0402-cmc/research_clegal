@@ -1,0 +1,2931 @@
+{
+  "architecture": "a1_llm_extractor",
+  "n_clauses": 30,
+  "overall": {
+    "doc_id": "a1_llm_extractor",
+    "precision": 0.5532,
+    "recall": 0.3421,
+    "f1": 0.4228,
+    "tp": 26,
+    "fp": 21,
+    "fn": 50,
+    "true_positives": [
+      {
+        "relation": "dinh_chi",
+        "reference": "Quyết định số 126/2004/QĐ-UB ngày 10/05/2004 của Uỷ ban nhân dân tỉnh Khánh Hòa",
+        "_matched_gt": {
+          "reference": "Quyết định số 126/2004/QĐ-UB ngày 10/05/2004",
+          "relation": "dinh_chi"
+        }
+      },
+      {
+        "relation": "thay_the",
+        "reference": "Quyết định số 2491/QĐ-UBND ngày 24 tháng 12 năm 2010 của Ủy ban nhân dân tỉnh Cao Bằng",
+        "_matched_gt": {
+          "reference": "Quyết định số 2491/QĐ-UBND ngày 24 tháng 12 năm 2010",
+          "relation": "thay_the"
+        }
+      },
+      {
+        "relation": "dinh_chi",
+        "reference": "Khoản 1 của Điều 8, Quy định kèm theo Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010 của Ủy ban nhân dân tỉnh Cà Mau ban hành Quy định về quản lý và bảo vệ động vật hoang dã trên địa bàn tỉnh Cà Mau",
+        "_matched_gt": {
+          "reference": "khoản 1 Điều 8 Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010",
+          "relation": "dinh_chi"
+        }
+      },
+      {
+        "relation": "dinh_chi",
+        "reference": "Khoản 2, Khoản 3 của Điều 1 và loài rùa hộp lưng đen (số thứ tự 24) tại Danh mục động vật hoang dã thông thường được quản lý, bảo vệ trên địa bàn tỉnh Cà Mau, thuộc Quyết định số 03/2014/QĐ-UBND ngày 08/02/2014 của Ủy ban nhân dân tỉnh Cà Mau sửa đổi, bổ sung một số điều của Quy định về quản lý và bảo vệ động vật hoang dã trên địa bàn tỉnh Cà Mau ban hành kèm theo Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010 của Ủy ban nhân dân tỉnh Cà Mau",
+        "_matched_gt": {
+          "reference": "khoản 2 Điều 1 Quyết định số 03/2014/QĐ-UBND ngày 08/02/2014",
+          "relation": "dinh_chi"
+        }
+      },
+      {
+        "relation": "ngung_hieu_luc",
+        "reference": "khoản 1 Điều 7 Thông tư số 02/2022/TT-BTNMT",
+        "_matched_gt": {
+          "reference": "khoản 1 Điều 7 Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022",
+          "relation": "ngung_hieu_luc"
+        }
+      },
+      {
+        "relation": "ngung_hieu_luc",
+        "reference": "khoản 2 Điều 75 Thông tư số 02/2022/TT-BTNMT",
+        "_matched_gt": {
+          "reference": "khoản 2 Điều 75 Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022",
+          "relation": "ngung_hieu_luc"
+        }
+      },
+      {
+        "relation": "keo_dai_hieu_luc",
+        "reference": "Quyết định số 2393/QĐ-UBND ngày 11/9/2019 của UBND tỉnh Quảng Trị",
+        "_matched_gt": {
+          "reference": "Quyết định số 2393/QĐ-UBND ngày 11/9/2019",
+          "relation": "keo_dai_hieu_luc"
+        }
+      },
+      {
+        "relation": "sua_doi",
+        "reference": "khoản 4 Điều 9 Thông tư số 32/2012/TT-BCT",
+        "_matched_gt": {
+          "reference": "khoản 4 Điều 9 Thông tư số 32/2012/TT-BCT ngày 12 tháng 11 năm 2012",
+          "relation": "sua_doi"
+        }
+      },
+      {
+        "relation": "quy_dinh_chi_tiet",
+        "reference": "Điều 54 Luật Bảo vệ môi trường",
+        "_matched_gt": {
+          "reference": "Điều 54 Luật Bảo vệ môi trường",
+          "relation": "quy_dinh_chi_tiet"
+        }
+      },
+      {
+        "relation": "quy_dinh_chi_tiet",
+        "reference": "Điều 55 Luật Bảo vệ môi trường",
+        "_matched_gt": {
+          "reference": "Điều 55 Luật Bảo vệ môi trường",
+          "relation": "quy_dinh_chi_tiet"
+        }
+      },
+      {
+        "relation": "dinh_chinh",
+        "reference": "điểm d khoản 4 Điều 3 Thông tư số 15/2024/TT-BYT ngày 19 tháng 9 năm 2024",
+        "_matched_gt": {
+          "reference": "điểm d khoản 4 Điều 3 Thông tư số 15/2024/TT-BYT ngày 19 tháng 9 năm 2024",
+          "relation": "dinh_chinh"
+        }
+      },
+      {
+        "relation": "bai_bo",
+        "reference": "Quyết định số 900/2006/QĐ-KTNN ngày 15 tháng 12 năm 2006 của Tổng Kiểm toán nhà nước",
+        "_matched_gt": {
+          "reference": "Quyết định số 900/2006/QĐ-KTNN ngày ngày 15 tháng 12 năm 2006",
+          "relation": "bai_bo"
+        }
+      },
+      {
+        "relation": "can_cu",
+        "reference": "Luật Thuế tài nguyên số 45/2009/QH12 ngày 25 tháng 11 năm 2009",
+        "_matched_gt": {
+          "reference": "Luật Thuế tài nguyên số 45/2009/QH12 ngày 25 tháng 11 năm 2009",
+          "relation": "can_cu"
+        }
+      },
+      {
+        "relation": "can_cu",
+        "reference": "Luật Dầu khí năm 1993",
+        "_matched_gt": {
+          "reference": "Luật Dầu khí năm 1993",
+          "relation": "can_cu"
+        }
+      },
+      {
+        "relation": "can_cu",
+        "reference": "Luật sửa đổi, bổ sung một số điều của Luật dầu khí số 19/2000/QH10",
+        "_matched_gt": {
+          "reference": "Luật sửa đổi, bổ sung một số điều của Luật dầu khí số 19/2000/QH10",
+          "relation": "can_cu"
+        }
+      },
+      {
+        "relation": "can_cu",
+        "reference": "Luật sửa đổi, bổ sung một số điều của Luật Dầu khí số 10/2008/QH12",
+        "_matched_gt": {
+          "reference": "Luật sửa đổi, bổ sung một số điều của Luật Dầu khí số 10/2008/QH12",
+          "relation": "can_cu"
+        }
+      },
+      {
+        "relation": "can_cu",
+        "reference": "Luật Quản lý thuế số 78/2006/QH11 ngày 29/11/2006",
+        "_matched_gt": {
+          "reference": "Luật Quản lý thuế số 78/2006/QH11 ngày 29/11/2006",
+          "relation": "can_cu"
+        }
+      },
+      {
+        "relation": "can_cu",
+        "reference": "Nghị định số 50/2010/NĐ-CP ngày 14 tháng 5 năm 2010 của Chính phủ",
+        "_matched_gt": {
+          "reference": "Nghị định số 50/2010/NĐ-CP ngày 14 tháng 5 năm 2010",
+          "relation": "can_cu"
+        }
+      },
+      {
+        "relation": "can_cu",
+        "reference": "Nghị định số 118/2008/NĐ-CP ngày 27 tháng 11 năm 2008 của Chính phủ",
+        "_matched_gt": {
+          "reference": "Nghị định số 118/2008/NĐ-CP ngày 27 tháng 11 năm 2008",
+          "relation": "can_cu"
+        }
+      },
+      {
+        "relation": "dan_chieu",
+        "reference": "điểm a khoản 1 Điều 204 của Luật Sở hữu trí tuệ",
+        "_matched_gt": {
+          "reference": "điểm a khoản 1 Điều 204 Luật Sở hữu trí tuệ",
+          "relation": "dan_chieu"
+        }
+      },
+      {
+        "relation": "can_cu",
+        "reference": "Luật Tổ chức Hội đồng nhân dân và Uỷ ban nhân dân ngày 26/11/2003",
+        "_matched_gt": {
+          "reference": "Luật Tổ chức Hội đồng nhân dân và Uỷ ban nhân dân ngày 26/11/2003",
+          "relation": "can_cu"
+        }
+      },
+      {
+        "relation": "can_cu",
+        "reference": "Nghị định số 63/2010/NĐ-CP ngày 08 tháng 6 năm 2010 của Chính phủ về Kiểm soát thủ tục hành chính",
+        "_matched_gt": {
+          "reference": "Nghị định số 63/2010/NĐ-CP ngày 08 tháng 6 năm 2010",
+          "relation": "can_cu"
+        }
+      },
+      {
+        "relation": "can_cu",
+        "reference": "Thông tư số 42/2012/TT-BNNPTNT ngày 21/8/2012 của Bộ Nông nghiệp và PTNT",
+        "_matched_gt": {
+          "reference": "Thông tư số 42/2012/TT-BNNPTNT ngày 21/8/2012",
+          "relation": "can_cu"
+        }
+      },
+      {
+        "relation": "can_cu",
+        "reference": "Thông tư số 47/TT-BNNPTNT ngày 25/9/2012 của Bộ Nông nghiệp&PTNT",
+        "_matched_gt": {
+          "reference": "Thông tư số 47/TT-BNNPTNT ngày 25/9/2012",
+          "relation": "can_cu"
+        }
+      },
+      {
+        "relation": "can_cu",
+        "reference": "Quyết định số 39/2012/QĐ-TTg ngày 05/10/2012 của Thủ tướng Chính phủ",
+        "_matched_gt": {
+          "reference": "Quyết định số 39/2012/QĐ-TTg",
+          "relation": "can_cu"
+        }
+      },
+      {
+        "relation": "dan_chieu",
+        "reference": "Luật thi đua khen thưởng",
+        "_matched_gt": {
+          "reference": "Luật thi đua khen thưởng",
+          "relation": "dan_chieu"
+        }
+      }
+    ],
+    "false_positives": [
+      {
+        "relation": "sua_doi_bo_sung",
+        "reference": "Điều 1"
+      },
+      {
+        "relation": "can_cu",
+        "reference": "Luật Tổ chức Chính phủ ngày 25 tháng 12 năm 2001"
+      },
+      {
+        "relation": "can_cu",
+        "reference": "Luật Giáo dục đại học ngày 18 tháng 6 năm 2012"
+      },
+      {
+        "relation": "bo_sung",
+        "reference": "khoản 3 Điều 9"
+      },
+      {
+        "relation": "thay_the",
+        "reference": "khoản 4 Điều 3 Luật Bảo vệ môi trường"
+      },
+      {
+        "relation": "thay_the",
+        "reference": "khoản 1 Điều 9 Luật Bảo vệ môi trường"
+      },
+      {
+        "relation": "thay_the",
+        "reference": "khoản 1 Điều 13 Luật Bảo vệ môi trường"
+      },
+      {
+        "relation": "thay_the",
+        "reference": "khoản 2 Điều 21 Luật Bảo vệ môi trường"
+      },
+      {
+        "relation": "thay_the",
+        "reference": "khoản 1 Điều 22 Luật Bảo vệ môi trường"
+      },
+      {
+        "relation": "thay_the",
+        "reference": "Điều 23 Luật Bảo vệ môi trường"
+      },
+      {
+        "relation": "thay_the",
+        "reference": "điểm đ khoản 2 Điều 27 Luật Bảo vệ môi trường"
+      },
+      {
+        "relation": "thay_the",
+        "reference": "điểm a khoản 3 Điều 29 Luật Bảo vệ môi trường"
+      },
+      {
+        "relation": "thay_the",
+        "reference": "điểm b khoản 1 Điều 32 Luật Bảo vệ môi trường"
+      },
+      {
+        "relation": "thay_the",
+        "reference": "điểm c khoản 1 Điều 42 Luật Bảo vệ môi trường"
+      },
+      {
+        "relation": "thay_the",
+        "reference": "điểm e khoản 1 Điều 42 Luật Bảo vệ môi trường"
+      },
+      {
+        "relation": "sua_doi_bo_sung",
+        "reference": "Thông tư số 32/2012/TT-BCT"
+      },
+      {
+        "relation": "huy_bo",
+        "reference": "Phần 4 - Chăm sóc sơ sinh thuộc Hướng dẫn quốc gia về các dịch vụ chăm sóc sức khỏe sinh sản ban hành kèm theo Quyết định số 4128/QĐ-BYT ngày 29/7/2016 của Bộ trưởng Bộ Y tế"
+      },
+      {
+        "relation": "dinh_chi",
+        "reference": "Quyết định số 21/2025/QĐ-UBND ngày 12 tháng 3 năm 2025 của Ủy ban nhân dân tỉnh"
+      },
+      {
+        "relation": "bo_sung",
+        "reference": "Luật Kế toán số 88/2015/QH13"
+      },
+      {
+        "relation": "bo_sung",
+        "reference": "Điều 13 Luật Thuế thu nhập doanh nghiệp số 67/2025/QH15"
+      },
+      {
+        "relation": "dan_chieu",
+        "reference": "Nghị định số 33/2002/NĐ-CP ngày 28/3/2002 của Chính phủ"
+      }
+    ],
+    "false_negatives": [
+      {
+        "reference": "Điều 1 Thông tư số 35/2025/TT-NHNN",
+        "relation": "sua_doi"
+      },
+      {
+        "reference": "khoản 3 Điều 1 Quyết định số 03/2014/QĐ-UBND ngày 08/02/2014",
+        "relation": "dinh_chi"
+      },
+      {
+        "reference": "Nghị định số 143/2013/NĐ-CP ngày 24 tháng 10 năm 2013",
+        "relation": "hop_nhat"
+      },
+      {
+        "reference": "Nghị định số 51/2026/NĐ-CP ngày 02 tháng 02 năm 2026",
+        "relation": "hop_nhat"
+      },
+      {
+        "reference": "điểm c khoản 2 Điều 12 Luật 67/2025/QH15",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "điểm e khoản 2 Điều 12 Luật 67/2025/QH15",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "khoản 3 Điều 9 Nghị định 126/2020/NĐ-CP",
+        "relation": "bo_sung"
+      },
+      {
+        "reference": "khoản 4 Điều 3 Luật Bảo vệ môi trường",
+        "relation": "sua_doi"
+      },
+      {
+        "reference": "khoản 1 Điều 9 Luật Bảo vệ môi trường",
+        "relation": "sua_doi"
+      },
+      {
+        "reference": "khoản 1 Điều 13 Luật Bảo vệ môi trường",
+        "relation": "sua_doi"
+      },
+      {
+        "reference": "khoản 2 Điều 21 Luật Bảo vệ môi trường",
+        "relation": "sua_doi"
+      },
+      {
+        "reference": "khoản 1 Điều 22 Luật Bảo vệ môi trường",
+        "relation": "sua_doi"
+      },
+      {
+        "reference": "Điều 23 Luật Bảo vệ môi trường",
+        "relation": "sua_doi"
+      },
+      {
+        "reference": "điểm đ khoản 2 Điều 27 Luật Bảo vệ môi trường",
+        "relation": "sua_doi"
+      },
+      {
+        "reference": "điểm a khoản 3 Điều 29 Luật Bảo vệ môi trường",
+        "relation": "sua_doi"
+      },
+      {
+        "reference": "điểm b khoản 1 Điều 32 Luật Bảo vệ môi trường",
+        "relation": "sua_doi"
+      },
+      {
+        "reference": "điểm c khoản 1 Điều 42 Luật Bảo vệ môi trường",
+        "relation": "sua_doi"
+      },
+      {
+        "reference": "điểm e khoản 1 Điều 42 Luật Bảo vệ môi trường",
+        "relation": "sua_doi"
+      },
+      {
+        "reference": "điểm b khoản 1 Điều 73 Luật 59/2024/QH15",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "Luật An toàn thông tin mạng số 86/2015/QH13",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "Luật 116/2025/QH15",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "Quyết định số 4128/QĐ-BYT ngày 29/7/2016",
+        "relation": "sua_doi_bo_sung"
+      },
+      {
+        "reference": "Quyết định số 21/2025/QĐ-UBND ngày 12 tháng 3 năm 2025",
+        "relation": "dinh_chinh"
+      },
+      {
+        "reference": "điểm b khoản 1 Điều 19 Luật Bảo vệ môi trường",
+        "relation": "bai_bo"
+      },
+      {
+        "reference": "điểm c khoản 1 Điều 19 Luật Bảo vệ môi trường",
+        "relation": "bai_bo"
+      },
+      {
+        "reference": "khoản 1 Điều 44 Luật Bảo vệ môi trường",
+        "relation": "bai_bo"
+      },
+      {
+        "reference": "điểm a khoản 5 Điều 52 Luật Bảo vệ môi trường",
+        "relation": "bai_bo"
+      },
+      {
+        "reference": "khoản 5 Điều 85 Luật Bảo vệ môi trường",
+        "relation": "bai_bo"
+      },
+      {
+        "reference": "khoản 7 Điều 85 Luật Bảo vệ môi trường",
+        "relation": "bai_bo"
+      },
+      {
+        "reference": "khoản 4 Điều 102 Luật Bảo vệ môi trường",
+        "relation": "bai_bo"
+      },
+      {
+        "reference": "khoản 4 Điều 107 Luật Bảo vệ môi trường",
+        "relation": "bai_bo"
+      },
+      {
+        "reference": "điểm b khoản 1 Điều 109 Luật Bảo vệ môi trường",
+        "relation": "bai_bo"
+      },
+      {
+        "reference": "khoản 2 Điều 168 Luật Bảo vệ môi trường",
+        "relation": "bai_bo"
+      },
+      {
+        "reference": "điểm c khoản 2 Điều 131 Luật Bảo vệ môi trường",
+        "relation": "bai_bo"
+      },
+      {
+        "reference": "Điều 70a Luật Kế toán số 88/2015/QH13",
+        "relation": "bo_sung"
+      },
+      {
+        "reference": "Luật Việc làm",
+        "relation": "quy_dinh_chi_tiet"
+      },
+      {
+        "reference": "khoản 1a Điều 13 Luật Thuế thu nhập doanh nghiệp số 67/2025/QH15",
+        "relation": "bo_sung"
+      },
+      {
+        "reference": "Luật Thuế tài nguyên",
+        "relation": "huong_dan"
+      },
+      {
+        "reference": "Nghị định số 50/2010/NĐ-CP ngày 14 tháng 5 năm 2010",
+        "relation": "huong_dan"
+      },
+      {
+        "reference": "Điều 56 Luật Điều ước quốc tế năm 2016",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "Điều 59 Luật Điều ước quốc tế năm 2016",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "Thông tư số 05/2024/TT-BLĐTBXH ngày 10 tháng 5 năm 2024",
+        "relation": "sua_doi_bo_sung"
+      },
+      {
+        "reference": "điểm b khoản 2 Điều 79 Luật 127/2025/QH15",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "điểm c khoản 2 Điều 79 Luật 127/2025/QH15",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "điểm d khoản 2 Điều 79 Luật 127/2025/QH15",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "điểm b khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "điểm c khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "điểm d khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "Điều 28 Nghị định số 33/2002/NĐ-CP ngày 28/3/2002",
+        "relation": "dan_chieu"
+      },
+      {
+        "reference": "Điều 29 Nghị định số 33/2002/NĐ-CP ngày 28/3/2002",
+        "relation": "dan_chieu"
+      }
+    ],
+    "precision_ci95": [
+      0.4125,
+      0.6859
+    ],
+    "recall_ci95": [
+      0.2454,
+      0.454
+    ]
+  },
+  "by_relation_type": {
+    "bai_bo": {
+      "doc_id": "bai_bo",
+      "precision": 1.0,
+      "recall": 0.0833,
+      "f1": 0.1538,
+      "tp": 1,
+      "fp": 0,
+      "fn": 11,
+      "true_positives": [
+        {
+          "relation": "bai_bo",
+          "reference": "Quyết định số 900/2006/QĐ-KTNN ngày 15 tháng 12 năm 2006 của Tổng Kiểm toán nhà nước",
+          "_matched_gt": {
+            "reference": "Quyết định số 900/2006/QĐ-KTNN ngày ngày 15 tháng 12 năm 2006",
+            "relation": "bai_bo"
+          }
+        }
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "reference": "điểm b khoản 1 Điều 19 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "điểm c khoản 1 Điều 19 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 1 Điều 44 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "điểm a khoản 5 Điều 52 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 5 Điều 85 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 7 Điều 85 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 4 Điều 102 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 4 Điều 107 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "điểm b khoản 1 Điều 109 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 2 Điều 168 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "điểm c khoản 2 Điều 131 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        }
+      ]
+    },
+    "bo_sung": {
+      "doc_id": "bo_sung",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 3,
+      "fn": 3,
+      "true_positives": [],
+      "false_positives": [
+        {
+          "relation": "bo_sung",
+          "reference": "khoản 3 Điều 9"
+        },
+        {
+          "relation": "bo_sung",
+          "reference": "Luật Kế toán số 88/2015/QH13"
+        },
+        {
+          "relation": "bo_sung",
+          "reference": "Điều 13 Luật Thuế thu nhập doanh nghiệp số 67/2025/QH15"
+        }
+      ],
+      "false_negatives": [
+        {
+          "reference": "khoản 3 Điều 9 Nghị định 126/2020/NĐ-CP",
+          "relation": "bo_sung"
+        },
+        {
+          "reference": "Điều 70a Luật Kế toán số 88/2015/QH13",
+          "relation": "bo_sung"
+        },
+        {
+          "reference": "khoản 1a Điều 13 Luật Thuế thu nhập doanh nghiệp số 67/2025/QH15",
+          "relation": "bo_sung"
+        }
+      ]
+    },
+    "can_cu": {
+      "doc_id": "can_cu",
+      "precision": 0.8571,
+      "recall": 1.0,
+      "f1": 0.9231,
+      "tp": 12,
+      "fp": 2,
+      "fn": 0,
+      "true_positives": [
+        {
+          "relation": "can_cu",
+          "reference": "Luật Thuế tài nguyên số 45/2009/QH12 ngày 25 tháng 11 năm 2009",
+          "_matched_gt": {
+            "reference": "Luật Thuế tài nguyên số 45/2009/QH12 ngày 25 tháng 11 năm 2009",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật Dầu khí năm 1993",
+          "_matched_gt": {
+            "reference": "Luật Dầu khí năm 1993",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật sửa đổi, bổ sung một số điều của Luật dầu khí số 19/2000/QH10",
+          "_matched_gt": {
+            "reference": "Luật sửa đổi, bổ sung một số điều của Luật dầu khí số 19/2000/QH10",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật sửa đổi, bổ sung một số điều của Luật Dầu khí số 10/2008/QH12",
+          "_matched_gt": {
+            "reference": "Luật sửa đổi, bổ sung một số điều của Luật Dầu khí số 10/2008/QH12",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật Quản lý thuế số 78/2006/QH11 ngày 29/11/2006",
+          "_matched_gt": {
+            "reference": "Luật Quản lý thuế số 78/2006/QH11 ngày 29/11/2006",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Nghị định số 50/2010/NĐ-CP ngày 14 tháng 5 năm 2010 của Chính phủ",
+          "_matched_gt": {
+            "reference": "Nghị định số 50/2010/NĐ-CP ngày 14 tháng 5 năm 2010",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Nghị định số 118/2008/NĐ-CP ngày 27 tháng 11 năm 2008 của Chính phủ",
+          "_matched_gt": {
+            "reference": "Nghị định số 118/2008/NĐ-CP ngày 27 tháng 11 năm 2008",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật Tổ chức Hội đồng nhân dân và Uỷ ban nhân dân ngày 26/11/2003",
+          "_matched_gt": {
+            "reference": "Luật Tổ chức Hội đồng nhân dân và Uỷ ban nhân dân ngày 26/11/2003",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Nghị định số 63/2010/NĐ-CP ngày 08 tháng 6 năm 2010 của Chính phủ về Kiểm soát thủ tục hành chính",
+          "_matched_gt": {
+            "reference": "Nghị định số 63/2010/NĐ-CP ngày 08 tháng 6 năm 2010",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Thông tư số 42/2012/TT-BNNPTNT ngày 21/8/2012 của Bộ Nông nghiệp và PTNT",
+          "_matched_gt": {
+            "reference": "Thông tư số 42/2012/TT-BNNPTNT ngày 21/8/2012",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Thông tư số 47/TT-BNNPTNT ngày 25/9/2012 của Bộ Nông nghiệp&PTNT",
+          "_matched_gt": {
+            "reference": "Thông tư số 47/TT-BNNPTNT ngày 25/9/2012",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Quyết định số 39/2012/QĐ-TTg ngày 05/10/2012 của Thủ tướng Chính phủ",
+          "_matched_gt": {
+            "reference": "Quyết định số 39/2012/QĐ-TTg",
+            "relation": "can_cu"
+          }
+        }
+      ],
+      "false_positives": [
+        {
+          "relation": "can_cu",
+          "reference": "Luật Tổ chức Chính phủ ngày 25 tháng 12 năm 2001"
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật Giáo dục đại học ngày 18 tháng 6 năm 2012"
+        }
+      ],
+      "false_negatives": []
+    },
+    "dan_chieu": {
+      "doc_id": "dan_chieu",
+      "precision": 0.6667,
+      "recall": 0.1176,
+      "f1": 0.2,
+      "tp": 2,
+      "fp": 1,
+      "fn": 15,
+      "true_positives": [
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm a khoản 1 Điều 204 của Luật Sở hữu trí tuệ",
+          "_matched_gt": {
+            "reference": "điểm a khoản 1 Điều 204 Luật Sở hữu trí tuệ",
+            "relation": "dan_chieu"
+          }
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật thi đua khen thưởng",
+          "_matched_gt": {
+            "reference": "Luật thi đua khen thưởng",
+            "relation": "dan_chieu"
+          }
+        }
+      ],
+      "false_positives": [
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị định số 33/2002/NĐ-CP ngày 28/3/2002 của Chính phủ"
+        }
+      ],
+      "false_negatives": [
+        {
+          "reference": "điểm c khoản 2 Điều 12 Luật 67/2025/QH15",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm e khoản 2 Điều 12 Luật 67/2025/QH15",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm b khoản 1 Điều 73 Luật 59/2024/QH15",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "Luật An toàn thông tin mạng số 86/2015/QH13",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "Luật 116/2025/QH15",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "Điều 56 Luật Điều ước quốc tế năm 2016",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "Điều 59 Luật Điều ước quốc tế năm 2016",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm b khoản 2 Điều 79 Luật 127/2025/QH15",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm c khoản 2 Điều 79 Luật 127/2025/QH15",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm d khoản 2 Điều 79 Luật 127/2025/QH15",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm b khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm c khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm d khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "Điều 28 Nghị định số 33/2002/NĐ-CP ngày 28/3/2002",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "Điều 29 Nghị định số 33/2002/NĐ-CP ngày 28/3/2002",
+          "relation": "dan_chieu"
+        }
+      ]
+    },
+    "dinh_chi": {
+      "doc_id": "dinh_chi",
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1": 0.75,
+      "tp": 3,
+      "fp": 1,
+      "fn": 1,
+      "true_positives": [
+        {
+          "relation": "dinh_chi",
+          "reference": "Quyết định số 126/2004/QĐ-UB ngày 10/05/2004 của Uỷ ban nhân dân tỉnh Khánh Hòa",
+          "_matched_gt": {
+            "reference": "Quyết định số 126/2004/QĐ-UB ngày 10/05/2004",
+            "relation": "dinh_chi"
+          }
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "Khoản 1 của Điều 8, Quy định kèm theo Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010 của Ủy ban nhân dân tỉnh Cà Mau ban hành Quy định về quản lý và bảo vệ động vật hoang dã trên địa bàn tỉnh Cà Mau",
+          "_matched_gt": {
+            "reference": "khoản 1 Điều 8 Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010",
+            "relation": "dinh_chi"
+          }
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "Khoản 2, Khoản 3 của Điều 1 và loài rùa hộp lưng đen (số thứ tự 24) tại Danh mục động vật hoang dã thông thường được quản lý, bảo vệ trên địa bàn tỉnh Cà Mau, thuộc Quyết định số 03/2014/QĐ-UBND ngày 08/02/2014 của Ủy ban nhân dân tỉnh Cà Mau sửa đổi, bổ sung một số điều của Quy định về quản lý và bảo vệ động vật hoang dã trên địa bàn tỉnh Cà Mau ban hành kèm theo Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010 của Ủy ban nhân dân tỉnh Cà Mau",
+          "_matched_gt": {
+            "reference": "khoản 2 Điều 1 Quyết định số 03/2014/QĐ-UBND ngày 08/02/2014",
+            "relation": "dinh_chi"
+          }
+        }
+      ],
+      "false_positives": [
+        {
+          "relation": "dinh_chi",
+          "reference": "Quyết định số 21/2025/QĐ-UBND ngày 12 tháng 3 năm 2025 của Ủy ban nhân dân tỉnh"
+        }
+      ],
+      "false_negatives": [
+        {
+          "reference": "khoản 3 Điều 1 Quyết định số 03/2014/QĐ-UBND ngày 08/02/2014",
+          "relation": "dinh_chi"
+        }
+      ]
+    },
+    "dinh_chinh": {
+      "doc_id": "dinh_chinh",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667,
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "true_positives": [
+        {
+          "relation": "dinh_chinh",
+          "reference": "điểm d khoản 4 Điều 3 Thông tư số 15/2024/TT-BYT ngày 19 tháng 9 năm 2024",
+          "_matched_gt": {
+            "reference": "điểm d khoản 4 Điều 3 Thông tư số 15/2024/TT-BYT ngày 19 tháng 9 năm 2024",
+            "relation": "dinh_chinh"
+          }
+        }
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "reference": "Quyết định số 21/2025/QĐ-UBND ngày 12 tháng 3 năm 2025",
+          "relation": "dinh_chinh"
+        }
+      ]
+    },
+    "hop_nhat": {
+      "doc_id": "hop_nhat",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "reference": "Nghị định số 143/2013/NĐ-CP ngày 24 tháng 10 năm 2013",
+          "relation": "hop_nhat"
+        },
+        {
+          "reference": "Nghị định số 51/2026/NĐ-CP ngày 02 tháng 02 năm 2026",
+          "relation": "hop_nhat"
+        }
+      ]
+    },
+    "huong_dan": {
+      "doc_id": "huong_dan",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "reference": "Luật Thuế tài nguyên",
+          "relation": "huong_dan"
+        },
+        {
+          "reference": "Nghị định số 50/2010/NĐ-CP ngày 14 tháng 5 năm 2010",
+          "relation": "huong_dan"
+        }
+      ]
+    },
+    "huy_bo": {
+      "doc_id": "huy_bo",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "true_positives": [],
+      "false_positives": [
+        {
+          "relation": "huy_bo",
+          "reference": "Phần 4 - Chăm sóc sơ sinh thuộc Hướng dẫn quốc gia về các dịch vụ chăm sóc sức khỏe sinh sản ban hành kèm theo Quyết định số 4128/QĐ-BYT ngày 29/7/2016 của Bộ trưởng Bộ Y tế"
+        }
+      ],
+      "false_negatives": []
+    },
+    "keo_dai_hieu_luc": {
+      "doc_id": "keo_dai_hieu_luc",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "true_positives": [
+        {
+          "relation": "keo_dai_hieu_luc",
+          "reference": "Quyết định số 2393/QĐ-UBND ngày 11/9/2019 của UBND tỉnh Quảng Trị",
+          "_matched_gt": {
+            "reference": "Quyết định số 2393/QĐ-UBND ngày 11/9/2019",
+            "relation": "keo_dai_hieu_luc"
+          }
+        }
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    "ngung_hieu_luc": {
+      "doc_id": "ngung_hieu_luc",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "true_positives": [
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "khoản 1 Điều 7 Thông tư số 02/2022/TT-BTNMT",
+          "_matched_gt": {
+            "reference": "khoản 1 Điều 7 Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022",
+            "relation": "ngung_hieu_luc"
+          }
+        },
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "khoản 2 Điều 75 Thông tư số 02/2022/TT-BTNMT",
+          "_matched_gt": {
+            "reference": "khoản 2 Điều 75 Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022",
+            "relation": "ngung_hieu_luc"
+          }
+        }
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    "quy_dinh_chi_tiet": {
+      "doc_id": "quy_dinh_chi_tiet",
+      "precision": 1.0,
+      "recall": 0.6667,
+      "f1": 0.8,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "true_positives": [
+        {
+          "relation": "quy_dinh_chi_tiet",
+          "reference": "Điều 54 Luật Bảo vệ môi trường",
+          "_matched_gt": {
+            "reference": "Điều 54 Luật Bảo vệ môi trường",
+            "relation": "quy_dinh_chi_tiet"
+          }
+        },
+        {
+          "relation": "quy_dinh_chi_tiet",
+          "reference": "Điều 55 Luật Bảo vệ môi trường",
+          "_matched_gt": {
+            "reference": "Điều 55 Luật Bảo vệ môi trường",
+            "relation": "quy_dinh_chi_tiet"
+          }
+        }
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "reference": "Luật Việc làm",
+          "relation": "quy_dinh_chi_tiet"
+        }
+      ]
+    },
+    "sua_doi": {
+      "doc_id": "sua_doi",
+      "precision": 1.0,
+      "recall": 0.0769,
+      "f1": 0.1429,
+      "tp": 1,
+      "fp": 0,
+      "fn": 12,
+      "true_positives": [
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 4 Điều 9 Thông tư số 32/2012/TT-BCT",
+          "_matched_gt": {
+            "reference": "khoản 4 Điều 9 Thông tư số 32/2012/TT-BCT ngày 12 tháng 11 năm 2012",
+            "relation": "sua_doi"
+          }
+        }
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "reference": "Điều 1 Thông tư số 35/2025/TT-NHNN",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "khoản 4 Điều 3 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "khoản 1 Điều 9 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "khoản 1 Điều 13 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "khoản 2 Điều 21 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "khoản 1 Điều 22 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "Điều 23 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm đ khoản 2 Điều 27 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm a khoản 3 Điều 29 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm b khoản 1 Điều 32 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm c khoản 1 Điều 42 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm e khoản 1 Điều 42 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        }
+      ]
+    },
+    "sua_doi_bo_sung": {
+      "doc_id": "sua_doi_bo_sung",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 2,
+      "fn": 2,
+      "true_positives": [],
+      "false_positives": [
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Điều 1"
+        },
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Thông tư số 32/2012/TT-BCT"
+        }
+      ],
+      "false_negatives": [
+        {
+          "reference": "Quyết định số 4128/QĐ-BYT ngày 29/7/2016",
+          "relation": "sua_doi_bo_sung"
+        },
+        {
+          "reference": "Thông tư số 05/2024/TT-BLĐTBXH ngày 10 tháng 5 năm 2024",
+          "relation": "sua_doi_bo_sung"
+        }
+      ]
+    },
+    "thay_the": {
+      "doc_id": "thay_the",
+      "precision": 0.0833,
+      "recall": 1.0,
+      "f1": 0.1538,
+      "tp": 1,
+      "fp": 11,
+      "fn": 0,
+      "true_positives": [
+        {
+          "relation": "thay_the",
+          "reference": "Quyết định số 2491/QĐ-UBND ngày 24 tháng 12 năm 2010 của Ủy ban nhân dân tỉnh Cao Bằng",
+          "_matched_gt": {
+            "reference": "Quyết định số 2491/QĐ-UBND ngày 24 tháng 12 năm 2010",
+            "relation": "thay_the"
+          }
+        }
+      ],
+      "false_positives": [
+        {
+          "relation": "thay_the",
+          "reference": "khoản 4 Điều 3 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 1 Điều 9 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 1 Điều 13 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 2 Điều 21 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 1 Điều 22 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 23 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm đ khoản 2 Điều 27 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm a khoản 3 Điều 29 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm b khoản 1 Điều 32 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm c khoản 1 Điều 42 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm e khoản 1 Điều 42 Luật Bảo vệ môi trường"
+        }
+      ],
+      "false_negatives": []
+    }
+  },
+  "by_clause_type": {
+    "diem": {
+      "doc_id": "diem",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 13,
+      "fn": 27,
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    "dieu": {
+      "doc_id": "dieu",
+      "precision": 0.7333,
+      "recall": 0.6471,
+      "f1": 0.6875,
+      "tp": 11,
+      "fp": 4,
+      "fn": 6,
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    "khoan": {
+      "doc_id": "khoan",
+      "precision": 0.6,
+      "recall": 0.2308,
+      "f1": 0.3333,
+      "tp": 3,
+      "fp": 2,
+      "fn": 10,
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    "vanban": {
+      "doc_id": "vanban",
+      "precision": 0.8571,
+      "recall": 0.6316,
+      "f1": 0.7273,
+      "tp": 12,
+      "fp": 2,
+      "fn": 7,
+      "true_positives": [],
+      "false_positives": [],
+      "false_negatives": []
+    }
+  },
+  "telemetry": {
+    "calls": 0,
+    "cache_hits": 30,
+    "errors": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "latency_s_total": 0.0,
+    "latency_s_mean": 0.0,
+    "completion_tokens_mean": 0.0
+  },
+  "rows": [
+    {
+      "key": [
+        "02/2026/TT-NHNN",
+        "dieu",
+        "Điều 1. Sửa đổi, bổ sung Điều 1\r\n“ Phạm vi điều chỉnh\r\nThông tư này quy định về việc cho vay đặc biệt của Ngân hàng Nhà nước Việt Nam (sau đây gọi là Ngân hàng Nhà nước), tổ chức bảo hiểm tiền gửi, tổ chức tín dụng khác đối với tổ chức tín dụng; việc cho vay đặc biệt của Ngân hàng Nhà nước đối với tổ chức bảo hiểm tiền gửi.”.",
+        "",
+        ""
+      ],
+      "so_hieu": "02/2026/TT-NHNN",
+      "clause_type": "dieu",
+      "content": "Điều 1. Sửa đổi, bổ sung Điều 1\r\n“ Phạm vi điều chỉnh\r\nThông tư này quy định về việc cho vay đặc biệt của Ngân hàng Nhà nước Việt Nam (sau đây gọi là Ngân hàng Nhà nước), tổ chức bảo hiểm tiền gửi, tổ chức tín dụng khác đối với tổ chức tín dụng; việc cho vay đặc biệt của Ngân hàng Nhà nước đối với tổ chức bảo hiểm tiền gửi.”.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Điều 1 Thông tư số 35/2025/TT-NHNN",
+          "relation": "sua_doi"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Điều 1"
+        }
+      ],
+      "tp": [],
+      "fp": [
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Điều 1"
+        }
+      ],
+      "fn": [
+        {
+          "reference": "Điều 1 Thông tư số 35/2025/TT-NHNN",
+          "relation": "sua_doi"
+        }
+      ]
+    },
+    {
+      "key": [
+        "57/2005/QĐ-UBND",
+        "khoan",
+        "1. Quyết định số 126/2004/QĐ-UB ngày 10/05/2004 của Uỷ ban nhân dân dân tỉnh Khánh Hòa về việc ban hành Quy định một số chính sách khuyến khích đầu tư trong nước tại tỉnh Khánh Hòa (sau đây viết tắt là Quyết định 126).",
+        "Điều 1. Đình chỉ thi hành các văn bản quy phạm pháp luật do Uỷ ban nhân dân tỉnh ban hành sau:",
+        ""
+      ],
+      "so_hieu": "57/2005/QĐ-UBND",
+      "clause_type": "khoan",
+      "content": "1. Quyết định số 126/2004/QĐ-UB ngày 10/05/2004 của Uỷ ban nhân dân dân tỉnh Khánh Hòa về việc ban hành Quy định một số chính sách khuyến khích đầu tư trong nước tại tỉnh Khánh Hòa (sau đây viết tắt là Quyết định 126).",
+      "parent_content": "Điều 1. Đình chỉ thi hành các văn bản quy phạm pháp luật do Uỷ ban nhân dân tỉnh ban hành sau:",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Quyết định số 126/2004/QĐ-UB ngày 10/05/2004",
+          "relation": "dinh_chi"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "dinh_chi",
+          "reference": "Quyết định số 126/2004/QĐ-UB ngày 10/05/2004 của Uỷ ban nhân dân tỉnh Khánh Hòa"
+        }
+      ],
+      "tp": [
+        {
+          "relation": "dinh_chi",
+          "reference": "Quyết định số 126/2004/QĐ-UB ngày 10/05/2004 của Uỷ ban nhân dân tỉnh Khánh Hòa",
+          "_matched_gt": {
+            "reference": "Quyết định số 126/2004/QĐ-UB ngày 10/05/2004",
+            "relation": "dinh_chi"
+          }
+        }
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "35/2015/QĐ-UBND",
+        "dieu",
+        "Điều 2. Quyết định này có hiệu lực thi hành sau 10 ngày kể từ ngày ký và thay thế Quyết định số 2491/QĐ-UBND ngày 24 tháng 12 năm 2010 của Ủy ban nhân dân tỉnh Cao Bằng về việc hướng dẫn phân cấp quản lý, sử dụng và xử lý tài sản nhà nước trên địa bàn tỉnh Cao Bằng.",
+        "",
+        ""
+      ],
+      "so_hieu": "35/2015/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 2. Quyết định này có hiệu lực thi hành sau 10 ngày kể từ ngày ký và thay thế Quyết định số 2491/QĐ-UBND ngày 24 tháng 12 năm 2010 của Ủy ban nhân dân tỉnh Cao Bằng về việc hướng dẫn phân cấp quản lý, sử dụng và xử lý tài sản nhà nước trên địa bàn tỉnh Cao Bằng.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Quyết định số 2491/QĐ-UBND ngày 24 tháng 12 năm 2010",
+          "relation": "thay_the"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "thay_the",
+          "reference": "Quyết định số 2491/QĐ-UBND ngày 24 tháng 12 năm 2010 của Ủy ban nhân dân tỉnh Cao Bằng"
+        }
+      ],
+      "tp": [
+        {
+          "relation": "thay_the",
+          "reference": "Quyết định số 2491/QĐ-UBND ngày 24 tháng 12 năm 2010 của Ủy ban nhân dân tỉnh Cao Bằng",
+          "_matched_gt": {
+            "reference": "Quyết định số 2491/QĐ-UBND ngày 24 tháng 12 năm 2010",
+            "relation": "thay_the"
+          }
+        }
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "1739/QĐ-UBND",
+        "dieu",
+        "Điều 1. Đình chỉ thi hành Khoản 1 của Điều 8, Quy định kèm theo Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010 của Ủy ban nhân dân tỉnh Cà Mau ban hành Quy định về quản lý và bảo vệ động vật hoang dã trên địa bàn tỉnh Cà Mau; Khoản 2, Khoản 3 của Điều 1 và loài rùa hộp lưng đen (số thứ tự 24) tại Danh mục động vật hoang dã thông thường được quản lý, bảo vệ trên địa bàn tỉnh Cà Mau, thuộc Quyết định số 03/2014/QĐ-UBND ngày 08/02/2014 của Ủy ban nhân dân tỉnh Cà Mau sửa đổi, bổ sung một số điều của Quy định về quản lý và bảo vệ động vật hoang dã trên địa bàn tỉnh Cà Mau ban hành kèm theo Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010 của Ủy ban nhân dân tỉnh Cà Mau. Lý do đình chỉ: Do không phù hợp với quy định của pháp luật hiện hành.",
+        "",
+        ""
+      ],
+      "so_hieu": "1739/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 1. Đình chỉ thi hành Khoản 1 của Điều 8, Quy định kèm theo Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010 của Ủy ban nhân dân tỉnh Cà Mau ban hành Quy định về quản lý và bảo vệ động vật hoang dã trên địa bàn tỉnh Cà Mau; Khoản 2, Khoản 3 của Điều 1 và loài rùa hộp lưng đen (số thứ tự 24) tại Danh mục động vật hoang dã thông thường được quản lý, bảo vệ trên địa bàn tỉnh Cà Mau, thuộc Quyết định số 03/2014/QĐ-UBND ngày 08/02/2014 của Ủy ban nhân dân tỉnh Cà Mau sửa đổi, bổ sung một số điều của Quy định về quản lý và bảo vệ động vật hoang dã trên địa bàn tỉnh Cà Mau ban hành kèm theo Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010 của Ủy ban nhân dân tỉnh Cà Mau. Lý do đình chỉ: Do không phù hợp với quy định của pháp luật hiện hành.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "khoản 1 Điều 8 Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010",
+          "relation": "dinh_chi"
+        },
+        {
+          "reference": "khoản 2 Điều 1 Quyết định số 03/2014/QĐ-UBND ngày 08/02/2014",
+          "relation": "dinh_chi"
+        },
+        {
+          "reference": "khoản 3 Điều 1 Quyết định số 03/2014/QĐ-UBND ngày 08/02/2014",
+          "relation": "dinh_chi"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "dinh_chi",
+          "reference": "Khoản 1 của Điều 8, Quy định kèm theo Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010 của Ủy ban nhân dân tỉnh Cà Mau ban hành Quy định về quản lý và bảo vệ động vật hoang dã trên địa bàn tỉnh Cà Mau"
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "Khoản 2, Khoản 3 của Điều 1 và loài rùa hộp lưng đen (số thứ tự 24) tại Danh mục động vật hoang dã thông thường được quản lý, bảo vệ trên địa bàn tỉnh Cà Mau, thuộc Quyết định số 03/2014/QĐ-UBND ngày 08/02/2014 của Ủy ban nhân dân tỉnh Cà Mau sửa đổi, bổ sung một số điều của Quy định về quản lý và bảo vệ động vật hoang dã trên địa bàn tỉnh Cà Mau ban hành kèm theo Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010 của Ủy ban nhân dân tỉnh Cà Mau"
+        }
+      ],
+      "tp": [
+        {
+          "relation": "dinh_chi",
+          "reference": "Khoản 1 của Điều 8, Quy định kèm theo Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010 của Ủy ban nhân dân tỉnh Cà Mau ban hành Quy định về quản lý và bảo vệ động vật hoang dã trên địa bàn tỉnh Cà Mau",
+          "_matched_gt": {
+            "reference": "khoản 1 Điều 8 Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010",
+            "relation": "dinh_chi"
+          }
+        },
+        {
+          "relation": "dinh_chi",
+          "reference": "Khoản 2, Khoản 3 của Điều 1 và loài rùa hộp lưng đen (số thứ tự 24) tại Danh mục động vật hoang dã thông thường được quản lý, bảo vệ trên địa bàn tỉnh Cà Mau, thuộc Quyết định số 03/2014/QĐ-UBND ngày 08/02/2014 của Ủy ban nhân dân tỉnh Cà Mau sửa đổi, bổ sung một số điều của Quy định về quản lý và bảo vệ động vật hoang dã trên địa bàn tỉnh Cà Mau ban hành kèm theo Quyết định số 20/2010/QĐ-UBND ngày 23/9/2010 của Ủy ban nhân dân tỉnh Cà Mau",
+          "_matched_gt": {
+            "reference": "khoản 2 Điều 1 Quyết định số 03/2014/QĐ-UBND ngày 08/02/2014",
+            "relation": "dinh_chi"
+          }
+        }
+      ],
+      "fp": [],
+      "fn": [
+        {
+          "reference": "khoản 3 Điều 1 Quyết định số 03/2014/QĐ-UBND ngày 08/02/2014",
+          "relation": "dinh_chi"
+        }
+      ]
+    },
+    {
+      "key": [
+        "04/2023/TT-BTNMT",
+        "dieu",
+        "Điều 1. Ngưng hiệu lực thi hành\r\nNgưng hiệu lực thi hành khoản 1 Điều 7 và khoản 2 Điều 75 Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022 của Bộ trưởng Bộ Tài nguyên và Môi trường quy định chi tiết thi hành một số điều của Luật Bảo vệ môi trường.",
+        "",
+        ""
+      ],
+      "so_hieu": "04/2023/TT-BTNMT",
+      "clause_type": "dieu",
+      "content": "Điều 1. Ngưng hiệu lực thi hành\r\nNgưng hiệu lực thi hành khoản 1 Điều 7 và khoản 2 Điều 75 Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022 của Bộ trưởng Bộ Tài nguyên và Môi trường quy định chi tiết thi hành một số điều của Luật Bảo vệ môi trường.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "khoản 1 Điều 7 Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022",
+          "relation": "ngung_hieu_luc"
+        },
+        {
+          "reference": "khoản 2 Điều 75 Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022",
+          "relation": "ngung_hieu_luc"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "khoản 1 Điều 7 Thông tư số 02/2022/TT-BTNMT"
+        },
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "khoản 2 Điều 75 Thông tư số 02/2022/TT-BTNMT"
+        }
+      ],
+      "tp": [
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "khoản 1 Điều 7 Thông tư số 02/2022/TT-BTNMT",
+          "_matched_gt": {
+            "reference": "khoản 1 Điều 7 Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022",
+            "relation": "ngung_hieu_luc"
+          }
+        },
+        {
+          "relation": "ngung_hieu_luc",
+          "reference": "khoản 2 Điều 75 Thông tư số 02/2022/TT-BTNMT",
+          "_matched_gt": {
+            "reference": "khoản 2 Điều 75 Thông tư số 02/2022/TT-BTNMT ngày 10 tháng 01 năm 2022",
+            "relation": "ngung_hieu_luc"
+          }
+        }
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "01/VBHN-BGDĐT",
+        "vanban",
+        "NGHỊ ĐỊNH\r\nQUY ĐỊNH VỀ BỒI HOÀN HỌC BỔNG VÀ CHI PHÍ ĐÀO TẠO\r\nNghị định số 143/2013/NĐ-CP ngày 24 tháng 10 năm 2013 của Chính phủ quy định về bồi hoàn học bổng và chi phí đào tạo, có hiệu lực kể từ ngày 10 tháng 12 năm 2013, được sửa đổi, bổ sung bởi:\r\nNghị định số 51/2026/NĐ-CP ngày 02 tháng 02 năm 2026 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 143/2013/NĐ-CP ngày 24 tháng 10 năm 2013 của Chính phủ quy định về bồi hoàn học bổng và chi phí đào tạo, có hiệu lực kể từ ngày 26 tháng 3 năm 2026.\r\nCăn cứ Luật Tổ chức Chính phủ ngày 25 tháng 12 năm 2001;\r\nCăn cứ Luật Giáo dục đại học ngày 18 tháng 6 năm 2012;\r\nTheo đề nghị của Bộ trưởng Bộ Giáo dục và Đào tạo;\r\nChính phủ ban hành Nghị định quy định về bồi hoàn học bổng và chi phí đào tạo.[1]",
+        "",
+        ""
+      ],
+      "so_hieu": "01/VBHN-BGDĐT",
+      "clause_type": "vanban",
+      "content": "NGHỊ ĐỊNH\r\nQUY ĐỊNH VỀ BỒI HOÀN HỌC BỔNG VÀ CHI PHÍ ĐÀO TẠO\r\nNghị định số 143/2013/NĐ-CP ngày 24 tháng 10 năm 2013 của Chính phủ quy định về bồi hoàn học bổng và chi phí đào tạo, có hiệu lực kể từ ngày 10 tháng 12 năm 2013, được sửa đổi, bổ sung bởi:\r\nNghị định số 51/2026/NĐ-CP ngày 02 tháng 02 năm 2026 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 143/2013/NĐ-CP ngày 24 tháng 10 năm 2013 của Chính phủ quy định về bồi hoàn học bổng và chi phí đào tạo, có hiệu lực kể từ ngày 26 tháng 3 năm 2026.\r\nCăn cứ Luật Tổ chức Chính phủ ngày 25 tháng 12 năm 2001;\r\nCăn cứ Luật Giáo dục đại học ngày 18 tháng 6 năm 2012;\r\nTheo đề nghị của Bộ trưởng Bộ Giáo dục và Đào tạo;\r\nChính phủ ban hành Nghị định quy định về bồi hoàn học bổng và chi phí đào tạo.[1]",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Nghị định số 143/2013/NĐ-CP ngày 24 tháng 10 năm 2013",
+          "relation": "hop_nhat"
+        },
+        {
+          "reference": "Nghị định số 51/2026/NĐ-CP ngày 02 tháng 02 năm 2026",
+          "relation": "hop_nhat"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "can_cu",
+          "reference": "Luật Tổ chức Chính phủ ngày 25 tháng 12 năm 2001"
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật Giáo dục đại học ngày 18 tháng 6 năm 2012"
+        }
+      ],
+      "tp": [],
+      "fp": [
+        {
+          "relation": "can_cu",
+          "reference": "Luật Tổ chức Chính phủ ngày 25 tháng 12 năm 2001"
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật Giáo dục đại học ngày 18 tháng 6 năm 2012"
+        }
+      ],
+      "fn": [
+        {
+          "reference": "Nghị định số 143/2013/NĐ-CP ngày 24 tháng 10 năm 2013",
+          "relation": "hop_nhat"
+        },
+        {
+          "reference": "Nghị định số 51/2026/NĐ-CP ngày 02 tháng 02 năm 2026",
+          "relation": "hop_nhat"
+        }
+      ]
+    },
+    {
+      "key": [
+        "67/2025/QH15",
+        "diem",
+        "a) Thu nhập của doanh nghiệp từ thực hiện dự án đầu tư mới quy định tại các điểm a, b, c, d và đ khoản 2 Điều 12 của Luật này; thu nhập của doanh nghiệp quy định tại điểm e khoản 2 Điều 12 của Luật này;",
+        "1. Áp dụng thuế suất 10% trong 15 năm đối với:",
+        "Điều 13. Thuế suất ưu đãi"
+      ],
+      "so_hieu": "67/2025/QH15",
+      "clause_type": "diem",
+      "content": "a) Thu nhập của doanh nghiệp từ thực hiện dự án đầu tư mới quy định tại các điểm a, b, c, d và đ khoản 2 Điều 12 của Luật này; thu nhập của doanh nghiệp quy định tại điểm e khoản 2 Điều 12 của Luật này;",
+      "parent_content": "1. Áp dụng thuế suất 10% trong 15 năm đối với:",
+      "grandparent_content": "Điều 13. Thuế suất ưu đãi",
+      "ground_truth": [
+        {
+          "reference": "điểm c khoản 2 Điều 12 Luật 67/2025/QH15",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm e khoản 2 Điều 12 Luật 67/2025/QH15",
+          "relation": "dan_chieu"
+        }
+      ],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": [
+        {
+          "reference": "điểm c khoản 2 Điều 12 Luật 67/2025/QH15",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm e khoản 2 Điều 12 Luật 67/2025/QH15",
+          "relation": "dan_chieu"
+        }
+      ]
+    },
+    {
+      "key": [
+        "373/2025/NĐ-CP",
+        "khoan",
+        "2. Bổ sung khoản 3 như sau:\r\n“3. Người nộp thuế đã khai thuế theo quý nhưng không đủ điều kiện khai thuế theo quý thì xử lý như sau:",
+        "Điều 1. Sửa đổi, bổ sung một số điểm, khoản của Điều 9 như sau:",
+        ""
+      ],
+      "so_hieu": "373/2025/NĐ-CP",
+      "clause_type": "khoan",
+      "content": "2. Bổ sung khoản 3 như sau:\r\n“3. Người nộp thuế đã khai thuế theo quý nhưng không đủ điều kiện khai thuế theo quý thì xử lý như sau:",
+      "parent_content": "Điều 1. Sửa đổi, bổ sung một số điểm, khoản của Điều 9 như sau:",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "khoản 3 Điều 9 Nghị định 126/2020/NĐ-CP",
+          "relation": "bo_sung"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "bo_sung",
+          "reference": "khoản 3 Điều 9"
+        }
+      ],
+      "tp": [],
+      "fp": [
+        {
+          "relation": "bo_sung",
+          "reference": "khoản 3 Điều 9"
+        }
+      ],
+      "fn": [
+        {
+          "reference": "khoản 3 Điều 9 Nghị định 126/2020/NĐ-CP",
+          "relation": "bo_sung"
+        }
+      ]
+    },
+    {
+      "key": [
+        "2042/QĐ-UBND",
+        "dieu",
+        "Điều 1. Kéo dài thời hạn áp dụng Quyết định số 2393/QĐ-UBND ngày 11/9/2019 của UBND tỉnh Quảng Trị về Quy định giá sản phẩm, dịch vụ công ích thủy lợi trên địa bàn tỉnh Quảng Trị giai đoạn 2019-2020 đến hết năm 2021.",
+        "",
+        ""
+      ],
+      "so_hieu": "2042/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 1. Kéo dài thời hạn áp dụng Quyết định số 2393/QĐ-UBND ngày 11/9/2019 của UBND tỉnh Quảng Trị về Quy định giá sản phẩm, dịch vụ công ích thủy lợi trên địa bàn tỉnh Quảng Trị giai đoạn 2019-2020 đến hết năm 2021.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Quyết định số 2393/QĐ-UBND ngày 11/9/2019",
+          "relation": "keo_dai_hieu_luc"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "keo_dai_hieu_luc",
+          "reference": "Quyết định số 2393/QĐ-UBND ngày 11/9/2019 của UBND tỉnh Quảng Trị"
+        }
+      ],
+      "tp": [
+        {
+          "relation": "keo_dai_hieu_luc",
+          "reference": "Quyết định số 2393/QĐ-UBND ngày 11/9/2019 của UBND tỉnh Quảng Trị",
+          "_matched_gt": {
+            "reference": "Quyết định số 2393/QĐ-UBND ngày 11/9/2019",
+            "relation": "keo_dai_hieu_luc"
+          }
+        }
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "146/2025/QH15",
+        "diem",
+        "i) Thay thế cụm từ “Quy hoạch bảo vệ môi trường quốc gia” bằng cụm từ “Quy hoạch bảo vệ môi trường” tại khoản 4 Điều 3; khoản 1 Điều 9; khoản 1 Điều 13; khoản 2 Điều 21; khoản 1 Điều 22; Điều 23; điểm đ khoản 2 Điều 27; điểm a khoản 3 Điều 29; điểm b khoản 1 Điều 32; điểm c và điểm e khoản 1 Điều 42;",
+        "37. Thay thế một số cụm từ tại các điều, khoản, điểm sau đây:",
+        "Điều 1. Sửa đổi, bổ sung một số điều của Luật Bảo vệ môi trường"
+      ],
+      "so_hieu": "146/2025/QH15",
+      "clause_type": "diem",
+      "content": "i) Thay thế cụm từ “Quy hoạch bảo vệ môi trường quốc gia” bằng cụm từ “Quy hoạch bảo vệ môi trường” tại khoản 4 Điều 3; khoản 1 Điều 9; khoản 1 Điều 13; khoản 2 Điều 21; khoản 1 Điều 22; Điều 23; điểm đ khoản 2 Điều 27; điểm a khoản 3 Điều 29; điểm b khoản 1 Điều 32; điểm c và điểm e khoản 1 Điều 42;",
+      "parent_content": "37. Thay thế một số cụm từ tại các điều, khoản, điểm sau đây:",
+      "grandparent_content": "Điều 1. Sửa đổi, bổ sung một số điều của Luật Bảo vệ môi trường",
+      "ground_truth": [
+        {
+          "reference": "khoản 4 Điều 3 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "khoản 1 Điều 9 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "khoản 1 Điều 13 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "khoản 2 Điều 21 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "khoản 1 Điều 22 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "Điều 23 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm đ khoản 2 Điều 27 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm a khoản 3 Điều 29 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm b khoản 1 Điều 32 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm c khoản 1 Điều 42 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm e khoản 1 Điều 42 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "thay_the",
+          "reference": "khoản 4 Điều 3 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 1 Điều 9 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 1 Điều 13 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 2 Điều 21 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 1 Điều 22 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 23 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm đ khoản 2 Điều 27 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm a khoản 3 Điều 29 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm b khoản 1 Điều 32 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm c khoản 1 Điều 42 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm e khoản 1 Điều 42 Luật Bảo vệ môi trường"
+        }
+      ],
+      "tp": [],
+      "fp": [
+        {
+          "relation": "thay_the",
+          "reference": "khoản 4 Điều 3 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 1 Điều 9 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 1 Điều 13 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 2 Điều 21 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "khoản 1 Điều 22 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "Điều 23 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm đ khoản 2 Điều 27 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm a khoản 3 Điều 29 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm b khoản 1 Điều 32 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm c khoản 1 Điều 42 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "thay_the",
+          "reference": "điểm e khoản 1 Điều 42 Luật Bảo vệ môi trường"
+        }
+      ],
+      "fn": [
+        {
+          "reference": "khoản 4 Điều 3 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "khoản 1 Điều 9 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "khoản 1 Điều 13 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "khoản 2 Điều 21 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "khoản 1 Điều 22 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "Điều 23 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm đ khoản 2 Điều 27 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm a khoản 3 Điều 29 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm b khoản 1 Điều 32 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm c khoản 1 Điều 42 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        },
+        {
+          "reference": "điểm e khoản 1 Điều 42 Luật Bảo vệ môi trường",
+          "relation": "sua_doi"
+        }
+      ]
+    },
+    {
+      "key": [
+        "59/2024/QH15",
+        "khoan",
+        "2. Trong thời hạn 03 ngày làm việc kể từ ngày nhận được quyết định áp dụng biện pháp xử lý chuyển hướng, Công an cấp xã, căn cứ vào điều kiện, hoàn cảnh của người chấp hành biện pháp xử lý chuyển hướng tại cộng đồng, năng lực, khối lượng công việc của các cá nhân thuộc danh sách quy định tại điểm b khoản 1 Điều 73 của Luật này, đề xuất người trực tiếp giám sát thi hành quyết định áp dụng biện pháp xử lý chuyển hướng theo thứ tự ưu tiên sau đây:",
+        "Điều 75. Lựa chọn, thay thế người trực tiếp giám sát thi hành quyết định áp dụng biện pháp xử lý chuyển hướng",
+        ""
+      ],
+      "so_hieu": "59/2024/QH15",
+      "clause_type": "khoan",
+      "content": "2. Trong thời hạn 03 ngày làm việc kể từ ngày nhận được quyết định áp dụng biện pháp xử lý chuyển hướng, Công an cấp xã, căn cứ vào điều kiện, hoàn cảnh của người chấp hành biện pháp xử lý chuyển hướng tại cộng đồng, năng lực, khối lượng công việc của các cá nhân thuộc danh sách quy định tại điểm b khoản 1 Điều 73 của Luật này, đề xuất người trực tiếp giám sát thi hành quyết định áp dụng biện pháp xử lý chuyển hướng theo thứ tự ưu tiên sau đây:",
+      "parent_content": "Điều 75. Lựa chọn, thay thế người trực tiếp giám sát thi hành quyết định áp dụng biện pháp xử lý chuyển hướng",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "điểm b khoản 1 Điều 73 Luật 59/2024/QH15",
+          "relation": "dan_chieu"
+        }
+      ],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": [
+        {
+          "reference": "điểm b khoản 1 Điều 73 Luật 59/2024/QH15",
+          "relation": "dan_chieu"
+        }
+      ]
+    },
+    {
+      "key": [
+        "116/2025/QH15",
+        "khoan",
+        "1. Hệ thống thông tin đã được xác định cấp độ theo quy định của Luật An toàn thông tin mạng số 86/2015/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 35/2018/QH14 thì tiếp tục giữ cấp độ đã được xác định kể từ ngày Luật này có hiệu lực thi hành; trong thời hạn 12 tháng kể từ ngày Luật này có hiệu lực thi hành thì phải bảo đảm điều kiện, tiêu chuẩn, biện pháp bảo vệ an ninh mạng tương ứng với cấp độ theo quy định của Luật này.",
+        "Điều 26. Điều khoản chuyển tiếp",
+        ""
+      ],
+      "so_hieu": "116/2025/QH15",
+      "clause_type": "khoan",
+      "content": "1. Hệ thống thông tin đã được xác định cấp độ theo quy định của Luật An toàn thông tin mạng số 86/2015/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 35/2018/QH14 thì tiếp tục giữ cấp độ đã được xác định kể từ ngày Luật này có hiệu lực thi hành; trong thời hạn 12 tháng kể từ ngày Luật này có hiệu lực thi hành thì phải bảo đảm điều kiện, tiêu chuẩn, biện pháp bảo vệ an ninh mạng tương ứng với cấp độ theo quy định của Luật này.",
+      "parent_content": "Điều 26. Điều khoản chuyển tiếp",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Luật An toàn thông tin mạng số 86/2015/QH13",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "Luật 116/2025/QH15",
+          "relation": "dan_chieu"
+        }
+      ],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": [
+        {
+          "reference": "Luật An toàn thông tin mạng số 86/2015/QH13",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "Luật 116/2025/QH15",
+          "relation": "dan_chieu"
+        }
+      ]
+    },
+    {
+      "key": [
+        "29/2018/TT-BCT",
+        "khoan",
+        "1. Sửa đổi khoản 4 Điều 9 như sau:\r\n“4. Hằng năm, chậm nhất vào ngày 15 tháng 01 và ngày 15 tháng 7, Uỷ ban nhân dân các tỉnh có các dự án điện gió phải có báo cáo định kỳ 6 tháng liền trước (theo Mẫu ban hành kèm theo Thông tư này) về hoạt động đăng ký đầu tư và tình hình triển khai thực hiện dự án trên địa bàn tỉnh gửi Bộ Công Thương bằng bản giấy hoặc bản mềm thông qua hệ thống thư điện tử tại địa chỉnlttcucdl@moit.gov.vnđể quản lý, theo dõi thực hiện”.",
+        "Điều 1. Sửa đổi, bổ sung Thông tư số 32/2012/TT-BCT ngày 12 tháng 11 năm 2012 của Bộ trưởng Bộ Công Thương Quy định thực hiện phát triển dự án điện gió và Hợp đồng mua bán điện mẫu cho các dự án điện gió",
+        ""
+      ],
+      "so_hieu": "29/2018/TT-BCT",
+      "clause_type": "khoan",
+      "content": "1. Sửa đổi khoản 4 Điều 9 như sau:\r\n“4. Hằng năm, chậm nhất vào ngày 15 tháng 01 và ngày 15 tháng 7, Uỷ ban nhân dân các tỉnh có các dự án điện gió phải có báo cáo định kỳ 6 tháng liền trước (theo Mẫu ban hành kèm theo Thông tư này) về hoạt động đăng ký đầu tư và tình hình triển khai thực hiện dự án trên địa bàn tỉnh gửi Bộ Công Thương bằng bản giấy hoặc bản mềm thông qua hệ thống thư điện tử tại địa chỉnlttcucdl@moit.gov.vnđể quản lý, theo dõi thực hiện”.",
+      "parent_content": "Điều 1. Sửa đổi, bổ sung Thông tư số 32/2012/TT-BCT ngày 12 tháng 11 năm 2012 của Bộ trưởng Bộ Công Thương Quy định thực hiện phát triển dự án điện gió và Hợp đồng mua bán điện mẫu cho các dự án điện gió",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "khoản 4 Điều 9 Thông tư số 32/2012/TT-BCT ngày 12 tháng 11 năm 2012",
+          "relation": "sua_doi"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Thông tư số 32/2012/TT-BCT"
+        },
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 4 Điều 9 Thông tư số 32/2012/TT-BCT"
+        }
+      ],
+      "tp": [
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 4 Điều 9 Thông tư số 32/2012/TT-BCT",
+          "_matched_gt": {
+            "reference": "khoản 4 Điều 9 Thông tư số 32/2012/TT-BCT ngày 12 tháng 11 năm 2012",
+            "relation": "sua_doi"
+          }
+        }
+      ],
+      "fp": [
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Thông tư số 32/2012/TT-BCT"
+        }
+      ],
+      "fn": []
+    },
+    {
+      "key": [
+        "2323/QĐ-BY",
+        "dieu",
+        "Điều 3. Quyết định này có hiệu lực kể từ ngày ký, ban hành và “Phần 4 - Chăm sóc sơ sinh” thuộc Hướng dẫn quốc gia về các dịch vụ chăm sóc sức khỏe sinh sản ban hành kèm theo Quyết định số 4128/QĐ-BYT ngày 29/7/2016 của Bộ trưởng Bộ Y tế hết hiệu lực thực hiện.",
+        "",
+        ""
+      ],
+      "so_hieu": "2323/QĐ-BY",
+      "clause_type": "dieu",
+      "content": "Điều 3. Quyết định này có hiệu lực kể từ ngày ký, ban hành và “Phần 4 - Chăm sóc sơ sinh” thuộc Hướng dẫn quốc gia về các dịch vụ chăm sóc sức khỏe sinh sản ban hành kèm theo Quyết định số 4128/QĐ-BYT ngày 29/7/2016 của Bộ trưởng Bộ Y tế hết hiệu lực thực hiện.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Quyết định số 4128/QĐ-BYT ngày 29/7/2016",
+          "relation": "sua_doi_bo_sung"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "huy_bo",
+          "reference": "Phần 4 - Chăm sóc sơ sinh thuộc Hướng dẫn quốc gia về các dịch vụ chăm sóc sức khỏe sinh sản ban hành kèm theo Quyết định số 4128/QĐ-BYT ngày 29/7/2016 của Bộ trưởng Bộ Y tế"
+        }
+      ],
+      "tp": [],
+      "fp": [
+        {
+          "relation": "huy_bo",
+          "reference": "Phần 4 - Chăm sóc sơ sinh thuộc Hướng dẫn quốc gia về các dịch vụ chăm sóc sức khỏe sinh sản ban hành kèm theo Quyết định số 4128/QĐ-BYT ngày 29/7/2016 của Bộ trưởng Bộ Y tế"
+        }
+      ],
+      "fn": [
+        {
+          "reference": "Quyết định số 4128/QĐ-BYT ngày 29/7/2016",
+          "relation": "sua_doi_bo_sung"
+        }
+      ]
+    },
+    {
+      "key": [
+        "592/QĐ-UBND",
+        "diem",
+        "b) Đính chính căn cứ ban hành tại Quyết định số 21/2025/QĐ-UBND ngày 12 tháng 3 năm 2025 của Ủy ban nhân dân tỉnh Ban hành Định mức kinh tế - kỹ thuật để lập dự toán ngân sách nhà nước phục vụ công tác định giá đất trên địa bàn tỉnh Quảng Ngãi, cụ thể:\r\n- Tại căn cứ ban hành: \"Căn cứ Luật Tổ chức Chính quyền địa phương ngày 19 tháng 02 năm 2015”.\r\n- Nay đính chính là: \"Căn cứ Luật Tổ chức Chính quyền địa phương ngày 19 tháng 02 năm 2025”.",
+        "Điều 1.",
+        ""
+      ],
+      "so_hieu": "592/QĐ-UBND",
+      "clause_type": "diem",
+      "content": "b) Đính chính căn cứ ban hành tại Quyết định số 21/2025/QĐ-UBND ngày 12 tháng 3 năm 2025 của Ủy ban nhân dân tỉnh Ban hành Định mức kinh tế - kỹ thuật để lập dự toán ngân sách nhà nước phục vụ công tác định giá đất trên địa bàn tỉnh Quảng Ngãi, cụ thể:\r\n- Tại căn cứ ban hành: \"Căn cứ Luật Tổ chức Chính quyền địa phương ngày 19 tháng 02 năm 2015”.\r\n- Nay đính chính là: \"Căn cứ Luật Tổ chức Chính quyền địa phương ngày 19 tháng 02 năm 2025”.",
+      "parent_content": "Điều 1.",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Quyết định số 21/2025/QĐ-UBND ngày 12 tháng 3 năm 2025",
+          "relation": "dinh_chinh"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "dinh_chi",
+          "reference": "Quyết định số 21/2025/QĐ-UBND ngày 12 tháng 3 năm 2025 của Ủy ban nhân dân tỉnh"
+        }
+      ],
+      "tp": [],
+      "fp": [
+        {
+          "relation": "dinh_chi",
+          "reference": "Quyết định số 21/2025/QĐ-UBND ngày 12 tháng 3 năm 2025 của Ủy ban nhân dân tỉnh"
+        }
+      ],
+      "fn": [
+        {
+          "reference": "Quyết định số 21/2025/QĐ-UBND ngày 12 tháng 3 năm 2025",
+          "relation": "dinh_chinh"
+        }
+      ]
+    },
+    {
+      "key": [
+        "110/2026/NĐ-CP",
+        "dieu",
+        "Điều 1. Phạm vi điều chỉnh\r\nNghị định này quy định chi tiết Điều 54 Luật Bảo vệ môi trường về trách nhiệm tái chế sản phẩm, bao bì và Điều 55 Luật Bảo vệ môi trường về trách nhiệm thu gom, xử lý chất thải của tổ chức, cá nhân sản xuất, nhập khẩu (tên viết tắt tiếng Anh là EPR).",
+        "",
+        ""
+      ],
+      "so_hieu": "110/2026/NĐ-CP",
+      "clause_type": "dieu",
+      "content": "Điều 1. Phạm vi điều chỉnh\r\nNghị định này quy định chi tiết Điều 54 Luật Bảo vệ môi trường về trách nhiệm tái chế sản phẩm, bao bì và Điều 55 Luật Bảo vệ môi trường về trách nhiệm thu gom, xử lý chất thải của tổ chức, cá nhân sản xuất, nhập khẩu (tên viết tắt tiếng Anh là EPR).",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Điều 54 Luật Bảo vệ môi trường",
+          "relation": "quy_dinh_chi_tiet"
+        },
+        {
+          "reference": "Điều 55 Luật Bảo vệ môi trường",
+          "relation": "quy_dinh_chi_tiet"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "quy_dinh_chi_tiet",
+          "reference": "Điều 54 Luật Bảo vệ môi trường"
+        },
+        {
+          "relation": "quy_dinh_chi_tiet",
+          "reference": "Điều 55 Luật Bảo vệ môi trường"
+        }
+      ],
+      "tp": [
+        {
+          "relation": "quy_dinh_chi_tiet",
+          "reference": "Điều 54 Luật Bảo vệ môi trường",
+          "_matched_gt": {
+            "reference": "Điều 54 Luật Bảo vệ môi trường",
+            "relation": "quy_dinh_chi_tiet"
+          }
+        },
+        {
+          "relation": "quy_dinh_chi_tiet",
+          "reference": "Điều 55 Luật Bảo vệ môi trường",
+          "_matched_gt": {
+            "reference": "Điều 55 Luật Bảo vệ môi trường",
+            "relation": "quy_dinh_chi_tiet"
+          }
+        }
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "146/2025/QH15",
+        "diem",
+        "a) Bãi bỏ điểm b và điểm c khoản 1 Điều 19; khoản 1 Điều 44; điểm a khoản 5 Điều 52; khoản 5, khoản 7 Điều 85; khoản 4 Điều 102; khoản 4 Điều 107; điểm b khoản 1 Điều 109; khoản 2 Điều 168; điểm c khoản 2 Điều 131;",
+        "36. Bãi bỏ một số khoản, điểm, cụm từ sau đây:",
+        "Điều 1. Sửa đổi, bổ sung một số điều của Luật Bảo vệ môi trường"
+      ],
+      "so_hieu": "146/2025/QH15",
+      "clause_type": "diem",
+      "content": "a) Bãi bỏ điểm b và điểm c khoản 1 Điều 19; khoản 1 Điều 44; điểm a khoản 5 Điều 52; khoản 5, khoản 7 Điều 85; khoản 4 Điều 102; khoản 4 Điều 107; điểm b khoản 1 Điều 109; khoản 2 Điều 168; điểm c khoản 2 Điều 131;",
+      "parent_content": "36. Bãi bỏ một số khoản, điểm, cụm từ sau đây:",
+      "grandparent_content": "Điều 1. Sửa đổi, bổ sung một số điều của Luật Bảo vệ môi trường",
+      "ground_truth": [
+        {
+          "reference": "điểm b khoản 1 Điều 19 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "điểm c khoản 1 Điều 19 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 1 Điều 44 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "điểm a khoản 5 Điều 52 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 5 Điều 85 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 7 Điều 85 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 4 Điều 102 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 4 Điều 107 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "điểm b khoản 1 Điều 109 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 2 Điều 168 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "điểm c khoản 2 Điều 131 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        }
+      ],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": [
+        {
+          "reference": "điểm b khoản 1 Điều 19 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "điểm c khoản 1 Điều 19 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 1 Điều 44 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "điểm a khoản 5 Điều 52 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 5 Điều 85 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 7 Điều 85 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 4 Điều 102 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 4 Điều 107 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "điểm b khoản 1 Điều 109 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "khoản 2 Điều 168 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        },
+        {
+          "reference": "điểm c khoản 2 Điều 131 Luật Bảo vệ môi trường",
+          "relation": "bai_bo"
+        }
+      ]
+    },
+    {
+      "key": [
+        "988/QĐ-BYT",
+        "khoan",
+        "1. Tại điểm d khoản 4 Điều 3, đã in là: “Hàng hoá không thuộc Danh mục, trừ trường hợp quy định tại điểm b khoản 3 Điều 2 Thông tư này”; nay sửa thành: “Hàng hoá không thuộc Danh mục, trừ trường hợp quy định tại điểm b khoản 3 Điều này”",
+        "Điều 1. Đính chính Thông tư số 15/2024/TT-BYT ngày 19 tháng 9 năm 2024 của Bộ trưởng Bộ Y tế ban hành Danh mục thực phẩm, phụ gia thực phẩm và dụng cụ chứa đựng thực phẩm, vật liệu bao gói tiếp xúc trực tiếp với thực phẩm đã được xác định mã số hàng hóa theo Danh mục hàng hóa xuất khẩu, nhập khẩu Việt Nam phải kiểm tra nhà nước về an toàn thực phẩm nhập khẩu thuộc phạm vi quản lý của Bộ Y tế như sau:",
+        ""
+      ],
+      "so_hieu": "988/QĐ-BYT",
+      "clause_type": "khoan",
+      "content": "1. Tại điểm d khoản 4 Điều 3, đã in là: “Hàng hoá không thuộc Danh mục, trừ trường hợp quy định tại điểm b khoản 3 Điều 2 Thông tư này”; nay sửa thành: “Hàng hoá không thuộc Danh mục, trừ trường hợp quy định tại điểm b khoản 3 Điều này”",
+      "parent_content": "Điều 1. Đính chính Thông tư số 15/2024/TT-BYT ngày 19 tháng 9 năm 2024 của Bộ trưởng Bộ Y tế ban hành Danh mục thực phẩm, phụ gia thực phẩm và dụng cụ chứa đựng thực phẩm, vật liệu bao gói tiếp xúc trực tiếp với thực phẩm đã được xác định mã số hàng hóa theo Danh mục hàng hóa xuất khẩu, nhập khẩu Việt Nam phải kiểm tra nhà nước về an toàn thực phẩm nhập khẩu thuộc phạm vi quản lý của Bộ Y tế như sau:",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "điểm d khoản 4 Điều 3 Thông tư số 15/2024/TT-BYT ngày 19 tháng 9 năm 2024",
+          "relation": "dinh_chinh"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "dinh_chinh",
+          "reference": "điểm d khoản 4 Điều 3 Thông tư số 15/2024/TT-BYT ngày 19 tháng 9 năm 2024"
+        }
+      ],
+      "tp": [
+        {
+          "relation": "dinh_chinh",
+          "reference": "điểm d khoản 4 Điều 3 Thông tư số 15/2024/TT-BYT ngày 19 tháng 9 năm 2024",
+          "_matched_gt": {
+            "reference": "điểm d khoản 4 Điều 3 Thông tư số 15/2024/TT-BYT ngày 19 tháng 9 năm 2024",
+            "relation": "dinh_chinh"
+          }
+        }
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "108/2025/QH15",
+        "dieu",
+        "Điều 51. Bổ sung Điều 70a vào sau Điều 70 của Luật Kế toán số 88/2015/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 38/2019/QH14 và Luật số 56/2024/QH15\r\nBổ sung Điều 70a vào sau Điều 70 như sau:\r\n“Điều 70a. Cung cấp dịch vụ kế toán của tổ chức kinh doanh dịch vụ làm thủ tục về thuế\r\nTổ chức kinh doanh dịch vụ làm thủ tục về thuế được cung cấp dịch vụ kế toán cho doanh nghiệp siêu nhỏ, hộ kinh doanh, cá nhân kinh doanh khi có ít nhất một người có chứng chỉ kế toán viên.”.",
+        "",
+        ""
+      ],
+      "so_hieu": "108/2025/QH15",
+      "clause_type": "dieu",
+      "content": "Điều 51. Bổ sung Điều 70a vào sau Điều 70 của Luật Kế toán số 88/2015/QH13 đã được sửa đổi, bổ sung một số điều theo Luật số 38/2019/QH14 và Luật số 56/2024/QH15\r\nBổ sung Điều 70a vào sau Điều 70 như sau:\r\n“Điều 70a. Cung cấp dịch vụ kế toán của tổ chức kinh doanh dịch vụ làm thủ tục về thuế\r\nTổ chức kinh doanh dịch vụ làm thủ tục về thuế được cung cấp dịch vụ kế toán cho doanh nghiệp siêu nhỏ, hộ kinh doanh, cá nhân kinh doanh khi có ít nhất một người có chứng chỉ kế toán viên.”.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Điều 70a Luật Kế toán số 88/2015/QH13",
+          "relation": "bo_sung"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "bo_sung",
+          "reference": "Luật Kế toán số 88/2015/QH13"
+        }
+      ],
+      "tp": [],
+      "fp": [
+        {
+          "relation": "bo_sung",
+          "reference": "Luật Kế toán số 88/2015/QH13"
+        }
+      ],
+      "fn": [
+        {
+          "reference": "Điều 70a Luật Kế toán số 88/2015/QH13",
+          "relation": "bo_sung"
+        }
+      ]
+    },
+    {
+      "key": [
+        "02/2025/QĐ-KTNN",
+        "dieu",
+        "Điều 1. Bãi bỏ một văn bản quy phạm pháp luật của Tổng Kiểm toán nhà nước\r\nBãi bỏ toàn bộ Quyết định số 900/2006/QĐ-KTNN ngày ngày 15 tháng 12 năm 2006 của Tổng Kiểm toán nhà nước ban hành Quy chế hoạt động đối ngoại của Kiểm toán nhà nước.",
+        "",
+        ""
+      ],
+      "so_hieu": "02/2025/QĐ-KTNN",
+      "clause_type": "dieu",
+      "content": "Điều 1. Bãi bỏ một văn bản quy phạm pháp luật của Tổng Kiểm toán nhà nước\r\nBãi bỏ toàn bộ Quyết định số 900/2006/QĐ-KTNN ngày ngày 15 tháng 12 năm 2006 của Tổng Kiểm toán nhà nước ban hành Quy chế hoạt động đối ngoại của Kiểm toán nhà nước.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Quyết định số 900/2006/QĐ-KTNN ngày ngày 15 tháng 12 năm 2006",
+          "relation": "bai_bo"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "bai_bo",
+          "reference": "Quyết định số 900/2006/QĐ-KTNN ngày 15 tháng 12 năm 2006 của Tổng Kiểm toán nhà nước"
+        }
+      ],
+      "tp": [
+        {
+          "relation": "bai_bo",
+          "reference": "Quyết định số 900/2006/QĐ-KTNN ngày 15 tháng 12 năm 2006 của Tổng Kiểm toán nhà nước",
+          "_matched_gt": {
+            "reference": "Quyết định số 900/2006/QĐ-KTNN ngày ngày 15 tháng 12 năm 2006",
+            "relation": "bai_bo"
+          }
+        }
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "138/2026/NĐ-CP",
+        "vanban",
+        "NGHỊ ĐỊNH\r\nQUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT VIỆC LÀM VỀ PHÁT TRIỂN KỸ NĂNG NGHỀ\r\nTheo đề nghị của Bộ trưởng Bộ Giáo dục và Đào tạo;\r\nChính phủ ban hành Nghị định quy định chi tiết một số điều của Luật Việc làm về phát triển kỹ năng nghề.",
+        "",
+        ""
+      ],
+      "so_hieu": "138/2026/NĐ-CP",
+      "clause_type": "vanban",
+      "content": "NGHỊ ĐỊNH\r\nQUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT VIỆC LÀM VỀ PHÁT TRIỂN KỸ NĂNG NGHỀ\r\nTheo đề nghị của Bộ trưởng Bộ Giáo dục và Đào tạo;\r\nChính phủ ban hành Nghị định quy định chi tiết một số điều của Luật Việc làm về phát triển kỹ năng nghề.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Luật Việc làm",
+          "relation": "quy_dinh_chi_tiet"
+        }
+      ],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": [
+        {
+          "reference": "Luật Việc làm",
+          "relation": "quy_dinh_chi_tiet"
+        }
+      ]
+    },
+    {
+      "key": [
+        "133/2025/QH15",
+        "diem",
+        "d) Bổ sung khoản 1a vào sau khoản 1 Điều 13 như sau:“1a. Áp dụng thuế suất 10% trong 25 năm đối với thu nhập của doanh nghiệp quy định tại điểm e1 khoản 2 Điều 12 của Luật này.”;",
+        "7. Sửa đổi, bổ sung một số điều của Luật Thuế thu nhập doanh nghiệp số 67/2025/QH15 và Luật số 116/2025/QH15 như sau:",
+        "Điều 25. Sửa đổi, bổ sung, bãi bỏ một số điều, khoản của các luật có liên quan"
+      ],
+      "so_hieu": "133/2025/QH15",
+      "clause_type": "diem",
+      "content": "d) Bổ sung khoản 1a vào sau khoản 1 Điều 13 như sau:“1a. Áp dụng thuế suất 10% trong 25 năm đối với thu nhập của doanh nghiệp quy định tại điểm e1 khoản 2 Điều 12 của Luật này.”;",
+      "parent_content": "7. Sửa đổi, bổ sung một số điều của Luật Thuế thu nhập doanh nghiệp số 67/2025/QH15 và Luật số 116/2025/QH15 như sau:",
+      "grandparent_content": "Điều 25. Sửa đổi, bổ sung, bãi bỏ một số điều, khoản của các luật có liên quan",
+      "ground_truth": [
+        {
+          "reference": "khoản 1a Điều 13 Luật Thuế thu nhập doanh nghiệp số 67/2025/QH15",
+          "relation": "bo_sung"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "bo_sung",
+          "reference": "Điều 13 Luật Thuế thu nhập doanh nghiệp số 67/2025/QH15"
+        }
+      ],
+      "tp": [],
+      "fp": [
+        {
+          "relation": "bo_sung",
+          "reference": "Điều 13 Luật Thuế thu nhập doanh nghiệp số 67/2025/QH15"
+        }
+      ],
+      "fn": [
+        {
+          "reference": "khoản 1a Điều 13 Luật Thuế thu nhập doanh nghiệp số 67/2025/QH15",
+          "relation": "bo_sung"
+        }
+      ]
+    },
+    {
+      "key": [
+        "105/2010/TT-BTC",
+        "vanban",
+        "THÔNG TƯ\r\nHƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT THUẾ TÀI NGUYÊN VÀ HƯỚNG DẪN THI HÀNH NGHỊ ĐỊNH SỐ 50/2010/NĐ-CP NGÀY 14 THÁNG 5 NĂM 2010 CỦA CHÍNH PHỦ QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN MỘT SỐ ĐIỀU CỦA LUẬT THUẾ TÀI NGUYÊN\r\nCăn cứ Luật Thuế tài nguyên số 45/2009/QH12 ngày 25 tháng 11 năm 2009; Căn cứ Luật Dầu khí năm 1993, Luật sửa đổi, bổ sung một số điều của Luật dầu khí số 19/2000/QH10, Luật sửa đổi, bổ sung một số điều của Luật Dầu khí số 10/2008/QH12; Căn cứ Luật Quản lý thuế số 78/2006/QH11 ngày 29/11/2006 và các Nghị định của Chính phủ qui định chi tiết thi hành Luật Quản lý thuế; Căn cứ Nghị định số 50/2010/NĐ-CP ngày 14 tháng 5 năm 2010 của Chính phủ quy định chi tiết và hướng dẫn thi hành một số điều của Luật Thuế tài nguyên; Căn cứ Nghị định số 118/2008/NĐ-CP ngày 27 tháng 11 năm 2008 của Chính phủ quy định chức năng, quyền hạn, nhiệm vụ và cơ cấu tổ chức của Bộ Tài chính; Bộ Tài chính hướng dẫn thực hiện như sau:",
+        "",
+        ""
+      ],
+      "so_hieu": "105/2010/TT-BTC",
+      "clause_type": "vanban",
+      "content": "THÔNG TƯ\r\nHƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT THUẾ TÀI NGUYÊN VÀ HƯỚNG DẪN THI HÀNH NGHỊ ĐỊNH SỐ 50/2010/NĐ-CP NGÀY 14 THÁNG 5 NĂM 2010 CỦA CHÍNH PHỦ QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN MỘT SỐ ĐIỀU CỦA LUẬT THUẾ TÀI NGUYÊN\r\nCăn cứ Luật Thuế tài nguyên số 45/2009/QH12 ngày 25 tháng 11 năm 2009; Căn cứ Luật Dầu khí năm 1993, Luật sửa đổi, bổ sung một số điều của Luật dầu khí số 19/2000/QH10, Luật sửa đổi, bổ sung một số điều của Luật Dầu khí số 10/2008/QH12; Căn cứ Luật Quản lý thuế số 78/2006/QH11 ngày 29/11/2006 và các Nghị định của Chính phủ qui định chi tiết thi hành Luật Quản lý thuế; Căn cứ Nghị định số 50/2010/NĐ-CP ngày 14 tháng 5 năm 2010 của Chính phủ quy định chi tiết và hướng dẫn thi hành một số điều của Luật Thuế tài nguyên; Căn cứ Nghị định số 118/2008/NĐ-CP ngày 27 tháng 11 năm 2008 của Chính phủ quy định chức năng, quyền hạn, nhiệm vụ và cơ cấu tổ chức của Bộ Tài chính; Bộ Tài chính hướng dẫn thực hiện như sau:",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Luật Thuế tài nguyên",
+          "relation": "huong_dan"
+        },
+        {
+          "reference": "Nghị định số 50/2010/NĐ-CP ngày 14 tháng 5 năm 2010",
+          "relation": "huong_dan"
+        },
+        {
+          "reference": "Luật Thuế tài nguyên số 45/2009/QH12 ngày 25 tháng 11 năm 2009",
+          "relation": "can_cu"
+        },
+        {
+          "reference": "Luật Dầu khí năm 1993",
+          "relation": "can_cu"
+        },
+        {
+          "reference": "Luật sửa đổi, bổ sung một số điều của Luật dầu khí số 19/2000/QH10",
+          "relation": "can_cu"
+        },
+        {
+          "reference": "Luật sửa đổi, bổ sung một số điều của Luật Dầu khí số 10/2008/QH12",
+          "relation": "can_cu"
+        },
+        {
+          "reference": "Luật Quản lý thuế số 78/2006/QH11 ngày 29/11/2006",
+          "relation": "can_cu"
+        },
+        {
+          "reference": "Nghị định số 50/2010/NĐ-CP ngày 14 tháng 5 năm 2010",
+          "relation": "can_cu"
+        },
+        {
+          "reference": "Nghị định số 118/2008/NĐ-CP ngày 27 tháng 11 năm 2008",
+          "relation": "can_cu"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "can_cu",
+          "reference": "Luật Thuế tài nguyên số 45/2009/QH12 ngày 25 tháng 11 năm 2009"
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật Dầu khí năm 1993"
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật sửa đổi, bổ sung một số điều của Luật dầu khí số 19/2000/QH10"
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật sửa đổi, bổ sung một số điều của Luật Dầu khí số 10/2008/QH12"
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật Quản lý thuế số 78/2006/QH11 ngày 29/11/2006"
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Nghị định số 50/2010/NĐ-CP ngày 14 tháng 5 năm 2010 của Chính phủ"
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Nghị định số 118/2008/NĐ-CP ngày 27 tháng 11 năm 2008 của Chính phủ"
+        }
+      ],
+      "tp": [
+        {
+          "relation": "can_cu",
+          "reference": "Luật Thuế tài nguyên số 45/2009/QH12 ngày 25 tháng 11 năm 2009",
+          "_matched_gt": {
+            "reference": "Luật Thuế tài nguyên số 45/2009/QH12 ngày 25 tháng 11 năm 2009",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật Dầu khí năm 1993",
+          "_matched_gt": {
+            "reference": "Luật Dầu khí năm 1993",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật sửa đổi, bổ sung một số điều của Luật dầu khí số 19/2000/QH10",
+          "_matched_gt": {
+            "reference": "Luật sửa đổi, bổ sung một số điều của Luật dầu khí số 19/2000/QH10",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật sửa đổi, bổ sung một số điều của Luật Dầu khí số 10/2008/QH12",
+          "_matched_gt": {
+            "reference": "Luật sửa đổi, bổ sung một số điều của Luật Dầu khí số 10/2008/QH12",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Luật Quản lý thuế số 78/2006/QH11 ngày 29/11/2006",
+          "_matched_gt": {
+            "reference": "Luật Quản lý thuế số 78/2006/QH11 ngày 29/11/2006",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Nghị định số 50/2010/NĐ-CP ngày 14 tháng 5 năm 2010 của Chính phủ",
+          "_matched_gt": {
+            "reference": "Nghị định số 50/2010/NĐ-CP ngày 14 tháng 5 năm 2010",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Nghị định số 118/2008/NĐ-CP ngày 27 tháng 11 năm 2008 của Chính phủ",
+          "_matched_gt": {
+            "reference": "Nghị định số 118/2008/NĐ-CP ngày 27 tháng 11 năm 2008",
+            "relation": "can_cu"
+          }
+        }
+      ],
+      "fp": [],
+      "fn": [
+        {
+          "reference": "Luật Thuế tài nguyên",
+          "relation": "huong_dan"
+        },
+        {
+          "reference": "Nghị định số 50/2010/NĐ-CP ngày 14 tháng 5 năm 2010",
+          "relation": "huong_dan"
+        }
+      ]
+    },
+    {
+      "key": [
+        "1410/BNG-LPQT",
+        "vanban",
+        "THÔNG BÁO\r\nVỀ VIỆC ĐIỀU ƯỚC QUỐC TẾ CÓ HIỆU LỰC\r\nThực hiện quy định tại Điều 56 của Luật Điều ước quốc tế năm 2016, Bộ Ngoại giao trân trọng thông báo:\r\nHiệp định về chuyển giao người bị kết án phạt tù giữa nước Cộng hòa xã hội chủ nghĩa Việt Nam và nước Cộng hòa Ca-dắc-xtan ký tại Hà Nội ngày 21 tháng 8 năm 2023, có hiệu lực từ ngày 10 tháng 4 năm 2025.\r\nBộ Ngoại giao trân trọng gửi Quý Cơ quan bản sao Hiệp định theo quy định tại Điều 59 của Luật nêu trên./.\r\n\r\nHIỆP ĐỊNH\r\nVỀ CHUYỂN GIAO NGƯỜI BỊ KẾT ÁN PHẠT TÙ GIỮA NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM VÀ NƯỚC CỘNG HÒA CA-DẮC-XTAN\r\nNước Cộng hòa xã hội chủ nghĩa Việt Nam và nước Cộng hòa Ca-dắc-xtan (sau đây gọi là “các Bên”),\r\nTrên cơ sở tôn trọng chủ quyền, bình đẳng,\r\nPhù hợp với các điều ước quốc tế mà hai nước là thành viên,\r\nMong muốn tăng cường hợp tác tư pháp giữa hai nước,\r\nVới mục đích để người bị kết án chấp hành bản án tại nước họ mang quốc tịch nhằm tạo điều kiện thuận lợi cho họ tái hòa nhập cộng đồng,\r\nĐã thỏa thuận như sau:",
+        "",
+        ""
+      ],
+      "so_hieu": "1410/BNG-LPQT",
+      "clause_type": "vanban",
+      "content": "THÔNG BÁO\r\nVỀ VIỆC ĐIỀU ƯỚC QUỐC TẾ CÓ HIỆU LỰC\r\nThực hiện quy định tại Điều 56 của Luật Điều ước quốc tế năm 2016, Bộ Ngoại giao trân trọng thông báo:\r\nHiệp định về chuyển giao người bị kết án phạt tù giữa nước Cộng hòa xã hội chủ nghĩa Việt Nam và nước Cộng hòa Ca-dắc-xtan ký tại Hà Nội ngày 21 tháng 8 năm 2023, có hiệu lực từ ngày 10 tháng 4 năm 2025.\r\nBộ Ngoại giao trân trọng gửi Quý Cơ quan bản sao Hiệp định theo quy định tại Điều 59 của Luật nêu trên./.\r\n\r\nHIỆP ĐỊNH\r\nVỀ CHUYỂN GIAO NGƯỜI BỊ KẾT ÁN PHẠT TÙ GIỮA NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM VÀ NƯỚC CỘNG HÒA CA-DẮC-XTAN\r\nNước Cộng hòa xã hội chủ nghĩa Việt Nam và nước Cộng hòa Ca-dắc-xtan (sau đây gọi là “các Bên”),\r\nTrên cơ sở tôn trọng chủ quyền, bình đẳng,\r\nPhù hợp với các điều ước quốc tế mà hai nước là thành viên,\r\nMong muốn tăng cường hợp tác tư pháp giữa hai nước,\r\nVới mục đích để người bị kết án chấp hành bản án tại nước họ mang quốc tịch nhằm tạo điều kiện thuận lợi cho họ tái hòa nhập cộng đồng,\r\nĐã thỏa thuận như sau:",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Điều 56 Luật Điều ước quốc tế năm 2016",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "Điều 59 Luật Điều ước quốc tế năm 2016",
+          "relation": "dan_chieu"
+        }
+      ],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": [
+        {
+          "reference": "Điều 56 Luật Điều ước quốc tế năm 2016",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "Điều 59 Luật Điều ước quốc tế năm 2016",
+          "relation": "dan_chieu"
+        }
+      ]
+    },
+    {
+      "key": [
+        "105/2006/NĐ-CP",
+        "dieu",
+        "Điều 20. Chi phí hợp lý để ngăn chặn, khắc phục thiệt hại\r\nChi phí hợp lý để ngăn chặn, khắc phục thiệt hại quy định tại điểm a khoản 1 Điều 204 của Luật Sở hữu trí tuệ gồm chi phí cho việc tạm giữ, bảo quản, lưu kho, lưu bãi đối với hàng hoá xâm phạm, chi phí thực hiện các biện pháp khẩn cấp tạm thời, chi phí hợp lý để thuê dịch vụ giám định, ngăn chặn, khắc phục hành vi xâm phạm và chi phí cho việc thông báo, cải chính trên phương tiện thông tin đại chúng liên quan đến hành vi xâm phạm.",
+        "",
+        ""
+      ],
+      "so_hieu": "105/2006/NĐ-CP",
+      "clause_type": "dieu",
+      "content": "Điều 20. Chi phí hợp lý để ngăn chặn, khắc phục thiệt hại\r\nChi phí hợp lý để ngăn chặn, khắc phục thiệt hại quy định tại điểm a khoản 1 Điều 204 của Luật Sở hữu trí tuệ gồm chi phí cho việc tạm giữ, bảo quản, lưu kho, lưu bãi đối với hàng hoá xâm phạm, chi phí thực hiện các biện pháp khẩn cấp tạm thời, chi phí hợp lý để thuê dịch vụ giám định, ngăn chặn, khắc phục hành vi xâm phạm và chi phí cho việc thông báo, cải chính trên phương tiện thông tin đại chúng liên quan đến hành vi xâm phạm.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "điểm a khoản 1 Điều 204 Luật Sở hữu trí tuệ",
+          "relation": "dan_chieu"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm a khoản 1 Điều 204 của Luật Sở hữu trí tuệ"
+        }
+      ],
+      "tp": [
+        {
+          "relation": "dan_chieu",
+          "reference": "điểm a khoản 1 Điều 204 của Luật Sở hữu trí tuệ",
+          "_matched_gt": {
+            "reference": "điểm a khoản 1 Điều 204 Luật Sở hữu trí tuệ",
+            "relation": "dan_chieu"
+          }
+        }
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "571/QĐ-UBND",
+        "vanban",
+        "QUYẾT ĐỊNH\r\nVỀ VIỆC CÔNG BỐ THỦ TỤC HÀNH CHÍNH ĐƯỢC SỬA ĐỔI, BỔ SUNG THUỘC LĨNH VỰC NÔNG, LÂM NGHIỆP ÁP DỤNG TẠI CẤP HUYỆN TRÊN ĐỊA BÀN TỈNH LÀO CAI\r\nCHỦ TỊCH UỶ BAN NHÂN DÂN TỈNH LÀO CAI\r\nCăn cứ Luật Tổ chức Hội đồng nhân dân và Uỷ ban nhân dân ngày 26/11/2003;\r\nCăn cứ Nghị định số 63/2010/NĐ-CP ngày 08 tháng 6 năm 2010 của Chính phủ về Kiểm soát thủ tục hành chính;\r\nCăn cứ Thông tư số 42/2012/TT-BNNPTNT ngày 21/8/2012 của Bộ Nông nghiệp và PTNT; Thông tư số 47/TT-BNNPTNT ngày 25/9/2012 của Bộ Nông nghiệp&PTNT, quy định về quản lý khai thác từ tự nhiên và nuôi động vật rừng thông thường; Quyết định số 39/2012/QĐ-TTg, ngày 05/10/2012 của Thủ tướng Chính phủ ban hành Quy chế Quản lý cây cảnh, cây bóng mát, cây cổ thụ;\r\nXét đề nghị của Giám đốc Sở Nông nghiệp và PTNT và Chánh Văn phòng Ủy ban nhân dân tỉnh,\r\nQUYẾT ĐỊNH:",
+        "",
+        ""
+      ],
+      "so_hieu": "571/QĐ-UBND",
+      "clause_type": "vanban",
+      "content": "QUYẾT ĐỊNH\r\nVỀ VIỆC CÔNG BỐ THỦ TỤC HÀNH CHÍNH ĐƯỢC SỬA ĐỔI, BỔ SUNG THUỘC LĨNH VỰC NÔNG, LÂM NGHIỆP ÁP DỤNG TẠI CẤP HUYỆN TRÊN ĐỊA BÀN TỈNH LÀO CAI\r\nCHỦ TỊCH UỶ BAN NHÂN DÂN TỈNH LÀO CAI\r\nCăn cứ Luật Tổ chức Hội đồng nhân dân và Uỷ ban nhân dân ngày 26/11/2003;\r\nCăn cứ Nghị định số 63/2010/NĐ-CP ngày 08 tháng 6 năm 2010 của Chính phủ về Kiểm soát thủ tục hành chính;\r\nCăn cứ Thông tư số 42/2012/TT-BNNPTNT ngày 21/8/2012 của Bộ Nông nghiệp và PTNT; Thông tư số 47/TT-BNNPTNT ngày 25/9/2012 của Bộ Nông nghiệp&PTNT, quy định về quản lý khai thác từ tự nhiên và nuôi động vật rừng thông thường; Quyết định số 39/2012/QĐ-TTg, ngày 05/10/2012 của Thủ tướng Chính phủ ban hành Quy chế Quản lý cây cảnh, cây bóng mát, cây cổ thụ;\r\nXét đề nghị của Giám đốc Sở Nông nghiệp và PTNT và Chánh Văn phòng Ủy ban nhân dân tỉnh,\r\nQUYẾT ĐỊNH:",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Luật Tổ chức Hội đồng nhân dân và Uỷ ban nhân dân ngày 26/11/2003",
+          "relation": "can_cu"
+        },
+        {
+          "reference": "Nghị định số 63/2010/NĐ-CP ngày 08 tháng 6 năm 2010",
+          "relation": "can_cu"
+        },
+        {
+          "reference": "Thông tư số 42/2012/TT-BNNPTNT ngày 21/8/2012",
+          "relation": "can_cu"
+        },
+        {
+          "reference": "Thông tư số 47/TT-BNNPTNT ngày 25/9/2012",
+          "relation": "can_cu"
+        },
+        {
+          "reference": "Quyết định số 39/2012/QĐ-TTg",
+          "relation": "can_cu"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "can_cu",
+          "reference": "Luật Tổ chức Hội đồng nhân dân và Uỷ ban nhân dân ngày 26/11/2003"
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Nghị định số 63/2010/NĐ-CP ngày 08 tháng 6 năm 2010 của Chính phủ về Kiểm soát thủ tục hành chính"
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Thông tư số 42/2012/TT-BNNPTNT ngày 21/8/2012 của Bộ Nông nghiệp và PTNT"
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Thông tư số 47/TT-BNNPTNT ngày 25/9/2012 của Bộ Nông nghiệp&PTNT"
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Quyết định số 39/2012/QĐ-TTg ngày 05/10/2012 của Thủ tướng Chính phủ"
+        }
+      ],
+      "tp": [
+        {
+          "relation": "can_cu",
+          "reference": "Luật Tổ chức Hội đồng nhân dân và Uỷ ban nhân dân ngày 26/11/2003",
+          "_matched_gt": {
+            "reference": "Luật Tổ chức Hội đồng nhân dân và Uỷ ban nhân dân ngày 26/11/2003",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Nghị định số 63/2010/NĐ-CP ngày 08 tháng 6 năm 2010 của Chính phủ về Kiểm soát thủ tục hành chính",
+          "_matched_gt": {
+            "reference": "Nghị định số 63/2010/NĐ-CP ngày 08 tháng 6 năm 2010",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Thông tư số 42/2012/TT-BNNPTNT ngày 21/8/2012 của Bộ Nông nghiệp và PTNT",
+          "_matched_gt": {
+            "reference": "Thông tư số 42/2012/TT-BNNPTNT ngày 21/8/2012",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Thông tư số 47/TT-BNNPTNT ngày 25/9/2012 của Bộ Nông nghiệp&PTNT",
+          "_matched_gt": {
+            "reference": "Thông tư số 47/TT-BNNPTNT ngày 25/9/2012",
+            "relation": "can_cu"
+          }
+        },
+        {
+          "relation": "can_cu",
+          "reference": "Quyết định số 39/2012/QĐ-TTg ngày 05/10/2012 của Thủ tướng Chính phủ",
+          "_matched_gt": {
+            "reference": "Quyết định số 39/2012/QĐ-TTg",
+            "relation": "can_cu"
+          }
+        }
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "key": [
+        "25/2026/TT-BGDĐT",
+        "diem",
+        "b) Quy định về chuẩn chuyên môn, nghiệp vụ của nhà giáo dạy trình độ cao đẳng quy định tại Chương II của Thông tư số 05/2024/TT-BLĐTBXH ngày 10 tháng 5 năm 2024 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội quy định chuẩn chuyên môn, nghiệp vụ của nhà giáo giáo dục nghề nghiệp;",
+        "2. Thông tư này bãi bỏ các quy định sau:",
+        "Điều 11. Tổ chức thực hiện"
+      ],
+      "so_hieu": "25/2026/TT-BGDĐT",
+      "clause_type": "diem",
+      "content": "b) Quy định về chuẩn chuyên môn, nghiệp vụ của nhà giáo dạy trình độ cao đẳng quy định tại Chương II của Thông tư số 05/2024/TT-BLĐTBXH ngày 10 tháng 5 năm 2024 của Bộ trưởng Bộ Lao động - Thương binh và Xã hội quy định chuẩn chuyên môn, nghiệp vụ của nhà giáo giáo dục nghề nghiệp;",
+      "parent_content": "2. Thông tư này bãi bỏ các quy định sau:",
+      "grandparent_content": "Điều 11. Tổ chức thực hiện",
+      "ground_truth": [
+        {
+          "reference": "Thông tư số 05/2024/TT-BLĐTBXH ngày 10 tháng 5 năm 2024",
+          "relation": "sua_doi_bo_sung"
+        }
+      ],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": [
+        {
+          "reference": "Thông tư số 05/2024/TT-BLĐTBXH ngày 10 tháng 5 năm 2024",
+          "relation": "sua_doi_bo_sung"
+        }
+      ]
+    },
+    {
+      "key": [
+        "127/2025/QH15",
+        "khoan",
+        "6. Trường hợp người được hưởng án treo chết, Công an cấp xã, đơn vị quân đội được giao quản lý, giám sát, giáo dục thông báo cho cơ quan thi hành án hình sự Công an cấp tỉnh, cơ quan thi hành án hình sự cấp quân khu để thông báo cho Tòa án đã ra quyết định thi hành án.\r\nTrong thời hạn 03 ngày làm việc kể từ ngày nhận được thông báo, Tòa án đã ra quyết định thi hành án phải ra quyết định đình chỉ thi hành án và gửi cho cơ quan quy định tại các điểm b, c và d khoản 2 Điều 79 của Luật này.",
+        "Điều 80. Thi hành quyết định thi hành án treo",
+        ""
+      ],
+      "so_hieu": "127/2025/QH15",
+      "clause_type": "khoan",
+      "content": "6. Trường hợp người được hưởng án treo chết, Công an cấp xã, đơn vị quân đội được giao quản lý, giám sát, giáo dục thông báo cho cơ quan thi hành án hình sự Công an cấp tỉnh, cơ quan thi hành án hình sự cấp quân khu để thông báo cho Tòa án đã ra quyết định thi hành án.\r\nTrong thời hạn 03 ngày làm việc kể từ ngày nhận được thông báo, Tòa án đã ra quyết định thi hành án phải ra quyết định đình chỉ thi hành án và gửi cho cơ quan quy định tại các điểm b, c và d khoản 2 Điều 79 của Luật này.",
+      "parent_content": "Điều 80. Thi hành quyết định thi hành án treo",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "điểm b khoản 2 Điều 79 Luật 127/2025/QH15",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm c khoản 2 Điều 79 Luật 127/2025/QH15",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm d khoản 2 Điều 79 Luật 127/2025/QH15",
+          "relation": "dan_chieu"
+        }
+      ],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": [
+        {
+          "reference": "điểm b khoản 2 Điều 79 Luật 127/2025/QH15",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm c khoản 2 Điều 79 Luật 127/2025/QH15",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm d khoản 2 Điều 79 Luật 127/2025/QH15",
+          "relation": "dan_chieu"
+        }
+      ]
+    },
+    {
+      "key": [
+        "1933/2011/QĐ-UBND",
+        "khoan",
+        "2. Hủy bỏ một phần hoặc toàn bộ nội dung của văn bản trong trường hợp một phần hoặc toàn bộ văn bản được ban hành trái thẩm quyền về hình thức, thẩm quyền về nội dung hoặc không phù hợp với quy định của pháp luật ngay từ thời điểm ban hành văn bản. Văn bản chứa quy phạm pháp luật hoặc văn bản có thể thức và nội dung như văn bản quy phạm pháp luật theo quy định tại điểm b, c, d khoản 2 Điều 1 Quy định này đều xử lý bằng hình thức hủy bỏ.",
+        "Điều 3. Hình thức xử lý văn bản\r\nVăn bản không còn phù hợp hoặc trái pháp luật được xử lý bằng hình thức đình chỉ thi hành, thay thế, hủy bỏ, bãi bỏ, sửa đổi, bổ sung, đính chính văn bản:",
+        ""
+      ],
+      "so_hieu": "1933/2011/QĐ-UBND",
+      "clause_type": "khoan",
+      "content": "2. Hủy bỏ một phần hoặc toàn bộ nội dung của văn bản trong trường hợp một phần hoặc toàn bộ văn bản được ban hành trái thẩm quyền về hình thức, thẩm quyền về nội dung hoặc không phù hợp với quy định của pháp luật ngay từ thời điểm ban hành văn bản. Văn bản chứa quy phạm pháp luật hoặc văn bản có thể thức và nội dung như văn bản quy phạm pháp luật theo quy định tại điểm b, c, d khoản 2 Điều 1 Quy định này đều xử lý bằng hình thức hủy bỏ.",
+      "parent_content": "Điều 3. Hình thức xử lý văn bản\r\nVăn bản không còn phù hợp hoặc trái pháp luật được xử lý bằng hình thức đình chỉ thi hành, thay thế, hủy bỏ, bãi bỏ, sửa đổi, bổ sung, đính chính văn bản:",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "điểm b khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm c khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm d khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "relation": "dan_chieu"
+        }
+      ],
+      "predictions": [],
+      "tp": [],
+      "fp": [],
+      "fn": [
+        {
+          "reference": "điểm b khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm c khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "điểm d khoản 2 Điều 1 Quyết định 1933/2011/QĐ-UBND",
+          "relation": "dan_chieu"
+        }
+      ]
+    },
+    {
+      "key": [
+        "06/2017/QĐ-UBND",
+        "dieu",
+        "Điều 27. Khen thưởng, xử lý vi phạm\r\nThực hiện theo Điều 28, Điều 29, Nghị định số 33/2002/NĐ-CP ngày 28/3/2002 của Chính phủ quy định chi tiết thi hành Pháp lệnh bảo vệ bí mật nhà nước. Thủ tục và hồ sơ đề nghị khen thưởng thực hiện theo quy định của Luật thi đua khen thưởng và các văn bản hướng dẫn thi hành.",
+        "",
+        ""
+      ],
+      "so_hieu": "06/2017/QĐ-UBND",
+      "clause_type": "dieu",
+      "content": "Điều 27. Khen thưởng, xử lý vi phạm\r\nThực hiện theo Điều 28, Điều 29, Nghị định số 33/2002/NĐ-CP ngày 28/3/2002 của Chính phủ quy định chi tiết thi hành Pháp lệnh bảo vệ bí mật nhà nước. Thủ tục và hồ sơ đề nghị khen thưởng thực hiện theo quy định của Luật thi đua khen thưởng và các văn bản hướng dẫn thi hành.",
+      "parent_content": "",
+      "grandparent_content": "",
+      "ground_truth": [
+        {
+          "reference": "Điều 28 Nghị định số 33/2002/NĐ-CP ngày 28/3/2002",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "Điều 29 Nghị định số 33/2002/NĐ-CP ngày 28/3/2002",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "Luật thi đua khen thưởng",
+          "relation": "dan_chieu"
+        }
+      ],
+      "predictions": [
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị định số 33/2002/NĐ-CP ngày 28/3/2002 của Chính phủ"
+        },
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật thi đua khen thưởng"
+        }
+      ],
+      "tp": [
+        {
+          "relation": "dan_chieu",
+          "reference": "Luật thi đua khen thưởng",
+          "_matched_gt": {
+            "reference": "Luật thi đua khen thưởng",
+            "relation": "dan_chieu"
+          }
+        }
+      ],
+      "fp": [
+        {
+          "relation": "dan_chieu",
+          "reference": "Nghị định số 33/2002/NĐ-CP ngày 28/3/2002 của Chính phủ"
+        }
+      ],
+      "fn": [
+        {
+          "reference": "Điều 28 Nghị định số 33/2002/NĐ-CP ngày 28/3/2002",
+          "relation": "dan_chieu"
+        },
+        {
+          "reference": "Điều 29 Nghị định số 33/2002/NĐ-CP ngày 28/3/2002",
+          "relation": "dan_chieu"
+        }
+      ]
+    }
+  ]
+}

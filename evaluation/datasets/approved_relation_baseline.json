@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "purpose": "Approved minimum baseline for deterministic regression gate",
+    "target_overall_f1": 0.97,
+    "source_dataset": "evaluation/datasets/relation_pairs.csv",
+    "approved_after": "Relation benchmark reached 0.97 target"
+  },
+  "overall": {
+    "f1": 0.97
+  },
+  "by_relation_type": {
+    "bai_bo": 0.97,
+    "can_cu": 0.97,
+    "dan_chieu": 0.97,
+    "dinh_chi": 0.97,
+    "dinh_chinh": 0.97,
+    "hop_nhat": 0.97,
+    "huong_dan": 0.97,
+    "huy_bo": 0.97,
+    "keo_dai_hieu_luc": 0.97,
+    "ngung_hieu_luc": 0.97,
+    "quy_dinh_chi_tiet": 0.97,
+    "sua_doi_bo_sung": 0.97,
+    "thay_the": 0.97,
+    "sua_doi": 0.97,
+    "bo_sung": 0.97
+  }
+}

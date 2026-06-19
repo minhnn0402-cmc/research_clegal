@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "source": "live Mongo snapshot promoted to deterministic fixture",
+    "purpose": "Protect Mongo field contracts used by graph extraction",
+    "rules": [
+      "Default tests must not connect to Mongo",
+      "loai_van_ban is the document type field",
+      "doc_type is not a required cls_info field"
+    ]
+  },
+  "cases": [
+    {
+      "id": "MONGO-SOURCE-102-2025-QH15",
+      "status": "active",
+      "priority": "P1",
+      "cls_ID": 999999999624015,
+      "cls_info": {
+        "title": "Luật 102/2025/QH15 tương trợ tư pháp về dân sự 2025",
+        "title_without_number": "Luật tương trợ tư pháp về dân sự 2025",
+        "so_hieu": "102/2025/QH15",
+        "loai_van_ban": "Luật"
+      },
+      "cls_parsing_count": 175,
+      "expected": {
+        "cls_document_type": "Luật",
+        "forbidden_required_fields": [
+          "doc_type"
+        ]
+      }
+    }
+  ]
+}

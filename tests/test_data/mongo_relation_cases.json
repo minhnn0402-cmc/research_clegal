@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "source": "Mongo-derived and ticket-derived compact clauses",
+    "purpose": "Run relation extraction on stable clauses without live DB dependency",
+    "rules": [
+      "Expected relation labels are reviewed facts",
+      "Fixtures may include source metadata for traceability",
+      "Implementation must not branch on fixture IDs"
+    ]
+  },
+  "cases": [
+    {
+      "id": "REL-SDBS-APPENDIX-FORM-LIST",
+      "status": "active",
+      "priority": "P1",
+      "source": {
+        "so_hieu": "sample",
+        "title": "Nghị định thay thế phụ lục/mẫu/danh mục",
+        "loai_van_ban": "Nghị định"
+      },
+      "data": [
+        {
+          "com_key": "khoan_appendix_replacement",
+          "com_type": "khoan",
+          "com_title": "1. Thay thế danh mục thông báo tại Phụ lục II ban hành kèm theo Nghị định số 126/2020/NĐ-CP bằng danh mục thông báo tại Phụ lục II kèm theo Nghị định này.\n2. Thay thế Mẫu số 01/CCTT-TĐMN quy định tại Phụ lục II Nghị định số 126/2020/NĐ-CP thành Mẫu số 01/CCTT-TĐMN tại Phụ lục II kèm theo Nghị định này."
+        }
+      ],
+      "expected_relations": [
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Nghị định số 126/2020/NĐ-CP"
+        }
+      ],
+      "forbidden_relations": [
+        {
+          "relation": "thay_the",
+          "reference": "Nghị định số 126/2020/NĐ-CP"
+        }
+      ]
+    },
+    {
+      "id": "CLS-5077-53-APPENDIX-FORM",
+      "status": "active",
+      "priority": "P1",
+      "source": {
+        "cls_ID": 999999999694149,
+        "so_hieu": "53/2026/NĐ-CP",
+        "title": "Nghị định 53/2026/NĐ-CP sửa đổi các Nghị định trong lĩnh vực đê điều và phòng, chống thiên tai",
+        "loai_van_ban": "Nghị định"
+      },
+      "data": [
+        {
+          "com_key": "dieu_14",
+          "com_type": "dieu",
+          "com_path": "Điều 14 / Chương I",
+          "com_title": "Điều 14. Thay thế một số cụm từ tại điểm, khoản và phụ lục như sau:",
+          "com_content": "1. Thay thế cụm từ “Ban chỉ đạo quốc gia về phòng, chống thiên tai” bằng cụm từ “Ban Chỉ đạo Phòng thủ dân sự quốc gia” tại khoản 1 Điều 11; điểm b và điểm c khoản 2 Điều 16.\n2. Thay thế cụm từ “Ủy ban Quốc gia ứng phó sự cố, thiên tai và Tìm kiếm cứu nạn” bằng cụm từ “Ban Chỉ đạo Phòng thủ dân sự quốc gia” tại khoản 2 Điều 9; khoản 3 Điều 10.\n3. Thay thế cụm từ “Ban chỉ huy phòng, chống thiên tai và tìm kiếm cứu nạn” bằng cụm từ “Ban Chỉ huy Phòng thủ dân sự” tại điểm a và điểm b khoản 3 Điều 12; khoản 1 Điều 19.\n4. Thay thế cụm từ “Bộ Thông tin và Truyền thông” bằng cụm từ “Bộ Khoa học và Công nghệ” tại khoản 4 Điều 3.\n5. Thay thế cụm từ “Bộ Nông nghiệp và Phát triển nông thôn, Bộ Tài nguyên và Môi trường” bằng cụm từ “Bộ Nông nghiệp và Môi trường” tại khoản 4 Điều 3.\n6. Thay thế cụm từ “Bộ Nông nghiệp và Phát triển nông thôn” bằng cụm từ “Bộ Nông nghiệp và Môi trường” tại khoản 2 Điều 15.\n7. Thay thế cụm từ “Bộ Kế hoạch và Đầu tư” bằng cụm từ “Bộ Tài chính” tại khoản 2 Điều 15.\n8. Thay thế cụm từ “Bộ Lao động - Thương binh và Xã hội” bằng cụm từ “Bộ Y tế” tại điểm b khoản 3 Điều 18.\n9. Thay thế cụm từ “Ủy ban nhân dân cấp huyện” bằng cụm từ “Ủy ban nhân dân cấp tỉnh” tại khoản 3 Điều 7.\n10. Thay thế cụm từ “Ủy ban nhân dân cấp huyện” bằng cụm từ “Ủy ban nhân dân cấp xã” tại khoản 6 Điều 35.\n11. Thay thế cụm từ “Số Chứng minh nhân dân (Căn cước công dân)” bằng cụm từ “Số Căn cước công dân/Căn cước” tại Phụ lục VI ban hành kèm theo Nghị định số 66/2021/NĐ-CP ngày 06 tháng 7 năm 2021 của Chính phủ quy định chi tiết thi hành một số điều của Luật Phòng, chống thiên tai và Luật sửa đổi, bổ sung một số điều của Luật Phòng, chống thiên tai và Luật Đê điều.\n12. Thay thế “Đơn đăng ký hoạt động ứng phó và khắc phục hậu quả thiên tai tại Việt Nam” tại Phụ lục I kèm theo Nghị định số 66/2021/NĐ-CP ngày 06 tháng 7 năm 2021 của Chính phủ quy định chi tiết thi hành một số điều của Luật Phòng, chống thiên tai và Luật sửa đổi, bổ sung một số điều của Luật Phòng, chống thiên tai và Luật Đê điều bằng đơn kèm theo tại Phụ lục I Nghị định này.\n13. Thay thế “Mẫu đơn đề nghị trợ cấp tai nạn, tiền tuất” tại Phụ lục VII kèm theo Nghị định số 66/2021/NĐ-CP ngày 06 tháng 7 năm 2021 của Chính phủ quy định chi tiết thi hành một số điều của Luật Phòng, chống thiên tai và Luật sửa đổi, bổ sung một số điều của Luật Phòng, chống thiên tai và Luật Đê điều bằng mẫu đơn kèm theo tại Phụ lục II Nghị định này."
+        }
+      ],
+      "expected_relations": [
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "Nghị định số 66/2021/NĐ-CP ngày 06 tháng 7 năm 2021"
+        }
+      ],
+      "forbidden_relations": [
+        {
+          "relation": "thay_the",
+          "reference": "Nghị định số 66/2021/NĐ-CP ngày 06 tháng 7 năm 2021"
+        }
+      ],
+      "fixture_source": {
+        "kind": "mongo_snapshot",
+        "matched_query": {
+          "cls_ID": 999999999694149
+        },
+        "selected_com_keys": [
+          "dieu_14"
+        ]
+      }
+    },
+    {
+      "id": "CLS-5077-39-PARTIAL-APPENDIX",
+      "status": "active",
+      "priority": "P1",
+      "source": {
+        "cls_ID": 999999999691209,
+        "so_hieu": "39/2026/NĐ-CP",
+        "title": "Nghị định 39/2026/NĐ-CP sửa đổi Nghị định 27/2019/NĐ-CP hướng dẫn Luật Đo đạc và bản đồ được sửa đổi bởi Nghị định 136/2021/NĐ-CP và Nghị định 22/2023/NĐ-CP",
+        "loai_van_ban": "Nghị định"
+      },
+      "data": [
+        {
+          "com_key": "dieu_2",
+          "com_type": "dieu",
+          "com_path": "Điều 2",
+          "com_title": "Điều 2. Thay thế, bãi bỏ một số quy định và Phụ lục của Nghị định số 27/2019/NĐ-CP ngày 13 tháng 3 năm 2019 của Chính phủ quy định chi tiết một số điều của Luật Đo đạc và bản đồ được sửa đổi, bổ sung bởi Nghị định số 136/2021/NĐ-CP ngày 31 tháng 12 năm 2021 của Chính phủ và Nghị định số 22/2023/NĐ-CP ngày 12 tháng 5 năm 2023 của Chính phủ",
+          "com_content": "1. Thay thế một số cụm từ như sau:\na) Thay thế cụm từ “Bộ Tài nguyên và Môi trường” bằng cụm từ “Bộ Nông nghiệp và Môi trường” tại khoản 4 Điều 4 (được sửa đổi, bổ sung bởi khoản 1 Điều 1 Nghị định số 136/2021/NĐ-CP); khoản 1 và khoản 2 Điều 9; khoản 2 Điều 14; điểm b khoản 6 và điểm d khoản 7 Điều 17; khoản 2 và khoản 3 Điều 18; khoản 3 Điều 24; khoản 3 Điều 26; khoản 10 Điều 27; khoản 3 và khoản 4 Điều 28; khoản 1, khoản 3 và khoản 4 Điều 33 (được sửa đổi, bổ sung bởi khoản 8 Điều 1 Nghị định số 136/2021/NĐ-CP); điểm c khoản 2 Điều 34 (được sửa đổi, bổ sung bởi khoản 9 Điều 1 Nghị định số 136/2021/NĐ-CP); Điều 36 (được sửa đổi, bổ sung bởi khoản 11 Điều 1 Nghị định số 136/2021/NĐ-CP); khoản 3 Điều 37 (được sửa đổi, bổ sung bởi điểm b khoản 12 Điều 1 Nghị định số 136/2021/NĐ-CP); khoản 1 Điều 39 (được sửa đổi, bổ sung bởi khoản 14 Điều 1 Nghị định số 136/2021/NĐ-CP); khoản 2 Điều 40; khoản 2 Điều 41; điểm a khoản 2 Điều 43; khoản 2 Điều 45; điểm a khoản 3 Điều 46 (được sửa đổi, bổ sung bởi điểm b khoản 16 Điều 1 Nghị định số 136/2021/NĐ-CP); khoản 2 Điều 51; khoản 2 Điều 52 của Nghị định số 27/2019/NĐ-CP; khoản 1 Điều 4 Nghị định số 136/2021/NĐ-CP; Phụ lục I ban hành kèm theo Nghị định số 27/2019/NĐ-CP;\nb) Thay thế cụm từ “Bộ Kế hoạch và Đầu tư” bằng cụm từ “Bộ Tài chính” tại khoản 2 Điều 4 Nghị định số 136/2021/NĐ-CP;\nc) Thay thế cụm từ “tài nguyên và môi trường” bằng cụm từ “nông nghiệp và môi trường” tại điểm b khoản 4 và khoản 4a Điều 4 (được sửa đổi, bổ sung bởi khoản 1 Điều 1 Nghị định số 136/2021/NĐ-CP); khoản 3 Điều 12; khoản 4, khoản 5 và khoản 6 Điều 17; khoản 4 Điều 18; khoản 10 Điều 27; điểm b khoản 1, điểm b và điểm đ khoản 3, điểm b khoản 4 Điều 33 (được sửa đổi, bổ sung bởi khoản 8 Điều 1 Nghị định số 136/2021/NĐ-CP); khoản 2 Điều 36; điểm b khoản 3 Điều 37; Điều 39 (được sửa đổi, bổ sung bởi khoản 14 Điều 1 Nghị định số 136/2021/NĐ-CP); điểm a khoản 2 Điều 43; điểm b khoản 3 Điều 46 (được sửa đổi, bổ sung bởi điểm b khoản 16 Điều 1 Nghị định số 136/2021/NĐ-CP); khoản 2 Điều 51; điểm b khoản 2 Điều 52; Phụ lục I ban hành kèm theo Nghị định số 27/2019/NĐ-CP;\nd) Thay thế cụm từ “cấp huyện” bằng cụm từ “cấp xã” tại điểm a khoản 3 Điều 18 Nghị định số 27/2019/NĐ-CP;\nđ) Thay thế cụm từ “Mẫu số 07” bằng cụm từ “Mẫu số 06” tại Điều 34 Nghị định số 27/2019/NĐ-CP (được sửa đổi, bổ sung bởi khoản 9 Điều 1 Nghị định số 136/2021/NĐ-CP).\n\n2. Bãi bỏ khoản 3, khoản 5 Điều 27 Nghị định số 27/2019/NĐ-CP ngày 13 tháng 3 năm 2019 của Chính phủ quy định chi tiết một số điều của Luật Đo đạc và bản đồ.\n3. Thay thế một số Phụ lục sau:\na) Thay thế Mẫu số 03 Phụ lục I ban hành kèm theo Nghị định số 27/2019/NĐ-CP bằng Mẫu số 03 Phụ lục I ban hành kèm theo Nghị định này;\nb) Thay thế Phụ lục II ban hành kèm theo Nghị định số 27/2019/NĐ-CP bằng Phụ lục II ban hành kèm theo Nghị định này;\nc) Thay thế Phụ lục IA ban hành kèm theo Nghị định số 136/2021/NĐ-CP bằng Phụ lục IA ban hành kèm theo Nghị định này."
+        }
+      ],
+      "expected_relations": [
+        {
+          "relation": "sua_doi",
+          "reference": "khoản 2 Điều 52 Nghị định số 27/2019/NĐ-CP"
+        }
+      ],
+      "forbidden_relations": [
+        {
+          "relation": "sua_doi_bo_sung",
+          "reference": "khoản 2 Điều 52 Nghị định số 27/2019/NĐ-CP"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "Nghị định số 27/2019/NĐ-CP"
+        },
+        {
+          "relation": "bai_bo",
+          "reference": "Nghị định số 136/2021/NĐ-CP"
+        }
+      ],
+      "fixture_source": {
+        "kind": "mongo_snapshot",
+        "matched_query": {
+          "cls_ID": 999999999691209
+        },
+        "selected_com_keys": [
+          "dieu_2"
+        ]
+      }
+    }
+  ]
+}
